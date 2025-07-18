@@ -145,7 +145,7 @@
       <select id="language-select">
         <option value="en" selected>English</option>
         <option value="pl">Polski</option>
-        <option value="ua">Українська</option>
+        <option value="uk">Українська</option>
         <option value="fr">Français</option>
         <option value="de">Deutsch</option>
         <option value="es">Español</option>
@@ -193,7 +193,7 @@
     <p>W razie pytań skontaktuj się z nami: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
   </section>
 
-  <section id="ua">
+  <section id="uk">
     <h2>Умови використання</h2>
     <p><strong>Дата набрання чинності:</strong> 16 липня 2025</p>
     <p>Ласкаво просимо до "Чи Було в Тебе". Використовуючи цей додаток, ви погоджуєтесь з наступними умовами:</p>
@@ -284,7 +284,7 @@
   const localizations = {
     en: { title: 'Terms of Use - Have You Ever', label: 'Select Language:' },
     pl: { title: 'Regulamin - Czy Kiedykolwiek', label: 'Wybierz język:' },
-    ua: { title: 'Умови використання - Чи Було в Тебе', label: 'Виберіть мову:' },
+    uk: { title: 'Умови використання - Чи Було в Тебе', label: 'Виберіть мову:' },
     fr: { title: 'Conditions d\'Utilisation - Tu n\'as Jamais', label: 'Sélectionner la langue:' },
     de: { title: 'Nutzungsbedingungen - Ich hab\' noch nie', label: 'Sprache auswählen:' },
     es: { title: 'Términos de Uso - Yo Nunca', label: 'Seleccionar idioma:' }
@@ -313,7 +313,7 @@
   function getLangFromUrl() {
     const params = new URLSearchParams(window.location.search);
     const lang = params.get('lang');
-    return ["en", "pl", "ua", "fr", "de", "es"].includes(lang) ? lang : 'en';
+    return ["en", "pl", "uk", "fr", "de", "es"].includes(lang) ? lang : 'en';
   }
 
   document.addEventListener('DOMContentLoaded', () => {

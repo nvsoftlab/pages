@@ -154,7 +154,7 @@
       <select id="language-select">
         <option value="en" selected>English</option>
         <option value="pl">Polski</option>
-        <option value="ua">Українська</option>
+        <option value="uk">Українська</option>
         <option value="fr">Français</option>
         <option value="de">Deutsch</option>
         <option value="es">Español</option>
@@ -214,7 +214,7 @@
     <p>W razie pytań skontaktuj się z nami pod adresem: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
   </section>
 
-  <section id="ua">
+  <section id="uk">
     <h2>Політика Конфіденційності</h2>
     <p><strong>Останнє оновлення:</strong> 16 липня 2025</p>
     <p>Ця Політика Конфіденційності пояснює, як ми збираємо, використовуємо та захищаємо вашу інформацію під час використання додатка "Чи Було в Тебе". Ми поважаємо вашу конфіденційність і прагнемо її захищати.</p>
@@ -329,7 +329,7 @@
   const localizations = {
     en: { title: 'Privacy Policy - Have You Ever', label: 'Select Language:' },
     pl: { title: 'Polityka Prywatności - Czy Kiedykolwiek', label: 'Wybierz język:' },
-    ua: { title: 'Політика Конфіденційності - Чи Було в Тебе', label: 'Виберіть мову:' },
+    uk: { title: 'Політика Конфіденційності - Чи Було в Тебе', label: 'Виберіть мову:' },
     fr: { title: 'Politique de Confidentialité - Tu n\'as Jamais', label: 'Sélectionner la langue:' },
     de: { title: 'Datenschutzrichtlinie - Ich hab\' noch nie', label: 'Sprache auswählen:' },
     es: { title: 'Política de Privacidad - Yo Nunca', label: 'Seleccionar idioma:' }
@@ -358,7 +358,7 @@
   function getLangFromUrl() {
     const params = new URLSearchParams(window.location.search);
     const lang = params.get('lang');
-    return ["en", "pl", "ua", "fr", "de", "es"].includes(lang) ? lang : 'en';
+    return ["en", "pl", "uk", "fr", "de", "es"].includes(lang) ? lang : 'en';
   }
 
   document.addEventListener('DOMContentLoaded', () => {
