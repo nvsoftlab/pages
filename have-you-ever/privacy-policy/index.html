@@ -158,6 +158,7 @@
         <option value="fr">Français</option>
         <option value="de">Deutsch</option>
         <option value="es">Español</option>
+        <option value="it">Italiano</option>
       </select>
     </div>
   </header>
@@ -317,6 +318,32 @@
     <h3>Contacto</h3>
     <p>Si tiene preguntas, contáctenos en: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
   </section>
+
+  <section id="it">
+    <h2>Politica sulla Privacy</h2>
+    <p><strong>Ultimo aggiornamento:</strong> 16 luglio 2025</p>
+    <p>Questa Politica sulla Privacy spiega come raccogliamo, utilizziamo e proteggiamo le tue informazioni durante l'utilizzo dell'app "Non ho mai". Rispettiamo la tua privacy e ci impegniamo a proteggerla.</p>
+    <h3>Informazioni che raccogliamo</h3>
+    <ul>
+      <li>ID del dispositivo e inserimento facoltativo del nome.</li>
+      <li>Dati di analisi e di utilizzo tramite Firebase e Google Analytics.</li>
+      <li>Dati pubblicitari tramite Google AdMob.</li>
+    </ul>
+    <h3>Come utilizziamo i dati</h3>
+    <ul>
+      <li>Per migliorare l'esperienza dell'app.</li>
+      <li>Per personalizzare gli annunci e monitorare le prestazioni dell'app.</li>
+      <li>Per gestire l'autenticazione, gli abbonamenti e le funzionalità premium.</li>
+    </ul>
+    <h3>Archiviazione e sicurezza dei dati</h3>
+    <p>I dati sono archiviati in modo sicuro in Firebase e crittografati a riposo. Tutta la comunicazione è crittografata tramite HTTPS.</p>
+    <h3>Diritti dell'utente</h3>
+    <p>Puoi eliminare i tuoi dati in qualsiasi momento utilizzando le impostazioni dell'app. Al momento non offriamo l'esportazione dei dati o la possibilità di disattivare il tracciamento.</p>
+    <h3>Privacy dei minori</h3>
+    <p>La versione gratuita è adatta a bambini di età inferiore a 13 anni. La versione Pro include contenuti per adulti (18+), accessibili solo dopo la conferma dell'età.</p>
+    <h3>Contatti</h3>
+    <p>Per domande, contattaci a: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+  </section>
 </div>
 
 <script>
@@ -332,7 +359,8 @@
     uk: { title: 'Політика Конфіденційності - Чи Було в Тебе', label: 'Виберіть мову:' },
     fr: { title: 'Politique de Confidentialité - Tu n\'as Jamais', label: 'Sélectionner la langue:' },
     de: { title: 'Datenschutzrichtlinie - Ich hab\' noch nie', label: 'Sprache auswählen:' },
-    es: { title: 'Política de Privacidad - Yo Nunca', label: 'Seleccionar idioma:' }
+    es: { title: 'Política de Privacidad - Yo Nunca', label: 'Seleccionar idioma:' },
+    it: { title: 'Politica sulla Privacy - Non ho mai', label: 'Seleziona la lingua:' }
   };
   
   function showLanguage(lang) {
@@ -358,7 +386,7 @@
   function getLangFromUrl() {
     const params = new URLSearchParams(window.location.search);
     const lang = params.get('lang');
-    return ["en", "pl", "uk", "fr", "de", "es"].includes(lang) ? lang : 'en';
+    return ["en", "pl", "uk", "fr", "de", "es", "it"].includes(lang) ? lang : 'en';
   }
 
   document.addEventListener('DOMContentLoaded', () => {

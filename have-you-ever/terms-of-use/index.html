@@ -149,6 +149,7 @@
         <option value="fr">Français</option>
         <option value="de">Deutsch</option>
         <option value="es">Español</option>
+        <option value="it">Italiano</option>
       </select>
     </div>
   </header>
@@ -272,6 +273,26 @@
     <h3>7. Contacto</h3>
     <p>Para cualquier consulta, contáctenos en: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
   </section>
+
+  <section id="it">
+    <h2>Termini di Utilizzo</h2>
+    <p><strong>Data di entrata in vigore:</strong> 16 luglio 2025</p>
+    <p>Benvenuto in "Non ho mai". Utilizzando questa app, accetti i seguenti termini:</p>
+    <h3>1. Utilizzo ed Idoneità</h3>
+    <p>La versione gratuita è aperta a tutte le età. La versione Pro include contenuti destinati agli adulti (18+) e richiede la conferma dell'età.</p>
+    <h3>2. Abbonamenti e Acquisti</h3>
+    <p>"Non ho mai" è freemium. Gli utenti possono abbonarsi mensilmente, annualmente o settimanalmente per accedere a contenuti senza pubblicità e premium tramite l'App Store o il Play Market.</p>
+    <h3>3. Contenuti Generati dagli Utenti</h3>
+    <p>Puoi creare domande e categorie personalizzate. Questi contenuti sono privati a meno che non vengano condivisi manualmente. Non moderiamo questi contenuti.</p>
+    <h3>4. Uso Accettabile</h3>
+    <p>Non devi utilizzare l'app per attività illegali, offensive o dannose. Ciò include molestie, abusi o il caricamento di materiali non autorizzati.</p>
+    <h3>5. Proprietà Intellettuale</h3>
+    <p>Tutti i contenuti dell'app (design, domande, risorse) sono di proprietà degli sviluppatori, ad eccezione dei contenuti personalizzati creati dagli utenti per uso privato.</p>
+    <h3>6. Esclusione di Responsabilità</h3>
+    <p>Questa app è destinata esclusivamente a scopi di intrattenimento. Decliniamo ogni responsabilità per il comportamento degli utenti, l'uso improprio dei contenuti o la perdita di dati.</p>
+    <h3>7. Contatti</h3>
+    <p>Per qualsiasi richiesta, contattaci a: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+  </section>
 </div>
 
 <script>
@@ -287,7 +308,8 @@
     uk: { title: 'Умови використання - Чи Було в Тебе', label: 'Виберіть мову:' },
     fr: { title: 'Conditions d\'Utilisation - Tu n\'as Jamais', label: 'Sélectionner la langue:' },
     de: { title: 'Nutzungsbedingungen - Ich hab\' noch nie', label: 'Sprache auswählen:' },
-    es: { title: 'Términos de Uso - Yo Nunca', label: 'Seleccionar idioma:' }
+    es: { title: 'Términos de Uso - Yo Nunca', label: 'Seleccionar idioma:' },
+    it: { title: 'Termini di Utilizzo - Non ho mai', label: 'Seleziona la lingua:' }
   };
   
   function showLanguage(lang) {
@@ -313,7 +335,7 @@
   function getLangFromUrl() {
     const params = new URLSearchParams(window.location.search);
     const lang = params.get('lang');
-    return ["en", "pl", "uk", "fr", "de", "es"].includes(lang) ? lang : 'en';
+    return ["en", "pl", "uk", "fr", "de", "es", "it"].includes(lang) ? lang : 'en';
   }
 
   document.addEventListener('DOMContentLoaded', () => {
