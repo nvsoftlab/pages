@@ -3,143 +3,35 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Terms of Use - Have you ever</title>
+<title>Terms of Use - Have You Ever</title>
 <style>
-  /* --- General & Typography --- */
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    background-color: #f4f7f9;
-    color: #333;
-    line-height: 1.7;
-    margin: 0;
-    padding: 20px;
-  }
-
-  /* --- Layout & Container --- */
-  .container {
-    max-width: 960px;
-    margin: 20px auto;
-    padding: 20px 40px;
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
-  }
-
-  /* --- Header --- */
-  header {
-    border-bottom: 2px solid #eef2f5;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-  
-  header h1 {
-    font-size: 28px;
-    color: #2c3e50;
-    margin: 0;
-  }
-  
-  .language-selector {
-    text-align: right;
-  }
-
-  label {
-    font-size: 14px;
-    color: #555;
-    margin-right: 8px;
-  }
-
-  select {
-    font-size: 16px;
-    padding: 8px 12px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-    cursor: pointer;
-    transition: border-color 0.3s, box-shadow 0.3s;
-  }
-
-  select:hover {
-    border-color: #007bff;
-  }
-  
-  select:focus {
-    outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
-  }
-
-  /* --- Content Sections --- */
-  section {
-    display: none;
-    animation: fadeIn 0.5s ease-in-out;
-  }
-
-  section.active {
-    display: block;
-  }
-
-  h2 {
-    font-size: 24px;
-    color: #2c3e50;
-    margin-top: 0;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
-  }
-
-  h3 {
-    font-size: 20px;
-    color: #34495e;
-    margin-top: 30px;
-  }
-
-  p {
-    margin-bottom: 15px;
-  }
-  
-  a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  strong {
-    color: #2c3e50;
-  }
-
-  /* --- Animation --- */
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  
-  /* --- Responsive Design --- */
-  @media (max-width: 600px) {
-    .container {
-      padding: 15px 20px;
-    }
-    header {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    header h1 {
-      font-size: 24px;
-    }
-  }
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:#f4f7f9;color:#333;line-height:1.7;margin:0;padding:20px}
+  .container{max-width:960px;margin:20px auto;padding:20px 40px;background:#fff;border-radius:12px;box-shadow:0 8px 25px rgba(0,0,0,.07)}
+  header{border-bottom:2px solid #eef2f5;margin-bottom:30px;padding-bottom:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
+  header h1{font-size:28px;color:#2c3e50;margin:0}
+  .language-selector{text-align:right}
+  label{font-size:14px;color:#555;margin-right:8px}
+  select{font-size:16px;padding:8px 12px;border-radius:8px;border:1px solid #ccc;background:#f9f9f9;cursor:pointer;transition:border-color .3s,box-shadow .3s}
+  select:hover{border-color:#007bff}
+  select:focus{outline:none;border-color:#007bff;box-shadow:0 0 0 3px rgba(0,123,255,.2)}
+  section{display:none;animation:fadeIn .5s ease-in-out}
+  section.active{display:block}
+  h2{font-size:24px;color:#2c3e50;margin-top:0;padding-bottom:10px;border-bottom:1px solid #eee}
+  h3{font-size:20px;color:#34495e;margin-top:30px}
+  p{margin-bottom:15px}
+  ul{padding-left:20px}
+  a{color:#007bff;text-decoration:none}
+  a:hover{text-decoration:underline}
+  strong{color:#2c3e50}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+  @media (max-width:600px){.container{padding:15px 20px}header{flex-direction:column;align-items:flex-start}header h1{font-size:24px}}
 </style>
 </head>
 <body>
 
 <div class="container">
   <header>
-    <h1 id="main-title">Terms of Use - Have you ever</h1>
+    <h1 id="main-title">Terms of Use - Have You Ever</h1>
     <div class="language-selector">
       <label for="language-select" id="language-label">Select Language:</label>
       <select id="language-select">
@@ -150,7 +42,6 @@
         <option value="de">Deutsch</option>
         <option value="es">Español</option>
         <option value="it">Italiano</option>
-        <!-- New languages -->
         <option value="bg">Български</option>
         <option value="hu">Magyar</option>
         <option value="ro">Română</option>
@@ -160,249 +51,532 @@
     </div>
   </header>
 
+  <!-- ENGLISH -->
   <section id="en" class="active">
     <h2>Terms of Use</h2>
-    <p><strong>Effective date:</strong> July 16, 2025</p>
-    <p>Welcome to "Have you ever". By using this app, you agree to the following terms:</p>
-    <h3>1. Use & Eligibility</h3>
-    <p>The free version is open to all ages. The Pro version includes content intended for adults (18+) and requires age confirmation.</p>
-    <h3>2. Subscriptions & Purchases</h3>
-    <p>"Have you ever" is freemium. Users can subscribe monthly, yearly, or weekly to access ad-free and premium content via the App Store or Play Market.</p>
-    <h3>3. User-Generated Content</h3>
-    <p>You can create custom questions and categories. This content is private unless manually shared. We do not moderate this content.</p>
-    <h3>4. Acceptable Use</h3>
-    <p>You must not use the app for illegal, offensive, or harmful activities. This includes harassment, abuse, or uploading unauthorized materials.</p>
-    <h3>5. Intellectual Property</h3>
-    <p>All app content (design, questions, assets) is owned by the developers, except custom content created by users for private use.</p>
-    <h3>6. Disclaimer</h3>
-    <p>This app is for entertainment purposes only. We disclaim liability for user behavior, content misuse, or data loss.</p>
-    <h3>7. Contact</h3>
-    <p>For any inquiries, contact us at: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+    <p><strong>Effective date:</strong> September 11, 2025</p>
+    <p>Welcome to <strong>Have You Ever</strong>. By using this app, you agree to these Terms of Use.</p>
+
+    <h3>1) Eligibility & Purpose</h3>
+    <p>The free version is suitable for all ages. The Pro version includes content intended for adults (18+) and requires age confirmation. The app is for entertainment only and is not a source of advice.</p>
+
+    <h3>2) Subscriptions, Trials & Purchases</h3>
+    <ul>
+      <li>Subscriptions are billed through Apple App Store or Google Play and <strong>auto-renew</strong> unless cancelled at least 24 hours before the current period ends.</li>
+      <li>Free trials (3 days) <strong>convert to paid</strong> unless cancelled before the trial ends. Pricing and taxes may vary by country and currency.</li>
+      <li>Manage/cancel: <em>iOS</em> – Settings &gt; Apple ID &gt; Subscriptions; <em>Android</em> – Google Play &gt; Profile &gt; Payments &amp; subscriptions.</li>
+      <li><em>iOS</em>: You can restore previous purchases via “Restore Purchases”.</li>
+      <li>Refunds are handled by Apple or Google under their respective policies.</li>
+    </ul>
+
+    <h3>3) User-Generated & AI-Generated Content</h3>
+    <ul>
+      <li>You may create custom questions and categories for private use. We do not pre-moderate such content.</li>
+      <li>If you share content, you represent you have the necessary rights and grant us a limited, non-exclusive, revocable license to store, transmit, and display it as needed to operate the app.</li>
+      <li>AI-generated questions may be inaccurate or inappropriate in some contexts. Use discretion; we are not liable for reliance on AI outputs.</li>
+    </ul>
+
+    <h3>4) Acceptable Use</h3>
+    <p>Do not use the app for illegal, harmful, or offensive activities (including harassment, abuse, or infringing content). We may suspend or terminate access for violations.</p>
+
+    <h3>5) Intellectual Property</h3>
+    <p>App content (design, built-in questions, assets) is owned by us and our licensors. Your custom content remains yours, subject to Section 3 when shared.</p>
+
+    <h3>6) Changes to the App & Terms</h3>
+    <p>We may update features or these Terms. The current version is available on this page with the effective date. Continued use after changes constitutes acceptance.</p>
+
+    <h3>7) Disclaimers & Liability</h3>
+    <p>The app is provided “as is” for entertainment. To the extent permitted by law, we disclaim warranties and limit liability for indirect or consequential losses.</p>
+
+    <h3>8) Governing Law</h3>
+    <p>These Terms are governed by the laws of Poland. Courts in Wrocław, Poland have exclusive jurisdiction, except where mandatory consumer laws provide otherwise.</p>
+
+    <h3>9) Contact</h3>
+    <p>Questions about these Terms: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
   </section>
 
+  <!-- POLISH -->
   <section id="pl">
     <h2>Regulamin</h2>
-    <p><strong>Data obowiązywania:</strong> 16 lipca 2025</p>
-    <p>Witamy w aplikacji "Have you ever". Korzystając z niej, zgadzasz się na poniższe warunki:</p>
-    <h3>1. Użytkowanie i kwalifikacja</h3>
-    <p>Wersja darmowa dostępna jest dla wszystkich. Wersja Pro zawiera treści dla dorosłych (18+) i wymaga potwierdzenia wieku.</p>
-    <h3>2. Subskrypcje i zakupy</h3>
-    <p>Aplikacja działa w modelu freemium. Użytkownicy mogą subskrybować miesięcznie, rocznie lub tygodniowo, aby uzyskać dostęp do wersji bez reklam i treści premium za pośrednictwem App Store lub Play Market.</p>
-    <h3>3. Treści tworzone przez użytkowników</h3>
-    <p>Możesz tworzyć własne pytania i kategorie. Treści te są prywatne, chyba że zostaną ręcznie udostępnione. Nie moderujemy ich.</p>
-    <h3>4. Dozwolone użytkowanie</h3>
-    <p>Nie wolno używać aplikacji w sposób nielegalny, obraźliwy lub szkodliwy, w tym do nękania, nadużyć czy publikacji nieautoryzowanych materiałów.</p>
-    <h3>5. Własność intelektualna</h3>
-    <p>Cała zawartość aplikacji (projekt, pytania, zasoby) należy do twórców, poza treściami stworzonymi przez użytkowników na własny użytek.</p>
-    <h3>6. Zrzeczenie się odpowiedzialności</h3>
-    <p>Aplikacja służy wyłącznie celom rozrywkowym. Nie ponosimy odpowiedzialności za zachowanie użytkowników, niewłaściwe użycie treści ani utratę danych.</p>
-    <h3>7. Kontakt</h3>
-    <p>W razie pytań skontaktuj się z nami: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+    <p><strong>Data obowiązywania:</strong> 11 września 2025</p>
+    <p>Witamy w <strong>Have You Ever</strong>. Korzystając z aplikacji, akceptujesz niniejszy Regulamin.</p>
+
+    <h3>1) Użytkowanie i cel</h3>
+    <p>Wersja darmowa jest odpowiednia dla wszystkich grup wiekowych. Wersja Pro zawiera treści dla dorosłych (18+) i wymaga potwierdzenia wieku. Aplikacja służy wyłącznie rozrywce i nie stanowi porady.</p>
+
+    <h3>2) Subskrypcje, okres próbny i zakupy</h3>
+    <ul>
+      <li>Subskrypcje są rozliczane przez Apple App Store lub Google Play i <strong>odnawiają się automatycznie</strong>, chyba że zostaną anulowane co najmniej 24 godziny przed końcem okresu.</li>
+      <li>Bezpłatny okres próbny (3 dni) <strong>przekształca się w płatną subskrypcję</strong>, jeśli nie zostanie anulowany przed jego zakończeniem. Ceny i podatki mogą się różnić w zależności od kraju i waluty.</li>
+      <li>Zarządzanie/Anulowanie: <em>iOS</em> – Ustawienia &gt; Apple ID &gt; Subscriptions; <em>Android</em> – Google Play &gt; Profil &gt; Płatności i subskrypcje.</li>
+      <li><em>iOS</em>: Możesz przywrócić zakupy przez „Restore Purchases”.</li>
+      <li>Zwroty środków realizują Apple lub Google zgodnie z ich zasadami.</li>
+    </ul>
+
+    <h3>3) Treści użytkownika i treści AI</h3>
+    <ul>
+      <li>Możesz tworzyć własne pytania i kategorie do prywatnego użytku. Nie prowadzimy wstępnej moderacji takich treści.</li>
+      <li>Udostępniając treści, oświadczasz, że masz do nich prawa i udzielasz nam ograniczonej, niewyłącznej, odwołalnej licencji na ich przechowywanie, transmisję i wyświetlanie w celu działania aplikacji.</li>
+      <li>Treści generowane przez AI mogą być niedokładne lub nieodpowiednie w niektórych kontekstach. Korzystaj z rozwagą; nie odpowiadamy za poleganie na wynikach AI.</li>
+    </ul>
+
+    <h3>4) Dozwolone użytkowanie</h3>
+    <p>Zakazane jest używanie aplikacji w sposób nielegalny, szkodliwy lub obraźliwy (w tym nękanie, nadużycia, naruszenia praw). W przypadku naruszeń możemy zawiesić lub zakończyć dostęp.</p>
+
+    <h3>5) Własność intelektualna</h3>
+    <p>Treści aplikacji (projekt, wbudowane pytania, zasoby) należą do nas i naszych licencjodawców. Twoje treści własne pozostają Twoje, z zastrzeżeniem pkt 3 przy udostępnianiu.</p>
+
+    <h3>6) Zmiany aplikacji i regulaminu</h3>
+    <p>Możemy aktualizować funkcje lub Regulamin. Aktualna wersja jest dostępna na tej stronie z datą obowiązywania. Dalsze korzystanie oznacza akceptację zmian.</p>
+
+    <h3>7) Zastrzeżenia i odpowiedzialność</h3>
+    <p>Aplikacja jest dostarczana „tak jak jest” i służy rozrywce. W granicach prawa wyłączamy rękojmie i ograniczamy odpowiedzialność za szkody pośrednie/konsekwencyjne.</p>
+
+    <h3>8) Prawo właściwe</h3>
+    <p>Regulamin podlega prawu polskiemu. Właściwe sądy: Wrocław, z zastrzeżeniem bezwzględnych przepisów konsumenckich.</p>
+
+    <h3>9) Kontakt</h3>
+    <p>Pytania: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
   </section>
 
+  <!-- UKRAINIAN -->
   <section id="uk">
     <h2>Умови використання</h2>
-    <p><strong>Дата набрання чинності:</strong> 16 липня 2025</p>
-    <p>Ласкаво просимо до "Have you ever". Використовуючи цей додаток, ви погоджуєтесь з наступними умовами:</p>
-    <h3>1. Використання та вікові обмеження</h3>
-    <p>Безкоштовна версія доступна для будь-якого віку. Версія Pro містить контент для дорослих (18+) і вимагає підтвердження віку.</p>
-    <h3>2. Підписки та покупки</h3>
-    <p>"Have you ever" є безкоштовним додатком з преміум-функціями. Користувачі можуть підписатися на місяць, рік або тиждень, щоб отримати доступ до контенту без реклами та преміум-функцій через App Store або Play Market.</p>
-    <h3>3. Контент, створений користувачами</h3>
-    <p>Ви можете створювати власні запитання та категорії. Цей контент є приватним, доки ви не поділитеся ним вручну. Ми не модеруємо цей контент.</p>
-    <h3>4. Прийнятне використання</h3>
-    <p>Ви не повинні використовувати додаток для незаконних, образливих або шкідливих дій. Це включає переслідування, зловживання або завантаження неавторизованих матеріалів.</p>
-    <h3>5. Інтелектуальна власність</h3>
-    <p>Весь контент додатка (дизайн, запитання, ресурси) належить розробникам, за винятком власного контенту, створеного користувачами для приватного використання.</p>
-    <h3>6. Відмова від відповідальності</h3>
-    <p>Цей додаток призначений лише для розважальних цілей. Ми не несемо відповідальності за поведінку користувачів, неправильне використання контенту або втрату даних.</p>
-    <h3>7. Контакти</h3>
-    <p>З будь-яких питань звертайтеся до нас за адресою: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+    <p><strong>Дата набрання чинності:</strong> 11 вересня 2025</p>
+    <p>Ласкаво просимо до <strong>Have You Ever</strong>. Використовуючи додаток, ви погоджуєтесь із цими Умовами.</p>
+
+    <h3>1) Призначення та вік</h3>
+    <p>Безкоштовна версія підходить для всіх вікових груп. Pro-версія містить контент для дорослих (18+) і вимагає підтвердження віку. Додаток має розважальний характер і не є джерелом порад.</p>
+
+    <h3>2) Підписки, пробний період і покупки</h3>
+    <ul>
+      <li>Підписки оплачуються через Apple App Store або Google Play і <strong>автоматично подовжуються</strong>, якщо їх не скасувати щонайменше за 24 години до завершення поточного періоду.</li>
+      <li>Безкоштовний 3-денний trial <strong>перетворюється на платну підписку</strong>, якщо не скасувати вчасно. Ціни та податки можуть відрізнятися залежно від країни та валюти.</li>
+      <li>Керування/скасування: <em>iOS</em> – Settings &gt; Apple ID &gt; Subscriptions; <em>Android</em> – Google Play &gt; Profile &gt; Payments &amp; subscriptions.</li>
+      <li><em>iOS</em>: можна відновити покупки через “Restore Purchases”.</li>
+      <li>Повернення коштів здійснюються Apple або Google згідно з їхніми правилами.</li>
+    </ul>
+
+    <h3>3) Користувацький та AI-контент</h3>
+    <ul>
+      <li>Можна створювати власні запитання й категорії для приватного використання. Ми не проводимо попередню модерацію такого контенту.</li>
+      <li>Поширюючи контент, ви підтверджуєте наявність прав і надаєте нам обмежену, невиключну, відкличну ліцензію на зберігання, передавання та відображення для роботи додатка.</li>
+      <li>AI-запитання можуть бути неточними або недоречними. Використовуйте з обережністю; ми не несемо відповідальності за покладання на результати AI.</li>
+    </ul>
+
+    <h3>4) Прийнятне використання</h3>
+    <p>Заборонено використовувати додаток для незаконних, шкідливих або образливих дій (переслідування, зловживання, порушення прав). У разі порушень ми можемо призупинити або припинити доступ.</p>
+
+    <h3>5) Права інтелектуальної власності</h3>
+    <p>Контент додатка (дизайн, вбудовані запитання, ресурси) належить нам і нашим ліцензіарам. Ваш власний контент залишається вашим, із застереженням розділу 3 при поширенні.</p>
+
+    <h3>6) Зміни в додатку та Умовах</h3>
+    <p>Ми можемо оновлювати функції або ці Умови. Чинна версія з датою доступна на цій сторінці. Подальше використання означає згоду зі змінами.</p>
+
+    <h3>7) Відмова від відповідальності</h3>
+    <p>Додаток надається «як є» для розваги. У межах закону ми відмовляємося від гарантій і обмежуємо відповідальність за непрямі/супутні збитки.</p>
+
+    <h3>8) Застосовне право</h3>
+    <p>Умови регулюються законодавством Польщі. Компетентні суди — м. Вроцлав (за винятком випадків, передбачених обов’язковими нормами захисту споживачів).</p>
+
+    <h3>9) Контакти</h3>
+    <p>Запитання щодо Умов: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
   </section>
 
+  <!-- FRENCH -->
   <section id="fr">
-    <h2>Conditions d'Utilisation</h2>
-    <p><strong>Date d'entrée en vigueur :</strong> 16 juillet 2025</p>
-    <p>Bienvenue sur "Have you ever". En utilisant cette application, vous acceptez les conditions suivantes :</p>
-    <h3>1. Utilisation et Éligibilité</h3>
-    <p>La version gratuite est ouverte à tous les âges. La version Pro inclut du contenu destiné aux adultes (18+) et nécessite une confirmation de l'âge.</p>
-    <h3>2. Abonnements et Achats</h3>
-    <p>"Have you ever" est un freemium. Les utilisateurs peuvent s'abonner au mois, à l'année ou à la semaine pour accéder à du contenu sans publicité et premium via l'App Store ou le Play Market.</p>
-    <h3>3. Contenu Généré par l'Utilisateur</h3>
-    <p>Vous pouvez créer des questions et des catégories personnalisées. Ce contenu est privé sauf s'il est partagé manuellement. Nous ne modérons pas ce contenu.</p>
-    <h3>4. Utilisation Acceptable</h3>
-    <p>Vous ne devez pas utiliser l'application à des fins illégales, offensantes ou nuisibles. Cela inclut le harcèlement, l'abus ou le téléchargement de matériel non autorisé.</p>
-    <h3>5. Propriété Intellectuelle</h3>
-    <p>Tout le contenu de l'application (design, questions, ressources) appartient aux développeurs, à l'exception du contenu personnalisé créé par les utilisateurs pour un usage privé.</p>
-    <h3>6. Clause de Non-responsabilité</h3>
-    <p>Cette application est à des fins de divertissement uniquement. Nous déclinons toute responsabilité pour le comportement des utilisateurs, l'utilisation abusive du contenu ou la perte de données.</p>
-    <h3>7. Contact</h3>
-    <p>Pour toute demande, contactez-nous à : <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+    <h2>Conditions d’Utilisation</h2>
+    <p><strong>Date d’entrée en vigueur :</strong> 11 septembre 2025</p>
+    <p>Bienvenue sur <strong>Have You Ever</strong>. En utilisant l’application, vous acceptez ces Conditions d’utilisation.</p>
+
+    <h3>1) Objectif et éligibilité</h3>
+    <p>La version gratuite convient à tout âge. La version Pro comprend des contenus destinés aux adultes (18+) et nécessite une confirmation d’âge. L’app est destinée au divertissement uniquement.</p>
+
+    <h3>2) Abonnements, essais et achats</h3>
+    <ul>
+      <li>Les abonnements sont facturés via l’Apple App Store ou Google Play et se <strong>renouvellent automatiquement</strong>, sauf annulation au moins 24 h avant la fin de la période en cours.</li>
+      <li>Les essais gratuits de 3 jours <strong>deviennent payants</strong> s’ils ne sont pas annulés à temps. Les prix et taxes varient selon le pays et la devise.</li>
+      <li>Gérer/annuler : <em>iOS</em> – Réglages &gt; Identifiant Apple &gt; Abonnements ; <em>Android</em> – Google Play &gt; Profil &gt; Payments &amp; subscriptions.</li>
+      <li><em>iOS</em> : « Restore Purchases » permet de restaurer les achats.</li>
+      <li>Les remboursements sont gérés par Apple ou Google selon leurs politiques.</li>
+    </ul>
+
+    <h3>3) Contenus générés par l’utilisateur et par IA</h3>
+    <ul>
+      <li>Vous pouvez créer des questions et catégories personnalisées pour un usage privé. Pas de pré-modération.</li>
+      <li>En partageant du contenu, vous garantissez détenir les droits et nous accordez une licence limitée, non exclusive et révocable pour stocker, transmettre et l’afficher pour le fonctionnement de l’app.</li>
+      <li>Les contenus générés par IA peuvent être inexacts ou inadaptés. Agissez avec discernement ; nous déclinons toute responsabilité quant à leur utilisation.</li>
+    </ul>
+
+    <h3>4) Utilisation acceptable</h3>
+    <p>Interdiction d’usages illégaux, nuisibles ou offensants (harcèlement, abus, contenus illicites). Nous pouvons suspendre/terminer l’accès en cas de violations.</p>
+
+    <h3>5) Propriété intellectuelle</h3>
+    <p>Les contenus de l’app (design, questions intégrées, ressources) nous appartiennent. Vos contenus restent les vôtres, sous réserve de la section 3 en cas de partage.</p>
+
+    <h3>6) Modifications de l’app et des Conditions</h3>
+    <p>Nous pouvons mettre à jour des fonctionnalités ou ces Conditions. La version en vigueur figure sur cette page avec la date d’effet. L’usage continu vaut acceptation.</p>
+
+    <h3>7) Avertissements et responsabilité</h3>
+    <p>App fournie « en l’état » pour le divertissement. Dans les limites légales, nous déclinons les garanties et limitons la responsabilité pour les pertes indirectes.</p>
+
+    <h3>8) Droit applicable</h3>
+    <p>Conditions régies par le droit polonais. Compétence exclusive des tribunaux de Wrocław, sous réserve des droits impératifs des consommateurs.</p>
+
+    <h3>9) Contact</h3>
+    <p>Questions : <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
   </section>
 
+  <!-- GERMAN -->
   <section id="de">
     <h2>Nutzungsbedingungen</h2>
-    <p><strong>Gültig ab:</strong> 16. Juli 2025</p>
-    <p>Willkommen bei "Have you ever". Durch die Nutzung dieser App stimmen Sie den folgenden Bedingungen zu:</p>
-    <h3>1. Nutzung & Teilnahmeberechtigung</h3>
-    <p>Die kostenlose Version ist für alle Altersgruppen zugänglich. Die Pro-Version enthält Inhalte für Erwachsene (18+) und erfordert eine Altersbestätigung.</p>
-    <h3>2. Abonnements & Käufe</h3>
-    <p>"Have you ever" ist Freemium. Benutzer können ein monatliches, jährliches oder wöchentliches Abonnement abschließen, um werbefreie und Premium-Inhalte über den App Store oder Play Market zu erhalten.</p>
-    <h3>3. Nutzergenerierte Inhalte</h3>
-    <p>Sie können benutzerdefinierte Fragen und Kategorien erstellen. Diese Inhalte sind privat, es sei denn, sie werden manuell geteilt. Wir moderieren diese Inhalte nicht.</p>
-    <h3>4. Zulässige Nutzung</h3>
-    <p>Sie dürfen die App nicht für illegale, beleidigende oder schädliche Aktivitäten verwenden. Dies schließt Belästigung, Missbrauch oder das Hochladen nicht autorisierter Materialien ein.</p>
-    <h3>5. Geistiges Eigentum</h3>
-    <p>Alle Inhalte der App (Design, Fragen, Assets) sind Eigentum der Entwickler, ausgenommen benutzerdefinierte Inhalte, die von Benutzern für den privaten Gebrauch erstellt wurden.</p>
-    <h3>6. Haftungsausschluss</h3>
-    <p>Diese App dient nur zu Unterhaltungszwecken. Wir lehnen jegliche Haftung für das Verhalten der Nutzer, den Missbrauch von Inhalten oder Datenverlust ab.</p>
-    <h3>7. Kontakt</h3>
-    <p>Bei Anfragen kontaktieren Sie uns unter: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+    <p><strong>Gültig ab:</strong> 11. September 2025</p>
+    <p>Willkommen bei <strong>Have You Ever</strong>. Durch die Nutzung der App akzeptieren Sie diese Nutzungsbedingungen.</p>
+
+    <h3>1) Zweck & Teilnahmeberechtigung</h3>
+    <p>Die kostenlose Version ist für alle Altersgruppen geeignet. Die Pro-Version enthält Inhalte für Erwachsene (18+) und erfordert eine Altersbestätigung. Die App dient ausschließlich der Unterhaltung.</p>
+
+    <h3>2) Abos, Testphase & Käufe</h3>
+    <ul>
+      <li>Abonnements werden über Apple App Store oder Google Play abgerechnet und <strong>verlängern sich automatisch</strong>, sofern sie nicht mindestens 24 Stunden vor Periodenende gekündigt werden.</li>
+      <li>Die 3-tägige Testphase <strong>geht in ein kostenpflichtiges Abo über</strong>, wenn sie nicht rechtzeitig gekündigt wird. Preise und Steuern variieren je nach Land und Währung.</li>
+      <li>Verwalten/Kündigen: <em>iOS</em> – Einstellungen &gt; Apple-ID &gt; Abonnements; <em>Android</em> – Google Play &gt; Profil &gt; Payments &amp; subscriptions.</li>
+      <li><em>iOS</em>: Käufe können über „Restore Purchases“ wiederhergestellt werden.</li>
+      <li>Rückerstattungen erfolgen gemäß den Richtlinien von Apple oder Google.</li>
+    </ul>
+
+    <h3>3) Nutzer- und KI-Inhalte</h3>
+    <ul>
+      <li>Sie können eigene Fragen/Kategorien für den privaten Gebrauch erstellen. Keine Vorab-Moderation.</li>
+      <li>Beim Teilen sichern Sie Rechte zu und gewähren uns eine begrenzte, nicht exklusive, widerrufliche Lizenz zum Speichern, Übertragen und Anzeigen zur App-Funktion.</li>
+      <li>KI-Inhalte können ungenau oder unpassend sein. Bitte mit Vorsicht nutzen; keine Haftung für Vertrauen in KI-Ergebnisse.</li>
+    </ul>
+
+    <h3>4) Zulässige Nutzung</h3>
+    <p>Keine illegalen, schädlichen oder anstößigen Nutzungen (Belästigung, Missbrauch, Rechtsverletzungen). Bei Verstößen können wir den Zugang aussetzen/beenden.</p>
+
+    <h3>5) Geistiges Eigentum</h3>
+    <p>App-Inhalte (Design, integrierte Fragen, Assets) gehören uns bzw. unseren Lizenzgebern. Eigene Inhalte bleiben Ihre, vorbehaltlich Abschnitt 3 beim Teilen.</p>
+
+    <h3>6) Änderungen an App & Bedingungen</h3>
+    <p>Wir können Funktionen oder diese Bedingungen aktualisieren. Die aktuelle Fassung mit Stichtag steht auf dieser Seite. Fortgesetzte Nutzung gilt als Zustimmung.</p>
+
+    <h3>7) Haftungsausschluss</h3>
+    <p>Bereitstellung „wie besehen“ zu Unterhaltungszwecken. Soweit gesetzlich zulässig, schließen wir Gewährleistungen aus und haften nicht für mittelbare/folgende Schäden.</p>
+
+    <h3>8) Anwendbares Recht</h3>
+    <p>Anwendbar ist polnisches Recht. Ausschließlicher Gerichtsstand ist Wrocław, vorbehaltlich zwingender Verbraucherschutzvorschriften.</p>
+
+    <h3>9) Kontakt</h3>
+    <p>Anfragen: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
   </section>
 
+  <!-- SPANISH -->
   <section id="es">
     <h2>Términos de Uso</h2>
-    <p><strong>Fecha de entrada en vigor:</strong> 16 de julio de 2025</p>
-    <p>Bienvenido a "Have you ever". Al utilizar esta aplicación, aceptas los siguientes términos:</p>
-    <h3>1. Uso y Elegibilidad</h3>
-    <p>La versión gratuita está abierta a todas las edades. La versión Pro incluye contenido destinado a adultos (18+) y requiere confirmación de edad.</p>
-    <h3>2. Suscripciones y Compras</h3>
-    <p>"Have you ever" es freemium. Los usuarios pueden suscribirse mensual, anual o semanalmente para acceder a contenido sin anuncios y premium a través de la App Store o Play Market.</p>
-    <h3>3. Contenido Generado por el Usuario</h3>
-    <p>Puedes crear preguntas y categorías personalizadas. Este contenido es privado a menos que se comparta manualmente. No moderamos este contenido.</p>
-    <h3>4. Uso Aceptable</h3>
-    <p>No debes usar la aplicación para actividades ilegales, ofensivas o dañinas. Esto incluye acoso, abuso o la carga de materiales no autorizados.</p>
-    <h3>5. Propiedad Intelectual</h3>
-    <p>Todo el contenido de la aplicación (diseño, preguntas, activos) es propiedad de los desarrolladores, excepto el contenido personalizado creado por los usuarios para uso privado.</p>
-    <h3>6. Descargo de Responsabilidad</h3>
-    <p>Esta aplicación es solo para fines de entretenimiento. Renunciamos a toda responsabilidad por el comportamiento del usuario, el mal uso del contenido o la pérdida de datos.</p>
-    <h3>7. Contacto</h3>
-    <p>Para cualquier consulta, contáctenos en: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+    <p><strong>Fecha de entrada en vigor:</strong> 11 de septiembre de 2025</p>
+    <p>Bienvenido a <strong>Have You Ever</strong>. Al usar la app, aceptas estos Términos.</p>
+
+    <h3>1) Finalidad y elegibilidad</h3>
+    <p>La versión gratuita es apta para todas las edades. La versión Pro incluye contenido para adultos (18+) y requiere confirmación de edad. La app es solo de entretenimiento.</p>
+
+    <h3>2) Suscripciones, prueba y compras</h3>
+    <ul>
+      <li>Las suscripciones se facturan mediante Apple App Store o Google Play y se <strong>renuevan automáticamente</strong> salvo cancelación al menos 24 h antes del fin del periodo.</li>
+      <li>La prueba gratuita de 3 días <strong>pasa a ser de pago</strong> si no se cancela a tiempo. Precios e impuestos varían según país y moneda.</li>
+      <li>Gestionar/Cancelar: <em>iOS</em> – Ajustes &gt; Apple ID &gt; Subscriptions; <em>Android</em> – Google Play &gt; Perfil &gt; Payments &amp; subscriptions.</li>
+      <li><em>iOS</em>: puedes restaurar compras con “Restore Purchases”.</li>
+      <li>Los reembolsos los gestionan Apple o Google según sus políticas.</li>
+    </ul>
+
+    <h3>3) Contenido de usuario y generado por IA</h3>
+    <ul>
+      <li>Puedes crear preguntas y categorías personalizadas para uso privado. No hay moderación previa.</li>
+      <li>Si compartes contenido, declaras tener los derechos y nos otorgas una licencia limitada, no exclusiva y revocable para almacenarlo, transmitirlo y mostrarlo para operar la app.</li>
+      <li>El contenido de IA puede ser inexacto o inapropiado. Úsalo con discreción; no somos responsables por su uso.</li>
+    </ul>
+
+    <h3>4) Uso aceptable</h3>
+    <p>Prohibido usar la app para actividades ilegales, dañinas u ofensivas (acoso, abuso, infracciones). Podemos suspender o terminar el acceso por violaciones.</p>
+
+    <h3>5) Propiedad intelectual</h3>
+    <p>El contenido de la app (diseño, preguntas integradas, recursos) nos pertenece a nosotros y a nuestros licenciantes. Tu contenido propio sigue siendo tuyo; si lo compartes, aplica la Sección 3.</p>
+
+    <h3>6) Cambios en la app y en los términos</h3>
+    <p>Podemos actualizar funciones o estos Términos. La versión vigente con la fecha aparece en esta página. El uso continuado implica aceptación.</p>
+
+    <h3>7) Exenciones y responsabilidad</h3>
+    <p>La app se ofrece “tal cual” con fines de entretenimiento. En la medida permitida, rechazamos garantías y limitamos la responsabilidad por daños indirectos.</p>
+
+    <h3>8) Ley aplicable</h3>
+    <p>Se aplica la ley de Polonia. Los tribunales de Wrocław tienen jurisdicción exclusiva, sin perjuicio de las normas imperativas de consumo.</p>
+
+    <h3>9) Contacto</h3>
+    <p>Consultas: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
   </section>
 
+  <!-- ITALIAN -->
   <section id="it">
     <h2>Termini di Utilizzo</h2>
-    <p><strong>Data di entrata in vigore:</strong> 16 luglio 2025</p>
-    <p>Benvenuto in "Have you ever". Utilizzando questa app, accetti i seguenti termini:</p>
-    <h3>1. Utilizzo ed Idoneità</h3>
-    <p>La versione gratuita è aperta a tutte le età. La versione Pro include contenuti destinati agli adulti (18+) e richiede la conferma dell'età.</p>
-    <h3>2. Abbonamenti e Acquisti</h3>
-    <p>"Have you ever" è freemium. Gli utenti possono abbonarsi mensilmente, annualmente o settimanalmente per accedere a contenuti senza pubblicità e premium tramite l'App Store o il Play Market.</p>
-    <h3>3. Contenuti Generati dagli Utenti</h3>
-    <p>Puoi creare domande e categorie personalizzate. Questi contenuti sono privati a meno che non vengano condivisi manualmente. Non moderiamo questi contenuti.</p>
-    <h3>4. Uso Accettabile</h3>
-    <p>Non devi utilizzare l'app per attività illegali, offensive o dannose. Ciò include molestie, abusi o il caricamento di materiali non autorizzati.</p>
-    <h3>5. Proprietà Intellettuale</h3>
-    <p>Tutti i contenuti dell'app (design, domande, risorse) sono di proprietà degli sviluppatori, ad eccezione dei contenuti personalizzati creati dagli utenti per uso privato.</p>
-    <h3>6. Esclusione di Responsabilità</h3>
-    <p>Questa app è destinata esclusivamente a scopi di intrattenimento. Decliniamo ogni responsabilità per il comportamento degli utenti, l'uso improprio dei contenuti o la perdita di dati.</p>
-    <h3>7. Contatti</h3>
-    <p>Per qualsiasi richiesta, contattaci a: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+    <p><strong>Data di entrata in vigore:</strong> 11 settembre 2025</p>
+    <p>Benvenuto su <strong>Have You Ever</strong>. Utilizzando l’app accetti i presenti Termini.</p>
+
+    <h3>1) Finalità e idoneità</h3>
+    <p>La versione gratuita è adatta a tutte le età. La versione Pro include contenuti per adulti (18+) e richiede la conferma dell’età. L’app è solo per intrattenimento.</p>
+
+    <h3>2) Abbonamenti, prova e acquisti</h3>
+    <ul>
+      <li>Gli abbonamenti sono fatturati tramite Apple App Store o Google Play e si <strong>rinnovano automaticamente</strong> salvo disdetta almeno 24 ore prima della fine del periodo in corso.</li>
+      <li>La prova gratuita di 3 giorni <strong>diventa a pagamento</strong> se non viene annullata in tempo. Prezzi e tasse possono variare per paese e valuta.</li>
+      <li>Gestione/Annullamento: <em>iOS</em> – Impostazioni &gt; Apple ID &gt; Subscriptions; <em>Android</em> – Google Play &gt; Profile &gt; Payments &amp; subscriptions.</li>
+      <li><em>iOS</em>: puoi ripristinare gli acquisti con “Restore Purchases”.</li>
+      <li>I rimborsi sono gestiti da Apple o Google secondo le rispettive policy.</li>
+    </ul>
+
+    <h3>3) Contenuti dell’utente e generati dall’IA</h3>
+    <ul>
+      <li>Puoi creare domande e categorie personalizzate per uso privato. Nessuna pre-moderazione.</li>
+      <li>Se condividi contenuti, dichiari di avere i diritti e concedi una licenza limitata, non esclusiva e revocabile per archiviarli, trasmetterli e mostrarli ai fini di funzionamento dell’app.</li>
+      <li>I contenuti generati dall’IA possono essere imprecisi o inappropriati. Usa discrezione; non siamo responsabili dell’affidamento su tali risultati.</li>
+    </ul>
+
+    <h3>4) Uso accettabile</h3>
+    <p>Vietato usare l’app per attività illegali, dannose o offensive (molestie, abusi, violazioni). Possiamo sospendere o terminare l’accesso in caso di violazioni.</p>
+
+    <h3>5) Proprietà intellettuale</h3>
+    <p>I contenuti dell’app (design, domande integrate, asset) sono nostri e dei nostri licenzianti. I tuoi contenuti rimangono tuoi; in caso di condivisione si applica la Sezione 3.</p>
+
+    <h3>6) Modifiche all’app e ai Termini</h3>
+    <p>Possiamo aggiornare funzionalità o questi Termini. La versione corrente con la data è disponibile in questa pagina. L’uso continuato implica accettazione.</p>
+
+    <h3>7) Esclusioni e responsabilità</h3>
+    <p>L’app è fornita “così com’è” a fini di intrattenimento. Nei limiti di legge, escludiamo garanzie e limitiamo la responsabilità per danni indiretti.</p>
+
+    <h3>8) Legge applicabile</h3>
+    <p>Si applica la legge polacca. Foro esclusivo: Wrocław, fatto salvo il diritto imperativo dei consumatori.</p>
+
+    <h3>9) Contatti</h3>
+    <p>Domande: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
   </section>
 
-  <!-- NEW: Bulgarian -->
+  <!-- BULGARIAN -->
   <section id="bg">
     <h2>Условия за ползване</h2>
-    <p><strong>Дата на влизане в сила:</strong> 16 юли 2025 г.</p>
-    <p>Добре дошли в „Have you ever". Използвайки това приложение, приемате следните условия:</p>
-    <h3>1. Ползване и допустимост</h3>
-    <p>Безплатната версия е за всички възрасти. Pro версията съдържа съдържание за възрастни (18+) и изисква потвърждение на възрастта.</p>
-    <h3>2. Абонаменти и покупки</h3>
-    <p>„Have you ever" е freemium. Потребителите могат да се абонират месечно, годишно или седмично за достъп до съдържание без реклами и премиум функции чрез App Store или Play Market.</p>
-    <h3>3. Съдържание, създадено от потребители</h3>
-    <p>Можете да създавате собствени въпроси и категории. Това съдържание е частно, освен ако не бъде споделено ръчно. Не модерираме това съдържание.</p>
-    <h3>4. Приемливо използване</h3>
-    <p>Не трябва да използвате приложението за незаконни, обидни или вредни дейности, включително тормоз, злоупотреба или качване на неоторизирани материали.</p>
-    <h3>5. Интелектуална собственост</h3>
-    <p>Цялото съдържание на приложението (дизайн, въпроси, ресурси) е собственост на разработчиците, с изключение на персонализираното съдържание, създадено от потребители за частна употреба.</p>
-    <h3>6. Отказ от отговорност</h3>
-    <p>Приложението е само за развлекателни цели. Не носим отговорност за поведението на потребителите, злоупотреба със съдържание или загуба на данни.</p>
-    <h3>7. Контакт</h3>
-    <p>За запитвания се свържете с нас: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+    <p><strong>Дата на влизане в сила:</strong> 11 септември 2025 г.</p>
+    <p>Добре дошли в <strong>Have You Ever</strong>. С използването на приложението приемате тези Условия.</p>
+
+    <h3>1) Цел и допустимост</h3>
+    <p>Безплатната версия е подходяща за всички възрасти. Pro версията включва съдържание за възрастни (18+) и изисква потвърждение на възрастта. Приложението е само за развлечение.</p>
+
+    <h3>2) Абонаменти, пробен период и покупки</h3>
+    <ul>
+      <li>Абонаментите се таксуват чрез Apple App Store или Google Play и се <strong>подновяват автоматично</strong>, освен ако не бъдат отменени поне 24 ч. предварително.</li>
+      <li>3-дневният безплатен период <strong>става платен</strong>, ако не бъде отменен навреме. Цените и данъците варират според държава и валута.</li>
+      <li>Управление/Отмяна: <em>iOS</em> – Settings &gt; Apple ID &gt; Subscriptions; <em>Android</em> – Google Play &gt; Profile &gt; Payments &amp; subscriptions.</li>
+      <li><em>iOS</em>: можете да възстановите покупки чрез „Restore Purchases“.</li>
+      <li>Възстановяванията се обработват от Apple или Google по техните правила.</li>
+    </ul>
+
+    <h3>3) Съдържание на потребители и генерирано от ИИ</h3>
+    <ul>
+      <li>Можете да създавате собствени въпроси и категории за лична употреба. Няма предварителна модерация.</li>
+      <li>При споделяне декларирате права и ни давате ограничен, неизключителен, отменяем лиценз за съхранение, предаване и показване с цел работа на приложението.</li>
+      <li>ИИ съдържание може да е неточно или неуместно. Ползвайте с преценка; не носим отговорност за разчитане на ИИ резултати.</li>
+    </ul>
+
+    <h3>4) Приемливо използване</h3>
+    <p>Забранени са незаконни, вредни или обидни действия (тормоз, злоупотреби, нарушения). При нарушения можем да спрем/прекратим достъпа.</p>
+
+    <h3>5) Интелектуална собственост</h3>
+    <p>Съдържанието на приложението (дизайн, вградени въпроси, ресурси) е наша/на лицензодателите ни собственост. Вашето съдържание си остава ваше; при споделяне важи Раздел 3.</p>
+
+    <h3>6) Промени в приложението и условията</h3>
+    <p>Можем да актуализираме функционалности или тези Условия. Текущата версия с датата е на тази страница. Продължаващата употреба означава приемане.</p>
+
+    <h3>7) Отказ от отговорност</h3>
+    <p>Приложението се предоставя „както е“ за развлечение. В рамките на закона изключваме гаранции и ограничаваме отговорността за косвени вреди.</p>
+
+    <h3>8) Приложимо право</h3>
+    <p>Приложимо е правото на Полша. Компетентни са съдилищата във Вроцлав, с оглед на императивните потребителски норми.</p>
+
+    <h3>9) Контакт</h3>
+    <p>Въпроси: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
   </section>
 
-  <!-- NEW: Hungarian -->
+  <!-- HUNGARIAN -->
   <section id="hu">
     <h2>Felhasználási feltételek</h2>
-    <p><strong>Hatálybalépés dátuma:</strong> 2025. július 16.</p>
-    <p>Üdvözlünk az „Have you ever" alkalmazásban. Az alkalmazás használatával elfogadod az alábbi feltételeket:</p>
-    <h3>1. Használat és jogosultság</h3>
-    <p>Az ingyenes verzió minden korosztály számára elérhető. A Pro verzió felnőtteknek (18+) szóló tartalmat tartalmaz, és életkor-ellenőrzést igényel.</p>
-    <h3>2. Előfizetések és vásárlások</h3>
-    <p>Az „Have you ever" freemium modellben működik. A felhasználók havi, éves vagy heti előfizetéssel reklámmentes és prémium tartalmakhoz férhetnek hozzá az App Store-on vagy a Play Marketen keresztül.</p>
-    <h3>3. Felhasználók által létrehozott tartalom</h3>
-    <p>Egyedi kérdéseket és kategóriákat hozhatsz létre. Ez a tartalom privát, amíg kézzel meg nem osztod. Nem moderáljuk ezt a tartalmat.</p>
-    <h3>4. Elfogadható használat</h3>
-    <p>Tilos az alkalmazást jogellenes, sértő vagy káros tevékenységekre használni, beleértve a zaklatást, a visszaélést vagy a jogosulatlan anyagok feltöltését.</p>
-    <h3>5. Szellemi tulajdon</h3>
-    <p>Az alkalmazás minden tartalma (dizájn, kérdések, erőforrások) a fejlesztők tulajdona, kivéve a felhasználók által privát használatra létrehozott egyéni tartalmakat.</p>
-    <h3>6. Felelősségkizárás</h3>
-    <p>Az alkalmazás kizárólag szórakoztatási célokat szolgál. Nem vállalunk felelősséget a felhasználói magatartásért, a tartalom helytelen használatáért vagy adatvesztésért.</p>
-    <h3>7. Kapcsolat</h3>
-    <p>Kérdés esetén írj nekünk: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+    <p><strong>Hatálybalépés dátuma:</strong> 2025. szeptember 11.</p>
+    <p>Üdvözlünk a <strong>Have You Ever</strong> alkalmazásban. Az app használatával elfogadod ezeket a feltételeket.</p>
+
+    <h3>1) Cél és jogosultság</h3>
+    <p>Az ingyenes verzió minden korosztály számára megfelelő. A Pro verzió felnőtteknek (18+) szóló tartalmat tartalmaz és életkor-ellenőrzést igényel. Az app szórakoztatási célú.</p>
+
+    <h3>2) Előfizetések, próba és vásárlások</h3>
+    <ul>
+      <li>Az előfizetéseket az Apple App Store vagy a Google Play számlázza, és <strong>automatikusan megújulnak</strong>, hacsak legkésőbb 24 órával a periódus vége előtt nem mondod le.</li>
+      <li>A 3 napos próba <strong>fizetőssé válik</strong>, ha időben nem mondod le. Az árak és adók országonként és pénznemenként eltérhetnek.</li>
+      <li>Kezelés/Lemondás: <em>iOS</em> – Settings &gt; Apple ID &gt; Subscriptions; <em>Android</em> – Google Play &gt; Profile &gt; Payments &amp; subscriptions.</li>
+      <li><em>iOS</em>: a vásárlások „Restore Purchases” funkcióval visszaállíthatók.</li>
+      <li>Visszatérítéseket az Apple vagy a Google kezeli a saját szabályaik szerint.</li>
+    </ul>
+
+    <h3>3) Felhasználói és MI-tartalom</h3>
+    <ul>
+      <li>Hozhatsz létre egyedi kérdéseket/kategóriákat magánhasználatra. Nincs előzetes moderáció.</li>
+      <li>Megosztáskor kijelented, hogy rendelkezel a jogokkal, és korlátozott, nem kizárólagos, visszavonható licencet adsz tárolásra, továbbításra és megjelenítésre az app működéséhez.</li>
+      <li>MI-tartalom pontatlan vagy nem megfelelő lehet; felelősséget nem vállalunk az ilyen tartalomra hagyatkozásért.</li>
+    </ul>
+
+    <h3>4) Elfogadható használat</h3>
+    <p>Tilos jogellenes, káros vagy sértő tevékenység (zaklatás, visszaélés, jogsértés). Jogunkban áll a hozzáférés felfüggesztése/megszüntetése.</p>
+
+    <h3>5) Szellemi tulajdon</h3>
+    <p>Az app tartalmai (dizájn, beépített kérdések, erőforrások) a miénk/licencadóinké. A saját tartalmad a tiéd marad; megosztás esetén a 3. szakasz irányadó.</p>
+
+    <h3>6) Változtatások az appon és a feltételeken</h3>
+    <p>Funkciókat vagy jelen feltételeket módosíthatjuk. Az aktuális verzió a dátummal ezen az oldalon érhető el. A további használat elfogadásnak minősül.</p>
+
+    <h3>7) Felelősségkizárás</h3>
+    <p>Az app „adott állapotban”, szórakoztatási céllal érhető el. A jog által engedett mértékben kizárjuk a jótállásokat és korlátozzuk a felelősséget közvetett károkért.</p>
+
+    <h3>8) Irányadó jog</h3>
+    <p>A feltételekre a lengyel jog irányadó. Illetékes bíróságok: Wrocław; fogyasztói kogens szabályok elsődlegesek.</p>
+
+    <h3>9) Kapcsolat</h3>
+    <p>Kérdések: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
   </section>
 
-  <!-- NEW: Romanian -->
+  <!-- ROMANIAN -->
   <section id="ro">
     <h2>Termeni de Utilizare</h2>
-    <p><strong>Data intrării în vigoare:</strong> 16 iulie 2025</p>
-    <p>Bine ai venit la „Have you ever". Folosind această aplicație, ești de acord cu următorii termeni:</p>
-    <h3>1. Utilizare și eligibilitate</h3>
-    <p>Versiunea gratuită este deschisă tuturor vârstelor. Versiunea Pro include conținut destinat adulților (18+) și necesită confirmarea vârstei.</p>
-    <h3>2. Abonamente și achiziții</h3>
-    <p>„Have you ever" funcționează în regim freemium. Utilizatorii se pot abona lunar, anual sau săptămânal pentru a accesa conținut fără reclame și premium prin App Store sau Play Market.</p>
-    <h3>3. Conținut generat de utilizatori</h3>
-    <p>Poți crea întrebări și categorii personalizate. Acest conținut este privat, cu excepția cazului în care este partajat manual. Nu moderăm acest conținut.</p>
-    <h3>4. Utilizare acceptabilă</h3>
-    <p>Nu trebuie să folosești aplicația pentru activități ilegale, ofensatoare sau dăunătoare, inclusiv hărțuire, abuz sau încărcarea de materiale neautorizate.</p>
-    <h3>5. Proprietate intelectuală</h3>
-    <p>Tot conținutul aplicației (design, întrebări, resurse) aparține dezvoltatorilor, cu excepția conținutului personalizat creat de utilizatori pentru uz privat.</p>
-    <h3>6. Declarație de limitare a răspunderii</h3>
-    <p>Aplicația are scop exclusiv de divertisment. Nu ne asumăm răspunderea pentru comportamentul utilizatorilor, utilizarea necorespunzătoare a conținutului sau pierderea de date.</p>
-    <h3>7. Contact</h3>
-    <p>Pentru întrebări, contactează-ne la: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+    <p><strong>Data intrării în vigoare:</strong> 11 septembrie 2025</p>
+    <p>Bine ai venit la <strong>Have You Ever</strong>. Folosind aplicația, accepți acești Termeni.</p>
+
+    <h3>1) Scop și eligibilitate</h3>
+    <p>Versiunea gratuită este potrivită tuturor vârstelor. Versiunea Pro include conținut pentru adulți (18+) și necesită confirmarea vârstei. Aplicația are scop de divertisment.</p>
+
+    <h3>2) Abonamente, probă și achiziții</h3>
+    <ul>
+      <li>Abonamentele sunt facturate prin Apple App Store sau Google Play și se <strong>reînnoiesc automat</strong>, cu excepția anulării cu cel puțin 24 h înainte de finalul perioadei curente.</li>
+      <li>Perioada de probă de 3 zile <strong>devine plătită</strong> dacă nu este anulată la timp. Prețurile și taxele diferă în funcție de țară și monedă.</li>
+      <li>Gestionare/Anulare: <em>iOS</em> – Settings &gt; Apple ID &gt; Subscriptions; <em>Android</em> – Google Play &gt; Profile &gt; Payments &amp; subscriptions.</li>
+      <li><em>iOS</em>: poți restaura achizițiile prin „Restore Purchases”.</li>
+      <li>Rambursările sunt gestionate de Apple sau Google conform politicilor lor.</li>
+    </ul>
+
+    <h3>3) Conținut generat de utilizator și de IA</h3>
+    <ul>
+      <li>Poți crea întrebări și categorii personalizate pentru uz privat. Nu există moderare prealabilă.</li>
+      <li>La partajare, declari că deții drepturile și ne acorzi o licență limitată, neexclusivă și revocabilă pentru stocare, transmitere și afișare în scopul funcționării aplicației.</li>
+      <li>Conținutul IA poate fi inexact sau nepotrivit; folosirea este pe răspunderea ta.</li>
+    </ul>
+
+    <h3>4) Utilizare acceptabilă</h3>
+    <p>Este interzisă utilizarea pentru activități ilegale, dăunătoare sau ofensatoare (hărțuire, abuz, încălcări). Putem suspenda/încheia accesul la încălcări.</p>
+
+    <h3>5) Proprietate intelectuală</h3>
+    <p>Conținutul aplicației (design, întrebări integrate, resurse) este al nostru și al licențiatorilor noștri. Conținutul propriu rămâne al tău; la partajare se aplică Secțiunea 3.</p>
+
+    <h3>6) Modificări ale aplicației și termenilor</h3>
+    <p>Putem actualiza funcții sau acești Termeni. Versiunea curentă cu data este pe această pagină. Continuarea utilizării înseamnă acceptare.</p>
+
+    <h3>7) Declarații și răspundere</h3>
+    <p>Aplicația este furnizată „ca atare” în scop de divertisment. În limite legale, excludem garanții și limităm răspunderea pentru pierderi indirecte.</p>
+
+    <h3>8) Lege aplicabilă</h3>
+    <p>Se aplică legea Poloniei. Instanțele din Wrocław au jurisdicție exclusivă, sub rezerva normelor imperative de protecție a consumatorilor.</p>
+
+    <h3>9) Contact</h3>
+    <p>Întrebări: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
   </section>
 
-  <!-- NEW: Czech -->
+  <!-- CZECH -->
   <section id="cs">
     <h2>Podmínky používání</h2>
-    <p><strong>Datum účinnosti:</strong> 16. července 2025</p>
-    <p>Vítejte v aplikaci „Have you ever". Používáním této aplikace souhlasíte s následujícími podmínkami:</p>
-    <h3>1. Používání a způsobilost</h3>
-    <p>Bezplatná verze je určena pro všechny věkové kategorie. Verze Pro obsahuje obsah pro dospělé (18+) a vyžaduje ověření věku.</p>
-    <h3>2. Předplatné a nákupy</h3>
-    <p>„Have you ever" funguje ve freemium režimu. Uživatelé si mohou předplatit měsíčně, ročně nebo týdně a získat přístup k obsahu bez reklam a k prémiovým funkcím prostřednictvím App Storu nebo Play Marketu.</p>
-    <h3>3. Obsah vytvářený uživateli</h3>
-    <p>Můžete vytvářet vlastní otázky a kategorie. Tento obsah je soukromý, pokud není ručně sdílen. Tento obsah nemoderujeme.</p>
-    <h3>4. Přijatelné používání</h3>
-    <p>Aplikaci nesmíte používat k nezákonným, urážlivým nebo škodlivým aktivitám, včetně obtěžování, zneužívání nebo nahrávání neoprávněných materiálů.</p>
-    <h3>5. Duševní vlastnictví</h3>
-    <p>Veškerý obsah aplikace (design, otázky, zdroje) je vlastnictvím vývojářů, s výjimkou vlastního obsahu vytvořeného uživateli pro soukromé použití.</p>
-    <h3>6. Zřeknutí se odpovědnosti</h3>
-    <p>Tato aplikace slouží pouze pro zábavní účely. Neodpovídáme za chování uživatelů, nesprávné použití obsahu nebo ztrátu dat.</p>
-    <h3>7. Kontakt</h3>
-    <p>V případě dotazů nás kontaktujte na: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+    <p><strong>Datum účinnosti:</strong> 11. září 2025</p>
+    <p>Vítejte v <strong>Have You Ever</strong>. Používáním aplikace souhlasíte s těmito Podmínkami.</p>
+
+    <h3>1) Účel a způsobilost</h3>
+    <p>Bezplatná verze je vhodná pro všechny věkové kategorie. Verze Pro obsahuje obsah pro dospělé (18+) a vyžaduje ověření věku. Aplikace slouží pouze k zábavě.</p>
+
+    <h3>2) Předplatné, zkušební verze a nákupy</h3>
+    <ul>
+      <li>Předplatné je účtováno přes Apple App Store nebo Google Play a <strong>automaticky se obnovuje</strong>, pokud není zrušeno alespoň 24 hodin před koncem období.</li>
+      <li>3denní zkušební verze se <strong>po skončení mění na placené</strong>, pokud není včas zrušena. Ceny a daně se liší dle země a měny.</li>
+      <li>Správa/Zrušení: <em>iOS</em> – Settings &gt; Apple ID &gt; Subscriptions; <em>Android</em> – Google Play &gt; Profile &gt; Payments &amp; subscriptions.</li>
+      <li><em>iOS</em>: nákupy lze obnovit pomocí „Restore Purchases“.</li>
+      <li>Vrácení peněz řeší Apple nebo Google podle svých pravidel.</li>
+    </ul>
+
+    <h3>3) Uživatelký a AI obsah</h3>
+    <ul>
+      <li>Můžete vytvářet vlastní otázky a kategorie pro soukromé použití. Předběžná moderace se neprovádí.</li>
+      <li>Při sdílení prohlašujete, že máte potřebná práva, a udělujete nám omezenou, nevýhradní, odvolatelnou licenci ke skladování, přenosu a zobrazení pro provoz aplikace.</li>
+      <li>Obsah generovaný AI může být nepřesný nebo nevhodný; používejte s rozvahou.</li>
+    </ul>
+
+    <h3>4) Přijatelné používání</h3>
+    <p>Zakázány jsou nezákonné, škodlivé či urážlivé aktivity (obtěžování, zneužití, porušování práv). Při porušení můžeme přístup pozastavit/ukončit.</p>
+
+    <h3>5) Duševní vlastnictví</h3>
+    <p>Obsah aplikace (design, vestavěné otázky, zdroje) je náš/našich poskytovatelů licencí. Váš vlastní obsah zůstává váš; při sdílení platí sekce 3.</p>
+
+    <h3>6) Změny aplikace a podmínek</h3>
+    <p>Můžeme aktualizovat funkce nebo tyto Podmínky. Aktuální verze s datem je na této stránce. Další používání znamená souhlas.</p>
+
+    <h3>7) Vyloučení odpovědnosti</h3>
+    <p>Aplikace je poskytována „tak jak je“ pro zábavu. V zákonných mezích vylučujeme záruky a omezujeme odpovědnost za nepřímé/škodné následky.</p>
+
+    <h3>8) Rozhodné právo</h3>
+    <p>Řídí se právem Polské republiky. Příslušné jsou soudy ve Vratislavi; nedotčena zůstávají kogentní spotřebitelské normy.</p>
+
+    <h3>9) Kontakt</h3>
+    <p>Dotazy: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
   </section>
 
-  <!-- NEW: Slovak -->
+  <!-- SLOVAK -->
   <section id="sk">
     <h2>Podmienky používania</h2>
-    <p><strong>Dátum účinnosti:</strong> 16. júla 2025</p>
-    <p>Vitajte v aplikácii „Have you ever". Používaním tejto aplikácie súhlasíte s týmito podmienkami:</p>
-    <h3>1. Používanie a spôsobilosť</h3>
-    <p>Bezplatná verzia je dostupná pre všetky vekové kategórie. Verzia Pro obsahuje obsah pre dospelých (18+) a vyžaduje potvrdenie veku.</p>
-    <h3>2. Predplatné a nákupy</h3>
-    <p>„Have you ever" funguje v modeli freemium. Používatelia si môžu predplatiť mesačne, ročne alebo týždenne a získať prístup k obsahu bez reklám a prémiovým funkciám cez App Store alebo Play Market.</p>
-    <h3>3. Obsah vytvorený používateľmi</h3>
-    <p>Môžete vytvárať vlastné otázky a kategórie. Tento obsah je súkromný, pokiaľ nie je manuálne zdieľaný. Tento obsah nemoderujeme.</p>
-    <h3>4. Prijateľné používanie</h3>
-    <p>Aplikáciu nesmiete používať na nezákonné, urážlivé alebo škodlivé činnosti, vrátane obťažovania, zneužívania alebo nahrávania neoprávnených materiálov.</p>
-    <h3>5. Duševné vlastníctvo</h3>
-    <p>Všetok obsah aplikácie (dizajn, otázky, zdroje) je vlastníctvom vývojárov, s výnimkou vlastného obsahu vytvoreného používateľmi na súkromné účely.</p>
-    <h3>6. Zrieknutie sa zodpovednosti</h3>
-    <p>Aplikácia slúži výhradne na zábavné účely. Nenesieme zodpovednosť za správanie používateľov, nesprávne použitie obsahu alebo stratu údajov.</p>
-    <h3>7. Kontakt</h3>
-    <p>V prípade otázok nás kontaktujte na: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+    <p><strong>Dátum účinnosti:</strong> 11. septembra 2025</p>
+    <p>Vitajte v <strong>Have You Ever</strong>. Používaním aplikácie súhlasíte s týmito Podmienkami.</p>
+
+    <h3>1) Účel a spôsobilosť</h3>
+    <p>Bezplatná verzia je vhodná pre všetky vekové skupiny. Pro verzia obsahuje obsah pre dospelých (18+) a vyžaduje overenie veku. Aplikácia slúži len na zábavu.</p>
+
+    <h3>2) Predplatné, skúšobná verzia a nákupy</h3>
+    <ul>
+      <li>Predplatné je účtované cez Apple App Store alebo Google Play a <strong>automaticky sa obnovuje</strong>, pokiaľ nie je zrušené aspoň 24 hodín pred koncom obdobia.</li>
+      <li>3-dňová skúšobná verzia sa <strong>mení na platené</strong>, ak nie je včas zrušená. Ceny a dane sa líšia podľa krajiny a meny.</li>
+      <li>Správa/Zrušenie: <em>iOS</em> – Settings &gt; Apple ID &gt; Subscriptions; <em>Android</em> – Google Play &gt; Profile &gt; Payments &amp; subscriptions.</li>
+      <li><em>iOS</em>: nákupy je možné obnoviť cez „Restore Purchases“.</li>
+      <li>Refundy spravujú Apple alebo Google podľa svojich pravidiel.</li>
+    </ul>
+
+    <h3>3) Používateľský a AI obsah</h3>
+    <ul>
+      <li>Môžete vytvárať vlastné otázky a kategórie na súkromné účely. Nevykonávame predbežnú moderáciu.</li>
+      <li>Pri zdieľaní vyhlasujete, že máte práva, a udeľujete nám obmedzenú, nevýlučnú, odvolateľnú licenciu na uloženie, prenos a zobrazenie na účely prevádzky aplikácie.</li>
+      <li>AI obsah môže byť nepresný alebo nevhodný. Používajte s rozvahou; nenesieme zodpovednosť za spoliehanie sa na výstupy AI.</li>
+    </ul>
+
+    <h3>4) Prijateľné používanie</h3>
+    <p>Zakázané sú nezákonné, škodlivé alebo urážlivé činnosti (obťažovanie, zneužitie, porušenia). Pri porušení môžeme prístup pozastaviť/ukončiť.</p>
+
+    <h3>5) Duševné vlastníctvo</h3>
+    <p>Obsah aplikácie (dizajn, vstavané otázky, zdroje) je náš/našich poskytovateľov licencie. Váš vlastný obsah ostáva váš; pri zdieľaní platí sekcia 3.</p>
+
+    <h3>6) Zmeny aplikácie a podmienok</h3>
+    <p>Môžeme aktualizovať funkcie alebo tieto Podmienky. Aktuálna verzia s dátumom je na tejto stránke. Ďalšie používanie znamená súhlas.</p>
+
+    <h3>7) Zrieknutie sa zodpovednosti</h3>
+    <p>Aplikácia je poskytovaná „tak ako je“ na zábavu. V medziach zákona vylučujeme záruky a obmedzujeme zodpovednosť za nepriame/ následné škody.</p>
+
+    <h3>8) Rozhodné právo</h3>
+    <p>Uplatňuje sa právo Poľska. Príslušné sú súdy vo Wrocławe, s ohľadom na kogentné spotrebiteľské normy.</p>
+
+    <h3>9) Kontakt</h3>
+    <p>Otázky: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
   </section>
 </div>
 
@@ -412,40 +586,29 @@
   const mainTitle = document.getElementById('main-title');
   const languageLabel = document.getElementById('language-label');
 
-  // Titles and labels for localization
   const localizations = {
-    en: { title: 'Terms of Use - Have you ever', label: 'Select Language:' },
-    pl: { title: 'Regulamin - Have you ever', label: 'Wybierz język:' },
-    uk: { title: 'Умови використання - Have you ever', label: 'Виберіть мову:' },
-    fr: { title: 'Conditions d\'Utilisation - Have you ever', label: 'Sélectionner la langue:' },
-    de: { title: 'Nutzungsbedingungen - Have you ever', label: 'Sprache auswählen:' },
-    es: { title: 'Términos de Uso - Have you ever', label: 'Seleccionar idioma:' },
-    it: { title: 'Termini di Utilizzo - Have you ever', label: 'Seleziona la lingua:' },
-    bg: { title: 'Условия за ползване - Have you ever', label: 'Изберете език:' },
-    hu: { title: 'Felhasználási feltételek - Have you ever', label: 'Nyelv kiválasztása:' },
-    ro: { title: 'Termeni de Utilizare - Have you ever', label: 'Selectează limba:' },
-    cs: { title: 'Podmínky používání - Have you ever', label: 'Vyberte jazyk:' },
-    sk: { title: 'Podmienky používania - Have you ever', label: 'Vyberte jazyk:' }
+    en: { title: 'Terms of Use - Have You Ever', label: 'Select Language:' },
+    pl: { title: 'Regulamin - Have You Ever', label: 'Wybierz język:' },
+    uk: { title: 'Умови використання - Have You Ever', label: 'Виберіть мову:' },
+    fr: { title: 'Conditions d’Utilisation - Have You Ever', label: 'Sélectionner la langue:' },
+    de: { title: 'Nutzungsbedingungen - Have You Ever', label: 'Sprache auswählen:' },
+    es: { title: 'Términos de Uso - Have You Ever', label: 'Seleccionar idioma:' },
+    it: { title: 'Termini di Utilizzo - Have You Ever', label: 'Seleziona la lingua:' },
+    bg: { title: 'Условия за ползване - Have You Ever', label: 'Изберете език:' },
+    hu: { title: 'Felhasználási feltételek - Have You Ever', label: 'Nyelv kiválasztása:' },
+    ro: { title: 'Termeni de Utilizare - Have You Ever', label: 'Selectează limba:' },
+    cs: { title: 'Podmínky používání - Have You Ever', label: 'Vyberte jazyk:' },
+    sk: { title: 'Podmienky používania - Have You Ever', label: 'Vyberte jazyk:' }
   };
-  
-  function showLanguage(lang) {
-    // Fallback to English if lang is invalid
-    if (!localizations[lang]) {
-      lang = 'en';
-    }
 
-    // Update titles and labels
+  function showLanguage(lang) {
+    if (!localizations[lang]) lang = 'en';
     mainTitle.textContent = localizations[lang].title;
     languageLabel.textContent = localizations[lang].label;
-    document.title = localizations[lang].title; // Update page title
-
-    // Show the correct section
+    document.title = localizations[lang].title;
     sections.forEach(section => section.classList.remove('active'));
     const el = document.getElementById(lang);
-    if (el) {
-      el.classList.add('active');
-      select.value = lang;
-    }
+    if (el) { el.classList.add('active'); select.value = lang; }
   }
 
   function getLangFromUrl() {
@@ -465,8 +628,6 @@
   select.addEventListener('change', () => {
     const newLang = select.value;
     showLanguage(newLang);
-    
-    // Optional: Update URL without reloading the page
     const url = new URL(window.location);
     url.searchParams.set('lang', newLang);
     window.history.pushState({}, '', url);
