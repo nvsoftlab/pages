@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Support - Have You Ever</title>
+<style>
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:#f4f7f9;color:#333;line-height:1.7;margin:0;padding:20px}
+  .container{max-width:960px;margin:20px auto;padding:20px 40px;background:#fff;border-radius:12px;box-shadow:0 8px 25px rgba(0,0,0,.07)}
+  header{border-bottom:2px solid #eef2f5;margin-bottom:30px;padding-bottom:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
+  header h1{font-size:28px;color:#2c3e50;margin:0}
+  .language-selector{text-align:right}
+  label{font-size:14px;color:#555;margin-right:8px}
+  select{font-size:16px;padding:8px 12px;border-radius:8px;border:1px solid #ccc;background:#f9f9f9;cursor:pointer;transition:border-color .3s,box-shadow .3s}
+  select:hover{border-color:#007bff}
+  select:focus{outline:none;border-color:#007bff;box-shadow:0 0 0 3px rgba(0,123,255,.2)}
+  section{display:none;animation:fadeIn .5s ease-in-out}
+  section.active{display:block}
+  h2{font-size:24px;color:#2c3e50;margin-top:0;padding-bottom:10px;border-bottom:1px solid #eee}
+  h3{font-size:20px;color:#34495e;margin-top:30px}
+  ul{padding-left:20px;list-style-type:'✓  '}
+  li{margin-bottom:10px}
+  p{margin-bottom:15px}
+  a{color:#007bff;text-decoration:none}
+  a:hover{text-decoration:underline}
+  strong{color:#2c3e50}
+  .card{background:#fff;border:1px solid #eef2f5;border-radius:12px;padding:16px 20px;margin:16px 0}
+  .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+  .btn{display:inline-block;padding:10px 14px;border:1px solid #dbe3ea;background:#f7fafc;border-radius:10px;text-decoration:none;color:#2c3e50;font-weight:600}
+  .btn:hover{background:#eef5fb}
+  .muted{color:#666;font-size:14px}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+  @media (max-width:600px){.container{padding:15px 20px}header{flex-direction:column;align-items:flex-start}header h1{font-size:24px}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1 id="main-title">Support - Have You Ever</h1>
+    <div class="language-selector">
+      <label for="language-select" id="language-label">Select Language:</label>
+      <select id="language-select">
+        <option value="en" selected>English</option>
+        <option value="pl">Polski</option>
+        <option value="uk">Українська</option>
+        <option value="de">Deutsch</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+        <option value="it">Italiano</option>
+        <option value="bg">Български</option>
+        <option value="hu">Magyar</option>
+        <option value="ro">Română</option>
+        <option value="cs">Čeština</option>
+        <option value="sk">Slovenčina</option>
+      </select>
+    </div>
+  </header>
+
+  <section id="en" class="active">
+    <h2>Need help?</h2>
+    <p><strong>Last updated:</strong> October 6, 2025</p>
+    <p>We’re here to help. If you have questions or issues, contact us and we’ll respond within <strong>48 hours</strong> (Mon–Fri).</p>
+    <div class="card">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+      <p class="muted">When you write, please include: device model, OS version, app version (Settings → About), and steps to reproduce.</p>
+    </div>
+    <div class="card">
+      <h3>Quick links</h3>
+      <ul>
+        <li>Privacy Policy: <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=en" target="_blank" rel="noopener">View</a></li>
+        <li>Terms of Use: <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=en" target="_blank" rel="noopener">View</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Subscriptions & Purchases</h3>
+      <p>All purchases and subscriptions are processed by Apple or Google. We do not store your payment information.</p>
+      <ul>
+        <li><strong>Manage subscription (in-app):</strong> Settings → <em>Manage Subscription</em> (opens App Store / Google Play)</li>
+        <li><strong>iOS (manually):</strong> Settings → Apple ID → Subscriptions</li>
+        <li><strong>Android (manually):</strong> Google Play → Profile → Payments & subscriptions</li>
+        <li><strong>Restore purchases (in-app, iOS):</strong> Settings → <em>Restore Purchases</em></li>
+        <li><strong>Refunds:</strong> handled by Apple/Google under their policies</li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="https://apps.apple.com/account/subscriptions" target="_blank" rel="noopener">Open Apple Subscriptions</a>
+        <a class="btn" href="https://play.google.com/store/account/subscriptions" target="_blank" rel="noopener">Open Google Play Subscriptions</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>FAQ</h3>
+      <p><strong>1) Pro access not activated after purchase</strong><br>
+      On iOS, open the app → Settings → <em>Restore Purchases</em>. On Android, ensure you’re signed into the same Google account used for purchase and tap <em>Manage Subscription</em> to refresh.</p>
+      <p><strong>2) App feels slow or stuck</strong><br>
+      Force close and reopen the app, check your connection, and ensure you’re on the latest version from the App Store / Google Play.</p>
+      <p><strong>3) Change language</strong><br>
+      Go to <em>Settings → Language</em> and choose your preferred language.</p>
+      <p><strong>4) Report an inappropriate question</strong><br>
+      Use the in-app report option on the question screen or email us with a screenshot.</p>
+    </div>
+    <div class="card">
+      <h3>What to include when contacting us</h3>
+      <ul>
+        <li>Device (e.g., iPhone 14 / Pixel 7)</li>
+        <li>OS version (e.g., iOS 18.x / Android 14)</li>
+        <li>App version (Settings → About)</li>
+        <li>Steps to reproduce (1–2–3)</li>
+        <li>Screenshots or a short screen recording (if possible)</li>
+      </ul>
+    </div>
+    <p class="muted">© <span id="y"></span> NV Softlab — Have You Ever. All rights reserved.</p>
+  </section>
+
+  <section id="pl">
+    <h2>Potrzebujesz pomocy?</h2>
+    <p><strong>Ostatnia aktualizacja:</strong> 6 października 2025</p>
+    <p>Jesteśmy tu, aby pomóc. Jeśli masz pytania lub problemy, skontaktuj się z nami, a odpowiemy w ciągu <strong>48 godzin</strong> (pon.–pt.).</p>
+    <div class="card">
+      <h3>Kontakt</h3>
+      <p>E-mail: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+      <p class="muted">Pisząc do nas, podaj: model urządzenia, wersję systemu operacyjnego, wersję aplikacji (Ustawienia → O aplikacji) oraz kroki do odtworzenia problemu.</p>
+    </div>
+    <div class="card">
+      <h3>Szybkie linki</h3>
+      <ul>
+        <li>Polityka Prywatności: <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=pl" target="_blank" rel="noopener">Zobacz</a></li>
+        <li>Warunki Użytkowania: <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=pl" target="_blank" rel="noopener">Zobacz</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Subskrypcje i Zakupy</h3>
+      <p>Wszystkie zakupy i subskrypcje są przetwarzane przez Apple lub Google. Nie przechowujemy Twoich informacji o płatnościach.</p>
+      <ul>
+        <li><strong>Zarządzaj subskrypcją (w aplikacji):</strong> Ustawienia → <em>Zarządzaj subskrypcją</em> (otwiera App Store / Google Play)</li>
+        <li><strong>iOS (ręcznie):</strong> Ustawienia → Apple ID → Subskrypcje</li>
+        <li><strong>Android (ręcznie):</strong> Google Play → Profil → Płatności i subskrypcje</li>
+        <li><strong>Przywróć zakupy (w aplikacji, iOS):</strong> Ustawienia → <em>Przywróć zakupy</em></li>
+        <li><strong>Zwroty:</strong> obsługiwane przez Apple/Google zgodnie z ich polityką</li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="https://apps.apple.com/account/subscriptions" target="_blank" rel="noopener">Otwórz subskrypcje Apple</a>
+        <a class="btn" href="https://play.google.com/store/account/subscriptions" target="_blank" rel="noopener">Otwórz subskrypcje Google Play</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>FAQ</h3>
+      <p><strong>1) Brak dostępu Pro po zakupie</strong><br>
+      Na iOS, otwórz aplikację → Ustawienia → <em>Przywróć zakupy</em>. Na Androidzie, upewnij się, że jesteś zalogowany na to samo konto Google, którego użyto do zakupu, i stuknij <em>Zarządzaj subskrypcją</em>, aby odświeżyć.</p>
+      <p><strong>2) Aplikacja działa wolno lub się zawiesza</strong><br>
+      Wymuś zamknięcie i ponowne otwarcie aplikacji, sprawdź połączenie z internetem i upewnij się, że masz najnowszą wersję z App Store / Google Play.</p>
+      <p><strong>3) Zmiana języka</strong><br>
+      Przejdź do <em>Ustawienia → Język</em> i wybierz preferowany język.</p>
+      <p><strong>4) Zgłaszanie nieodpowiedniego pytania</strong><br>
+      Użyj opcji zgłaszania w aplikacji na ekranie pytania lub napisz do nas e-mail ze zrzutem ekranu.</p>
+    </div>
+    <div class="card">
+      <h3>Co zawrzeć w wiadomości do nas</h3>
+      <ul>
+        <li>Urządzenie (np. iPhone 14 / Pixel 7)</li>
+        <li>Wersja systemu (np. iOS 18.x / Android 14)</li>
+        <li>Wersja aplikacji (Ustawienia → O aplikacji)</li>
+        <li>Kroki do odtworzenia (1–2–3)</li>
+        <li>Zrzuty ekranu lub krótkie nagranie ekranu (jeśli to możliwe)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="uk">
+    <h2>Потрібна допомога?</h2>
+    <p><strong>Останнє оновлення:</strong> 6 жовтня 2025</p>
+    <p>Ми тут, щоб допомогти. Якщо у вас є запитання чи проблеми, зв’яжіться з нами, і ми відповімо протягом <strong>48 годин</strong> (пн–пт).</p>
+    <div class="card">
+      <h3>Контакти</h3>
+      <p>Ел. пошта: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+      <p class="muted">Коли ви пишете, будь ласка, вкажіть: модель пристрою, версію ОС, версію програми (Налаштування → Про програму) та кроки для відтворення проблеми.</p>
+    </div>
+    <div class="card">
+      <h3>Швидкі посилання</h3>
+      <ul>
+        <li>Політика конфіденційності: <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=uk" target="_blank" rel="noopener">Переглянути</a></li>
+        <li>Умови використання: <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=uk" target="_blank" rel="noopener">Переглянути</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Підписки та Покупки</h3>
+      <p>Усі покупки та підписки обробляються Apple або Google. Ми не зберігаємо вашу платіжну інформацію.</p>
+      <ul>
+        <li><strong>Керувати підпискою (у додатку):</strong> Налаштування → <em>Керувати підпискою</em> (відкриває App Store / Google Play)</li>
+        <li><strong>iOS (вручну):</strong> Налаштування → Apple ID → Підписки</li>
+        <li><strong>Android (вручну):</strong> Google Play → Профіль → Платежі та підписки</li>
+        <li><strong>Відновити покупки (у додатку, iOS):</strong> Налаштування → <em>Відновити покупки</em></li>
+        <li><strong>Повернення коштів:</strong> обробляється Apple/Google відповідно до їхніх політик</li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="https://apps.apple.com/account/subscriptions" target="_blank" rel="noopener">Відкрити підписки Apple</a>
+        <a class="btn" href="https://play.google.com/store/account/subscriptions" target="_blank" rel="noopener">Відкрити підписки Google Play</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>FAQ</h3>
+      <p><strong>1) Доступ Pro не активовано після покупки</strong><br>
+      На iOS відкрийте програму → Налаштування → <em>Відновити покупки</em>. На Android переконайтеся, що ви ввійшли в той самий обліковий запис Google, який використовувався для покупки, і торкніться <em>Керувати підпискою</em>, щоб оновити.</p>
+      <p><strong>2) Програма працює повільно або зависає</strong><br>
+      Примусово закрийте та знову відкрийте програму, перевірте з’єднання та переконайтеся, що у вас остання версія з App Store / Google Play.</p>
+      <p><strong>3) Змінити мову</strong><br>
+      Перейдіть до <em>Налаштування → Мова</em> та виберіть потрібну мову.</p>
+      <p><strong>4) Поскаржитися на недоречне запитання</strong><br>
+      Використовуйте опцію скарги в додатку на екрані запитання або надішліть нам електронний лист зі знімком екрана.</p>
+    </div>
+    <div class="card">
+      <h3>Що вказати при зверненні до нас</h3>
+      <ul>
+        <li>Пристрій (напр., iPhone 14 / Pixel 7)</li>
+        <li>Версія ОС (напр., iOS 18.x / Android 14)</li>
+        <li>Версія програми (Налаштування → Про програму)</li>
+        <li>Кроки для відтворення (1–2–3)</li>
+        <li>Знімки екрана або короткий запис екрана (за можливості)</li>
+      </ul>
+    </div>
+  </section>
+  
+  <section id="de">
+    <h2>Brauchst du Hilfe?</h2>
+    <p><strong>Letzte Aktualisierung:</strong> 6. Oktober 2025</p>
+    <p>Wir sind hier, um zu helfen. Wenn du Fragen oder Probleme hast, kontaktiere uns und wir antworten innerhalb von <strong>48 Stunden</strong> (Mo–Fr).</p>
+    <div class="card">
+      <h3>Kontakt</h3>
+      <p>E-Mail: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+      <p class="muted">Bitte gib bei deiner Anfrage Folgendes an: Gerätemodell, Betriebssystemversion, App-Version (Einstellungen → Über) und Schritte zur Reproduktion des Problems.</p>
+    </div>
+    <div class="card">
+      <h3>Nützliche Links</h3>
+      <ul>
+        <li>Datenschutzrichtlinie: <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=de" target="_blank" rel="noopener">Ansehen</a></li>
+        <li>Nutzungsbedingungen: <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=de" target="_blank" rel="noopener">Ansehen</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Abonnements & Käufe</h3>
+      <p>Alle Käufe und Abonnements werden von Apple oder Google abgewickelt. Wir speichern deine Zahlungsinformationen nicht.</p>
+      <ul>
+        <li><strong>Abo verwalten (in-app):</strong> Einstellungen → <em>Abonnement verwalten</em> (öffnet App Store / Google Play)</li>
+        <li><strong>iOS (manuell):</strong> Einstellungen → Apple ID → Abonnements</li>
+        <li><strong>Android (manuell):</strong> Google Play → Profil → Zahlungen & Abos</li>
+        <li><strong>Käufe wiederherstellen (in-app, iOS):</strong> Einstellungen → <em>Käufe wiederherstellen</em></li>
+        <li><strong>Rückerstattungen:</strong> werden von Apple/Google gemäß deren Richtlinien abgewickelt</li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="https://apps.apple.com/account/subscriptions" target="_blank" rel="noopener">Apple-Abonnements öffnen</a>
+        <a class="btn" href="https://play.google.com/store/account/subscriptions" target="_blank" rel="noopener">Google Play-Abonnements öffnen</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>FAQ</h3>
+      <p><strong>1) Pro-Zugang nach Kauf nicht aktiviert</strong><br>
+      Öffne auf iOS die App → Einstellungen → <em>Käufe wiederherstellen</em>. Stelle auf Android sicher, dass du mit demselben Google-Konto angemeldet bist, das für den Kauf verwendet wurde, und tippe auf <em>Abonnement verwalten</em>, um es zu aktualisieren.</p>
+      <p><strong>2) App fühlt sich langsam an oder hängt</strong><br>
+      Erzwinge das Schließen und öffne die App erneut, überprüfe deine Verbindung und stelle sicher, dass du die neueste Version aus dem App Store / Google Play hast.</p>
+      <p><strong>3) Sprache ändern</strong><br>
+      Gehe zu <em>Einstellungen → Sprache</em> und wähle deine bevorzugte Sprache aus.</p>
+      <p><strong>4) Eine unangebrachte Frage melden</strong><br>
+      Verwende die Meldefunktion in der App auf dem Fragebildschirm oder sende uns eine E-Mail mit einem Screenshot.</p>
+    </div>
+    <div class="card">
+      <h3>Was du bei der Kontaktaufnahme angeben solltest</h3>
+      <ul>
+        <li>Gerät (z.B. iPhone 14 / Pixel 7)</li>
+        <li>Betriebssystemversion (z.B. iOS 18.x / Android 14)</li>
+        <li>App-Version (Einstellungen → Über)</li>
+        <li>Schritte zur Reproduktion (1–2–3)</li>
+        <li>Screenshots oder eine kurze Bildschirmaufnahme (falls möglich)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="es">
+    <h2>¿Necesitas ayuda?</h2>
+    <p><strong>Última actualización:</strong> 6 de octubre de 2025</p>
+    <p>Estamos aquí para ayudar. Si tienes preguntas o problemas, contáctanos y te responderemos en un plazo de <strong>48 horas</strong> (lun-vie).</p>
+    <div class="card">
+      <h3>Contacto</h3>
+      <p>Correo electrónico: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+      <p class="muted">Cuando escribas, por favor incluye: modelo del dispositivo, versión del sistema operativo, versión de la app (Ajustes → Acerca de) y los pasos para reproducir el problema.</p>
+    </div>
+    <div class="card">
+      <h3>Enlaces rápidos</h3>
+      <ul>
+        <li>Política de Privacidad: <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=es" target="_blank" rel="noopener">Ver</a></li>
+        <li>Términos de Uso: <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=es" target="_blank" rel="noopener">Ver</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Suscripciones y Compras</h3>
+      <p>Todas las compras y suscripciones son procesadas por Apple o Google. No almacenamos tu información de pago.</p>
+      <ul>
+        <li><strong>Gestionar suscripción (en la app):</strong> Ajustes → <em>Gestionar suscripción</em> (abre App Store / Google Play)</li>
+        <li><strong>iOS (manualmente):</strong> Ajustes → ID de Apple → Suscripciones</li>
+        <li><strong>Android (manualmente):</strong> Google Play → Perfil → Pagos y suscripciones</li>
+        <li><strong>Restaurar compras (en la app, iOS):</strong> Ajustes → <em>Restaurar compras</em></li>
+        <li><strong>Reembolsos:</strong> gestionados por Apple/Google según sus políticas</li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="https://apps.apple.com/account/subscriptions" target="_blank" rel="noopener">Abrir suscripciones de Apple</a>
+        <a class="btn" href="https://play.google.com/store/account/subscriptions" target="_blank" rel="noopener">Abrir suscripciones de Google Play</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>FAQ</h3>
+      <p><strong>1) Acceso Pro no activado después de la compra</strong><br>
+      En iOS, abre la app → Ajustes → <em>Restaurar compras</em>. En Android, asegúrate de haber iniciado sesión con la misma cuenta de Google utilizada para la compra y toca <em>Gestionar suscripción</em> para actualizar.</p>
+      <p><strong>2) La app va lenta o se bloquea</strong><br>
+      Fuerza el cierre y vuelve a abrir la app, comprueba tu conexión y asegúrate de tener la última versión de la App Store / Google Play.</p>
+      <p><strong>3) Cambiar idioma</strong><br>
+      Ve a <em>Ajustes → Idioma</em> y elige tu idioma preferido.</p>
+      <p><strong>4) Reportar una pregunta inapropiada</strong><br>
+      Usa la opción de reportar en la app en la pantalla de la pregunta o envíanos un correo electrónico con una captura de pantalla.</p>
+    </div>
+    <div class="card">
+      <h3>Qué incluir al contactarnos</h3>
+      <ul>
+        <li>Dispositivo (ej., iPhone 14 / Pixel 7)</li>
+        <li>Versión del SO (ej., iOS 18.x / Android 14)</li>
+        <li>Versión de la app (Ajustes → Acerca de)</li>
+        <li>Pasos para reproducir (1–2–3)</li>
+        <li>Capturas de pantalla o una breve grabación de pantalla (si es posible)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="fr">
+    <h2>Besoin d'aide ?</h2>
+    <p><strong>Dernière mise à jour :</strong> 6 octobre 2025</p>
+    <p>Nous sommes là pour vous aider. Si vous avez des questions ou des problèmes, contactez-nous et nous vous répondrons dans les <strong>48 heures</strong> (lun-ven).</p>
+    <div class="card">
+      <h3>Contact</h3>
+      <p>E-mail : <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+      <p class="muted">Lorsque vous nous écrivez, veuillez inclure : le modèle de l'appareil, la version de l'OS, la version de l'application (Paramètres → À propos) et les étapes pour reproduire le problème.</p>
+    </div>
+    <div class="card">
+      <h3>Liens rapides</h3>
+      <ul>
+        <li>Politique de Confidentialité : <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=fr" target="_blank" rel="noopener">Voir</a></li>
+        <li>Conditions d'Utilisation : <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=fr" target="_blank" rel="noopener">Voir</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Abonnements & Achats</h3>
+      <p>Tous les achats et abonnements sont traités par Apple ou Google. Nous ne stockons pas vos informations de paiement.</p>
+      <ul>
+        <li><strong>Gérer l'abonnement (dans l'app) :</strong> Paramètres → <em>Gérer l'abonnement</em> (ouvre l'App Store / Google Play)</li>
+        <li><strong>iOS (manuellement) :</strong> Réglages → Identifiant Apple → Abonnements</li>
+        <li><strong>Android (manuellement) :</strong> Google Play → Profil → Paiements et abonnements</li>
+        <li><strong>Restaurer les achats (dans l'app, iOS) :</strong> Paramètres → <em>Restaurer les achats</em></li>
+        <li><strong>Remboursements :</strong> gérés par Apple/Google selon leurs politiques</li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="https://apps.apple.com/account/subscriptions" target="_blank" rel="noopener">Ouvrir les abonnements Apple</a>
+        <a class="btn" href="https://play.google.com/store/account/subscriptions" target="_blank" rel="noopener">Ouvrir les abonnements Google Play</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>FAQ</h3>
+      <p><strong>1) Accès Pro non activé après l'achat</strong><br>
+      Sur iOS, ouvrez l'application → Paramètres → <em>Restaurer les achats</em>. Sur Android, assurez-vous d'être connecté au même compte Google utilisé pour l'achat et appuyez sur <em>Gérer l'abonnement</em> pour rafraîchir.</p>
+      <p><strong>2) L'application est lente ou bloquée</strong><br>
+      Forcez la fermeture et rouvrez l'application, vérifiez votre connexion et assurez-vous d'avoir la dernière version de l'App Store / Google Play.</p>
+      <p><strong>3) Changer de langue</strong><br>
+      Allez dans <em>Paramètres → Langue</em> et choisissez votre langue préférée.</p>
+      <p><strong>4) Signaler une question inappropriée</strong><br>
+      Utilisez l'option de signalement dans l'application sur l'écran de la question ou envoyez-nous un e-mail avec une capture d'écran.</p>
+    </div>
+    <div class="card">
+      <h3>Que faut-il inclure en nous contactant</h3>
+      <ul>
+        <li>Appareil (ex. : iPhone 14 / Pixel 7)</li>
+        <li>Version de l'OS (ex. : iOS 18.x / Android 14)</li>
+        <li>Version de l'app (Paramètres → À propos)</li>
+        <li>Étapes pour reproduire (1–2–3)</li>
+        <li>Captures d'écran ou un court enregistrement d'écran (si possible)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="it">
+    <h2>Hai bisogno di aiuto?</h2>
+    <p><strong>Ultimo aggiornamento:</strong> 6 ottobre 2025</p>
+    <p>Siamo qui per aiutarti. Se hai domande o problemi, contattaci e ti risponderemo entro <strong>48 ore</strong> (lun-ven).</p>
+    <div class="card">
+      <h3>Contatti</h3>
+      <p>Email: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+      <p class="muted">Quando scrivi, includi: modello del dispositivo, versione del sistema operativo, versione dell'app (Impostazioni → Informazioni) e i passaggi per riprodurre il problema.</p>
+    </div>
+    <div class="card">
+      <h3>Link rapidi</h3>
+      <ul>
+        <li>Informativa sulla Privacy: <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=it" target="_blank" rel="noopener">Visualizza</a></li>
+        <li>Termini di Utilizzo: <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=it" target="_blank" rel="noopener">Visualizza</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Abbonamenti e Acquisti</h3>
+      <p>Tutti gli acquisti e gli abbonamenti sono elaborati da Apple o Google. Non memorizziamo le tue informazioni di pagamento.</p>
+      <ul>
+        <li><strong>Gestisci abbonamento (in-app):</strong> Impostazioni → <em>Gestisci abbonamento</em> (apre App Store / Google Play)</li>
+        <li><strong>iOS (manualmente):</strong> Impostazioni → ID Apple → Abbonamenti</li>
+        <li><strong>Android (manualmente):</strong> Google Play → Profilo → Pagamenti e abbonamenti</li>
+        <li><strong>Ripristina acquisti (in-app, iOS):</strong> Impostazioni → <em>Ripristina acquisti</em></li>
+        <li><strong>Rimborsi:</strong> gestiti da Apple/Google secondo le loro politiche</li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="https://apps.apple.com/account/subscriptions" target="_blank" rel="noopener">Apri abbonamenti Apple</a>
+        <a class="btn" href="https://play.google.com/store/account/subscriptions" target="_blank" rel="noopener">Apri abbonamenti Google Play</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>FAQ</h3>
+      <p><strong>1) Accesso Pro non attivato dopo l'acquisto</strong><br>
+      Su iOS, apri l'app → Impostazioni → <em>Ripristina acquisti</em>. Su Android, assicurati di aver effettuato l'accesso con lo stesso account Google utilizzato per l'acquisto e tocca <em>Gestisci abbonamento</em> per aggiornare.</p>
+      <p><strong>2) L'app è lenta o bloccata</strong><br>
+      Forza la chiusura e riapri l'app, controlla la connessione e assicurati di avere l'ultima versione dall'App Store / Google Play.</p>
+      <p><strong>3) Cambiare lingua</strong><br>
+      Vai su <em>Impostazioni → Lingua</em> e scegli la tua lingua preferita.</p>
+      <p><strong>4) Segnalare una domanda inappropriata</strong><br>
+      Usa l'opzione di segnalazione nell'app sulla schermata della domanda o inviaci un'email con uno screenshot.</p>
+    </div>
+    <div class="card">
+      <h3>Cosa includere quando ci contatti</h3>
+      <ul>
+        <li>Dispositivo (es. iPhone 14 / Pixel 7)</li>
+        <li>Versione OS (es. iOS 18.x / Android 14)</li>
+        <li>Versione app (Impostazioni → Informazioni)</li>
+        <li>Passaggi per riprodurre (1–2–3)</li>
+        <li>Screenshot o una breve registrazione dello schermo (se possibile)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="bg">
+    <h2>Нуждаете се от помощ?</h2>
+    <p><strong>Последна актуализация:</strong> 6 октомври 2025</p>
+    <p>Ние сме тук, за да помогнем. Ако имате въпроси или проблеми, свържете се с нас и ние ще отговорим в рамките на <strong>48 часа</strong> (пн–пт).</p>
+    <div class="card">
+      <h3>Контакт</h3>
+      <p>Имейл: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+      <p class="muted">Когато пишете, моля, включете: модел на устройството, версия на ОС, версия на приложението (Настройки → Относно) и стъпки за възпроизвеждане.</p>
+    </div>
+    <div class="card">
+      <h3>Бързи връзки</h3>
+      <ul>
+        <li>Политика за поверителност: <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=bg" target="_blank" rel="noopener">Преглед</a></li>
+        <li>Условия за ползване: <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=bg" target="_blank" rel="noopener">Преглед</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Абонаменти и покупки</h3>
+      <p>Всички покупки и абонаменти се обработват от Apple или Google. Ние не съхраняваме вашата информация за плащане.</p>
+      <ul>
+        <li><strong>Управление на абонамент (в приложението):</strong> Настройки → <em>Управление на абонамент</em> (отваря App Store / Google Play)</li>
+        <li><strong>iOS (ръчно):</strong> Настройки → Apple ID → Абонаменти</li>
+        <li><strong>Android (ръчно):</strong> Google Play → Профил → Плащания и абонаменти</li>
+        <li><strong>Възстановяване на покупки (в приложението, iOS):</strong> Настройки → <em>Възстановяване на покупки</em></li>
+        <li><strong>Възстановяване на средства:</strong> обработва се от Apple/Google съгласно техните политики</li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="https://apps.apple.com/account/subscriptions" target="_blank" rel="noopener">Отворете абонаменти на Apple</a>
+        <a class="btn" href="https://play.google.com/store/account/subscriptions" target="_blank" rel="noopener">Отворете абонаменти на Google Play</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>ЧЗВ</h3>
+      <p><strong>1) Про достъпът не е активиран след покупка</strong><br>
+      На iOS отворете приложението → Настройки → <em>Възстановяване на покупки</em>. На Android се уверете, че сте влезли със същия акаунт в Google, използван за покупката, и докоснете <em>Управление на абонамент</em>, за да опресните.</p>
+      <p><strong>2) Приложението е бавно или блокира</strong><br>
+      Принудително затворете и отворете отново приложението, проверете връзката си и се уверете, че използвате най-новата версия от App Store / Google Play.</p>
+      <p><strong>3) Промяна на езика</strong><br>
+      Отидете в <em>Настройки → Език</em> и изберете предпочитания от вас език.</p>
+      <p><strong>4) Докладване на неподходящ въпрос</strong><br>
+      Използвайте опцията за докладване в приложението на екрана с въпроса или ни изпратете имейл със екранна снимка.</p>
+    </div>
+    <div class="card">
+      <h3>Какво да включите, когато се свързвате с нас</h3>
+      <ul>
+        <li>Устройство (напр. iPhone 14 / Pixel 7)</li>
+        <li>Версия на ОС (напр. iOS 18.x / Android 14)</li>
+        <li>Версия на приложението (Настройки → Относно)</li>
+        <li>Стъпки за възпроизвеждане (1–2–3)</li>
+        <li>Екранни снимки или кратък запис на екрана (ако е възможно)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="hu">
+    <h2>Segítségre van szüksége?</h2>
+    <p><strong>Utolsó frissítés:</strong> 2025. október 6.</p>
+    <p>Azért vagyunk itt, hogy segítsünk. Ha kérdése vagy problémája van, vegye fel velünk a kapcsolatot, és <strong>48 órán belül</strong> válaszolunk (H-P).</p>
+    <div class="card">
+      <h3>Kapcsolat</h3>
+      <p>E-mail: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+      <p class="muted">Amikor ír nekünk, kérjük, adja meg: az eszköz modelljét, az operációs rendszer verzióját, az alkalmazás verzióját (Beállítások → Névjegy) és a probléma reprodukálásának lépéseit.</p>
+    </div>
+    <div class="card">
+      <h3>Gyors linkek</h3>
+      <ul>
+        <li>Adatvédelmi irányelvek: <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=hu" target="_blank" rel="noopener">Megtekintés</a></li>
+        <li>Felhasználási feltételek: <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=hu" target="_blank" rel="noopener">Megtekintés</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Előfizetések és vásárlások</h3>
+      <p>Minden vásárlást és előfizetést az Apple vagy a Google kezel. Nem tároljuk a fizetési adatait.</p>
+      <ul>
+        <li><strong>Előfizetés kezelése (alkalmazáson belül):</strong> Beállítások → <em>Előfizetés kezelése</em> (megnyitja az App Store-t / Google Play-t)</li>
+        <li><strong>iOS (manuálisan):</strong> Beállítások → Apple ID → Előfizetések</li>
+        <li><strong>Android (manuálisan):</strong> Google Play → Profil → Fizetések és előfizetések</li>
+        <li><strong>Vásárlások visszaállítása (alkalmazáson belül, iOS):</strong> Beállítások → <em>Vásárlások visszaállítása</em></li>
+        <li><strong>Visszatérítések:</strong> az Apple/Google kezeli a saját szabályzataik szerint</li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="https://apps.apple.com/account/subscriptions" target="_blank" rel="noopener">Apple előfizetések megnyitása</a>
+        <a class="btn" href="https://play.google.com/store/account/subscriptions" target="_blank" rel="noopener">Google Play előfizetések megnyitása</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>GYIK</h3>
+      <p><strong>1) A Pro hozzáférés nem aktiválódott a vásárlás után</strong><br>
+      iOS-en nyissa meg az alkalmazást → Beállítások → <em>Vásárlások visszaállítása</em>. Androidon győződjön meg róla, hogy ugyanazzal a Google-fiókkal van bejelentkezve, amellyel a vásárlást végezte, majd érintse meg az <em>Előfizetés kezelése</em> gombot a frissítéshez.</p>
+      <p><strong>2) Az alkalmazás lassú vagy lefagy</strong><br>
+      Zárja be kényszerítve és nyissa meg újra az alkalmazást, ellenőrizze a kapcsolatot, és győződjön meg róla, hogy a legújabb verziót használja az App Store-ból / Google Play-ből.</p>
+      <p><strong>3) Nyelv megváltoztatása</strong><br>
+      Menjen a <em>Beállítások → Nyelv</em> menüpontba, és válassza ki a kívánt nyelvet.</p>
+      <p><strong>4) Nem megfelelő kérdés jelentése</strong><br>
+      Használja az alkalmazáson belüli jelentési opciót a kérdés képernyőjén, vagy küldjön nekünk egy e-mailt képernyőképpel.</p>
+    </div>
+    <div class="card">
+      <h3>Mit tartalmazzon az üzenete</h3>
+      <ul>
+        <li>Eszköz (pl. iPhone 14 / Pixel 7)</li>
+        <li>OS verzió (pl. iOS 18.x / Android 14)</li>
+        <li>Alkalmazás verzió (Beállítások → Névjegy)</li>
+        <li>Lépések a reprodukáláshoz (1–2–3)</li>
+        <li>Képernyőképek vagy rövid képernyőfelvétel (ha lehetséges)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="ro">
+    <h2>Ai nevoie de ajutor?</h2>
+    <p><strong>Ultima actualizare:</strong> 6 octombrie 2025</p>
+    <p>Suntem aici pentru a te ajuta. Dacă ai întrebări sau probleme, contactează-ne și îți vom răspunde în <strong>48 de ore</strong> (Luni–Vineri).</p>
+    <div class="card">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+      <p class="muted">Când ne scrii, te rugăm să incluzi: modelul dispozitivului, versiunea sistemului de operare, versiunea aplicației (Setări → Despre) și pașii pentru a reproduce problema.</p>
+    </div>
+    <div class="card">
+      <h3>Linkuri rapide</h3>
+      <ul>
+        <li>Politică de Confidențialitate: <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=ro" target="_blank" rel="noopener">Vezi</a></li>
+        <li>Termeni de Utilizare: <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=ro" target="_blank" rel="noopener">Vezi</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Abonamente și Achiziții</h3>
+      <p>Toate achizițiile și abonamentele sunt procesate de Apple sau Google. Nu stocăm informațiile tale de plată.</p>
+      <ul>
+        <li><strong>Gestionează abonamentul (în aplicație):</strong> Setări → <em>Gestionează abonamentul</em> (deschide App Store / Google Play)</li>
+        <li><strong>iOS (manual):</strong> Configurări → ID Apple → Abonamente</li>
+        <li><strong>Android (manual):</strong> Google Play → Profil → Plăți și abonamente</li>
+        <li><strong>Restaurează achizițiile (în aplicație, iOS):</strong> Setări → <em>Restaurează achizițiile</em></li>
+        <li><strong>Rambursări:</strong> gestionate de Apple/Google conform politicilor lor</li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="https://apps.apple.com/account/subscriptions" target="_blank" rel="noopener">Deschide abonamentele Apple</a>
+        <a class="btn" href="https://play.google.com/store/account/subscriptions" target="_blank" rel="noopener">Deschide abonamentele Google Play</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>FAQ</h3>
+      <p><strong>1) Accesul Pro nu s-a activat după achiziție</strong><br>
+      Pe iOS, deschide aplicația → Setări → <em>Restaurează achizițiile</em>. Pe Android, asigură-te că ești conectat la același cont Google folosit pentru achiziție și apasă pe <em>Gestionează abonamentul</em> pentru a reîmprospăta.</p>
+      <p><strong>2) Aplicația merge greu sau s-a blocat</strong><br>
+      Forțează închiderea și redeschide aplicația, verifică conexiunea la internet și asigură-te că ai cea mai recentă versiune din App Store / Google Play.</p>
+      <p><strong>3) Schimbarea limbii</strong><br>
+      Mergi la <em>Setări → Limbă</em> și alege limba preferată.</p>
+      <p><strong>4) Raportarea unei întrebări nepotrivite</strong><br>
+      Folosește opțiunea de raportare din aplicație de pe ecranul cu întrebarea sau trimite-ne un e-mail cu o captură de ecran.</p>
+    </div>
+    <div class="card">
+      <h3>Ce să incluzi când ne contactezi</h3>
+      <ul>
+        <li>Dispozitiv (ex. iPhone 14 / Pixel 7)</li>
+        <li>Versiune OS (ex. iOS 18.x / Android 14)</li>
+        <li>Versiune aplicație (Setări → Despre)</li>
+        <li>Pași de reproducere (1–2–3)</li>
+        <li>Capturi de ecran sau o scurtă înregistrare a ecranului (dacă este posibil)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="cs">
+    <h2>Potřebujete pomoc?</h2>
+    <p><strong>Poslední aktualizace:</strong> 6. října 2025</p>
+    <p>Jsme tu, abychom vám pomohli. Pokud máte dotazy nebo problémy, kontaktujte nás a my vám odpovíme do <strong>48 hodin</strong> (Po–Pá).</p>
+    <div class="card">
+      <h3>Kontakt</h3>
+      <p>E-mail: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+      <p class="muted">Když nám píšete, uveďte prosím: model zařízení, verzi operačního systému, verzi aplikace (Nastavení → O aplikaci) a kroky k reprodukci problému.</p>
+    </div>
+    <div class="card">
+      <h3>Rychlé odkazy</h3>
+      <ul>
+        <li>Zásady ochrany osobních údajů: <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=cs" target="_blank" rel="noopener">Zobrazit</a></li>
+        <li>Podmínky použití: <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=cs" target="_blank" rel="noopener">Zobrazit</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Předplatná a nákupy</h3>
+      <p>Všechny nákupy a předplatná zpracovává společnost Apple nebo Google. Neukládáme vaše platební údaje.</p>
+      <ul>
+        <li><strong>Spravovat předplatné (v aplikaci):</strong> Nastavení → <em>Spravovat předplatné</em> (otevře App Store / Google Play)</li>
+        <li><strong>iOS (ručně):</strong> Nastavení → Apple ID → Předplatná</li>
+        <li><strong>Android (ručně):</strong> Google Play → Profil → Platby a předplatná</li>
+        <li><strong>Obnovit nákupy (v aplikaci, iOS):</strong> Nastavení → <em>Obnovit nákupy</em></li>
+        <li><strong>Vrácení peněz:</strong> řeší společnost Apple/Google podle svých zásad</li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="https://apps.apple.com/account/subscriptions" target="_blank" rel="noopener">Otevřít předplatná Apple</a>
+        <a class="btn" href="https://play.google.com/store/account/subscriptions" target="_blank" rel="noopener">Otevřít předplatná Google Play</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>FAQ</h3>
+      <p><strong>1) Pro přístup není po nákupu aktivován</strong><br>
+      Na iOS otevřete aplikaci → Nastavení → <em>Obnovit nákupy</em>. Na Androidu se ujistěte, že jste přihlášeni ke stejnému účtu Google, který byl použit k nákupu, a klepněte na <em>Spravovat předplatné</em> pro obnovení.</p>
+      <p><strong>2) Aplikace je pomalá nebo se zasekává</strong><br>
+      Vynutěte ukončení a znovu otevřete aplikaci, zkontrolujte připojení a ujistěte se, že máte nejnovější verzi z App Store / Google Play.</p>
+      <p><strong>3) Změna jazyka</strong><br>
+      Přejděte do <em>Nastavení → Jazyk</em> a vyberte preferovaný jazyk.</p>
+      <p><strong>4) Nahlášení nevhodné otázky</strong><br>
+      Použijte možnost nahlášení v aplikaci na obrazovce s otázkou nebo nám pošlete e-mail se snímkem obrazovky.</p>
+    </div>
+    <div class="card">
+      <h3>Co uvést, když nás kontaktujete</h3>
+      <ul>
+        <li>Zařízení (např. iPhone 14 / Pixel 7)</li>
+        <li>Verze OS (např. iOS 18.x / Android 14)</li>
+        <li>Verze aplikace (Nastavení → O aplikaci)</li>
+        <li>Kroky k reprodukci (1–2–3)</li>
+        <li>Snímky obrazovky nebo krátký záznam obrazovky (pokud je to možné)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="sk">
+    <h2>Potrebujete pomoc?</h2>
+    <p><strong>Posledná aktualizácia:</strong> 6. október 2025</p>
+    <p>Sme tu, aby sme vám pomohli. Ak máte otázky alebo problémy, kontaktujte nás a my vám odpovieme do <strong>48 hodín</strong> (Po–Pia).</p>
+    <div class="card">
+      <h3>Kontakt</h3>
+      <p>E-mail: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+      <p class="muted">Keď nám píšete, uveďte, prosím: model zariadenia, verziu operačného systému, verziu aplikácie (Nastavenia → O aplikácii) a kroky na reprodukciu problému.</p>
+    </div>
+    <div class="card">
+      <h3>Rýchle odkazy</h3>
+      <ul>
+        <li>Zásady ochrany osobných údajov: <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=sk" target="_blank" rel="noopener">Zobraziť</a></li>
+        <li>Podmienky používania: <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=sk" target="_blank" rel="noopener">Zobraziť</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Predplatné a nákupy</h3>
+      <p>Všetky nákupy a predplatné spracováva spoločnosť Apple alebo Google. Neukladáme vaše platobné údaje.</p>
+      <ul>
+        <li><strong>Spravovať predplatné (v aplikácii):</strong> Nastavenia → <em>Spravovať predplatné</em> (otvorí App Store / Google Play)</li>
+        <li><strong>iOS (manuálne):</strong> Nastavenia → Apple ID → Predplatné</li>
+        <li><strong>Android (manuálne):</strong> Google Play → Profil → Platby a predplatné</li>
+        <li><strong>Obnoviť nákupy (v aplikácii, iOS):</strong> Nastavenia → <em>Obnoviť nákupy</em></li>
+        <li><strong>Vrátenie peňazí:</strong> rieši spoločnosť Apple/Google podľa svojich zásad</li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="https://apps.apple.com/account/subscriptions" target="_blank" rel="noopener">Otvoriť predplatné Apple</a>
+        <a class="btn" href="https://play.google.com/store/account/subscriptions" target="_blank" rel="noopener">Otvoriť predplatné Google Play</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>FAQ</h3>
+      <p><strong>1) Pro prístup nie je po nákupe aktivovaný</strong><br>
+      Na iOS otvorte aplikáciu → Nastavenia → <em>Obnoviť nákupy</em>. Na Androide sa uistite, že ste prihlásení do toho istého účtu Google, ktorý bol použitý na nákup, a ťuknite na <em>Spravovať predplatné</em> na obnovenie.</p>
+      <p><strong>2) Aplikácia je pomalá alebo zaseknutá</strong><br>
+      Vynútene zatvorte a znova otvorte aplikáciu, skontrolujte pripojenie a uistite sa, že máte najnovšiu verziu z App Store / Google Play.</p>
+      <p><strong>3) Zmena jazyka</strong><br>
+      Prejdite do <em>Nastavenia → Jazyk</em> a vyberte preferovaný jazyk.</p>
+      <p><strong>4) Nahlásenie nevhodnej otázky</strong><br>
+      Použite možnosť nahlásenia v aplikácii na obrazovke s otázkou alebo nám pošlite e-mail so snímkou obrazovky.</p>
+    </div>
+    <div class="card">
+      <h3>Čo uviesť, keď nás kontaktujete</h3>
+      <ul>
+        <li>Zariadenie (napr. iPhone 14 / Pixel 7)</li>
+        <li>Verzia OS (napr. iOS 18.x / Android 14)</li>
+        <li>Verzia aplikácie (Nastavenia → O aplikácii)</li>
+        <li>Kroky na reprodukciu (1–2–3)</li>
+        <li>Snímky obrazovky alebo krátky záznam obrazovky (ak je to možné)</li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+<script>
+  const select = document.getElementById('language-select');
+  const sections = document.querySelectorAll('section');
+  const mainTitle = document.getElementById('main-title');
+  const languageLabel = document.getElementById('language-label');
+
+  const localizations = {
+    en: { title: 'Support - Have You Ever', label: 'Select Language:' },
+    pl: { title: 'Wsparcie - Czy Kiedykolwiek', label: 'Wybierz język:' },
+    uk: { title: 'Підтримка - Чи Було в Тебе', label: 'Виберіть мову:' },
+    de: { title: 'Support - Hattest Du Schon Mal', label: 'Sprache auswählen:' },
+    es: { title: 'Soporte - Yo Nunca Nunca', label: 'Seleccionar idioma:' },
+    fr: { title: 'Support - Tu N\'as Jamais', label: 'Sélectionner la langue:' },
+    it: { title: 'Supporto - Non Ho Mai', label: 'Seleziona la lingua:' },
+    bg: { title: 'Поддръжка - Никога не съм', label: 'Изберете език:' },
+    hu: { title: 'Támogatás - Soha nem', label: 'Nyelv kiválasztása:' },
+    ro: { title: 'Asistență - Am N-am', label: 'Selectați limba:' },
+    cs: { title: 'Podpora - Nikdy Jsem', label: 'Zvolte jazyk:' },
+    sk: { title: 'Podpora - Nikdy Som', label: 'Zvoľte jazyk:' }
+  };
+
+  function showLanguage(lang) {
+    if (!localizations[lang]) lang = 'en';
+    mainTitle.textContent = localizations[lang].title;
+    languageLabel.textContent = localizations[lang].label;
+    document.title = localizations[lang].title;
+    sections.forEach(s => s.classList.remove('active'));
+    const el = document.getElementById(lang);
+    if (el) { el.classList.add('active'); select.value = lang; }
+  }
+  function getLangFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    const lang = params.get('lang');
+    return Object.keys(localizations).includes(lang) ? lang : 'en';
+  }
+  document.addEventListener('DOMContentLoaded', () => {
+    showLanguage(getLangFromUrl());
+    document.getElementById('y').textContent = new Date().getFullYear();
+  });
+  select.addEventListener('change', () => {
+    const newLang = select.value;
+    showLanguage(newLang);
+    const url = new URL(window.location);
+    url.searchParams.set('lang', newLang);
+    window.history.pushState({}, '', url);
+  });
+</script>
+</body>
+</html>
