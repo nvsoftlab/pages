@@ -714,17 +714,17 @@
 
   const localizations = {
     en: { title: 'Support - Have You Ever', label: 'Select Language:' },
-    pl: { title: 'Wsparcie - Czy Kiedykolwiek', label: 'Wybierz język:' },
-    uk: { title: 'Підтримка - Чи Було в Тебе', label: 'Виберіть мову:' },
-    de: { title: 'Support - Hattest Du Schon Mal', label: 'Sprache auswählen:' },
-    es: { title: 'Soporte - Yo Nunca Nunca', label: 'Seleccionar idioma:' },
-    fr: { title: 'Support - Tu N\'as Jamais', label: 'Sélectionner la langue:' },
-    it: { title: 'Supporto - Non Ho Mai', label: 'Seleziona la lingua:' },
-    bg: { title: 'Поддръжка - Никога не съм', label: 'Изберете език:' },
-    hu: { title: 'Támogatás - Soha nem', label: 'Nyelv kiválasztása:' },
-    ro: { title: 'Asistență - Am N-am', label: 'Selectați limba:' },
-    cs: { title: 'Podpora - Nikdy Jsem', label: 'Zvolte jazyk:' },
-    sk: { title: 'Podpora - Nikdy Som', label: 'Zvoľte jazyk:' }
+    pl: { title: 'Wsparcie - Have You Ever', label: 'Wybierz język:' },
+    uk: { title: 'Підтримка - Have You Ever', label: 'Виберіть мову:' },
+    de: { title: 'Support - Have You Ever', label: 'Sprache auswählen:' },
+    es: { title: 'Soporte - Have You Ever', label: 'Seleccionar idioma:' },
+    fr: { title: 'Support - Have You Ever', label: 'Sélectionner la langue:' },
+    it: { title: 'Supporto - Have You Ever', label: 'Seleziona la lingua:' },
+    bg: { title: 'Поддръжка - Have You Ever', label: 'Изберете език:' },
+    hu: { title: 'Támogatás - Have You Ever', label: 'Nyelv kiválasztása:' },
+    ro: { title: 'Asistență - Have You Ever', label: 'Selectați limba:' },
+    cs: { title: 'Podpora - Have You Ever', label: 'Zvolte jazyk:' },
+    sk: { title: 'Podpora - Have You Ever', label: 'Zvoľte jazyk:' }
   };
 
   function showLanguage(lang) {
@@ -743,7 +743,10 @@
   }
   document.addEventListener('DOMContentLoaded', () => {
     showLanguage(getLangFromUrl());
-    document.getElementById('y').textContent = new Date().getFullYear();
+    const yearSpan = document.querySelector('#en #y');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
   });
   select.addEventListener('change', () => {
     const newLang = select.value;
