@@ -1,759 +1,2825 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Terms of Use - Have You Ever</title>
-<style>
-  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:#f4f7f9;color:#333;line-height:1.7;margin:0;padding:20px}
-  .container{max-width:960px;margin:20px auto;padding:20px 40px;background:#fff;border-radius:12px;box-shadow:0 8px 25px rgba(0,0,0,.07)}
-  header{border-bottom:2px solid #eef2f5;margin-bottom:30px;padding-bottom:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
-  header h1{font-size:28px;color:#2c3e50;margin:0}
-  .language-selector{text-align:right}
-  label{font-size:14px;color:#555;margin-right:8px}
-  select{font-size:16px;padding:8px 12px;border-radius:8px;border:1px solid #ccc;background:#f9f9f9;cursor:pointer;transition:border-color .3s,box-shadow .3s}
-  select:hover{border-color:#007bff}
-  select:focus{outline:none;border-color:#007bff;box-shadow:0 0 0 3px rgba(0,123,255,.2)}
-  section{display:none;animation:fadeIn .5s ease-in-out}
-  section.active{display:block}
-  h2{font-size:24px;color:#2c3e50;margin-top:0;padding-bottom:10px;border-bottom:1px solid #eee}
-  h3{font-size:20px;color:#34495e;margin-top:30px}
-  p{margin-bottom:15px}
-  ul{padding-left:20px}
-  a{color:#007bff;text-decoration:none}
-  a:hover{text-decoration:underline}
-  strong{color:#2c3e50}
-  @keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
-  @media (max-width:600px){.container{padding:15px 20px}header{flex-direction:column;align-items:flex-start}header h1{font-size:24px}}
-</style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Terms of Use - Have You Ever</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+        background: #f4f7f9;
+        color: #333;
+        line-height: 1.7;
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 960px;
+        margin: 20px auto;
+        padding: 20px 40px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+      }
+      header {
+        border-bottom: 2px solid #eef2f5;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+      header h1 {
+        font-size: 28px;
+        color: #2c3e50;
+        margin: 0;
+      }
+      .language-selector {
+        text-align: right;
+      }
+      label {
+        font-size: 14px;
+        color: #555;
+        margin-right: 8px;
+      }
+      select {
+        font-size: 16px;
+        padding: 8px 12px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        background: #f9f9f9;
+        cursor: pointer;
+        transition: border-color 0.3s, box-shadow 0.3s;
+      }
+      select:hover {
+        border-color: #007bff;
+      }
+      select:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+      }
+      section {
+        display: none;
+        animation: fadeIn 0.5s ease-in-out;
+      }
+      section.active {
+        display: block;
+      }
+      h2 {
+        font-size: 24px;
+        color: #2c3e50;
+        margin-top: 0;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eee;
+      }
+      h3 {
+        font-size: 20px;
+        color: #34495e;
+        margin-top: 30px;
+      }
+      p {
+        margin-bottom: 15px;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      strong {
+        color: #2c3e50;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @media (max-width: 600px) {
+        .container {
+          padding: 15px 20px;
+        }
+        header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        header h1 {
+          font-size: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="main-title">Terms of Use - Have You Ever</h1>
+        <div class="language-selector">
+          <label for="language-select" id="language-label"
+            >Select Language:</label
+          >
+          <select id="language-select">
+            <option value="en" selected>English</option>
+            <option value="pl">Polski</option>
+            <option value="uk">Українська</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+            <option value="es">Español</option>
+            <option value="it">Italiano</option>
+            <option value="bg">Български</option>
+            <option value="hu">Magyar</option>
+            <option value="ro">Română</option>
+            <option value="cs">Čeština</option>
+            <option value="sk">Slovenčina</option>
+          </select>
+        </div>
+      </header>
 
-<div class="container">
-  <header>
-    <h1 id="main-title">Terms of Use - Have You Ever</h1>
-    <div class="language-selector">
-      <label for="language-select" id="language-label">Select Language:</label>
-      <select id="language-select">
-        <option value="en" selected>English</option>
-        <option value="pl">Polski</option>
-        <option value="uk">Українська</option>
-        <option value="fr">Français</option>
-        <option value="de">Deutsch</option>
-        <option value="es">Español</option>
-        <option value="it">Italiano</option>
-        <option value="bg">Български</option>
-        <option value="hu">Magyar</option>
-        <option value="ro">Română</option>
-        <option value="cs">Čeština</option>
-        <option value="sk">Slovenčina</option>
-      </select>
+      <section id="en" class="active">
+        <h2>Terms of Use</h2>
+
+        <p><strong>Effective date:</strong> October 6, 2025</p>
+
+        <p>
+          Welcome to <strong>Have You Ever</strong>. By using this app, you
+          agree to these Terms of Use.
+        </p>
+
+        <h3>1) Eligibility & Purpose</h3>
+        <p>
+          The free version is suitable for all ages. The Pro version includes
+          content intended for adults (18+) and requires age confirmation. The
+          app is for entertainment only and is not a source of advice.
+        </p>
+
+        <h3>2) Subscriptions, Trials & Purchases</h3>
+
+        <p>
+          <strong>Auto-renewable subscriptions (In-App Purchase)</strong> are
+          available to unlock premium features and AI-generated questions:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Have You Ever Pro – Weekly</strong> (1 week, includes a
+            3-day free trial)
+          </li>
+          <li>
+            <strong>Have You Ever Pro – Monthly</strong> (1 month, includes a
+            3-day free trial)
+          </li>
+          <li>
+            <strong>Have You Ever Pro – Yearly</strong> (1 year, no free trial)
+          </li>
+        </ul>
+        <p>
+          <strong>One-Time Purchase:</strong> A lifetime "Have You Ever Pro –
+          Lifetime" option is also available, granting permanent access to all
+          Pro features with a single payment.
+        </p>
+
+        <p>
+          <strong>Pricing:</strong> The price for each subscription is displayed
+          on the in-app purchase screen within the App Store and may vary by
+          region, currency, and taxes. Payment is charged to your Apple ID
+          account at confirmation of purchase.
+        </p>
+
+        <p>
+          <strong>Free trial:</strong> The Weekly and Monthly Pro subscriptions
+          include a 3-day free trial. After the trial ends, the subscription
+          automatically converts to a paid plan unless cancelled at least 24
+          hours before the trial period ends. Only one trial may be used per
+          Apple ID account.
+        </p>
+
+        <p>
+          <strong>Auto-renewal:</strong> Subscriptions renew automatically for
+          the same period unless auto-renew is turned off at least 24 hours
+          before the end of the current period. Your account will be charged for
+          renewal within 24 hours before the end of the current period.
+        </p>
+
+        <p>
+          <strong>Manage / Cancel:</strong> You can manage or cancel your
+          subscription anytime:     <br />• iOS:
+          <em>Settings > Apple ID > Subscriptions</em>     <br />• Android:
+          <em>Play Store > Profile > Payments & subscriptions</em>
+        </p>
+
+        <p>
+          <strong>Restore purchases (iOS):</strong> You can restore previous
+          purchases via the in-app “Restore Purchases” option.
+        </p>
+
+        <p>
+          <strong>Refunds:</strong> Refunds are handled by Apple or Google under
+          their respective policies.
+        </p>
+
+        <p>
+          <strong>Legal links:</strong>     <br />Terms of Use (EULA):
+          <a
+            href="https.nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=en"
+            target="_blank"
+            rel="noopener"
+            >https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html</a
+          >
+          <br />Privacy Policy:
+          <a
+            href="https.nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=en"
+            target="_blank"
+            rel="noopener"
+            >https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html</a
+          >
+        </p>
+
+        <h3>3) User-Generated & AI-Generated Content</h3>
+
+        <ul>
+          <li>
+            You may create custom questions and categories for private use. We
+            do not pre-moderate such content.
+          </li>
+          <li>
+            If you share content, you represent you have the necessary rights
+            and grant us a limited, non-exclusive, revocable license to store,
+            transmit, and display it as needed to operate the app.
+          </li>
+          <li>
+            AI-generated questions may be inaccurate or inappropriate in some
+            contexts. Use discretion; we are not liable for reliance on AI
+            outputs.
+          </li>
+        </ul>
+
+        <h3>4) Acceptable Use</h3>
+
+        <p>
+          Do not use the app for illegal, harmful, or offensive activities
+          (including harassment, abuse, or infringing content). We may suspend
+          or terminate access for violations.
+        </p>
+
+        <h3>5) Intellectual Property</h3>
+
+        <p>
+          App content (design, built-in questions, assets) is owned by us and
+          our licensors. Your custom content remains yours, subject to Section 3
+          when shared.
+        </p>
+
+        <h3>6) Changes to the App & Terms</h3>
+        <!--     -->
+        <p>
+          We may update features or these Terms. The current version is
+          available on this page with the effective date. Continued use after
+          changes constitutes acceptance.
+        </p>
+
+        <h3>7) Disclaimers & Liability</h3>
+
+        <p>
+          The app is provided “as is” for entertainment. To the extent permitted
+          by law, we disclaim warranties and limit liability for indirect or
+          consequential losses.
+        </p>
+
+        <h3>8) Governing Law</h3>
+
+        <p>
+          These Terms are governed by the laws of Poland. Courts in Wrocław,
+          Poland have exclusive jurisdiction, except where mandatory consumer
+          laws provide otherwise.
+        </p>
+
+        <h3>9) Contact</h3>
+
+        <p>
+          Questions about these Terms:
+          <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a>
+        </p>
+
+        <h3>Appendix A — Subscription Summary (Apple disclosure)</h3>
+
+        <ul>
+          <li>
+            <strong>Title:</strong> Have You Ever Pro (Weekly / Monthly / Yearly
+            / Lifetime)
+          </li>
+          <li><strong>Length:</strong> 1 week / 1 month / 1 year / One-time</li>
+          <li>
+            <strong>Free Trial:</strong> 3 days for Weekly and Monthly plans
+          </li>
+          <li>
+            <strong>Price:</strong> shown on the App Store purchase screen;
+            varies by region
+          </li>
+          <li>
+            <strong>Auto-renew:</strong> yes (for subscriptions), unless
+            cancelled ≥24h before period end
+          </li>
+          <li><strong>Manage:</strong> Settings > Apple ID > Subscriptions</li>
+          <li>
+            <strong>Legal:</strong>
+            <a
+              href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=en"
+              >Terms of Use</a
+            >
+            &
+            <a
+              href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=en"
+              >Privacy Policy</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section id="pl">
+        <h2>Warunki Użytkowania</h2>
+
+        <p><strong>Data wejścia w życie:</strong> 6 października 2025</p>
+
+        <p>
+          Witaj w <strong>Have You Ever</strong>. Korzystając z tej aplikacji,
+          akceptujesz niniejsze Warunki Użytkowania.
+        </p>
+
+        <h3>1) Uprawnienia i Cel</h3>
+
+        <p>
+          Wersja darmowa jest odpowiednia dla wszystkich grup wiekowych. Wersja
+          Pro zawiera treści przeznaczone dla dorosłych (18+) i wymaga
+          potwierdzenia wieku. Aplikacja służy wyłącznie do celów rozrywkowych i
+          nie jest źródłem porad.
+        </p>
+
+        <h3>2) Subskrypcje, Okresy Próbne i Zakupy</h3>
+
+        <p>
+          <strong
+            >Subskrypcje odnawialne automatycznie (In-App Purchase)</strong
+          >
+          są dostępne w celu odblokowania funkcji premium i pytań generowanych
+          przez AI:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Have You Ever Pro – Tygodniowa</strong> (1 tydzień, zawiera
+            3-dniowy bezpłatny okres próbny)
+          </li>
+          <li>
+            <strong>Have You Ever Pro – Miesięczna</strong> (1 miesiąc, zawiera
+            3-dniowy bezpłatny okres próbny)
+          </li>
+          <li>
+            <strong>Have You Ever Pro – Roczna</strong> (1 rok, bez bezpłatnego
+            okresu próbnego)
+          </li>
+        </ul>
+
+        <p>
+          <strong>Zakup Jednorazowy:</strong> Dostępna jest również opcja "Have
+          You Ever Pro – Dożywotnia", która przyznaje stały dostęp do wszystkich
+          funkcji Pro za jedną opłatą.
+        </p>
+
+        <p>
+          <strong>Ceny:</strong> Cena każdej subskrypcji jest wyświetlana na
+          ekranie zakupu w aplikacji w App Store i może się różnić w zależności
+          od regionu, waluty i podatków. Płatność jest pobierana z Twojego konta
+          Apple ID w momencie potwierdzenia zakupu.
+        </p>
+
+        <p>
+          <strong>Bezpłatny okres próbny:</strong> Subskrypcje Tygodniowa i
+          Miesięczna Pro obejmują 3-dniowy bezpłatny okres próbny. Po jego
+          zakończeniu subskrypcja automatycznie przekształca się w płatny plan,
+          chyba że zostanie anulowana co najmniej 24 godziny przed końcem okresu
+          próbnego. Na jedno konto Apple ID przypada tylko jeden okres próbny.
+        </p>
+
+        <p>
+          <strong>Automatyczne odnawianie:</strong> Subskrypcje odnawiają się
+          automatycznie na ten sam okres, chyba że automatyczne odnawianie
+          zostanie wyłączone co najmniej 24 godziny przed końcem bieżącego
+          okresu. Twoje konto zostanie obciążone opłatą za odnowienie w ciągu 24
+          godzin przed końcem bieżącego okresu.
+        </p>
+
+        <p>
+          <strong>Zarządzanie / Anulowanie:</strong> Możesz zarządzać
+          subskrypcją lub ją anulować w dowolnym momencie:     <br />• iOS:
+          <em>Ustawienia > Apple ID > Subskrypcje</em>     <br />• Android:
+          <em>Sklep Play > Profil > Płatności i subskrypcje</em>
+        </p>
+
+        <p>
+          <strong>Przywracanie zakupów (iOS):</strong> Możesz przywrócić
+          wcześniejsze zakupy za pomocą opcji „Przywróć zakupy” w aplikacji.
+        </p>
+
+        <p>
+          <strong>Zwroty:</strong> Zwroty są obsługiwane przez Apple lub Google
+          zgodnie z ich odpowiednimi politykami.
+        </p>
+
+        <p>
+          <strong>Linki prawne:</strong>     <br />Warunki Użytkowania (EULA):
+          <a
+            href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=pl"
+            target="_blank"
+            rel="noopener"
+            >https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html</a
+          >
+          <br />Polityka Prywatności:
+          <a
+            href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=pl"
+            target="_blank"
+            rel="noopener"
+            >https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html</a
+          >
+        </p>
+
+        <h3>3) Treści Generowane przez Użytkowników i AI</h3>
+
+        <ul>
+          <li>
+            Możesz tworzyć własne pytania i kategorie do użytku prywatnego. Nie
+            moderujemy wstępnie takich treści.
+          </li>
+          <li>
+            Jeśli udostępniasz treści, oświadczasz, że posiadasz niezbędne prawa
+            i udzielasz nam ograniczonej, niewyłącznej, odwołalnej licencji na
+            przechowywanie, przesyłanie i wyświetlanie ich w zakresie niezbędnym
+            do działania aplikacji.
+          </li>
+          <li>
+            Pytania generowane przez AI mogą być niedokładne lub nieodpowiednie
+            w niektórych kontekstach. Korzystaj z nich z rozwagą; nie ponosimy
+            odpowiedzialności za poleganie na wynikach AI.
+          </li>
+        </ul>
+
+        <h3>4) Dopuszczalne Użytkowanie</h3>
+
+        <p>
+          Nie używaj aplikacji do działań niezgodnych z prawem, szkodliwych lub
+          obraźliwych (w tym nękania, nadużyć lub treści naruszających prawa).
+          Możemy zawiesić lub zakończyć dostęp za naruszenia.
+        </p>
+
+        <h3>5) Własność Intelektualna</h3>
+
+        <p>
+          Treść aplikacji (projekt, wbudowane pytania, zasoby) jest naszą
+          własnością i naszych licencjodawców. Twoje własne treści pozostają
+          Twoje, z zastrzeżeniem licencji z Sekcji 3 w przypadku ich
+          udostępnienia.
+        </p>
+
+        <h3>6) Zmiany w Aplikacji i Warunkach</h3>
+
+        <p>
+          Możemy aktualizować funkcje lub niniejsze Warunki. Aktualna wersja
+          jest dostępna na tej stronie wraz z datą wejścia w życie. Dalsze
+          korzystanie po zmianach oznacza ich akceptację.
+        </p>
+
+        <h3>
+          7) Wyłączenia Odpowiedzialności i Ograniczenie Odpowiedzialności
+        </h3>
+
+        <p>
+          Aplikacja jest dostarczana w stanie „tak jak jest” do celów
+          rozrywkowych. W zakresie dozwolonym przez prawo, wyłączamy gwarancje i
+          ograniczamy odpowiedzialność za straty pośrednie lub wynikowe.
+        </p>
+
+        <h3>8) Prawo Właściwe</h3>
+
+        <p>
+          Niniejsze Warunki podlegają prawu polskiemu. Sądy we Wrocławiu
+          (Polska) mają wyłączną jurysdykcję, z wyjątkiem przypadków, gdy
+          bezwzględnie obowiązujące przepisy konsumenckie stanowią inaczej.
+        </p>
+
+        <h3>9) Kontakt</h3>
+
+        <p>
+          Pytania dotyczące Warunków:
+          <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a>
+        </p>
+
+        <h3>Załącznik A — Podsumowanie Subskrypcji (informacje dla Apple)</h3>
+
+        <ul>
+          <li>
+            <strong>Tytuł:</strong> Have You Ever Pro (Tygodniowa / Miesięczna /
+            Roczna / Dożywotnia)
+          </li>
+          <li>
+            <strong>Długość:</strong> 1 tydzień / 1 miesiąc / 1 rok /
+            Jednorazowa
+          </li>
+          <li>
+            <strong>Bezpłatny okres próbny:</strong> 3 dni dla planów
+            Tygodniowego i Miesięcznego
+          </li>
+          <li>
+            <strong>Cena:</strong> widoczna na ekranie zakupu w App Store; różni
+            się w zależności od regionu
+          </li>
+          <li>
+            <strong>Automatyczne odnawianie:</strong> tak (dla subskrypcji),
+            chyba że anulowano ≥24h przed końcem okresu
+          </li>
+          <li>
+            <strong>Zarządzanie:</strong> Ustawienia > Apple ID > Subskrypcje
+          </li>
+          <li>
+            <strong>Prawne:</strong>
+            <a
+              href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=pl"
+              >Warunki Użytkowania</a
+            >
+            i
+            <a
+              href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=pl"
+              >Polityka Prywatności</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section id="uk">
+        <h2>Умови використання</h2>
+
+        <p><strong>Дата набрання чинності:</strong> 6 жовтня 2025</p>
+
+        <p>
+          Ласкаво просимо до <strong>Have You Ever</strong>. Використовуючи цей
+          додаток, ви погоджуєтеся з цими Умовами використання.
+        </p>
+
+        <h3>1) Відповідність вимогам та мета</h3>
+
+        <p>
+          Безкоштовна версія підходить для будь-якого віку. Версія Pro містить
+          контент, призначений для дорослих (18+), і вимагає підтвердження віку.
+          Додаток призначений лише для розважальних цілей і не є джерелом порад.
+        </p>
+
+        <h3>2) Підписки, пробні періоди та покупки</h3>
+
+        <p>
+          <strong>Автоматично поновлювані підписки (In-App Purchase)</strong>
+          доступні для розблокування преміум-функцій та питань, згенерованих ШІ:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Have You Ever Pro – Тижнева</strong> (1 тиждень, включає
+            3-денний безкоштовний пробний період)
+          </li>
+          <li>
+            <strong>Have You Ever Pro – Місячна</strong> (1 місяць, включає
+            3-денний безкоштовний пробний період)
+          </li>
+          <li>
+            <strong>Have You Ever Pro – Річна</strong> (1 рік, без безкоштовного
+            пробного періоду)
+          </li>
+        </ul>
+
+        <p>
+          <strong>Одноразова покупка:</strong> Також доступна опція "Have You
+          Ever Pro – Назавжди", що надає постійний доступ до всіх функцій Pro за
+          один платіж.
+        </p>
+
+        <p>
+          <strong>Ціни:</strong> Ціна кожної підписки відображається на екрані
+          покупки в додатку в App Store і може відрізнятися залежно від регіону,
+          валюти та податків. Оплата стягується з вашого облікового запису Apple
+          ID після підтвердження покупки.
+        </p>
+
+        <p>
+          <strong>Безкоштовний пробний період:</strong> Тижнева та Місячна
+          підписки Pro включають 3-денний безкоштовний пробний період. Після
+          закінчення пробного періоду підписка автоматично перетворюється на
+          платний план, якщо її не скасовано принаймні за 24 години до
+          закінчення пробного періоду. На один обліковий запис Apple ID можна
+          використати лише один пробний період.
+        </p>
+
+        <p>
+          <strong>Автоматичне поновлення:</strong> Підписки автоматично
+          поновлюються на той самий період, якщо автоматичне поновлення не
+          вимкнено принаймні за 24 години до закінчення поточного періоду. З
+          вашого рахунку буде стягнуто плату за поновлення протягом 24 годин до
+          закінчення поточного періоду.
+        </p>
+
+        <p>
+          <strong>Керування / Скасування:</strong> Ви можете керувати або
+          скасувати підписку в будь-який час:     <br />• iOS:
+          <em>Налаштування > Apple ID > Підписки</em>     <br />• Android:
+          <em>Play Store > Профіль > Платежі та підписки</em>
+        </p>
+
+        <p>
+          <strong>Відновлення покупок (iOS):</strong> Ви можете відновити
+          попередні покупки за допомогою опції «Відновити покупки» в додатку.
+        </p>
+
+        <p>
+          <strong>Повернення коштів:</strong> Повернення коштів здійснюється
+          компаніями Apple або Google відповідно до їхніх політик.
+        </p>
+
+        <p>
+          <strong>Юридичні посилання:</strong>     <br />Умови використання
+          (EULA):
+          <a
+            href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=uk"
+            target="_blank"
+            rel="noopener"
+            >https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html</a
+          >
+          <br />Політика конфіденційності:
+          <a
+            href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=uk"
+            target="_blank"
+            rel="noopener"
+            >https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html</a
+          >
+        </p>
+
+        <h3>3) Контент, створений користувачами та ШІ</h3>
+
+        <ul>
+          <li>
+            Ви можете створювати власні запитання та категорії для приватного
+            використання. Ми не проводимо попередню модерацію такого контенту.
+          </li>
+          <li>
+            Якщо ви ділитеся контентом, ви підтверджуєте, що маєте необхідні
+            права, і надаєте нам обмежену, невиключну, відкличну ліцензію на
+            зберігання, передачу та відображення його в міру необхідності для
+            роботи додатка.
+          </li>
+          <li>
+            Питання, згенеровані ШІ, можуть бути неточними або недоречними в
+            деяких контекстах. Використовуйте їх на свій розсуд; ми не несемо
+            відповідальності за покладання на результати роботи ШІ.
+          </li>
+        </ul>
+
+        <h3>4) Прийнятне використання</h3>
+
+        <p>
+          Не використовуйте додаток для незаконних, шкідливих або образливих дій
+          (включаючи переслідування, зловживання або контент, що порушує права).
+          Ми можемо призупинити або припинити доступ за порушення.
+        </p>
+
+        <h3>5) Інтелектуальна власність</h3>
+
+        <p>
+          Контент додатка (дизайн, вбудовані запитання, ресурси) належить нам та
+          нашим ліцензіарам. Ваш власний контент залишається вашим, з
+          урахуванням ліцензії з Розділу 3 у разі його поширення.
+        </p>
+
+        <h3>6) Зміни в додатку та умовах</h3>
+
+        <p>
+          Ми можемо оновлювати функції або ці Умови. Поточна версія доступна на
+          цій сторінці з датою набрання чинності. Подальше використання після
+          змін означає їх прийняття.
+        </p>
+
+        <h3>7) Відмова від відповідальності та обмеження відповідальності</h3>
+
+        <p>
+          Додаток надається «як є» для розважальних цілей. У межах, дозволених
+          законом, ми відмовляємося від гарантій та обмежуємо відповідальність
+          за непрямі або наслідкові збитки.
+        </p>
+
+        <h3>8) Застосовне законодавство</h3>
+
+        <p>
+          Ці Умови регулюються законодавством Польщі. Суди у Вроцлаві, Польща,
+          мають виключну юрисдикцію, за винятком випадків, коли обов'язкові
+          закони про захист прав споживачів передбачають інше.
+        </p>
+
+        <h3>9) Контакти</h3>
+
+        <p>
+          Питання щодо цих Умов:
+          <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a>
+        </p>
+
+        <h3>Додаток А — Опис підписки (інформація для Apple)</h3>
+
+        <ul>
+          <li>
+            <strong>Назва:</strong> Have You Ever Pro (Тижнева / Місячна / Річна
+            / Назавжди)
+          </li>
+          <li>
+            <strong>Тривалість:</strong> 1 тиждень / 1 місяць / 1 рік /
+            Одноразова
+          </li>
+          <li>
+            <strong>Безкоштовний пробний період:</strong> 3 дні для Тижневого та
+            Місячного планів
+          </li>
+          <li>
+            <strong>Ціна:</strong> вказана на екрані покупки в App Store;
+            залежить від регіону
+          </li>
+          <li>
+            <strong>Автоматичне поновлення:</strong> так (для підписок), якщо не
+            скасовано за ≥24 години до кінця періоду
+          </li>
+          <li>
+            <strong>Керування:</strong> Налаштування > Apple ID > Підписки
+          </li>
+          <li>
+            <strong>Юридична інформація:</strong>
+            <a
+              href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=uk"
+              >Умови використання</a
+            >
+            та
+            <a
+              href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=uk"
+              >Політика конфіденційності</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section id="fr">
+        <h2>Conditions d'Utilisation</h2>
+
+        <p><strong>Date d'entrée en vigueur :</strong> 6 octobre 2025</p>
+
+        <p>
+          Bienvenue sur <strong>Have You Ever</strong>. En utilisant cette
+          application, vous acceptez ces Conditions d'Utilisation.
+        </p>
+
+        <h3>1) Éligibilité et Objectif</h3>
+
+        <p>
+          La version gratuite convient à tous les âges. La version Pro inclut du
+          contenu destiné aux adultes (18+) et nécessite une confirmation de
+          l'âge. L'application est uniquement à des fins de divertissement et ne
+          constitue pas une source de conseils.
+        </p>
+
+        <h3>2) Abonnements, Essais et Achats</h3>
+
+        <p>
+          Des
+          <strong
+            >abonnements à renouvellement automatique (Achat In-App)</strong
+          >
+          sont disponibles pour débloquer les fonctionnalités premium et les
+          questions générées par l'IA :
+        </p>
+
+        <ul>
+          <li>
+            <strong>Have You Ever Pro – Hebdomadaire</strong> (1 semaine, inclut
+            un essai gratuit de 3 jours)
+          </li>
+          <li>
+            <strong>Have You Ever Pro – Mensuel</strong> (1 mois, inclut un
+            essai gratuit de 3 jours)
+          </li>
+          <li>
+            <strong>Have You Ever Pro – Annuel</strong> (1 an, sans essai
+            gratuit)
+          </li>
+        </ul>
+
+        <p>
+          <strong>Achat Unique :</strong> Une option à vie "Have You Ever Pro –
+          À Vie" est également disponible, accordant un accès permanent à toutes
+          les fonctionnalités Pro avec un paiement unique.
+        </p>
+
+        <p>
+          <strong>Tarifs :</strong> Le prix de chaque abonnement est affiché sur
+          l'écran d'achat intégré dans l'App Store et peut varier selon la
+          région, la devise et les taxes. Le paiement est débité de votre compte
+          Apple ID à la confirmation de l'achat.
+        </p>
+
+        <p>
+          <strong>Essai gratuit :</strong> Les abonnements Pro Hebdomadaire et
+          Mensuel incluent un essai gratuit de 3 jours. À la fin de l'essai,
+          l'abonnement se transforme automatiquement en un plan payant, sauf
+          s'il est annulé au moins 24 heures avant la fin de la période d'essai.
+          Un seul essai peut être utilisé par compte Apple ID.
+        </p>
+
+        <p>
+          <strong>Renouvellement automatique :</strong> Les abonnements se
+          renouvellent automatiquement pour la même période, sauf si le
+          renouvellement automatique est désactivé au moins 24 heures avant la
+          fin de la période en cours. Votre compte sera débité pour le
+          renouvellement dans les 24 heures précédant la fin de la période en
+          cours.
+        </p>
+
+        <p>
+          <strong>Gérer / Annuler :</strong> Vous pouvez gérer ou annuler votre
+          abonnement à tout moment :     <br />• iOS :
+          <em>Réglages > Identifiant Apple > Abonnements</em>     <br />•
+          Android : <em>Play Store > Profil > Paiements et abonnements</em>
+        </p>
+
+        <p>
+          <strong>Restaurer les achats (iOS) :</strong> Vous pouvez restaurer
+          les achats précédents via l'option « Restaurer les achats » dans
+          l'application.
+        </p>
+
+        <p>
+          <strong>Remboursements :</strong> Les remboursements sont gérés par
+          Apple ou Google selon leurs politiques respectives.
+        </p>
+
+        <p>
+          <strong>Liens juridiques :</strong>     <br />Conditions d'Utilisation
+          (EULA) :
+          <a
+            href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=fr"
+            target="_blank"
+            rel="noopener"
+            >https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html</a
+          >
+          <br />Politique de Confidentialité :
+          <a
+            href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=fr"
+            target="_blank"
+            rel="noopener"
+            >https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html</a
+          >
+        </p>
+
+        <h3>3) Contenu Généré par l'Utilisateur et par l'IA</h3>
+
+        <ul>
+          <li>
+            Vous pouvez créer des questions et des catégories personnalisées
+            pour un usage privé. Nous ne modérons pas ce contenu à l'avance.
+          </li>
+          <li>
+            Si vous partagez du contenu, vous déclarez que vous disposez des
+            droits nécessaires et vous nous accordez une licence limitée, non
+            exclusive et révocable pour le stocker, le transmettre et l'afficher
+            selon les besoins pour faire fonctionner l'application.
+          </li>
+          <li>
+            Les questions générées par l'IA peuvent être inexactes ou
+            inappropriées dans certains contextes. Faites preuve de discernement
+            ; nous ne sommes pas responsables de la confiance accordée aux
+            résultats de l'IA.
+          </li>
+        </ul>
+
+        <h3>4) Utilisation Acceptable</h3>
+
+        <p>
+          N'utilisez pas l'application pour des activités illégales, nuisibles
+          ou offensantes (y compris le harcèlement, les abus ou le contenu
+          portant atteinte aux droits). Nous pouvons suspendre ou résilier
+          l'accès en cas de violation.
+        </p>
+
+        <h3>5) Propriété Intellectuelle</h3>
+
+        <p>
+          Le contenu de l'application (design, questions intégrées, ressources)
+          nous appartient ainsi qu'à nos concédants de licence. Votre contenu
+          personnalisé reste le vôtre, sous réserve de la licence de la Section
+          3 lorsqu'il est partagé.
+        </p>
+
+        <h3>6) Modifications de l'Application et des Conditions</h3>
+
+        <p>
+          Nous pouvons mettre à jour les fonctionnalités ou ces Conditions. La
+          version actuelle est disponible sur cette page avec la date d'entrée
+          en vigueur. L'utilisation continue après les modifications constitue
+          une acceptation.
+        </p>
+
+        <h3>7) Exclusions de Garantie et Limitation de Responsabilité</h3>
+
+        <p>
+          L'application est fournie « telle quelle » à des fins de
+          divertissement. Dans la mesure permise par la loi, nous déclinons
+          toute garantie et limitons notre responsabilité pour les pertes
+          indirectes ou consécutives.
+        </p>
+
+        <h3>8) Droit Applicable</h3>
+
+        <p>
+          Ces Conditions sont régies par les lois de la Pologne. Les tribunaux
+          de Wrocław, en Pologne, ont une compétence exclusive, sauf lorsque les
+          lois impératives sur la consommation en disposent autrement.
+        </p>
+
+        <h3>9) Contact</h3>
+
+        <p>
+          Questions sur ces Conditions :
+          <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a>
+        </p>
+
+        <h3>Annexe A — Résumé de l'Abonnement (divulgation Apple)</h3>
+
+        <ul>
+          <li>
+            <strong>Titre :</strong> Have You Ever Pro (Hebdomadaire / Mensuel /
+            Annuel / À Vie)
+          </li>
+          <li>
+            <strong>Durée :</strong> 1 semaine / 1 mois / 1 an / Achat unique
+          </li>
+          <li>
+            <strong>Essai gratuit :</strong> 3 jours pour les plans Hebdomadaire
+            et Mensuel
+          </li>
+          <li>
+            <strong>Prix :</strong> indiqué sur l'écran d'achat de l'App Store ;
+            varie selon la région
+          </li>
+          <li>
+            <strong>Renouvellement automatique :</strong> oui (pour les
+            abonnements), sauf si annulé ≥24h avant la fin de la période
+          </li>
+          <li>
+            <strong>Gérer :</strong> Réglages > Identifiant Apple > Abonnements
+          </li>
+          <li>
+            <strong>Juridique :</strong>
+            <a
+              href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=fr"
+              >Conditions d'Utilisation</a
+            >
+            &
+            <a
+              href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=fr"
+              >Politique de Confidentialité</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section id="de">
+        <h2>Nutzungsbedingungen</h2>
+
+        <p><strong>Gültig ab:</strong> 6. Oktober 2025</p>
+
+        <p>
+          Willkommen bei <strong>Have You Ever</strong>. Durch die Nutzung
+          dieser App stimmst du diesen Nutzungsbedingungen zu.
+        </p>
+
+        <h3>1) Berechtigung & Zweck</h3>
+
+        <p>
+          Die kostenlose Version ist für alle Altersgruppen geeignet. Die
+          Pro-Version enthält Inhalte für Erwachsene (18+) und erfordert eine
+          Altersbestätigung. Die App dient nur der Unterhaltung und ist keine
+          Beratungsquelle.
+        </p>
+
+        <h3>2) Abonnements, Testphasen & Käufe</h3>
+
+        <p>
+          <strong>Automatisch verlängerbare Abonnements (In-App-Kauf)</strong>
+          sind verfügbar, um Premium-Funktionen und KI-generierte Fragen
+          freizuschalten:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Have You Ever Pro – Wöchentlich</strong> (1 Woche, inkl.
+            3-tägiger kostenloser Testphase)
+          </li>
+          <li>
+            <strong>Have You Ever Pro – Monatlich</strong> (1 Monat, inkl.
+            3-tägiger kostenloser Testphase)
+          </li>
+          <li>
+            <strong>Have You Ever Pro – Jährlich</strong> (1 Jahr, keine
+            kostenlose Testphase)
+          </li>
+        </ul>
+
+        <p>
+          <strong>Einmalkauf:</strong> Eine lebenslange Option "Have You Ever
+          Pro – Lebenslang" ist ebenfalls verfügbar, die dauerhaften Zugriff auf
+          alle Pro-Funktionen gegen eine einmalige Zahlung gewährt.
+        </p>
+
+        <p>
+          <strong>Preise:</strong> Der Preis für jedes Abonnement wird auf dem
+          In-App-Kaufbildschirm im App Store angezeigt und kann je nach Region,
+          Währung und Steuern variieren. die Zahlung wird bei Kaufbestätigung
+          von deinem Apple-ID-Konto abgebucht.
+        </p>
+
+        <p>
+          <strong>Kostenlose Testphase:</strong> Die wöchentlichen und
+          monatlichen Pro-Abonnements beinhalten eine 3-tägige kostenlose
+          Testphase. Nach Ablauf der Testphase wird das Abonnement automatisch
+          in ein kostenpflichtiges Abonnement umgewandelt, es sei denn, es wird
+          mindestens 24 Stunden vor Ende der Testphase gekündigt. Pro
+          Apple-ID-Konto kann nur eine Testphase genutzt werden.
+        </p>
+
+        <p>
+          <strong>Automatische Verlängerung:</strong> Abonnements verlängern
+          sich automatisch um denselben Zeitraum, es sei denn, die automatische
+          Verlängerung wird mindestens 24 Stunden vor dem Ende des aktuellen
+          Zeitraums deaktiviert. Dein Konto wird innerhalb von 24 Stunden vor
+          dem Ende des aktuellen Zeitraums für die Verlängerung belastet.
+        </p>
+
+        <p>
+          <strong>Verwalten / Kündigen:</strong> Du kannst dein Abonnement
+          jederzeit verwalten oder kündigen:     <br />• iOS:
+          <em>Einstellungen > Apple ID > Abonnements</em>     <br />• Android:
+          <em>Play Store > Profil > Zahlungen & Abos</em>
+        </p>
+
+        <p>
+          <strong>Käufe wiederherstellen (iOS):</strong> Du kannst frühere Käufe
+          über die Option „Käufe wiederherstellen“ in der App wiederherstellen.
+        </p>
+
+        <p>
+          <strong>Rückerstattungen:</strong> Rückerstattungen werden von Apple
+          oder Google gemäß deren jeweiligen Richtlinien abgewickelt.
+        </p>
+
+        <p>
+          <strong>Rechtliche Links:</strong>     <br />Nutzungsbedingungen
+          (EULA):
+          <a
+            href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=de"
+            target="_blank"
+            rel="noopener"
+            >https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html</a
+          >
+          <br />Datenschutzrichtlinie:
+          <a
+            href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=de"
+            target="_blank"
+            rel="noopener"
+            >https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html</a
+          >
+        </p>
+
+        <h3>3) Nutzergenerierte & KI-generierte Inhalte</h3>
+
+        <ul>
+          <li>
+            Du kannst benutzerdefinierte Fragen und Kategorien für den privaten
+            Gebrauch erstellen. Wir moderieren solche Inhalte nicht vorab.
+          </li>
+          <li>
+            Wenn du Inhalte teilst, versicherst du, dass du die erforderlichen
+            Rechte besitzt, und gewährst uns eine begrenzte, nicht-exklusive,
+            widerrufliche Lizenz, diese zu speichern, zu übertragen und
+            anzuzeigen, wie es für den Betrieb der App erforderlich ist.
+          </li>
+          <li>
+            KI-generierte Fragen können in manchen Kontexten ungenau oder
+            unangemessen sein. Nutze sie mit Bedacht; wir haften nicht für das
+            Vertrauen auf KI-Ergebnisse.
+          </li>
+        </ul>
+
+        <h3>4) Akzeptable Nutzung</h3>
+
+        <p>
+          Verwende die App nicht für illegale, schädliche oder anstößige
+          Aktivitäten (einschließlich Belästigung, Missbrauch oder
+          rechtsverletzende Inhalte). Wir können den Zugang bei Verstößen
+          aussetzen oder beenden.
+        </p>
+
+        <h3>5) Geistiges Eigentum</h3>
+
+        <p>
+          Der Inhalt der App (Design, integrierte Fragen, Assets) ist unser
+          Eigentum und das unserer Lizenzgeber. Deine benutzerdefinierten
+          Inhalte bleiben dein Eigentum, vorbehaltlich der Lizenz in Abschnitt
+          3, wenn sie geteilt werden.
+        </p>
+
+        <h3>6) Änderungen an der App & den Bedingungen</h3>
+
+        <p>
+          Wir können Funktionen oder diese Bedingungen aktualisieren. Die
+          aktuelle Version ist auf dieser Seite mit dem Gültigkeitsdatum
+          verfügbar. Die fortgesetzte Nutzung nach Änderungen gilt als
+          Zustimmung.
+        </p>
+
+        <h3>7) Haftungsausschlüsse & Haftungsbeschränkung</h3>
+
+        <p>
+          Die App wird „wie besehen“ zur Unterhaltung bereitgestellt. Soweit
+          gesetzlich zulässig, lehnen wir Gewährleistungen ab und beschränken
+          die Haftung für indirekte oder Folgeschäden.
+        </p>
+
+        <h3>8) Geltendes Recht</h3>
+
+        <p>
+          Diese Bedingungen unterliegen den Gesetzen Polens. Die Gerichte in
+          Breslau, Polen, haben die ausschließliche Zuständigkeit, es sei denn,
+          zwingende Verbraucherschutzgesetze sehen etwas anderes vor.
+        </p>
+
+        <h3>9) Kontakt</h3>
+
+        <p>
+          Fragen zu diesen Bedingungen:
+          <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a>
+        </p>
+
+        <h3>Anhang A — Abonnement-Zusammenfassung (Apple-Offenlegung)</h3>
+
+        <ul>
+          <li>
+            <strong>Titel:</strong> Have You Ever Pro (Wöchentlich / Monatlich /
+            Jährlich / Lebenslang)
+          </li>
+          <li>
+            <strong>Laufzeit:</strong> 1 Woche / 1 Monat / 1 Jahr / Einmalkauf
+          </li>
+          <li>
+            <strong>Kostenlose Testphase:</strong> 3 Tage für wöchentliche und
+            monatliche Pläne
+          </li>
+          <li>
+            <strong>Preis:</strong> wird auf dem Kaufbildschirm im App Store
+            angezeigt; variiert je nach Region
+          </li>
+          <li>
+            <strong>Automatische Verlängerung:</strong> ja (für Abonnements),
+            sofern nicht ≥24 Stunden vor Ende des Zeitraums gekündigt
+          </li>
+          <li>
+            <strong>Verwalten:</strong> Einstellungen > Apple ID > Abonnements
+          </li>
+          <li>
+            <strong>Rechtliches:</strong>
+            <a
+              href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=de"
+              >Nutzungsbedingungen</a
+            >
+            &
+            <a
+              href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=de"
+              >Datenschutzrichtlinie</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section id="es">
+        <h2>Términos de Uso</h2>
+
+        <p><strong>Fecha de entrada en vigor:</strong> 6 de octubre de 2025</p>
+
+        <p>
+          Bienvenido a <strong>Have You Ever</strong>. Al utilizar esta
+          aplicación, aceptas estos Términos de Uso.
+        </p>
+
+        <h3>1) Elegibilidad y Propósito</h3>
+
+        <p>
+          La versión gratuita es apta para todas las edades. La versión Pro
+          incluye contenido destinado a adultos (mayores de 18 años) y requiere
+          confirmación de edad. La aplicación es solo para entretenimiento y no
+          es una fuente de consejos.
+        </p>
+
+        <h3>2) Suscripciones, Pruebas y Compras</h3>
+
+        <p>
+          Las
+          <strong>suscripciones auto-renovables (Compra In-App)</strong> están
+          disponibles para desbloquear funciones premium y preguntas generadas
+          por IA:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Have You Ever Pro – Semanal</strong> (1 semana, incluye una
+            prueba gratuita de 3 días)
+          </li>
+          <li>
+            <strong>Have You Ever Pro – Mensual</strong> (1 mes, incluye una
+            prueba gratuita de 3 días)
+          </li>
+          <li>
+            <strong>Have You Ever Pro – Anual</strong> (1 año, sin prueba
+            gratuita)
+          </li>
+        </ul>
+
+        <p>
+          <strong>Compra Única:</strong> También está disponible una opción de
+          por vida "Have You Ever Pro – De por Vida", que otorga acceso
+          permanente a todas las funciones Pro con un solo pago.
+        </p>
+
+        <p>
+          <strong>Precios:</strong> El precio de cada suscripción se muestra en
+          la pantalla de compra dentro de la aplicación en la App Store y puede
+          variar según la región, la moneda y los impuestos. El pago se carga a
+          tu cuenta de Apple ID al confirmar la compra.
+        </p>
+
+        <p>
+          <strong>Prueba gratuita:</strong> Las suscripciones Pro Semanal y
+          Mensual incluyen una prueba gratuita de 3 días. Después de que
+          finalice la prueba, la suscripción se convierte automáticamente en un
+          plan de pago a menos que se cancele al menos 24 horas antes de que
+          finalice el período de prueba. Solo se puede usar una prueba por
+          cuenta de Apple ID.
+        </p>
+
+        <p>
+          <strong>Auto-renovación:</strong> Las suscripciones se renuevan
+          automáticamente por el mismo período a menos que se desactive la
+          renovación automática al menos 24 horas antes del final del período
+          actual. Se le cobrará a tu cuenta la renovación dentro de las 24 horas
+          anteriores al final del período actual.
+        </p>
+
+        <p>
+          <strong>Gestionar / Cancelar:</strong> Puedes gestionar o cancelar tu
+          suscripción en any momento:     <br />• iOS:
+          <em>Ajustes > ID de Apple > Suscripciones</em>     <br />• Android:
+          <em>Play Store > Perfil > Pagos y suscripciones</em>
+        </p>
+
+        <p>
+          <strong>Restaurar compras (iOS):</strong> Puedes restaurar compras
+          anteriores a través de la opción "Restaurar compras" en la aplicación.
+        </p>
+
+        <p>
+          <strong>Reembolsos:</strong> Los reembolsos son gestionados por Apple
+          o Google bajo sus respectivas políticas.
+        </p>
+
+        <p>
+          <strong>Enlaces legales:</strong>     <br />Términos de Uso (EULA):
+          <a
+            href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=es"
+            target="_blank"
+            rel="noopener"
+            >https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html</a
+          >
+          <br />Política de Privacidad:
+          <a
+            href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=es"
+            target="_blank"
+            rel="noopener"
+            >https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html</a
+          >
+        </p>
+
+        <h3>3) Contenido Generado por el Usuario y por IA</h3>
+
+        <ul>
+          <li>
+            Puedes crear preguntas y categorías personalizadas para uso privado.
+            No moderamos previamente dicho contenido.
+          </li>
+          <li>
+            Si compartes contenido, declaras que tienes los derechos necesarios
+            y nos otorgas una licencia limitada, no exclusiva y revocable para
+            almacenarlo, transmitirlo y mostrarlo según sea necesario para
+            operar la aplicación.
+          </li>
+          <li>
+            Las preguntas generadas por IA pueden ser inexactas o inapropiadas
+            en algunos contextos. Usa tu discreción; no somos responsables de la
+            confianza en los resultados de la IA.
+          </li>
+        </ul>
+
+        <h3>4) Uso Aceptable</h3>
+
+        <p>
+          No uses la aplicación para actividades ilegales, dañinas u ofensivas
+          (incluido el acoso, el abuso o contenido infractor). Podemos suspender
+          o terminar el acceso por violaciones.
+        </p>
+
+        <h3>5) Propiedad Intelectual</h3>
+
+        <p>
+          El contenido de la aplicación (diseño, preguntas incorporadas,
+          activos) es de nuestra propiedad y de nuestros licenciantes. Tu
+          contenido personalizado sigue siendo tuyo, sujeto a la licencia de la
+          Sección 3 cuando se comparte.
+        </p>
+
+        <h3>6) Cambios en la Aplicación y los Términos</h3>
+
+        <p>
+          Podemos actualizar las características o estos Términos. La versión
+          actual está disponible en esta página con la fecha de entrada en
+          vigor. El uso continuado después de los cambios constituye la
+          aceptación.
+        </p>
+
+        <h3>7) Exenciones y Limitación de Responsabilidad</h3>
+
+        <p>
+          La aplicación se proporciona "tal cual" para entretenimiento. En la
+          medida permitida por la ley, renunciamos a las garantías y limitamos
+          la responsabilidad por pérdidas indirectas o consecuentes.
+        </p>
+
+        <h3>8) Ley Aplicable</h3>
+
+        <p>
+          Estos Términos se rigen por las leyes de Polonia. Los tribunales de
+          Wrocław, Polonia, tienen jurisdicción exclusiva, excepto donde las
+          leyes de protección al consumidor obligatorias dispongan lo contrario.
+        </p>
+
+        <h3>9) Contacto</h3>
+
+        <p>
+          Preguntas sobre estos Términos:
+          <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a>
+        </p>
+
+        <h3>Apéndice A — Resumen de la Suscripción (divulgación de Apple)</h3>
+
+        <ul>
+          <li>
+            <strong>Título:</strong> Have You Ever Pro (Semanal / Mensual /
+            Anual / De por Vida)
+          </li>
+          <li>
+            <strong>Duración:</strong> 1 semana / 1 mes / 1 año / Compra única
+          </li>
+          <li>
+            <strong>Prueba gratuita:</strong> 3 días para los planes Semanal y
+            Mensual
+          </li>
+          <li>
+            <strong>Precio:</strong> se muestra en la pantalla de compra de la
+            App Store; varía según la región
+          </li>
+          <li>
+            <strong>Auto-renovación:</strong> sí (para suscripciones), a menos
+            que se cancele ≥24h antes del final del período
+          </li>
+          <li>
+            <strong>Gestionar:</strong> Ajustes > ID de Apple > Suscripciones
+          </li>
+          <li>
+            <strong>Legal:</strong>
+            <a
+              href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=es"
+              >Términos de Uso</a
+            >
+            y
+            <a
+              href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=es"
+              >Política de Privacidad</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section id="it">
+        <h2>Termini di Utilizzo</h2>
+
+        <p><strong>Data di entrata in vigore:</strong> 6 ottobre 2025</p>
+
+        <p>
+          Benvenuto in <strong>Have You Ever</strong>. Utilizzando questa app,
+          accetti questi Termini di Utilizzo.
+        </p>
+
+        <h3>1) Idoneità e Scopo</h3>
+
+        <p>
+          La versione gratuita è adatta a tutte le età. La versione Pro include
+          contenuti destinati agli adulti (18+) e richiede la conferma dell'età.
+          L'app è solo a scopo di intrattenimento e non è una fonte di consigli.
+        </p>
+
+        <h3>2) Abbonamenti, Prove e Acquisti</h3>
+
+        <p>
+          Sono disponibili
+          <strong>abbonamenti auto-rinnovabili (Acquisto In-App)</strong> per
+          sbloccare funzionalità premium e domande generate dall'IA:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Have You Ever Pro – Settimanale</strong> (1 settimana,
+            include una prova gratuita di 3 giorni)
+          </li>
+          <li>
+            <strong>Have You Ever Pro – Mensile</strong> (1 mese, include una
+            prova gratuita di 3 giorni)
+          </li>
+          <li>
+            <strong>Have You Ever Pro – Annuale</strong> (1 anno, nessuna prova
+            gratuita)
+          </li>
+        </ul>
+
+        <p>
+          <strong>Acquisto Una Tantum:</strong> È disponibile anche un'opzione a
+          vita "Have You Ever Pro – A Vita", che garantisce l'accesso permanente
+          a tutte le funzionalità Pro con un unico pagamento.
+        </p>
+
+        <p>
+          <strong>Prezzi:</strong> Il prezzo di ogni abbonamento è visualizzato
+          sulla schermata di acquisto in-app all'interno dell'App Store e può
+          variare in base a regione, valuta e tasse. Il pagamento viene
+          addebitato sul tuo account Apple ID alla conferma dell'acquisto.
+        </p>
+
+        <p>
+          <strong>Prova gratuita:</strong> Gli abbonamenti Pro Settimanale e
+          Mensile includono una prova gratuita di 3 giorni. Al termine della
+          prova, l'abbonamento si converte automaticamente in un piano a
+          pagamento, a meno che non venga annullato almeno 24 ore prima della
+          fine del periodo di prova. È possibile utilizzare una sola prova per
+          account Apple ID.
+        </p>
+
+        <p>
+          <strong>Rinnovo automatico:</strong> Gli abbonamenti si rinnovano
+          automaticamente per lo stesso periodo, a meno che il rinnovo
+          automatico non venga disattivato almeno 24 ore prima della fine del
+          periodo corrente. Il tuo account verrà addebitato per il rinnovo entro
+          24 ore prima della fine del periodo corrente.
+        </p>
+
+        <p>
+          <strong>Gestione / Annullamento:</strong> Puoi gestire o annullare il
+          tuo abbonamento in qualsiasi momento:     <br />• iOS:
+          <em>Impostazioni > ID Apple > Abbonamenti</em>     <br />• Android:
+          <em>Play Store > Profilo > Pagamenti e abbonamenti</em>
+        </p>
+
+        <p>
+          <strong>Ripristino acquisti (iOS):</strong> Puoi ripristinare gli
+          acquisti precedenti tramite l'opzione "Ripristina acquisti" nell'app.
+        </p>
+
+        <p>
+          <strong>Rimborsi:</strong> I rimborsi sono gestiti da Apple o Google
+          secondo le rispettive politiche.
+        </p>
+
+        <p>
+          <strong>Link legali:</strong>     <br />Termini di Utilizzo (EULA):
+          <a
+            href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=it"
+            target="_blank"
+            rel="noopener"
+            >https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html</a
+          >
+          <br />Informativa sulla Privacy:
+          <a
+            href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=it"
+            target="_blank"
+            rel="noopener"
+            >https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html</a
+          >
+        </p>
+
+        <h3>3) Contenuti Generati dagli Utenti e dall'IA</h3>
+
+        <ul>
+          <li>
+            Puoi creare domande e categorie personalizzate per uso privato. Non
+            moderiamo preventivamente tali contenuti.
+          </li>
+          <li>
+            Se condividi contenuti, dichiari di avere i diritti necessari e ci
+            concedi una licenza limitata, non esclusiva e revocabile per
+            archiviarli, trasmetterli e visualizzarli come necessario per il
+            funzionamento dell'app.
+          </li>
+          <li>
+            Le domande generate dall'IA possono essere inaccurate o
+            inappropriate in alcuni contesti. Usa discrezione; non siamo
+            responsabili per l'affidamento sugli output dell'IA.
+          </li>
+        </ul>
+
+        <h3>4) Uso Accettabile</h3>
+
+        <p>
+          Non utilizzare l'app per attività illegali, dannose o offensive
+          (inclusi molestie, abusi o contenuti che violano i diritti). Possiamo
+          sospendere o terminare l'accesso per violazioni.
+        </p>
+
+        <h3>5) Proprietà Intellettuale</h3>
+
+        <p>
+          Il contenuto dell'app (design, domande integrate, risorse) è di nostra
+          proprietà e dei nostri licenziatari. I tuoi contenuti personalizzati
+          rimangono tuoi, soggetti alla licenza della Sezione 3 quando
+          condivisi.
+        </p>
+
+        <h3>6) Modifiche all'App e ai Termini</h3>
+
+        <p>
+          Potremmo aggiornare le funzionalità o questi Termini. La versione
+          attuale è disponibile su questa pagina con la data di entrata in
+          vigore. L'uso continuato dopo le modifiche costituisce accettazione.
+        </p>
+
+        <h3>7) Esclusioni di Garanzia e Limitazione di Responsabilità</h3>
+
+        <p>
+          L'app è fornita "così com'è" per intrattenimento. Nella misura
+          consentita dalla legge, decliniamo le garanzie e limitiamo la
+          responsabilità per perdite indirette o consequenziali.
+        </p>
+
+        <h3>8) Legge Applicabile</h3>
+
+        <p>
+          Questi Termini sono regolati dalle leggi della Polonia. I tribunali di
+          Breslavia, Polonia, hanno giurisdizione esclusiva, salvo dove le leggi
+          obbligatorie a tutela dei consumatori dispongano diversamente.
+        </p>
+
+        <h3>9) Contatti</h3>
+
+        <p>
+          Domande su questi Termini:
+          <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a>
+        </p>
+
+        <h3>Appendice A — Riepilogo Abbonamento (informativa Apple)</h3>
+
+        <ul>
+          <li>
+            <strong>Titolo:</strong> Have You Ever Pro (Settimanale / Mensile /
+            Annuale / A Vita)
+          </li>
+          <li>
+            <strong>Durata:</strong> 1 settimana / 1 mese / 1 anno / Acquisto
+            una tantum
+          </li>
+          <li>
+            <strong>Prova gratuita:</strong> 3 giorni per i piani Settimanale e
+            Mensile
+          </li>
+          <li>
+            <strong>Prezzo:</strong> mostrato sulla schermata di acquisto
+            dell'App Store; varia per regione
+          </li>
+          <li>
+            <strong>Rinnovo automatico:</strong> sì (per abbonamenti), a meno
+            che non venga annullato ≥24 ore prima della fine del periodo
+          </li>
+          <li>
+            <strong>Gestione:</strong> Impostazioni > ID Apple > Abbonamenti
+          </li>
+          <li>
+            <strong>Legale:</strong>
+            <a
+              href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=it"
+              >Termini di Utilizzo</a
+            >
+            &
+            <a
+              href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=it"
+              >Informativa sulla Privacy</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section id="bg">
+        <h2>Условия за ползване</h2>
+
+        <p><strong>Дата на влизане в сила:</strong> 6 октомври 2025</p>
+
+        <p>
+          Добре дошли в <strong>Have You Ever</strong>. С използването на това
+          приложение вие се съгласявате с настоящите Условия за ползване.
+        </p>
+
+        <h3>1) Допустимост и цел</h3>
+
+        <p>
+          Безплатната версия е подходяща за всички възрасти. Pro версията
+          включва съдържание, предназначено за възрастни (18+), и изисква
+          потвърждение на възрастта. Приложението е само за развлекателни цели и
+          не е източник на съвети.
+        </p>
+
+        <h3>2) Абонаменти, пробни периоди и покупки</h3>
+
+        <p>
+          <strong
+            >Автоматично подновяеми абонаменти (Покупка в приложението)</strong
+          >
+          са налични за отключване на премиум функции и въпроси, генерирани от
+          ИИ:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Have You Ever Pro – Седмичен</strong> (1 седмица, включва
+            3-дневен безплатен пробен период)
+          </li>
+          <li>
+            <strong>Have You Ever Pro – Месечен</strong> (1 месец, включва
+            3-дневен безплатен пробен период)
+          </li>
+          <li>
+            <strong>Have You Ever Pro – Годишен</strong> (1 година, без
+            безплатен пробен период)
+          </li>
+        </ul>
+
+        <p>
+          <strong>Еднократна покупка:</strong> Предлага се и доживотна опция
+          "Have You Ever Pro – Доживотно", която предоставя постоянен достъп до
+          всички Pro функции срещу еднократно плащане.
+        </p>
+
+        <p>
+          <strong>Цени:</strong> Цената за всеки абонамент се показва на екрана
+          за покупка в приложението в App Store и може да варира в зависимост от
+          региона, валутата и данъците. Плащането се начислява на вашия Apple ID
+          акаунт при потвърждение на покупката.
+        </p>
+
+        <p>
+          <strong>Безплатен пробен период:</strong> Седмичният и месечният Pro
+          абонамент включват 3-дневен безплатен пробен период. След края на
+          пробния период абонаментът автоматично се преобразува в платен план,
+          освен ако не бъде анулиран поне 24 часа преди края на пробния период.
+          Може да се използва само един пробен период на Apple ID акаунт.
+        </p>
+
+        <p>
+          <strong>Автоматично подновяване:</strong> Абонаментите се подновяват
+          автоматично за същия период, освен ако автоматичното подновяване не
+          бъде изключено поне 24 часа преди края на текущия период. Вашият
+          акаунт ще бъде таксуван за подновяване в рамките на 24 часа преди края
+          на текущия период.
+        </p>
+
+        <p>
+          <strong>Управление / Анулиране:</strong> Можете да управлявате или
+          анулирате абонамента си по всяко време:     <br />• iOS:
+          <em>Настройки > Apple ID > Абонаменти</em>     <br />• Android:
+          <em>Play Store > Профил > Плащания и абонаменти</em>
+        </p>
+
+        <p>
+          <strong>Възстановяване на покупки (iOS):</strong> Можете да
+          възстановите предишни покупки чрез опцията „Възстановяване на покупки“
+          в приложението.
+        </p>
+
+        <p>
+          <strong>Възстановяване на средства:</strong> Възстановяването на
+          средства се обработва от Apple или Google съгласно техните съответни
+          политики.
+        </p>
+
+        <p>
+          <strong>Правни връзки:</strong>     <br />Условия за ползване (EULA):
+          <a
+            href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=bg"
+            target="_blank"
+            rel="noopener"
+            >https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html</a
+          >
+          <br />Политика за поверителност:
+          <a
+            href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=bg"
+            target="_blank"
+            rel="noopener"
+            >https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html</a
+          >
+        </p>
+
+        <h3>3) Съдържание, генерирано от потребители и ИИ</h3>
+
+        <ul>
+          <li>
+            Можете да създавате персонализирани въпроси и категории за лична
+            употреба. Ние не модерираме предварително такова съдържание.
+          </li>
+          <li>
+            Ако споделяте съдържание, вие декларирате, че имате необходимите
+            права и ни предоставяте ограничен, неизключителен, отменим лиценз за
+            съхранение, предаване и показване, както е необходимо за работата на
+            приложението.
+          </li>
+          <li>
+            Въпросите, генерирани от ИИ, може да са неточни или неподходящи в
+            някои контексти. Използвайте по преценка; ние не носим отговорност
+            за разчитане на резултати от ИИ.
+          </li>
+        </ul>
+
+        <h3>4) Приемлива употреба</h3>
+
+        <p>
+          Не използвайте приложението за незаконни, вредни или обидни дейности
+          (включително тормоз, злоупотреба или съдържание, нарушаващо права).
+          Можем да спрем или прекратим достъпа при нарушения.
+        </p>
+
+        <h3>5) Интелектуална собственост</h3>
+
+        <p>
+          Съдържанието на приложението (дизайн, вградени въпроси, активи) е наша
+          собственост и на нашите лицензодатели. Вашето персонализирано
+          съдържание остава ваше, при спазване на лиценза от Раздел 3 при
+          споделяне.
+        </p>
+
+        <h3>6) Промени в приложението и условията</h3>
+
+        <p>
+          Можем да актуализираме функциите или тези Условия. Текущата версия е
+          достъпна на тази страница с датата на влизане в сила. Продължаващата
+          употреба след промени представлява приемане.
+        </p>
+
+        <h3>7) Откази от отговорност и ограничаване на отговорността</h3>
+
+        <p>
+          Приложението се предоставя „както е“ за развлечение. До степента,
+          позволена от закона, ние се отказваме от гаранции и ограничаваме
+          отговорността за косвени или последващи загуби.
+        </p>
+
+        <h3>8) Приложимо право</h3>
+
+        <p>
+          Тези Условия се уреждат от законите на Полша. Съдилищата във Вроцлав,
+          Полша, имат изключителна юрисдикция, освен когато задължителните
+          закони за защита на потребителите предвиждат друго.
+        </p>
+
+        <h3>9) Контакт</h3>
+
+        <p>
+          Въпроси относно тези Условия:
+          <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a>
+        </p>
+
+        <h3>Приложение А — Обобщение на абонамента (разкриване за Apple)</h3>
+
+        <ul>
+          <li>
+            <strong>Заглавие:</strong> Have You Ever Pro (Седмичен / Месечен /
+            Годишен / Доживотно)
+          </li>
+          <li>
+            <strong>Продължителност:</strong> 1 седмица / 1 месец / 1 година /
+            Еднократна
+          </li>
+          <li>
+            <strong>Безплатен пробен период:</strong> 3 дни за седмични и
+            месечни планове
+          </li>
+          <li>
+            <strong>Цена:</strong> показана на екрана за покупка в App Store;
+            варира според региона
+          </li>
+          <li>
+            <strong>Автоматично подновяване:</strong> да (за абонаменти), освен
+            ако не бъде анулиран ≥24 часа преди края на периода
+          </li>
+          <li>
+            <strong>Управление:</strong> Настройки > Apple ID > Абонаменти
+          </li>
+          <li>
+            <strong>Правни:</strong>
+            <a
+              href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=bg"
+              >Условия за ползване</a
+            >
+            и
+            <a
+              href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=bg"
+              >Политика за поверителност</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section id="hu">
+        <h2>Felhasználási Feltételek</h2>
+
+        <p><strong>Hatálybalépés dátuma:</strong> 2025. október 6.</p>
+
+        <p>
+          Üdvözöljük a <strong>Have You Ever</strong> alkalmazásban. Az
+          alkalmazás használatával elfogadja ezeket a Felhasználási
+          Feltételeket.
+        </p>
+
+        <h3>1) Jogosultság és Cél</h3>
+
+        <p>
+          Az ingyenes verzió minden korosztály számára megfelelő. A Pro verzió
+          felnőtteknek (18+) szánt tartalmat tartalmaz, és korhatár-megerősítést
+          igényel. Az alkalmazás kizárólag szórakoztató jellegű, és nem minősül
+          tanácsadásnak.
+        </p>
+
+        <h3>2) Előfizetések, Próbaidőszakok és Vásárlások</h3>
+
+        <p>
+          <strong
+            >Automatikusan megújuló előfizetések (Alkalmazáson belüli
+            vásárlás)</strong
+          >
+          állnak rendelkezésre a prémium funkciók és az MI által generált
+          kérdések feloldásához:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Have You Ever Pro – Heti</strong> (1 hét, 3 napos ingyenes
+            próbaidőszakkal)
+          </li>
+          <li>
+            <strong>Have You Ever Pro – Havi</strong> (1 hónap, 3 napos ingyenes
+            próbaidőszakkal)
+          </li>
+          <li>
+            <strong>Have You Ever Pro – Éves</strong> (1 év, ingyenes
+            próbaidőszak nélkül)
+          </li>
+        </ul>
+
+        <p>
+          <strong>Egyszeri Vásárlás:</strong> Elérhető egy élethosszig tartó
+          "Have You Ever Pro – Örökös" opció is, amely egyetlen fizetéssel
+          állandó hozzáférést biztosít az összes Pro funkcióhoz.
+        </p>
+
+        <p>
+          <strong>Árak:</strong> Az egyes előfizetések ára az alkalmazáson
+          belüli vásárlási képernyőn jelenik meg az App Store-ban, és
+          régiónként, pénznemenként és adónként változhat. A fizetés a vásárlás
+          megerősítésekor az Ön Apple ID-fiókját terheli.
+        </p>
+
+        <p>
+          <strong>Ingyenes próbaidőszak:</strong> A Heti és Havi Pro
+          előfizetések 3 napos ingyenes próbaidőszakot tartalmaznak. A
+          próbaidőszak lejárta után az előfizetés automatikusan fizetősre vált,
+          hacsak nem mondják le legalább 24 órával a próbaidőszak vége előtt.
+          Apple ID-fiókonként csak egy próbaidőszak használható fel.
+        </p>
+
+        <p>
+          <strong>Automatikus megújítás:</strong> Az előfizetések automatikusan
+          megújulnak ugyanarra az időszakra, hacsak az automatikus megújítást
+          nem kapcsolják ki legalább 24 órával az aktuális időszak vége előtt.
+          Fiókját a megújításért az aktuális időszak végét megelőző 24 órán
+          belül terheljük.
+        </p>
+
+        <p>
+          <strong>Kezelés / Lemondás:</strong> Előfizetését bármikor kezelheti
+          vagy lemondhatja:     <br />• iOS:
+          <em>Beállítások > Apple ID > Előfizetések</em>     <br />• Android:
+          <em>Play Áruház > Profil > Fizetések és előfizetések</em>
+        </p>
+
+        <p>
+          <strong>Vásárlások visszaállítása (iOS):</strong> Korábbi vásárlásait
+          az alkalmazáson belüli „Vásárlások visszaállítása” opcióval állíthatja
+          vissza.
+        </p>
+
+        <p>
+          <strong>Visszatérítések:</strong> A visszatérítéseket az Apple vagy a
+          Google kezeli a saját irányelveik szerint.
+        </p>
+
+        <p>
+          <strong>Jogi linkek:</strong>     <br />Felhasználási Feltételek
+          (EULA):
+          <a
+            href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=hu"
+            target="_blank"
+            rel="noopener"
+            >https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html</a
+          >
+          <br />Adatvédelmi Irányelvek:
+          <a
+            href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=hu"
+            target="_blank"
+            rel="noopener"
+            >https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html</a
+          >
+        </p>
+
+        <h3>3) Felhasználó által és MI által Generált Tartalom</h3>
+
+        <ul>
+          <li>
+            Létrehozhat egyedi kérdéseket és kategóriákat magáncélú használatra.
+            Az ilyen tartalmakat nem moderáljuk előzetesen.
+          </li>
+          <li>
+            Ha tartalmat oszt meg, kijelenti, hogy rendelkezik a szükséges
+            jogokkal, és korlátozott, nem kizárólagos, visszavonható licencet ad
+            nekünk annak tárolására, továbbítására és megjelenítésére az
+            alkalmazás működtetéséhez szükséges mértékben.
+          </li>
+          <li>
+            Az MI által generált kérdések bizonyos kontextusokban pontatlanok
+            vagy nem megfelelőek lehetnek. Használja belátása szerint; nem
+            vállalunk felelősséget az MI kimeneteire való támaszkodásért.
+          </li>
+        </ul>
+
+        <h3>4) Elfogadható Használat</h3>
+
+        <p>
+          Ne használja az alkalmazást illegális, káros vagy sértő
+          tevékenységekre (beleértve a zaklatást, visszaélést vagy jogsértő
+          tartalmat). A szabályszegések esetén felfüggeszthetjük vagy
+          megszüntethetjük a hozzáférést.
+        </p>
+
+        <h3>5) Szellemi Tulajdon</h3>
+
+        <p>
+          Az alkalmazás tartalma (tervezés, beépített kérdések, eszközök) a mi
+          és licencadóink tulajdonát képezi. Az Ön egyedi tartalma az Öné marad,
+          a 3. szakaszban foglalt licenc feltételei mellett, ha megosztja azt.
+        </p>
+
+        <h3>6) Változások az Alkalmazásban és a Feltételekben</h3>
+
+        <p>
+          Frissíthetjük a funkciókat vagy ezeket a Feltételeket. Az aktuális
+          verzió ezen az oldalon érhető el a hatálybalépés dátumával. A
+          változások utáni további használat elfogadást jelent.
+        </p>
+
+        <h3>7) Jogi Nyilatkozatok és Felelősségkorlátozás</h3>
+
+        <p>
+          Az alkalmazást „ahogy van” állapotban, szórakoztatás céljából
+          biztosítjuk. A törvény által megengedett mértékben kizárjuk a
+          szavatosságot és korlátozzuk a felelősséget a közvetett vagy
+          következményes károkért.
+        </p>
+
+        <h3>8) Irányadó Jog</h3>
+
+        <p>
+          Ezekre a Feltételekre Lengyelország törvényei az irányadók. A wrocławi
+          (Lengyelország) bíróságok kizárólagos joghatósággal rendelkeznek,
+          kivéve, ha a kötelező fogyasztóvédelmi törvények másként rendelkeznek.
+        </p>
+
+        <h3>9) Kapcsolat</h3>
+
+        <p>
+          Kérdések a Feltételekről:
+          <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a>
+        </p>
+
+        <h3>A. függelék — Előfizetés Összefoglaló (Apple tájékoztató)</h3>
+
+        <ul>
+          <li>
+            <strong>Cím:</strong> Have You Ever Pro (Heti / Havi / Éves /
+            Örökös)
+          </li>
+          <li><strong>Időtartam:</strong> 1 hét / 1 hónap / 1 év / Egyszeri</li>
+          <li>
+            <strong>Ingyenes próbaidőszak:</strong> 3 nap a Heti és Havi
+            csomagoknál
+          </li>
+          <li>
+            <strong>Ár:</strong> az App Store vásárlási képernyőjén látható;
+            régiónként változik
+          </li>
+          <li>
+            <strong>Automatikus megújítás:</strong> igen (előfizetéseknél),
+            hacsak nem mondják le ≥24 órával az időszak vége előtt
+          </li>
+          <li>
+            <strong>Kezelés:</strong> Beállítások > Apple ID > Előfizetések
+          </li>
+          <li>
+            <strong>Jogi:</strong>
+            <a
+              href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=hu"
+              >Felhasználási Feltételek</a
+            >
+            &
+            <a
+              href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=hu"
+              >Adatvédelmi Irányelvek</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section id="ro">
+        <h2>Termeni de Utilizare</h2>
+
+        <p><strong>Data intrării în vigoare:</strong> 6 octombrie 2025</p>
+
+        <p>
+          Bun venit la <strong>Have You Ever</strong>. Prin utilizarea acestei
+          aplicații, sunteți de acord cu acești Termeni de Utilizare.
+        </p>
+
+        <h3>1) Eligibilitate și Scop</h3>
+
+        <p>
+          Versiunea gratuită este potrivită pentru toate vârstele. Versiunea Pro
+          include conținut destinat adulților (18+) și necesită confirmarea
+          vârstei. Aplicația este doar pentru divertisment și nu reprezintă o
+          sursă de sfaturi.
+        </p>
+
+        <h3>2) Abonamente, Perioade de Probă și Achiziții</h3>
+
+        <p>
+          <strong>Abonamentele cu reînnoire automată (Achiziție In-App)</strong>
+          sunt disponibile pentru a debloca funcționalități premium și întrebări
+          generate de AI:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Have You Ever Pro – Săptămânal</strong> (1 săptămână,
+            include o perioadă de probă gratuită de 3 zile)
+          </li>
+          <li>
+            <strong>Have You Ever Pro – Lunar</strong> (1 lună, include o
+            perioadă de probă gratuită de 3 zile)
+          </li>
+          <li>
+            <strong>Have You Ever Pro – Anual</strong> (1 an, fără perioadă de
+            probă gratuită)
+          </li>
+        </ul>
+
+        <p>
+          <strong>Achiziție Unică:</strong> Este disponibilă și o opțiune "Have
+          You Ever Pro – Pe Viață", care acordă acces permanent la toate
+          funcțiile Pro printr-o singură plată.
+        </p>
+
+        <p>
+          <strong>Prețuri:</strong> Prețul fiecărui abonament este afișat pe
+          ecranul de achiziție din aplicație în App Store și poate varia în
+          funcție de regiune, monedă și taxe. Plata este debitată din contul
+          dvs. Apple ID la confirmarea achiziției.
+        </p>
+
+        <p>
+          <strong>Perioada de probă gratuită:</strong> Abonamentele Pro
+          Săptămânal și Lunar includ o perioadă de probă gratuită de 3 zile.
+          După încheierea perioadei de probă, abonamentul se transformă automat
+          într-un plan plătit, cu excepția cazului în care este anulat cu cel
+          puțin 24 de ore înainte de sfârșitul perioadei de probă. Se poate
+          utiliza o singură perioadă de probă per cont Apple ID.
+        </p>
+
+        <p>
+          <strong>Reînnoire automată:</strong> Abonamentele se reînnoiesc
+          automat pentru aceeași perioadă, cu excepția cazului în care
+          reînnoirea automată este dezactivată cu cel puțin 24 de ore înainte de
+          sfârșitul perioadei curente. Contul dvs. va fi taxat pentru reînnoire
+          în termen de 24 de ore înainte de sfârșitul perioadei curente.
+        </p>
+
+        <p>
+          <strong>Gestionare / Anulare:</strong> Puteți gestiona sau anula
+          abonamentul oricând:     <br />• iOS:
+          <em>Configurări > ID Apple > Abonamente</em>     <br />• Android:
+          <em>Magazin Play > Profil > Plăți și abonamente</em>
+        </p>
+
+        <p>
+          <strong>Restaurarea achizițiilor (iOS):</strong> Puteți restaura
+          achizițiile anterioare prin opțiunea „Restaurează achizițiile” din
+          aplicație.
+        </p>
+
+        <p>
+          <strong>Rambursări:</strong> Rambursările sunt gestionate de Apple sau
+          Google conform politicilor lor respective.
+        </p>
+
+        <p>
+          <strong>Linkuri legale:</strong>     <br />Termeni de Utilizare
+          (EULA):
+          <a
+            href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=ro"
+            target="_blank"
+            rel="noopener"
+            >https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html</a
+          >
+          <br />Politică de Confidențialitate:
+          <a
+            href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=ro"
+            target="_blank"
+            rel="noopener"
+            >https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html</a
+          >
+        </p>
+
+        <h3>3) Conținut Generat de Utilizatori și de AI</h3>
+
+        <ul>
+          <li>
+            Puteți crea întrebări și categorii personalizate pentru uz privat.
+            Nu moderăm în prealabil acest tip de conținut.
+          </li>
+          <li>
+            Dacă partajați conținut, declarați că aveți drepturile necesare și
+            ne acordați o licență limitată, neexclusivă, revocabilă pentru a-l
+            stoca, transmite și afișa, după cum este necesar pentru funcționarea
+            aplicației.
+          </li>
+          <li>
+            Întrebările generate de AI pot fi inexacte sau nepotrivite în
+            anumite contexte. Folosiți-le cu discernământ; nu suntem
+            răspunzători pentru încrederea acordată rezultatelor AI.
+          </li>
+        </ul>
+
+        <h3>4) Utilizare Acceptabilă</h3>
+
+        <p>
+          Nu utilizați aplicația pentru activități ilegale, dăunătoare sau
+          ofensatoare (inclusiv hărțuire, abuz sau conținut care încalcă
+          drepturi). Putem suspenda sau înceta accesul în caz de încălcări.
+        </p>
+
+        <h3>5) Proprietate Intelectuală</h3>
+
+        <p>
+          Conținutul aplicației (design, întrebări integrate, active) este
+          proprietatea noastră și a licențiatorilor noștri. Conținutul dvs.
+          personalizat rămâne al dvs., sub rezerva licenței din Secțiunea 3
+          atunci când este partajat.
+        </p>
+
+        <h3>6) Modificări ale Aplicației și Termenilor</h3>
+
+        <p>
+          Putem actualiza funcționalitățile sau acești Termeni. Versiunea
+          curentă este disponibilă pe această pagină, cu data intrării în
+          vigoare. Utilizarea continuă după modificări constituie acceptarea
+          acestora.
+        </p>
+        D
+        <h3>7) Exonerări de Răspundere și Limitarea Răspunderii</h3>
+
+        <p>
+          Aplicația este furnizată „ca atare” pentru divertisment. În măsura
+          permisă de lege, ne declinăm garanțiile și limităm răspunderea pentru
+          pierderi indirecte sau consecutive.
+        </p>
+
+        <h3>8) Legea Aplicabilă</h3>
+
+        <p>
+          Acești Termeni sunt guvernați de legile Poloniei. Instanțele din
+          Wrocław, Polonia, au jurisdicție exclusivă, cu excepția cazului în
+          care legile obligatorii privind protecția consumatorilor prevăd
+          altfel.
+        </p>
+
+        <h3>9) Contact</h3>
+
+        <p>
+          Întrebări despre acești Termeni:
+          <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a>
+        </p>
+
+        <h3>Anexa A — Rezumatul Abonamentului (divulgare Apple)</h3>
+
+        <ul>
+          <li>
+            <strong>Titlu:</strong> Have You Ever Pro (Săptămânal / Lunar /
+            Anual / Pe Viață)
+          </li>
+          <li>
+            <strong>Durată:</strong> 1 săptămână / 1 lună / 1 an / Achiziție
+            unică
+          </li>
+          <li>
+            <strong>Perioadă de probă gratuită:</strong> 3 zile pentru planurile
+            Săptămânal și Lunar
+          </li>
+          <li>
+            <strong>Preț:</strong> afișat pe ecranul de achiziție din App Store;
+            variază în funcție de regiune
+          </li>
+          <li>
+            <strong>Reînnoire automată:</strong> da (pentru abonamente), dacă nu
+            este anulat cu ≥24h înainte de sfârșitul perioadei
+          </li>
+          <li>
+            <strong>Gestionare:</strong> Configurări > ID Apple > Abonamente
+          </li>
+          <li>
+            <strong>Legal:</strong>
+            <a
+              href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=ro"
+              >Termeni de Utilizare</a
+            >
+            și
+            <a
+              href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=ro"
+              >Politică de Confidențialitate</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section id="cs">
+        <h2>Podmínky používání</h2>
+
+        <p><strong>Datum účinnosti:</strong> 6. října 2025</p>
+
+        <p>
+          Vítejte v <strong>Have You Ever</strong>. Používáním této aplikace
+          souhlasíte s těmito Podmínkami používání.
+        </p>
+
+        <h3>1) Způsobilost a účel</h3>
+
+        <p>
+          Bezplatná verze je vhodná pro všechny věkové kategorie. Verze Pro
+          obsahuje obsah určený pro dospělé (18+) a vyžaduje potvrzení věku.
+          Aplikace je určena pouze pro zábavu a není zdrojem rad.
+        </p>
+
+        <h3>2) Předplatné, zkušební období a nákupy</h3>
+
+        <p>
+          <strong>Automaticky obnovitelné předplatné (In-App Purchase)</strong>
+          je k dispozici pro odemknutí prémiových funkcí a otázek generovaných
+          AI:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Have You Ever Pro – Týdenní</strong> (1 týden, zahrnuje
+            3denní bezplatné zkušební období)
+          </li>
+          <li>
+            <strong>Have You Ever Pro – Měsíční</strong> (1 měsíc, zahrnuje
+            3denní bezplatné zkušební období)
+          </li>
+          <li>
+            <strong>Have You Ever Pro – Roční</strong> (1 rok, bez bezplatného
+            zkušebního období)
+          </li>
+        </ul>
+
+        <p>
+          <strong>Jednorázový nákup:</strong> K dispozici je také doživotní
+          možnost "Have You Ever Pro – Doživotní", která poskytuje trvalý
+          přístup ke všem funkcím Pro za jednu platbu.
+        </p>
+
+        <p>
+          <strong>Ceny:</strong> Cena každého předplatného je zobrazena na
+          obrazovce nákupu v aplikaci v App Store a může se lišit v závislosti
+          na regionu, měně a daních. Platba je stržena z vašeho účtu Apple ID
+          při potvrzení nákupu.
+        </p>
+
+        <p>
+          <strong>Bezplatné zkušební období:</strong> Týdenní a měsíční
+          předplatné Pro zahrnuje 3denní bezplatné zkušební období. Po skončení
+          zkušebního období se předplatné automaticky převede na placený plán,
+          pokud není zrušeno alespoň 24 hodin před koncem zkušebního období. Na
+          jeden účet Apple ID lze využít pouze jedno zkušební období.
+        </p>
+
+        <p>
+          <strong>Automatické obnovení:</strong> Předplatné se automaticky
+          obnovuje na stejné období, pokud není automatické obnovení vypnuto
+          alespoň 24 hodin před koncem aktuálního období. Váš účet bude účtován
+          za obnovení do 24 hodin před koncem aktuálního období.
+        </p>
+
+        <p>
+          <strong>Správa / Zrušení:</strong> Předplatné můžete kdykoli spravovat
+          nebo zrušit:     <br />• iOS:
+          <em>Nastavení > Apple ID > Předplatná</em>     <br />• Android:
+          <em>Obchod Play > Profil > Platby a předplatná</em>
+        </p>
+
+        <p>
+          <strong>Obnovení nákupů (iOS):</strong> Předchozí nákupy můžete
+          obnovit pomocí možnosti „Obnovit nákupy“ v aplikaci.
+        </p>
+
+        <p>
+          <strong>Vrácení peněz:</strong> Vrácení peněz je řešeno společností
+          Apple nebo Google podle jejich příslušných zásad.
+        </p>
+
+        <p>
+          <strong>Právní odkazy:</strong>     <br />Podmínky používání (EULA):
+          <a
+            href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=cs"
+            target="_blank"
+            rel="noopener"
+            >https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html</a
+          >
+          <br />Zásady ochrany osobních údajů:
+          <a
+            href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=cs"
+            target="_blank"
+            rel="noopener"
+            >https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html</a
+          >
+        </p>
+
+        <h3>3) Obsah generovaný uživateli a AI</h3>
+
+        <ul>
+          <li>
+            Můžete vytvářet vlastní otázky a kategorie pro soukromé použití.
+            Takový obsah předem nemoderujeme.
+          </li>
+          <li>
+            Pokud sdílíte obsah, prohlašujete, že máte potřebná práva, a
+            udělujete nám omezenou, nevýhradní, odvolatelnou licenci k jeho
+            ukládání, přenosu a zobrazování v rozsahu nezbytném pro provoz
+            aplikace.
+          </li>
+          <li>
+            Otázky generované AI mohou být v některých kontextech nepřesné nebo
+            nevhodné. Používejte je s uvážením; neneseme odpovědnost za
+            spoléhání se na výstupy AI.
+          </li>
+        </ul>
+
+        <h3>4) Přípustné použití</h3>
+
+        <p>
+          Nepoužívejte aplikaci k nezákonným, škodlivým nebo urážlivým činnostem
+          (včetně obtěžování, zneužívání nebo obsahu porušujícího práva). Za
+          porušení můžeme pozastavit nebo ukončit přístup.
+        </p>
+
+        <h3>5) Duševní vlastnictví</h3>
+
+        <p>
+          Obsah aplikace (design, vestavěné otázky, aktiva) je naším
+          vlastnictvím a vlastnictvím našich poskytovatelů licencí. Váš vlastní
+          obsah zůstává váš, s výhradou licence podle oddílu 3 při sdílení.
+        </p>
+
+        <h3>6) Změny aplikace a podmínek</h3>
+
+        <p>
+          Můžeme aktualizovat funkce nebo tyto Podmínky. Aktuální verze je k
+          dispozici na této stránce s datem účinnosti. Pokračování v používání
+          po změnách představuje souhlas.
+        </p>
+
+        <h3>7) Vyloučení odpovědnosti a omezení odpovědnosti</h3>
+
+        <p>
+          Aplikace je poskytována „tak, jak je“ pro zábavu. V rozsahu povoleném
+          zákonem se zříkáme záruk a omezujeme odpovědnost za nepřímé nebo
+          následné ztráty.
+        </p>
+
+        <h3>8) Rozhodné právo</h3>
+
+        <p>
+          Tyto Podmínky se řídí zákony Polska. Soudy ve Vratislavi, Polsko, mají
+          výhradní příslušnost, s výjimkou případů, kdy závazné spotřebitelské
+          zákony stanoví jinak.
+        </p>
+
+        <h3>9) Kontakt</h3>
+
+        <p>
+          Dotazy k těmto Podmínkám:
+          <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a>
+        </p>
+
+        <h3>Příloha A — Souhrn předplatného (informace pro Apple)</h3>
+
+        <ul>
+          <li>
+            <strong>Název:</strong> Have You Ever Pro (Týdenní / Měsíční / Roční
+            / Doživotní)
+          </li>
+          <li>
+            <strong>Délka:</strong> 1 týden / 1 měsíc / 1 rok / Jednorázový
+          </li>
+          <li>
+            <strong>Bezplatné zkušební období:</strong> 3 dny pro Týdenní a
+            Měsíční plány
+          </li>
+          <li>
+            <strong>Cena:</strong> zobrazena na obrazovce nákupu v App Store;
+            liší se podle regionu
+          </li>
+          <li>
+            <strong>Automatické obnovení:</strong> ano (u předplatného), pokud
+            není zrušeno ≥24h před koncem období
+          </li>
+          <li><strong>Správa:</strong> Nastavení > Apple ID > Předplatná</li>
+          <li>
+            <strong>Právní:</strong>
+            <a
+              href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=cs"
+              >Podmínky používání</a
+            >
+            a
+            <a
+              href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=cs"
+              >Zásady ochrany osobních údajů</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section id="sk">
+        <h2>Podmienky používania</h2>
+        <p><strong>Dátum účinnosti:</strong> 6. októbra 2025</p>
+        <p>
+          Vitajte v <strong>Have You Ever</strong>. Používaním tejto aplikácie
+          súhlasíte s týmito Podmienkami používania.
+        </p>
+
+        <h3>1) Spôsobilosť a účel</h3>
+
+        <p>
+          Bezplatná verzia je vhodná pre všetky vekové kategórie. Verzia Pro
+          obsahuje obsah určený pre dospelých (18+) a vyžaduje potvrdenie veku.
+          Aplikácia je určená len na zábavu a nie je zdrojom rád.
+        </p>
+
+        <h3>2) Predplatné, skúšobné obdobia a nákupy</h3>
+
+        <p>
+          <strong>Automaticky obnoviteľné predplatné (In-App Purchase)</strong>
+          je k dispozícii na odomknutie prémiových funkcií a otázok generovaných
+          AI:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Have You Ever Pro – Týždenné</strong> (1 týždeň, zahŕňa
+            3-dňové bezplatné skúšobné obdobie)
+          </li>
+          <li>
+            <strong>Have You Ever Pro – Mesačné</strong> (1 mesiac, zahŕňa
+            3-dňové bezplatné skúšobné obdobie)
+          </li>
+          <li>
+            <strong>Have You Ever Pro – Ročné</strong> (1 rok, bez bezplatného
+            skúšobného obdobia)
+          </li>
+        </ul>
+
+        <p>
+          <strong>Jednorazový nákup:</strong> K dispozícii je aj doživotná
+          možnosť "Have You Ever Pro – Doživotne", ktorá poskytuje trvalý
+          prístup ku všetkým funkciám Pro za jednu platbu.
+        </p>
+
+        <p>
+          <strong>Ceny:</strong> Cena každého predplatného je zobrazená na
+          obrazovke nákupu v aplikácii v App Store a môže sa líšiť v závislosti
+          od regiónu, meny a daní. Platba je strhnutá z vášho účtu Apple ID pri
+          potvrdení nákupu.
+        </p>
+
+        <p>
+          <strong>Bezplatné skúšobné obdobie:</strong> Týždenné a mesačné
+          predplatné Pro zahŕňa 3-dňové bezplatné skúšobné obdobie. Po skončení
+          skúšobného obdobia sa predplatné automaticky prevedie na platený plán,
+          pokiaľ nie je zrušené aspoň 24 hodín pred koncom skúšobného obdobia.
+          Na jeden účet Apple ID je možné využiť len jedno skúšobné obdobie.
+        </p>
+
+        <p>
+          <strong>Automatické obnovenie:</strong> Predplatné sa automaticky
+          obnovuje na rovnaké obdobie, pokiaľ nie je automatické obnovenie
+          vypnuté aspoň 24 hodín pred koncom aktuálneho obdobia. Váš účet bude
+          účtovaný za obnovenie do 24 hodín pred koncom aktuálneho obdobia.
+        </p>
+
+        <p>
+          <strong>Správa / Zrušenie:</strong> Predplatné môžete kedykoľvek
+          spravovať alebo zrušiť:     <br />• iOS:
+          <em>Nastavenia > Apple ID > Predplatné</em>     <br />• Android:
+          <em>Obchod Play > Profil > Platby a predplatné</em>
+        </p>
+
+        <p>
+          <strong>Obnovenie nákupov (iOS):</strong> Predchádzajúce nákupy môžete
+          obnoviť pomocou možnosti „Obnoviť nákupy“ v aplikácii.
+        </p>
+
+        <p>
+          <strong>Vrátenie peňazí:</strong> Vrátenie peňazí je riešené
+          spoločnosťou Apple alebo Google podľa ich príslušných zásad.
+        </p>
+
+        <p>
+          <strong>Právne odkazy:</strong>     <br />Podmienky používania (EULA):
+          <a
+            href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=sk"
+            target="_blank"
+            rel="noopener"
+            >https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html</a
+          >
+          <br />Zásady ochrany osobných údajov:
+          <a
+            href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=sk"
+            target="_blank"
+            rel="noopener"
+            >https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html</a
+          >
+        </p>
+
+        <h3>3) Obsah generovaný používateľmi a AI</h3>
+
+        <ul>
+          <li>
+            Môžete vytvárať vlastné otázky a kategórie na súkromné použitie.
+            Takýto obsah vopred nemoderujeme.
+          </li>
+          <li>
+            Ak zdieľate obsah, vyhlasujete, že máte potrebné práva, a udeľujete
+            nám obmedzenú, nevýhradnú, odvolateľnú licenciu na jeho ukladanie,
+            prenos a zobrazovanie v rozsahu potrebnom na prevádzku aplikácie.
+          </li>
+          <li>
+            Otázky generované AI môžu byť v niektorých kontextoch nepresné alebo
+            nevhodné. Používajte ich s uvážením; nenesieme zodpovednosť za
+            spoliehanie sa na výstupy AI.
+          </li>
+        </ul>
+
+        <h3>4) Prípustné použitie</h3>
+
+        <p>
+          Nepoužívajte aplikáciu na nezákonné, škodlivé alebo urážlivé činnosti
+          (vrátane obťažovania, zneužívania alebo obsahu porušujúceho práva). Za
+          porušenie môžeme pozastaviť alebo ukončiť prístup.
+        </p>
+
+        <h3>5) Duševné vlastníctvo</h3>
+
+        <p>
+          Obsah aplikácie (dizajn, vstavané otázky, aktíva) je naším
+          vlastníctvom a vlastníctvom našich poskytovateľov licencií. Váš
+          vlastný obsah zostáva váš, s výhradou licencie podľa oddielu 3 pri
+          zdieľaní.
+        </p>
+
+        <h3>6) Zmeny aplikácie a podmienok</h3>
+
+        <p>
+          Môžeme aktualizovať funkcie alebo tieto Podmienky. Aktuálna verzia je
+          k dispozícii na tejto stránke s dátumom účinnosti. Pokračovanie v
+          používaní po změnách predstavuje súhlas.
+        </p>
+
+        <h3>7) Vylúčenie zodpovednosti a obmedzenie zodpovednosti</h3>
+
+        <p>
+          Aplikácia je poskytovaná „tak, ako je“ na zábavu. V rozsahu povolenom
+          zákonom sa zriekame záruk a obmedzujeme zodpovednosť za nepriame alebo
+          následné straty.
+        </p>
+
+        <h3>8) Rozhodné právo</h3>
+
+        <p>
+          Tieto Podmienky sa riadia zákonmi Poľska. Súdy vo Vroclavi, Poľsko,
+          majú výhradnú príslušnosť, s výnimkou prípadov, keď záväzné
+          spotrebiteľské zákony ustanovujú inak.
+        </p>
+        M
+        <h3>9) Kontakt</h3>
+
+        <p>
+          Otázky k týmto Podmienkam:
+          <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a>
+        </p>
+
+        <h3>Príloha A — Súhrn predplatného (informácie pre Apple)</h3>
+
+        <ul>
+          <li>
+            <strong>Názov:</strong> Have You Ever Pro (Týždenné / Mesačné /
+            Ročné / Doživotne)
+          </li>
+          <li>
+            <strong>Dĺžka:</strong> 1 týždeň / 1 mesiac / 1 rok / Jednorazový
+          </li>
+          <li>
+            <strong>Bezplatné skúšobné obdobie:</strong> 3 dni pre Týždenné a
+            Mesačné plány
+          </li>
+          <li>
+            <strong>Cena:</strong> zobrazená na obrazovke nákupu v App Store;
+            líši sa podľa regiónu
+          </li>
+          <li>
+            <strong>Automatické obnovenie:</strong> áno (pre predplatné), pokiaľ
+            nie je zrušené ≥24h pred koncom obdobia
+          </li>
+          <li><strong>Správa:</strong> Nastavenia > Apple ID > Predplatné</li>
+          <li>
+            <strong>Právne:</strong>
+            <a
+              href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=sk"
+              >Podmienky používania</a
+            >
+            a
+            <a
+              href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=sk"
+              >Zásady ochrany osobných údajov</a
+            >
+          </li>
+        </ul>
+      </section>
     </div>
-  </header>
 
-  <section id="en" class="active">
-    <h2>Terms of Use</h2>
-    <p><strong>Effective date:</strong> November 6, 2025</p>
-    <p>Welcome to <strong>Have You Ever</strong>. By using this app, you agree to these Terms of Use.</p>
-    <h3>1) Eligibility & Purpose</h3>
-    <p>The free version is suitable for all ages. The Pro version includes content intended for adults (18+) and requires age confirmation. The app is for entertainment only and is not a source of advice.</p>
-    <h3>2) Subscriptions, Trials & Purchases</h3>
-    <p><strong>Auto-renewable subscriptions (In-App Purchase)</strong> are available to unlock premium features and AI-generated questions:</p>
-    <ul>
-      <li><strong>Have You Ever Pro – Weekly</strong> (1 week, includes a 3-day free trial)</li>
-      <li><strong>Have You Ever Pro – Monthly</strong> (1 month, includes a 3-day free trial)</li>
-      <li><strong>Have You Ever Pro – Yearly</strong> (1 year, no free trial)</li>
-    </ul>
-    <p><strong>Pricing:</strong> The price for each subscription is displayed on the in-app purchase screen within the App Store and may vary by region, currency, and taxes. Payment is charged to your Apple ID account at confirmation of purchase.</p>
-    <p><strong>Free trial:</strong> The Weekly and Monthly Pro subscriptions include a 3-day free trial. After the trial ends, the subscription automatically converts to a paid plan unless cancelled at least 24 hours before the trial period ends. Only one trial may be used per Apple ID account.</p>
-    <p><strong>Auto-renewal:</strong> Subscriptions renew automatically for the same period unless auto-renew is turned off at least 24 hours before the end of the current period. Your account will be charged for renewal within 24 hours before the end of the current period.</p>
-    <p><strong>Manage / Cancel:</strong> You can manage or cancel your subscription anytime:
-    <br>• iOS: <em>Settings > Apple ID > Subscriptions</em>
-    <br>• Android: <em>Play Store > Profile > Payments & subscriptions</em></p>
-    <p><strong>Restore purchases (iOS):</strong> You can restore previous purchases via the in-app “Restore Purchases” option.</p>
-    <p><strong>Refunds:</strong> Refunds are handled by Apple or Google under their respective policies.</p>
-    <p><strong>Legal links:</strong>
-    <br>Terms of Use (EULA): <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=en" target="_blank" rel="noopener">https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html</a>
-    <br>Privacy Policy: <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=en" target="_blank" rel="noopener">https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html</a></p>
-    <h3>3) User-Generated & AI-Generated Content</h3>
-    <ul>
-      <li>You may create custom questions and categories for private use. We do not pre-moderate such content.</li>
-      <li>If you share content, you represent you have the necessary rights and grant us a limited, non-exclusive, revocable license to store, transmit, and display it as needed to operate the app.</li>
-      <li>AI-generated questions may be inaccurate or inappropriate in some contexts. Use discretion; we are not liable for reliance on AI outputs.</li>
-    </ul>
-    <h3>4) Acceptable Use</h3>
-    <p>Do not use the app for illegal, harmful, or offensive activities (including harassment, abuse, or infringing content). We may suspend or terminate access for violations.</p>
-    <h3>5) Intellectual Property</h3>
-    <p>App content (design, built-in questions, assets) is owned by us and our licensors. Your custom content remains yours, subject to Section 3 when shared.</p>
-    <h3>6) Changes to the App & Terms</h3>
-    <p>We may update features or these Terms. The current version is available on this page with the effective date. Continued use after changes constitutes acceptance.</p>
-    <h3>7) Disclaimers & Liability</h3>
-    <p>The app is provided “as is” for entertainment. To the extent permitted by law, we disclaim warranties and limit liability for indirect or consequential losses.</p>
-    <h3>8) Governing Law</h3>
-    <p>These Terms are governed by the laws of Poland. Courts in Wrocław, Poland have exclusive jurisdiction, except where mandatory consumer laws provide otherwise.</p>
-    <h3>9) Contact</h3>
-    <p>Questions about these Terms: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
-    <h3>Appendix A — Subscription Summary (Apple disclosure)</h3>
-    <ul>
-      <li><strong>Title:</strong> Have You Ever Pro (Weekly / Monthly / Yearly)</li>
-      <li><strong>Length:</strong> 1 week / 1 month / 1 year</li>
-      <li><strong>Free Trial:</strong> 3 days for Weekly and Monthly plans</li>
-      <li><strong>Price:</strong> shown on the App Store purchase screen; varies by region</li>
-      <li><strong>Auto-renew:</strong> yes, unless cancelled ≥24h before period end</li>
-      <li><strong>Manage:</strong> Settings > Apple ID > Subscriptions</li>
-      <li><strong>Legal:</strong> <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=en">Terms of Use</a> & <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=en">Privacy Policy</a></li>
-    </ul>
-  </section>
+    <script>
+      const select = document.getElementById("language-select");
+      const sections = document.querySelectorAll("section");
+      const mainTitle = document.getElementById("main-title");
+      const languageLabel = document.getElementById("language-label");
 
-  <section id="pl">
-    <h2>Warunki Użytkowania</h2>
-    <p><strong>Data wejścia w życie:</strong> 6 listopada 2025</p>
-    <p>Witaj w <strong>Have You Ever</strong>. Korzystając z tej aplikacji, akceptujesz niniejsze Warunki Użytkowania.</p>
-    <h3>1) Uprawnienia i Cel</h3>
-    <p>Wersja darmowa jest odpowiednia dla wszystkich grup wiekowych. Wersja Pro zawiera treści przeznaczone dla dorosłych (18+) i wymaga potwierdzenia wieku. Aplikacja służy wyłącznie do celów rozrywkowych i nie jest źródłem porad.</p>
-    <h3>2) Subskrypcje, Okresy Próbne i Zakupy</h3>
-    <p><strong>Subskrypcje odnawialne automatycznie (In-App Purchase)</strong> są dostępne w celu odblokowania funkcji premium i pytań generowanych przez AI:</p>
-    <ul>
-      <li><strong>Have You Ever Pro – Tygodniowa</strong> (1 tydzień, zawiera 3-dniowy bezpłatny okres próbny)</li>
-      <li><strong>Have You Ever Pro – Miesięczna</strong> (1 miesiąc, zawiera 3-dniowy bezpłatny okres próbny)</li>
-      <li><strong>Have You Ever Pro – Roczna</strong> (1 rok, bez bezpłatnego okresu próbnego)</li>
-    </ul>
-    <p><strong>Ceny:</strong> Cena każdej subskrypcji jest wyświetlana na ekranie zakupu w aplikacji w App Store i może się różnić w zależności od regionu, waluty i podatków. Płatność jest pobierana z Twojego konta Apple ID w momencie potwierdzenia zakupu.</p>
-    <p><strong>Bezpłatny okres próbny:</strong> Subskrypcje Tygodniowa i Miesięczna Pro obejmują 3-dniowy bezpłatny okres próbny. Po jego zakończeniu subskrypcja automatycznie przekształca się w płatny plan, chyba że zostanie anulowana co najmniej 24 godziny przed końcem okresu próbnego. Na jedno konto Apple ID przypada tylko jeden okres próbny.</p>
-    <p><strong>Automatyczne odnawianie:</strong> Subskrypcje odnawiają się automatycznie na ten sam okres, chyba że automatyczne odnawianie zostanie wyłączone co najmniej 24 godziny przed końcem bieżącego okresu. Twoje konto zostanie obciążone opłatą za odnowienie w ciągu 24 godzin przed końcem bieżącego okresu.</p>
-    <p><strong>Zarządzanie / Anulowanie:</strong> Możesz zarządzać subskrypcją lub ją anulować w dowolnym momencie:
-    <br>• iOS: <em>Ustawienia > Apple ID > Subskrypcje</em>
-    <br>• Android: <em>Sklep Play > Profil > Płatności i subskrypcje</em></p>
-    <p><strong>Przywracanie zakupów (iOS):</strong> Możesz przywrócić wcześniejsze zakupy za pomocą opcji „Przywróć zakupy” w aplikacji.</p>
-    <p><strong>Zwroty:</strong> Zwroty są obsługiwane przez Apple lub Google zgodnie z ich odpowiednimi politykami.</p>
-    <p><strong>Linki prawne:</strong>
-    <br>Warunki Użytkowania (EULA): <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=pl" target="_blank" rel="noopener">https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html</a>
-    <br>Polityka Prywatności: <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=pl" target="_blank" rel="noopener">https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html</a></p>
-    <h3>3) Treści Generowane przez Użytkowników i AI</h3>
-    <ul>
-      <li>Możesz tworzyć własne pytania i kategorie do użytku prywatnego. Nie moderujemy wstępnie takich treści.</li>
-      <li>Jeśli udostępniasz treści, oświadczasz, że posiadasz niezbędne prawa i udzielasz nam ograniczonej, niewyłącznej, odwołalnej licencji na przechowywanie, przesyłanie i wyświetlanie ich w zakresie niezbędnym do działania aplikacji.</li>
-      <li>Pytania generowane przez AI mogą być niedokładne lub nieodpowiednie w niektórych kontekstach. Korzystaj z nich z rozwagą; nie ponosimy odpowiedzialności za poleganie na wynikach AI.</li>
-    </ul>
-    <h3>4) Dopuszczalne Użytkowanie</h3>
-    <p>Nie używaj aplikacji do działań niezgodnych z prawem, szkodliwych lub obraźliwych (w tym nękania, nadużyć lub treści naruszających prawa). Możemy zawiesić lub zakończyć dostęp za naruszenia.</p>
-    <h3>5) Własność Intelektualna</h3>
-    <p>Treść aplikacji (projekt, wbudowane pytania, zasoby) jest naszą własnością i naszych licencjodawców. Twoje własne treści pozostają Twoje, z zastrzeżeniem licencji z Sekcji 3 w przypadku ich udostępnienia.</p>
-    <h3>6) Zmiany w Aplikacji i Warunkach</h3>
-    <p>Możemy aktualizować funkcje lub niniejsze Warunki. Aktualna wersja jest dostępna na tej stronie wraz z datą wejścia w życie. Dalsze korzystanie po zmianach oznacza ich akceptację.</p>
-    <h3>7) Wyłączenia Odpowiedzialności i Ograniczenie Odpowiedzialności</h3>
-    <p>Aplikacja jest dostarczana w stanie „tak jak jest” do celów rozrywkowych. W zakresie dozwolonym przez prawo, wyłączamy gwarancje i ograniczamy odpowiedzialność za straty pośrednie lub wynikowe.</p>
-    <h3>8) Prawo Właściwe</h3>
-    <p>Niniejsze Warunki podlegają prawu polskiemu. Sądy we Wrocławiu (Polska) mają wyłączną jurysdykcję, z wyjątkiem przypadków, gdy bezwzględnie obowiązujące przepisy konsumenckie stanowią inaczej.</p>
-    <h3>9) Kontakt</h3>
-    <p>Pytania dotyczące Warunków: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
-    <h3>Załącznik A — Podsumowanie Subskrypcji (informacje dla Apple)</h3>
-    <ul>
-      <li><strong>Tytuł:</strong> Have You Ever Pro (Tygodniowa / Miesięczna / Roczna)</li>
-      <li><strong>Długość:</strong> 1 tydzień / 1 miesiąc / 1 rok</li>
-      <li><strong>Bezpłatny okres próbny:</strong> 3 dni dla planów Tygodniowego i Miesięcznego</li>
-      <li><strong>Cena:</strong> widoczna na ekranie zakupu w App Store; różni się w zależności od regionu</li>
-      <li><strong>Automatyczne odnawianie:</strong> tak, chyba że anulowano ≥24h przed końcem okresu</li>
-      <li><strong>Zarządzanie:</strong> Ustawienia > Apple ID > Subskrypcje</li>
-      <li><strong>Prawne:</strong> <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=pl">Warunki Użytkowania</a> i <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=pl">Polityka Prywatności</a></li>
-    </ul>
-  </section>
+      const localizations = {
+        en: {
+          title: "Terms of Use - Have You Ever",
+          label: "Select Language:",
+        },
+        pl: {
+          title: "Warunki Użytkowania - Have You Ever",
+          label: "Wybierz język:",
+        },
+        uk: {
+          title: "Умови використання - Have You Ever",
+          label: "Виберіть мову:",
+        },
+        fr: {
+          title: "Conditions d’Utilisation - Have You Ever",
+          label: "Sélectionner la langue:",
+        },
+        de: {
+          title: "Nutzungsbedingungen - Have You Ever",
+          label: "Sprache auswählen:",
+        },
+        es: {
+          title: "Términos de Uso - Have You Ever",
+          label: "Seleccionar idioma:",
+        },
+        it: {
+          title: "Termini di Utilizzo - Have You Ever",
+          label: "Seleziona la lingua:",
+        },
+        bg: {
+          title: "Условия за ползване - Have You Ever",
+          label: "Изберете език:",
+        },
+        hu: {
+          title: "Felhasználási Feltételek - Have You Ever",
+          label: "Nyelv kiválasztása:",
+        },
+        ro: {
+          title: "Termeni de Utilizare - Have You Ever",
+          label: "Selectează limba:",
+        },
+        cs: {
+          title: "Podmínky používání - Have You Ever",
+          label: "Vyberte jazyk:",
+        },
+        sk: {
+          title: "Podmienky používania - Have You Ever",
+          label: "Vyberte jazyk:",
+        },
+      };
 
-  <section id="uk">
-    <h2>Умови використання</h2>
-    <p><strong>Дата набрання чинності:</strong> 6 листопада 2025</p>
-    <p>Ласкаво просимо до <strong>Have You Ever</strong>. Використовуючи цей додаток, ви погоджуєтеся з цими Умовами використання.</p>
-    <h3>1) Правомочність та мета</h3>
-    <p>Безкоштовна версія підходить для будь-якого віку. Версія Pro містить контент, призначений для дорослих (18+), і вимагає підтвердження віку. Додаток призначений лише для розважальних цілей і не є джерелом порад.</p>
-    <h3>2) Підписки, пробні періоди та покупки</h3>
-    <p><strong>Автоматично поновлювані підписки (In-App Purchase)</strong> доступні для розблокування преміум-функцій та питань, згенерованих ШІ:</p>
-    <ul>
-      <li><strong>Have You Ever Pro – Тижнева</strong> (1 тиждень, включає 3-денний безкоштовний пробний період)</li>
-      <li><strong>Have You Ever Pro – Місячна</strong> (1 місяць, включає 3-денний безкоштовний пробний період)</li>
-      <li><strong>Have You Ever Pro – Річна</strong> (1 рік, без безкоштовного пробного періоду)</li>
-    </ul>
-    <p><strong>Ціни:</strong> Ціна кожної підписки відображається на екрані покупки в додатку в App Store і може відрізнятися залежно від регіону, валюти та податків. Оплата стягується з вашого облікового запису Apple ID після підтвердження покупки.</p>
-    <p><strong>Безкоштовний пробний період:</strong> Тижнева та Місячна підписки Pro включають 3-денний безкоштовний пробний період. Після закінчення пробного періоду підписка автоматично перетворюється на платний план, якщо її не скасовано принаймні за 24 години до закінчення пробного періоду. На один обліковий запис Apple ID можна використати лише один пробний період.</p>
-    <p><strong>Автоматичне поновлення:</strong> Підписки автоматично поновлюються на той самий період, якщо автоматичне поновлення не вимкнено принаймні за 24 години до закінчення поточного періоду. З вашого рахунку буде стягнуто плату за поновлення протягом 24 годин до закінчення поточного періоду.</p>
-    <p><strong>Керування / Скасування:</strong> Ви можете керувати або скасувати підписку в будь-який час:
-    <br>• iOS: <em>Налаштування > Apple ID > Підписки</em>
-    <br>• Android: <em>Play Store > Профіль > Платежі та підписки</em></p>
-    <p><strong>Відновлення покупок (iOS):</strong> Ви можете відновити попередні покупки за допомогою опції «Відновити покупки» в додатку.</p>
-    <p><strong>Повернення коштів:</strong> Повернення коштів здійснюється компаніями Apple або Google відповідно до їхніх політик.</p>
-    <p><strong>Юридичні посилання:</strong>
-    <br>Умови використання (EULA): <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=uk" target="_blank" rel="noopener">https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html</a>
-    <br>Політика конфіденційності: <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=uk" target="_blank" rel="noopener">https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html</a></p>
-    <h3>3) Контент, створений користувачами та ШІ</h3>
-    <ul>
-      <li>Ви можете створювати власні запитання та категорії для приватного використання. Ми не проводимо попередню модерацію такого контенту.</li>
-      <li>Якщо ви ділитеся контентом, ви підтверджуєте, що маєте необхідні права, і надаєте нам обмежену, невиключну, відкличну ліцензію на зберігання, передачу та відображення його в міру необхідності для роботи додатка.</li>
-      <li>Питання, згенеровані ШІ, можуть бути неточними або недоречними в деяких контекстах. Використовуйте їх на свій розсуд; ми не несемо відповідальності за покладання на результати роботи ШІ.</li>
-    </ul>
-    <h3>4) Прийнятне використання</h3>
-    <p>Не використовуйте додаток для незаконних, шкідливих або образливих дій (включаючи переслідування, зловживання або контент, що порушує права). Ми можемо призупинити або припинити доступ за порушення.</p>
-    <h3>5) Інтелектуальна власність</h3>
-    <p>Контент додатка (дизайн, вбудовані запитання, ресурси) належить нам та нашим ліцензіарам. Ваш власний контент залишається вашим, з урахуванням ліцензії з Розділу 3 у разі його поширення.</p>
-    <h3>6) Зміни в додатку та умовах</h3>
-    <p>Ми можемо оновлювати функції або ці Умови. Поточна версія доступна на цій сторінці з датою набрання чинності. Подальше використання після змін означає їх прийняття.</p>
-    <h3>7) Відмова від відповідальності та обмеження відповідальності</h3>
-    <p>Додаток надається «як є» для розважальних цілей. У межах, дозволених законом, ми відмовляємося від гарантій та обмежуємо відповідальність за непрямі або наслідкові збитки.</p>
-    <h3>8) Застосовне право</h3>
-    <p>Ці Умови регулюються законодавством Польщі. Суди у Вроцлаві, Польща, мають виключну юрисдикцію, за винятком випадків, коли обов'язкові закони про захист прав споживачів передбачають інше.</p>
-    <h3>9) Контакти</h3>
-    <p>Питання щодо цих Умов: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
-    <h3>Додаток А — Опис підписки (інформація для Apple)</h3>
-    <ul>
-      <li><strong>Назва:</strong> Have You Ever Pro (Тижнева / Місячна / Річна)</li>
-      <li><strong>Тривалість:</strong> 1 тиждень / 1 місяць / 1 рік</li>
-      <li><strong>Безкоштовний пробний період:</strong> 3 дні для Тижневого та Місячного планів</li>
-      <li><strong>Ціна:</strong> вказана на екрані покупки в App Store; залежить від регіону</li>
-      <li><strong>Автоматичне поновлення:</strong> так, якщо не скасовано за ≥24 години до кінця періоду</li>
-      <li><strong>Керування:</strong> Налаштування > Apple ID > Підписки</li>
-      <li><strong>Юридична інформація:</strong> <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=uk">Умови використання</a> та <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=uk">Політика конфіденційності</a></li>
-    </ul>
-  </section>
+      function showLanguage(lang) {
+        if (!localizations[lang]) lang = "en";
+        mainTitle.textContent = localizations[lang].title;
+        languageLabel.textContent = localizations[lang].label;
+        document.title = localizations[lang].title;
+        sections.forEach((section) => section.classList.remove("active"));
+        const el = document.getElementById(lang);
+        if (el) {
+          el.classList.add("active");
+          select.value = lang;
+        }
+      }
 
-  <section id="fr">
-    <h2>Conditions d'Utilisation</h2>
-    <p><strong>Date d'entrée en vigueur :</strong> 6 novembre 2025</p>
-    <p>Bienvenue sur <strong>Have You Ever</strong>. En utilisant cette application, vous acceptez ces Conditions d'Utilisation.</p>
-    <h3>1) Éligibilité et Objectif</h3>
-    <p>La version gratuite convient à tous les âges. La version Pro inclut du contenu destiné aux adultes (18+) et nécessite une confirmation de l'âge. L'application est uniquement à des fins de divertissement et ne constitue pas une source de conseils.</p>
-    <h3>2) Abonnements, Essais et Achats</h3>
-    <p>Des <strong>abonnements à renouvellement automatique (Achat In-App)</strong> sont disponibles pour débloquer les fonctionnalités premium et les questions générées par l'IA :</p>
-    <ul>
-      <li><strong>Have You Ever Pro – Hebdomadaire</strong> (1 semaine, inclut un essai gratuit de 3 jours)</li>
-      <li><strong>Have You Ever Pro – Mensuel</strong> (1 mois, inclut un essai gratuit de 3 jours)</li>
-      <li><strong>Have You Ever Pro – Annuel</strong> (1 an, sans essai gratuit)</li>
-    </ul>
-    <p><strong>Tarifs :</strong> Le prix de chaque abonnement est affiché sur l'écran d'achat intégré dans l'App Store et peut varier selon la région, la devise et les taxes. Le paiement est débité de votre compte Apple ID à la confirmation de l'achat.</p>
-    <p><strong>Essai gratuit :</strong> Les abonnements Pro Hebdomadaire et Mensuel incluent un essai gratuit de 3 jours. À la fin de l'essai, l'abonnement se transforme automatiquement en un plan payant, sauf s'il est annulé au moins 24 heures avant la fin de la période d'essai. Un seul essai peut être utilisé par compte Apple ID.</p>
-    <p><strong>Renouvellement automatique :</strong> Les abonnements se renouvellent automatiquement pour la même période, sauf si le renouvellement automatique est désactivé au moins 24 heures avant la fin de la période en cours. Votre compte sera débité pour le renouvellement dans les 24 heures précédant la fin de la période en cours.</p>
-    <p><strong>Gérer / Annuler :</strong> Vous pouvez gérer ou annuler votre abonnement à tout moment :
-    <br>• iOS : <em>Réglages > Identifiant Apple > Abonnements</em>
-    <br>• Android : <em>Play Store > Profil > Paiements et abonnements</em></p>
-    <p><strong>Restaurer les achats (iOS) :</strong> Vous pouvez restaurer les achats précédents via l'option « Restaurer les achats » dans l'application.</p>
-    <p><strong>Remboursements :</strong> Les remboursements sont gérés par Apple ou Google selon leurs politiques respectives.</p>
-    <p><strong>Liens juridiques :</strong>
-    <br>Conditions d'Utilisation (EULA) : <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=fr" target="_blank" rel="noopener">https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html</a>
-    <br>Politique de Confidentialité : <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=fr" target="_blank" rel="noopener">https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html</a></p>
-    <h3>3) Contenu Généré par l'Utilisateur et par l'IA</h3>
-    <ul>
-      <li>Vous pouvez créer des questions et des catégories personnalisées pour un usage privé. Nous ne modérons pas ce contenu à l'avance.</li>
-      <li>Si vous partagez du contenu, vous déclarez que vous disposez des droits nécessaires et vous nous accordez une licence limitée, non exclusive et révocable pour le stocker, le transmettre et l'afficher selon les besoins pour faire fonctionner l'application.</li>
-      <li>Les questions générées par l'IA peuvent être inexactes ou inappropriées dans certains contextes. Faites preuve de discernement ; nous ne sommes pas responsables de la confiance accordée aux résultats de l'IA.</li>
-    </ul>
-    <h3>4) Utilisation Acceptable</h3>
-    <p>N'utilisez pas l'application pour des activités illégales, nuisibles ou offensantes (y compris le harcèlement, les abus ou le contenu portant atteinte aux droits). Nous pouvons suspendre ou résilier l'accès en cas de violation.</p>
-    <h3>5) Propriété Intellectuelle</h3>
-    <p>Le contenu de l'application (design, questions intégrées, ressources) nous appartient ainsi qu'à nos concédants de licence. Votre contenu personnalisé reste le vôtre, sous réserve de la licence de la Section 3 lorsqu'il est partagé.</p>
-    <h3>6) Modifications de l'Application et des Conditions</h3>
-    <p>Nous pouvons mettre à jour les fonctionnalités ou ces Conditions. La version actuelle est disponible sur cette page avec la date d'entrée en vigueur. L'utilisation continue après les modifications constitue une acceptation.</p>
-    <h3>7) Exclusions de Garantie et Limitation de Responsabilité</h3>
-    <p>L'application est fournie « telle quelle » à des fins de divertissement. Dans la mesure permise par la loi, nous déclinons toute garantie et limitons notre responsabilité pour les pertes indirectes ou consécutives.</p>
-    <h3>8) Droit Applicable</h3>
-    <p>Ces Conditions sont régies par les lois de la Pologne. Les tribunaux de Wrocław, en Pologne, ont une compétence exclusive, sauf lorsque les lois impératives sur la consommation en disposent autrement.</p>
-    <h3>9) Contact</h3>
-    <p>Questions sur ces Conditions : <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
-    <h3>Annexe A — Résumé de l'Abonnement (divulgation Apple)</h3>
-    <ul>
-      <li><strong>Titre :</strong> Have You Ever Pro (Hebdomadaire / Mensuel / Annuel)</li>
-      <li><strong>Durée :</strong> 1 semaine / 1 mois / 1 an</li>
-      <li><strong>Essai gratuit :</strong> 3 jours pour les plans Hebdomadaire et Mensuel</li>
-      <li><strong>Prix :</strong> indiqué sur l'écran d'achat de l'App Store ; varie selon la région</li>
-      <li><strong>Renouvellement automatique :</strong> oui, sauf si annulé ≥24h avant la fin de la période</li>
-      <li><strong>Gérer :</strong> Réglages > Identifiant Apple > Abonnements</li>
-      <li><strong>Juridique :</strong> <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=fr">Conditions d'Utilisation</a> & <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=fr">Politique de Confidentialité</a></li>
-    </ul>
-  </section>
+      function getLangFromUrl() {
+        const params = new URLSearchParams(window.location.search);
+        const lang = params.get("lang");
+        return [
+          "en",
+          "pl",
+          "uk",
+          "fr",
+          "de",
+          "es",
+          "it",
+          "bg",
+          "hu",
+          "ro",
+          "cs",
+          "sk",
+        ].includes(lang)
+          ? lang
+          : "en";
+      }
 
-  <section id="de">
-    <h2>Nutzungsbedingungen</h2>
-    <p><strong>Gültig ab:</strong> 6. November 2025</p>
-    <p>Willkommen bei <strong>Have You Ever</strong>. Durch die Nutzung dieser App stimmst du diesen Nutzungsbedingungen zu.</p>
-    <h3>1) Berechtigung & Zweck</h3>
-    <p>Die kostenlose Version ist für alle Altersgruppen geeignet. Die Pro-Version enthält Inhalte für Erwachsene (18+) und erfordert eine Altersbestätigung. Die App dient nur der Unterhaltung und ist keine Beratungsquelle.</p>
-    <h3>2) Abonnements, Testphasen & Käufe</h3>
-    <p><strong>Automatisch verlängerbare Abonnements (In-App-Kauf)</strong> sind verfügbar, um Premium-Funktionen und KI-generierte Fragen freizuschalten:</p>
-    <ul>
-      <li><strong>Have You Ever Pro – Wöchentlich</strong> (1 Woche, inkl. 3-tägiger kostenloser Testphase)</li>
-      <li><strong>Have You Ever Pro – Monatlich</strong> (1 Monat, inkl. 3-tägiger kostenloser Testphase)</li>
-      <li><strong>Have You Ever Pro – Jährlich</strong> (1 Jahr, keine kostenlose Testphase)</li>
-    </ul>
-    <p><strong>Preise:</strong> Der Preis für jedes Abonnement wird auf dem In-App-Kaufbildschirm im App Store angezeigt und kann je nach Region, Währung und Steuern variieren. die Zahlung wird bei Kaufbestätigung von deinem Apple-ID-Konto abgebucht.</p>
-    <p><strong>Kostenlose Testphase:</strong> Die wöchentlichen und monatlichen Pro-Abonnements beinhalten eine 3-tägige kostenlose Testphase. Nach Ablauf der Testphase wird das Abonnement automatisch in ein kostenpflichtiges Abonnement umgewandelt, es sei denn, es wird mindestens 24 Stunden vor Ende der Testphase gekündigt. Pro Apple-ID-Konto kann nur eine Testphase genutzt werden.</p>
-    <p><strong>Automatische Verlängerung:</strong> Abonnements verlängern sich automatisch um denselben Zeitraum, es sei denn, die automatische Verlängerung wird mindestens 24 Stunden vor dem Ende des aktuellen Zeitraums deaktiviert. Dein Konto wird innerhalb von 24 Stunden vor dem Ende des aktuellen Zeitraums für die Verlängerung belastet.</p>
-    <p><strong>Verwalten / Kündigen:</strong> Du kannst dein Abonnement jederzeit verwalten oder kündigen:
-    <br>• iOS: <em>Einstellungen > Apple ID > Abonnements</em>
-    <br>• Android: <em>Play Store > Profil > Zahlungen & Abos</em></p>
-    <p><strong>Käufe wiederherstellen (iOS):</strong> Du kannst frühere Käufe über die Option „Käufe wiederherstellen“ in der App wiederherstellen.</p>
-    <p><strong>Rückerstattungen:</strong> Rückerstattungen werden von Apple oder Google gemäß deren jeweiligen Richtlinien abgewickelt.</p>
-    <p><strong>Rechtliche Links:</strong>
-    <br>Nutzungsbedingungen (EULA): <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=de" target="_blank" rel="noopener">https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html</a>
-    <br>Datenschutzrichtlinie: <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=de" target="_blank" rel="noopener">https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html</a></p>
-    <h3>3) Nutzergenerierte & KI-generierte Inhalte</h3>
-    <ul>
-      <li>Du kannst benutzerdefinierte Fragen und Kategorien für den privaten Gebrauch erstellen. Wir moderieren solche Inhalte nicht vorab.</li>
-      <li>Wenn du Inhalte teilst, versicherst du, dass du die erforderlichen Rechte besitzt, und gewährst uns eine begrenzte, nicht-exklusive, widerrufliche Lizenz, diese zu speichern, zu übertragen und anzuzeigen, wie es für den Betrieb der App erforderlich ist.</li>
-      <li>KI-generierte Fragen können in manchen Kontexten ungenau oder unangemessen sein. Nutze sie mit Bedacht; wir haften nicht für das Vertrauen auf KI-Ergebnisse.</li>
-    </ul>
-    <h3>4) Akzeptable Nutzung</h3>
-    <p>Verwende die App nicht für illegale, schädliche oder anstößige Aktivitäten (einschließlich Belästigung, Missbrauch oder rechtsverletzende Inhalte). Wir können den Zugang bei Verstößen aussetzen oder beenden.</p>
-    <h3>5) Geistiges Eigentum</h3>
-    <p>Der Inhalt der App (Design, integrierte Fragen, Assets) ist unser Eigentum und das unserer Lizenzgeber. Deine benutzerdefinierten Inhalte bleiben dein Eigentum, vorbehaltlich der Lizenz in Abschnitt 3, wenn sie geteilt werden.</p>
-    <h3>6) Änderungen an der App & den Bedingungen</h3>
-    <p>Wir können Funktionen oder diese Bedingungen aktualisieren. Die aktuelle Version ist auf dieser Seite mit dem Gültigkeitsdatum verfügbar. Die fortgesetzte Nutzung nach Änderungen gilt als Zustimmung.</p>
-    <h3>7) Haftungsausschlüsse & Haftungsbeschränkung</h3>
-    <p>Die App wird „wie besehen“ zur Unterhaltung bereitgestellt. Soweit gesetzlich zulässig, lehnen wir Gewährleistungen ab und beschränken die Haftung für indirekte oder Folgeschäden.</p>
-    <h3>8) Geltendes Recht</h3>
-    <p>Diese Bedingungen unterliegen den Gesetzen Polens. Die Gerichte in Breslau, Polen, haben die ausschließliche Zuständigkeit, es sei denn, zwingende Verbraucherschutzgesetze sehen etwas anderes vor.</p>
-    <h3>9) Kontakt</h3>
-    <p>Fragen zu diesen Bedingungen: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
-    <h3>Anhang A — Abonnement-Zusammenfassung (Apple-Offenlegung)</h3>
-    <ul>
-      <li><strong>Titel:</strong> Have You Ever Pro (Wöchentlich / Monatlich / Jährlich)</li>
-      <li><strong>Laufzeit:</strong> 1 Woche / 1 Monat / 1 Jahr</li>
-      <li><strong>Kostenlose Testphase:</strong> 3 Tage für wöchentliche und monatliche Pläne</li>
-      <li><strong>Preis:</strong> wird auf dem Kaufbildschirm im App Store angezeigt; variiert je nach Region</li>
-      <li><strong>Automatische Verlängerung:</strong> ja, sofern nicht ≥24 Stunden vor Ende des Zeitraums gekündigt</li>
-      <li><strong>Verwalten:</strong> Einstellungen > Apple ID > Abonnements</li>
-      <li><strong>Rechtliches:</strong> <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=de">Nutzungsbedingungen</a> & <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=de">Datenschutzrichtlinie</a></li>
-    </ul>
-  </section>
+      document.addEventListener("DOMContentLoaded", () => {
+        const lang = getLangFromUrl();
+        showLanguage(lang);
+      });
 
-  <section id="es">
-    <h2>Términos de Uso</h2>
-    <p><strong>Fecha de entrada en vigor:</strong> 6 de noviembre de 2025</p>
-    <p>Bienvenido a <strong>Have You Ever</strong>. Al utilizar esta aplicación, aceptas estos Términos de Uso.</p>
-    <h3>1) Elegibilidad y Propósito</h3>
-    <p>La versión gratuita es apta para todas las edades. La versión Pro incluye contenido destinado a adultos (mayores de 18 años) y requiere confirmación de edad. La aplicación es solo para entretenimiento y no es una fuente de consejos.</p>
-    <h3>2) Suscripciones, Pruebas y Compras</h3>
-    <p>Las <strong>suscripciones auto-renovables (Compra In-App)</strong> están disponibles para desbloquear funciones premium y preguntas generadas por IA:</p>
-    <ul>
-      <li><strong>Have You Ever Pro – Semanal</strong> (1 semana, incluye una prueba gratuita de 3 días)</li>
-      <li><strong>Have You Ever Pro – Mensual</strong> (1 mes, incluye una prueba gratuita de 3 días)</li>
-      <li><strong>Have You Ever Pro – Anual</strong> (1 año, sin prueba gratuita)</li>
-    </ul>
-    <p><strong>Precios:</strong> El precio de cada suscripción se muestra en la pantalla de compra dentro de la aplicación en la App Store y puede variar según la región, la moneda y los impuestos. El pago se carga a tu cuenta de Apple ID al confirmar la compra.</p>
-    <p><strong>Prueba gratuita:</strong> Las suscripciones Pro Semanal y Mensual incluyen una prueba gratuita de 3 días. Después de que finalice la prueba, la suscripción se convierte automáticamente en un plan de pago a menos que se cancele al menos 24 horas antes de que finalice el período de prueba. Solo se puede usar una prueba por cuenta de Apple ID.</p>
-    <p><strong>Auto-renovación:</strong> Las suscripciones se renuevan automáticamente por el mismo período a menos que se desactive la renovación automática al menos 24 horas antes del final del período actual. Se le cobrará a tu cuenta la renovación dentro de las 24 horas anteriores al final del período actual.</p>
-    <p><strong>Gestionar / Cancelar:</strong> Puedes gestionar o cancelar tu suscripción en cualquier momento:
-    <br>• iOS: <em>Ajustes > ID de Apple > Suscripciones</em>
-    <br>• Android: <em>Play Store > Perfil > Pagos y suscripciones</em></p>
-    <p><strong>Restaurar compras (iOS):</strong> Puedes restaurar compras anteriores a través de la opción "Restaurar compras" en la aplicación.</p>
-    <p><strong>Reembolsos:</strong> Los reembolsos son gestionados por Apple o Google bajo sus respectivas políticas.</p>
-    <p><strong>Enlaces legales:</strong>
-    <br>Términos de Uso (EULA): <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=es" target="_blank" rel="noopener">https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html</a>
-    <br>Política de Privacidad: <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=es" target="_blank" rel="noopener">https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html</a></p>
-    <h3>3) Contenido Generado por el Usuario y por IA</h3>
-    <ul>
-      <li>Puedes crear preguntas y categorías personalizadas para uso privado. No moderamos previamente dicho contenido.</li>
-      <li>Si compartes contenido, declaras que tienes los derechos necesarios y nos otorgas una licencia limitada, no exclusiva y revocable para almacenarlo, transmitirlo y mostrarlo según sea necesario para operar la aplicación.</li>
-      <li>Las preguntas generadas por IA pueden ser inexactas o inapropiadas en algunos contextos. Usa tu discreción; no somos responsables de la confianza en los resultados de la IA.</li>
-    </ul>
-    <h3>4) Uso Aceptable</h3>
-    <p>No uses la aplicación para actividades ilegales, dañinas u ofensivas (incluido el acoso, el abuso o contenido infractor). Podemos suspender o terminar el acceso por violaciones.</p>
-    <h3>5) Propiedad Intelectual</h3>
-    <p>El contenido de la aplicación (diseño, preguntas incorporadas, activos) es de nuestra propiedad y de nuestros licenciantes. Tu contenido personalizado sigue siendo tuyo, sujeto a la licencia de la Sección 3 cuando se comparte.</p>
-    <h3>6) Cambios en la Aplicación y los Términos</h3>
-    <p>Podemos actualizar las características o estos Términos. La versión actual está disponible en esta página con la fecha de entrada en vigor. El uso continuado después de los cambios constituye la aceptación.</p>
-    <h3>7) Exenciones y Limitación de Responsabilidad</h3>
-    <p>La aplicación se proporciona "tal cual" para entretenimiento. En la medida permitida por la ley, renunciamos a las garantías y limitamos la responsabilidad por pérdidas indirectas o consecuentes.</p>
-    <h3>8) Ley Aplicable</h3>
-    <p>Estos Términos se rigen por las leyes de Polonia. Los tribunales de Wrocław, Polonia, tienen jurisdicción exclusiva, excepto donde las leyes de protección al consumidor obligatorias dispongan lo contrario.</p>
-    <h3>9) Contacto</h3>
-    <p>Preguntas sobre estos Términos: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
-    <h3>Apéndice A — Resumen de la Suscripción (divulgación de Apple)</h3>
-    <ul>
-      <li><strong>Título:</strong> Have You Ever Pro (Semanal / Mensual / Anual)</li>
-      <li><strong>Duración:</strong> 1 semana / 1 mes / 1 año</li>
-      <li><strong>Prueba gratuita:</strong> 3 días para los planes Semanal y Mensual</li>
-      <li><strong>Precio:</strong> se muestra en la pantalla de compra de la App Store; varía según la región</li>
-      <li><strong>Auto-renovación:</strong> sí, a menos que se cancele ≥24h antes del final del período</li>
-      <li><strong>Gestionar:</strong> Ajustes > ID de Apple > Suscripciones</li>
-      <li><strong>Legal:</strong> <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=es">Términos de Uso</a> y <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=es">Política de Privacidad</a></li>
-    </ul>
-  </section>
-
-  <section id="it">
-    <h2>Termini di Utilizzo</h2>
-    <p><strong>Data di entrata in vigore:</strong> 6 novembre 2025</p>
-    <p>Benvenuto in <strong>Have You Ever</strong>. Utilizzando questa app, accetti questi Termini di Utilizzo.</p>
-    <h3>1) Idoneità e Scopo</h3>
-    <p>La versione gratuita è adatta a tutte le età. La versione Pro include contenuti destinati agli adulti (18+) e richiede la conferma dell'età. L'app è solo a scopo di intrattenimento e non è una fonte di consigli.</p>
-    <h3>2) Abbonamenti, Prove e Acquisti</h3>
-    <p>Sono disponibili <strong>abbonamenti auto-rinnovabili (Acquisto In-App)</strong> per sbloccare funzionalità premium e domande generate dall'IA:</p>
-    <ul>
-      <li><strong>Have You Ever Pro – Settimanale</strong> (1 settimana, include una prova gratuita di 3 giorni)</li>
-      <li><strong>Have You Ever Pro – Mensile</strong> (1 mese, include una prova gratuita di 3 giorni)</li>
-      <li><strong>Have You Ever Pro – Annuale</strong> (1 anno, nessuna prova gratuita)</li>
-    </ul>
-    <p><strong>Prezzi:</strong> Il prezzo di ogni abbonamento è visualizzato sulla schermata di acquisto in-app all'interno dell'App Store e può variare in base a regione, valuta e tasse. Il pagamento viene addebitato sul tuo account Apple ID alla conferma dell'acquisto.</p>
-    <p><strong>Prova gratuita:</strong> Gli abbonamenti Pro Settimanale e Mensile includono una prova gratuita di 3 giorni. Al termine della prova, l'abbonamento si converte automaticamente in un piano a pagamento, a meno che non venga annullato almeno 24 ore prima della fine del periodo di prova. È possibile utilizzare una sola prova per account Apple ID.</p>
-    <p><strong>Rinnovo automatico:</strong> Gli abbonamenti si rinnovano automaticamente per lo stesso periodo, a meno che il rinnovo automatico non venga disattivato almeno 24 ore prima della fine del periodo corrente. Il tuo account verrà addebitato per il rinnovo entro 24 ore prima della fine del periodo corrente.</p>
-    <p><strong>Gestione / Annullamento:</strong> Puoi gestire o annullare il tuo abbonamento in qualsiasi momento:
-    <br>• iOS: <em>Impostazioni > ID Apple > Abbonamenti</em>
-    <br>• Android: <em>Play Store > Profilo > Pagamenti e abbonamenti</em></p>
-    <p><strong>Ripristino acquisti (iOS):</strong> Puoi ripristinare gli acquisti precedenti tramite l'opzione "Ripristina acquisti" nell'app.</p>
-    <p><strong>Rimborsi:</strong> I rimborsi sono gestiti da Apple o Google secondo le rispettive politiche.</p>
-    <p><strong>Link legali:</strong>
-    <br>Termini di Utilizzo (EULA): <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=it" target="_blank" rel="noopener">https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html</a>
-    <br>Informativa sulla Privacy: <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=it" target="_blank" rel="noopener">https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html</a></p>
-    <h3>3) Contenuti Generati dagli Utenti e dall'IA</h3>
-    <ul>
-      <li>Puoi creare domande e categorie personalizzate per uso privato. Non moderiamo preventivamente tali contenuti.</li>
-      <li>Se condividi contenuti, dichiari di avere i diritti necessari e ci concedi una licenza limitata, non esclusiva e revocabile per archiviarli, trasmetterli e visualizzarli come necessario per il funzionamento dell'app.</li>
-      <li>Le domande generate dall'IA possono essere inaccurate o inappropriate in alcuni contesti. Usa discrezione; non siamo responsabili per l'affidamento sugli output dell'IA.</li>
-    </ul>
-    <h3>4) Uso Accettabile</h3>
-    <p>Non utilizzare l'app per attività illegali, dannose o offensive (inclusi molestie, abusi o contenuti che violano i diritti). Possiamo sospendere o terminare l'accesso per violazioni.</p>
-    <h3>5) Proprietà Intellettuale</h3>
-    <p>Il contenuto dell'app (design, domande integrate, risorse) è di nostra proprietà e dei nostri licenziatari. I tuoi contenuti personalizzati rimangono tuoi, soggetti alla licenza della Sezione 3 quando condivisi.</p>
-    <h3>6) Modifiche all'App e ai Termini</h3>
-    <p>Potremmo aggiornare le funzionalità o questi Termini. La versione attuale è disponibile su questa pagina con la data di entrata in vigore. L'uso continuato dopo le modifiche costituisce accettazione.</p>
-    <h3>7) Esclusioni di Garanzia e Limitazione di Responsabilità</h3>
-    <p>L'app è fornita "così com'è" per intrattenimento. Nella misura consentita dalla legge, decliniamo le garanzie e limitiamo la responsabilità per perdite indirette o consequenziali.</p>
-    <h3>8) Legge Applicabile</h3>
-    <p>Questi Termini sono regolati dalle leggi della Polonia. I tribunali di Breslavia, Polonia, hanno giurisdizione esclusiva, salvo dove le leggi obbligatorie a tutela dei consumatori dispongano diversamente.</p>
-    <h3>9) Contatti</h3>
-    <p>Domande su questi Termini: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
-    <h3>Appendice A — Riepilogo Abbonamento (informativa Apple)</h3>
-    <ul>
-      <li><strong>Titolo:</strong> Have You Ever Pro (Settimanale / Mensile / Annuale)</li>
-      <li><strong>Durata:</strong> 1 settimana / 1 mese / 1 anno</li>
-      <li><strong>Prova gratuita:</strong> 3 giorni per i piani Settimanale e Mensile</li>
-      <li><strong>Prezzo:</strong> mostrato sulla schermata di acquisto dell'App Store; varia per regione</li>
-      <li><strong>Rinnovo automatico:</strong> sì, a meno che non venga annullato ≥24 ore prima della fine del periodo</li>
-      <li><strong>Gestione:</strong> Impostazioni > ID Apple > Abbonamenti</li>
-      <li><strong>Legale:</strong> <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=it">Termini di Utilizzo</a> & <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=it">Informativa sulla Privacy</a></li>
-    </ul>
-  </section>
-
-  <section id="bg">
-    <h2>Условия за ползване</h2>
-    <p><strong>Дата на влизане в сила:</strong> 6 ноември 2025</p>
-    <p>Добре дошли в <strong>Have You Ever</strong>. С използването на това приложение вие се съгласявате с настоящите Условия за ползване.</p>
-    <h3>1) Допустимост и цел</h3>
-    <p>Безплатната версия е подходяща за всички възрасти. Pro версията включва съдържание, предназначено за възрастни (18+), и изисква потвърждение на възрастта. Приложението е само за развлекателни цели и не е източник на съвети.</p>
-    <h3>2) Абонаменти, пробни периоди и покупки</h3>
-    <p><strong>Автоматично подновяеми абонаменти (Покупка в приложението)</strong> са налични за отключване на премиум функции и въпроси, генерирани от ИИ:</p>
-    <ul>
-      <li><strong>Have You Ever Pro – Седмичен</strong> (1 седмица, включва 3-дневен безплатен пробен период)</li>
-      <li><strong>Have You Ever Pro – Месечен</strong> (1 месец, включва 3-дневен безплатен пробен период)</li>
-      <li><strong>Have You Ever Pro – Годишен</strong> (1 година, без безплатен пробен период)</li>
-    </ul>
-    <p><strong>Цени:</strong> Цената за всеки абонамент се показва на екрана за покупка в приложението в App Store и може да варира в зависимост от региона, валутата и данъците. Плащането се начислява на вашия Apple ID акаунт при потвърждение на покупката.</p>
-    <p><strong>Безплатен пробен период:</strong> Седмичният и месечният Pro абонамент включват 3-дневен безплатен пробен период. След края на пробния период абонаментът автоматично се преобразува в платен план, освен ако не бъде анулиран поне 24 часа преди края на пробния период. Може да се използва само един пробен период на Apple ID акаунт.</p>
-    <p><strong>Автоматично подновяване:</strong> Абонаментите се подновяват автоматично за същия период, освен ако автоматичното подновяване не бъде изключено поне 24 часа преди края на текущия период. Вашият акаунт ще бъде таксуван за подновяване в рамките на 24 часа преди края на текущия период.</p>
-    <p><strong>Управление / Анулиране:</strong> Можете да управлявате или анулирате абонамента си по всяко време:
-    <br>• iOS: <em>Настройки > Apple ID > Абонаменти</em>
-    <br>• Android: <em>Play Store > Профил > Плащания и абонаменти</em></p>
-    <p><strong>Възстановяване на покупки (iOS):</strong> Можете да възстановите предишни покупки чрез опцията „Възстановяване на покупки“ в приложението.</p>
-    <p><strong>Възстановяване на средства:</strong> Възстановяването на средства се обработва от Apple или Google съгласно техните съответни политики.</p>
-    <p><strong>Правни връзки:</strong>
-    <br>Условия за ползване (EULA): <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=bg" target="_blank" rel="noopener">https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html</a>
-    <br>Политика за поверителност: <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=bg" target="_blank" rel="noopener">https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html</a></p>
-    <h3>3) Съдържание, генерирано от потребители и ИИ</h3>
-    <ul>
-      <li>Можете да създавате персонализирани въпроси и категории за лична употреба. Ние не модерираме предварително такова съдържание.</li>
-      <li>Ако споделяте съдържание, вие декларирате, че имате необходимите права и ни предоставяте ограничен, неизключителен, отменим лиценз за съхранение, предаване и показване, както е необходимо за работата на приложението.</li>
-      <li>Въпросите, генерирани от ИИ, може да са неточни или неподходящи в някои контексти. Използвайте по преценка; ние не носим отговорност за разчитане на резултати от ИИ.</li>
-    </ul>
-    <h3>4) Приемлива употреба</h3>
-    <p>Не използвайте приложението за незаконни, вредни или обидни дейности (включително тормоз, злоупотреба или съдържание, нарушаващо права). Можем да спрем или прекратим достъпа при нарушения.</p>
-    <h3>5) Интелектуална собственост</h3>
-    <p>Съдържанието на приложението (дизайн, вградени въпроси, активи) е наша собственост и на нашите лицензодатели. Вашето персонализирано съдържание остава ваше, при спазване на лиценза от Раздел 3 при споделяне.</p>
-    <h3>6) Промени в приложението и условията</h3>
-    <p>Можем да актуализираме функциите или тези Условия. Текущата версия е достъпна на тази страница с датата на влизане в сила. Продължаващата употреба след промени представлява приемане.</p>
-    <h3>7) Откази от отговорност и ограничаване на отговорността</h3>
-    <p>Приложението се предоставя „както е“ за развлечение. До степента, позволена от закона, ние се отказваме от гаранции и ограничаваме отговорността за косвени или последващи загуби.</p>
-    <h3>8) Приложимо право</h3>
-    <p>Тези Условия се уреждат от законите на Полша. Съдилищата във Вроцлав, Полша, имат изключителна юрисдикция, освен когато задължителните закони за защита на потребителите предвиждат друго.</p>
-    <h3>9) Контакт</h3>
-    <p>Въпроси относно тези Условия: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
-    <h3>Приложение А — Обобщение на абонамента (разкриване за Apple)</h3>
-    <ul>
-      <li><strong>Заглавие:</strong> Have You Ever Pro (Седмичен / Месечен / Годишен)</li>
-      <li><strong>Продължителност:</strong> 1 седмица / 1 месец / 1 година</li>
-      <li><strong>Безплатен пробен период:</strong> 3 дни за седмични и месечни планове</li>
-      <li><strong>Цена:</strong> показана на екрана за покупка в App Store; варира според региона</li>
-      <li><strong>Автоматично подновяване:</strong> да, освен ако не бъде анулиран ≥24 часа преди края на периода</li>
-      <li><strong>Управление:</strong> Настройки > Apple ID > Абонаменти</li>
-      <li><strong>Правни:</strong> <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=bg">Условия за ползване</a> и <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=bg">Политика за поверителност</a></li>
-    </ul>
-  </section>
-
-  <section id="hu">
-    <h2>Felhasználási Feltételek</h2>
-    <p><strong>Hatálybalépés dátuma:</strong> 2025. november 6.</p>
-    <p>Üdvözöljük a <strong>Have You Ever</strong> alkalmazásban. Az alkalmazás használatával elfogadja ezeket a Felhasználási Feltételeket.</p>
-    <h3>1) Jogosultság és Cél</h3>
-    <p>Az ingyenes verzió minden korosztály számára megfelelő. A Pro verzió felnőtteknek (18+) szánt tartalmat tartalmaz, és korhatár-megerősítést igényel. Az alkalmazás kizárólag szórakoztató jellegű, és nem minősül tanácsadásnak.</p>
-    <h3>2) Előfizetések, Próbaidőszakok és Vásárlások</h3>
-    <p><strong>Automatikusan megújuló előfizetések (Alkalmazáson belüli vásárlás)</strong> állnak rendelkezésre a prémium funkciók és az MI által generált kérdések feloldásához:</p>
-    <ul>
-      <li><strong>Have You Ever Pro – Heti</strong> (1 hét, 3 napos ingyenes próbaidőszakkal)</li>
-      <li><strong>Have You Ever Pro – Havi</strong> (1 hónap, 3 napos ingyenes próbaidőszakkal)</li>
-      <li><strong>Have You Ever Pro – Éves</strong> (1 év, ingyenes próbaidőszak nélkül)</li>
-    </ul>
-    <p><strong>Árak:</strong> Az egyes előfizetések ára az alkalmazáson belüli vásárlási képernyőn jelenik meg az App Store-ban, és régiónként, pénznemenként és adónként változhat. A fizetés a vásárlás megerősítésekor az Ön Apple ID-fiókját terheli.</p>
-    <p><strong>Ingyenes próbaidőszak:</strong> A Heti és Havi Pro előfizetések 3 napos ingyenes próbaidőszakot tartalmaznak. A próbaidőszak lejárta után az előfizetés automatikusan fizetősre vált, hacsak nem mondják le legalább 24 órával a próbaidőszak vége előtt. Apple ID-fiókonként csak egy próbaidőszak használható fel.</p>
-    <p><strong>Automatikus megújítás:</strong> Az előfizetések automatikusan megújulnak ugyanarra az időszakra, hacsak az automatikus megújítást nem kapcsolják ki legalább 24 órával az aktuális időszak vége előtt. Fiókját a megújításért az aktuális időszak végét megelőző 24 órán belül terheljük.</p>
-    <p><strong>Kezelés / Lemondás:</strong> Előfizetését bármikor kezelheti vagy lemondhatja:
-    <br>• iOS: <em>Beállítások > Apple ID > Előfizetések</em>
-    <br>• Android: <em>Play Áruház > Profil > Fizetések és előfizetések</em></p>
-    <p><strong>Vásárlások visszaállítása (iOS):</strong> Korábbi vásárlásait az alkalmazáson belüli „Vásárlások visszaállítása” opcióval állíthatja vissza.</p>
-    <p><strong>Visszatérítések:</strong> A visszatérítéseket az Apple vagy a Google kezeli a saját irányelveik szerint.</p>
-    <p><strong>Jogi linkek:</strong>
-    <br>Felhasználási Feltételek (EULA): <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=hu" target="_blank" rel="noopener">https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html</a>
-    <br>Adatvédelmi Irányelvek: <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=hu" target="_blank" rel="noopener">https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html</a></p>
-    <h3>3) Felhasználó által és MI által Generált Tartalom</h3>
-    <ul>
-      <li>Létrehozhat egyedi kérdéseket és kategóriákat magáncélú használatra. Az ilyen tartalmakat nem moderáljuk előzetesen.</li>
-      <li>Ha tartalmat oszt meg, kijelenti, hogy rendelkezik a szükséges jogokkal, és korlátozott, nem kizárólagos, visszavonható licencet ad nekünk annak tárolására, továbbítására és megjelenítésére az alkalmazás működtetéséhez szükséges mértékben.</li>
-      <li>Az MI által generált kérdések bizonyos kontextusokban pontatlanok vagy nem megfelelőek lehetnek. Használja belátása szerint; nem vállalunk felelősséget az MI kimeneteire való támaszkodásért.</li>
-    </ul>
-    <h3>4) Elfogadható Használat</h3>
-    <p>Ne használja az alkalmazást illegális, káros vagy sértő tevékenységekre (beleértve a zaklatást, visszaélést vagy jogsértő tartalmat). A szabályszegések esetén felfüggeszthetjük vagy megszüntethetjük a hozzáférést.</p>
-    <h3>5) Szellemi Tulajdon</h3>
-    <p>Az alkalmazás tartalma (tervezés, beépített kérdések, eszközök) a mi és licencadóink tulajdonát képezi. Az Ön egyedi tartalma az Öné marad, a 3. szakaszban foglalt licenc feltételei mellett, ha megosztja azt.</p>
-    <h3>6) Változások az Alkalmazásban és a Feltételekben</h3>
-    <p>Frissíthetjük a funkciókat vagy ezeket a Feltételeket. Az aktuális verzió ezen az oldalon érhető el a hatálybalépés dátumával. A változások utáni további használat elfogadást jelent.</p>
-    <h3>7) Jogi Nyilatkozatok és Felelősségkorlátozás</h3>
-    <p>Az alkalmazást „ahogy van” állapotban, szórakoztatás céljából biztosítjuk. A törvény által megengedett mértékben kizárjuk a szavatosságot és korlátozzuk a felelősséget a közvetett vagy következményes károkért.</p>
-    <h3>8) Irányadó Jog</h3>
-    <p>Ezekre a Feltételekre Lengyelország törvényei az irányadók. A wrocławi (Lengyelország) bíróságok kizárólagos joghatósággal rendelkeznek, kivéve, ha a kötelező fogyasztóvédelmi törvények másként rendelkeznek.</p>
-    <h3>9) Kapcsolat</h3>
-    <p>Kérdések a Feltételekről: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
-    <h3>A. függelék — Előfizetés Összefoglaló (Apple tájékoztató)</h3>
-    <ul>
-      <li><strong>Cím:</strong> Have You Ever Pro (Heti / Havi / Éves)</li>
-      <li><strong>Időtartam:</strong> 1 hét / 1 hónap / 1 év</li>
-      <li><strong>Ingyenes próbaidőszak:</strong> 3 nap a Heti és Havi csomagoknál</li>
-      <li><strong>Ár:</strong> az App Store vásárlási képernyőjén látható; régiónként változik</li>
-      <li><strong>Automatikus megújítás:</strong> igen, hacsak nem mondják le ≥24 órával az időszak vége előtt</li>
-      <li><strong>Kezelés:</strong> Beállítások > Apple ID > Előfizetések</li>
-      <li><strong>Jogi:</strong> <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=hu">Felhasználási Feltételek</a> & <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=hu">Adatvédelmi Irányelvek</a></li>
-    </ul>
-  </section>
-
-  <section id="ro">
-    <h2>Termeni de Utilizare</h2>
-    <p><strong>Data intrării în vigoare:</strong> 6 noiembrie 2025</p>
-    <p>Bun venit la <strong>Have You Ever</strong>. Prin utilizarea acestei aplicații, sunteți de acord cu acești Termeni de Utilizare.</p>
-    <h3>1) Eligibilitate și Scop</h3>
-    <p>Versiunea gratuită este potrivită pentru toate vârstele. Versiunea Pro include conținut destinat adulților (18+) și necesită confirmarea vârstei. Aplicația este doar pentru divertisment și nu reprezintă o sursă de sfaturi.</p>
-    <h3>2) Abonamente, Perioade de Probă și Achiziții</h3>
-    <p><strong>Abonamentele cu reînnoire automată (Achiziție In-App)</strong> sunt disponibile pentru a debloca funcționalități premium și întrebări generate de AI:</p>
-    <ul>
-      <li><strong>Have You Ever Pro – Săptămânal</strong> (1 săptămână, include o perioadă de probă gratuită de 3 zile)</li>
-      <li><strong>Have You Ever Pro – Lunar</strong> (1 lună, include o perioadă de probă gratuită de 3 zile)</li>
-      <li><strong>Have You Ever Pro – Anual</strong> (1 an, fără perioadă de probă gratuită)</li>
-    </ul>
-    <p><strong>Prețuri:</strong> Prețul fiecărui abonament este afișat pe ecranul de achiziție din aplicație în App Store și poate varia în funcție de regiune, monedă și taxe. Plata este debitată din contul dvs. Apple ID la confirmarea achiziției.</p>
-    <p><strong>Perioada de probă gratuită:</strong> Abonamentele Pro Săptămânal și Lunar includ o perioadă de probă gratuită de 3 zile. După încheierea perioadei de probă, abonamentul se transformă automat într-un plan plătit, cu excepția cazului în care este anulat cu cel puțin 24 de ore înainte de sfârșitul perioadei de probă. Se poate utiliza o singură perioadă de probă per cont Apple ID.</p>
-    <p><strong>Reînnoire automată:</strong> Abonamentele se reînnoiesc automat pentru aceeași perioadă, cu excepția cazului în care reînnoirea automată este dezactivată cu cel puțin 24 de ore înainte de sfârșitul perioadei curente. Contul dvs. va fi taxat pentru reînnoire în termen de 24 de ore înainte de sfârșitul perioadei curente.</p>
-    <p><strong>Gestionare / Anulare:</strong> Puteți gestiona sau anula abonamentul oricând:
-    <br>• iOS: <em>Configurări > ID Apple > Abonamente</em>
-    <br>• Android: <em>Magazin Play > Profil > Plăți și abonamente</em></p>
-    <p><strong>Restaurarea achizițiilor (iOS):</strong> Puteți restaura achizițiile anterioare prin opțiunea „Restaurează achizițiile” din aplicație.</p>
-    <p><strong>Rambursări:</strong> Rambursările sunt gestionate de Apple sau Google conform politicilor lor respective.</p>
-    <p><strong>Linkuri legale:</strong>
-    <br>Termeni de Utilizare (EULA): <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=ro" target="_blank" rel="noopener">https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html</a>
-    <br>Politică de Confidențialitate: <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=ro" target="_blank" rel="noopener">https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html</a></p>
-    <h3>3) Conținut Generat de Utilizatori și de AI</h3>
-    <ul>
-      <li>Puteți crea întrebări și categorii personalizate pentru uz privat. Nu moderăm în prealabil acest tip de conținut.</li>
-      <li>Dacă partajați conținut, declarați că aveți drepturile necesare și ne acordați o licență limitată, neexclusivă, revocabilă pentru a-l stoca, transmite și afișa, după cum este necesar pentru funcționarea aplicației.</li>
-      <li>Întrebările generate de AI pot fi inexacte sau nepotrivite în anumite contexte. Folosiți-le cu discernământ; nu suntem răspunzători pentru încrederea acordată rezultatelor AI.</li>
-    </ul>
-    <h3>4) Utilizare Acceptabilă</h3>
-    <p>Nu utilizați aplicația pentru activități ilegale, dăunătoare sau ofensatoare (inclusiv hărțuire, abuz sau conținut care încalcă drepturi). Putem suspenda sau înceta accesul în caz de încălcări.</p>
-    <h3>5) Proprietate Intelectuală</h3>
-    <p>Conținutul aplicației (design, întrebări integrate, active) este proprietatea noastră și a licențiatorilor noștri. Conținutul dvs. personalizat rămâne al dvs., sub rezerva licenței din Secțiunea 3 atunci când este partajat.</p>
-    <h3>6) Modificări ale Aplicației și Termenilor</h3>
-    <p>Putem actualiza funcționalitățile sau acești Termeni. Versiunea curentă este disponibilă pe această pagină, cu data intrării în vigoare. Utilizarea continuă după modificări constituie acceptarea acestora.</p>
-    <h3>7) Exonerări de Răspundere și Limitarea Răspunderii</h3>
-    <p>Aplicația este furnizată „ca atare” pentru divertisment. În măsura permisă de lege, ne declinăm garanțiile și limităm răspunderea pentru pierderi indirecte sau consecutive.</p>
-    <h3>8) Legea Aplicabilă</h3>
-    <p>Acești Termeni sunt guvernați de legile Poloniei. Instanțele din Wrocław, Polonia, au jurisdicție exclusivă, cu excepția cazului în care legile obligatorii privind protecția consumatorilor prevăd altfel.</p>
-    <h3>9) Contact</h3>
-    <p>Întrebări despre acești Termeni: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
-    <h3>Anexa A — Rezumatul Abonamentului (divulgare Apple)</h3>
-    <ul>
-      <li><strong>Titlu:</strong> Have You Ever Pro (Săptămânal / Lunar / Anual)</li>
-      <li><strong>Durată:</strong> 1 săptămână / 1 lună / 1 an</li>
-      <li><strong>Perioadă de probă gratuită:</strong> 3 zile pentru planurile Săptămânal și Lunar</li>
-      <li><strong>Preț:</strong> afișat pe ecranul de achiziție din App Store; variază în funcție de regiune</li>
-      <li><strong>Reînnoire automată:</strong> da, dacă nu este anulat cu ≥24h înainte de sfârșitul perioadei</li>
-      <li><strong>Gestionare:</strong> Configurări > ID Apple > Abonamente</li>
-      <li><strong>Legal:</strong> <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=ro">Termeni de Utilizare</a> și <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=ro">Politică de Confidențialitate</a></li>
-    </ul>
-  </section>
-
-  <section id="cs">
-    <h2>Podmínky používání</h2>
-    <p><strong>Datum účinnosti:</strong> 6. listopadu 2025</p>
-    <p>Vítejte v <strong>Have You Ever</strong>. Používáním této aplikace souhlasíte s těmito Podmínkami používání.</p>
-    <h3>1) Způsobilost a účel</h3>
-    <p>Bezplatná verze je vhodná pro všechny věkové kategorie. Verze Pro obsahuje obsah určený pro dospělé (18+) a vyžaduje potvrzení věku. Aplikace je určena pouze pro zábavu a není zdrojem rad.</p>
-    <h3>2) Předplatné, zkušební období a nákupy</h3>
-    <p><strong>Automaticky obnovitelné předplatné (In-App Purchase)</strong> je k dispozici pro odemknutí prémiových funkcí a otázek generovaných AI:</p>
-    <ul>
-      <li><strong>Have You Ever Pro – Týdenní</strong> (1 týden, zahrnuje 3denní bezplatné zkušební období)</li>
-      <li><strong>Have You Ever Pro – Měsíční</strong> (1 měsíc, zahrnuje 3denní bezplatné zkušební období)</li>
-      <li><strong>Have You Ever Pro – Roční</strong> (1 rok, bez bezplatného zkušebního období)</li>
-    </ul>
-    <p><strong>Ceny:</strong> Cena každého předplatného je zobrazena na obrazovce nákupu v aplikaci v App Store a může se lišit v závislosti na regionu, měně a daních. Platba je stržena z vašeho účtu Apple ID při potvrzení nákupu.</p>
-    <p><strong>Bezplatné zkušební období:</strong> Týdenní a měsíční předplatné Pro zahrnuje 3denní bezplatné zkušební období. Po skončení zkušebního období se předplatné automaticky převede na placený plán, pokud není zrušeno alespoň 24 hodin před koncem zkušebního období. Na jeden účet Apple ID lze využít pouze jedno zkušební období.</p>
-    <p><strong>Automatické obnovení:</strong> Předplatné se automaticky obnovuje na stejné období, pokud není automatické obnovení vypnuto alespoň 24 hodin před koncem aktuálního období. Váš účet bude účtován za obnovení do 24 hodin před koncem aktuálního období.</p>
-    <p><strong>Správa / Zrušení:</strong> Předplatné můžete kdykoli spravovat nebo zrušit:
-    <br>• iOS: <em>Nastavení > Apple ID > Předplatná</em>
-    <br>• Android: <em>Obchod Play > Profil > Platby a předplatná</em></p>
-    <p><strong>Obnovení nákupů (iOS):</strong> Předchozí nákupy můžete obnovit pomocí možnosti „Obnovit nákupy“ v aplikaci.</p>
-    <p><strong>Vrácení peněz:</strong> Vrácení peněz je řešeno společností Apple nebo Google podle jejich příslušných zásad.</p>
-    <p><strong>Právní odkazy:</strong>
-    <br>Podmínky používání (EULA): <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=cs" target="_blank" rel="noopener">https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html</a>
-    <br>Zásady ochrany osobních údajů: <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=cs" target="_blank" rel="noopener">https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html</a></p>
-    <h3>3) Obsah generovaný uživateli a AI</h3>
-    <ul>
-      <li>Můžete vytvářet vlastní otázky a kategorie pro soukromé použití. Takový obsah předem nemoderujeme.</li>
-      <li>Pokud sdílíte obsah, prohlašujete, že máte potřebná práva, a udělujete nám omezenou, nevýhradní, odvolatelnou licenci k jeho ukládání, přenosu a zobrazování v rozsahu nezbytném pro provoz aplikace.</li>
-      <li>Otázky generované AI mohou být v některých kontextech nepřesné nebo nevhodné. Používejte je s uvážením; neneseme odpovědnost za spoléhání se na výstupy AI.</li>
-    </ul>
-    <h3>4) Přípustné použití</h3>
-    <p>Nepoužívejte aplikaci k nezákonným, škodlivým nebo urážlivým činnostem (včetně obtěžování, zneužívání nebo obsahu porušujícího práva). Za porušení můžeme pozastavit nebo ukončit přístup.</p>
-    <h3>5) Duševní vlastnictví</h3>
-    <p>Obsah aplikace (design, vestavěné otázky, aktiva) je naším vlastnictvím a vlastnictvím našich poskytovatelů licencí. Váš vlastní obsah zůstává váš, s výhradou licence podle oddílu 3 při sdílení.</p>
-    <h3>6) Změny aplikace a podmínek</h3>
-    <p>Můžeme aktualizovat funkce nebo tyto Podmínky. Aktuální verze je k dispozici na této stránce s datem účinnosti. Pokračování v používání po změnách představuje souhlas.</p>
-    <h3>7) Vyloučení odpovědnosti a omezení odpovědnosti</h3>
-    <p>Aplikace je poskytována „tak, jak je“ pro zábavu. V rozsahu povoleném zákonem se zříkáme záruk a omezujeme odpovědnost za nepřímé nebo následné ztráty.</p>
-    <h3>8) Rozhodné právo</h3>
-    <p>Tyto Podmínky se řídí zákony Polska. Soudy ve Vratislavi, Polsko, mají výhradní příslušnost, s výjimkou případů, kdy závazné spotřebitelské zákony stanoví jinak.</p>
-    <h3>9) Kontakt</h3>
-    <p>Dotazy k těmto Podmínkám: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
-    <h3>Příloha A — Souhrn předplatného (informace pro Apple)</h3>
-    <ul>
-      <li><strong>Název:</strong> Have You Ever Pro (Týdenní / Měsíční / Roční)</li>
-      <li><strong>Délka:</strong> 1 týden / 1 měsíc / 1 rok</li>
-      <li><strong>Bezplatné zkušební období:</strong> 3 dny pro Týdenní a Měsíční plány</li>
-      <li><strong>Cena:</strong> zobrazena na obrazovce nákupu v App Store; liší se podle regionu</li>
-      <li><strong>Automatické obnovení:</strong> ano, pokud není zrušeno ≥24h před koncem období</li>
-      <li><strong>Správa:</strong> Nastavení > Apple ID > Předplatná</li>
-      <li><strong>Právní:</strong> <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=cs">Podmínky používání</a> a <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=cs">Zásady ochrany osobních údajů</a></li>
-    </ul>
-  </section>
-
-  <section id="sk">
-    <h2>Podmienky používania</h2>
-    <p><strong>Dátum účinnosti:</strong> 6. novembra 2025</p>
-    <p>Vitajte v <strong>Have You Ever</strong>. Používaním tejto aplikácie súhlasíte s týmito Podmienkami používania.</p>
-    <h3>1) Spôsobilosť a účel</h3>
-    <p>Bezplatná verzia je vhodná pre všetky vekové kategórie. Verzia Pro obsahuje obsah určený pre dospelých (18+) a vyžaduje potvrdenie veku. Aplikácia je určená len na zábavu a nie je zdrojom rád.</p>
-    <h3>2) Predplatné, skúšobné obdobia a nákupy</h3>
-    <p><strong>Automaticky obnoviteľné predplatné (In-App Purchase)</strong> je k dispozícii na odomknutie prémiových funkcií a otázok generovaných AI:</p>
-    <ul>
-      <li><strong>Have You Ever Pro – Týždenné</strong> (1 týždeň, zahŕňa 3-dňové bezplatné skúšobné obdobie)</li>
-      <li><strong>Have You Ever Pro – Mesačné</strong> (1 mesiac, zahŕňa 3-dňové bezplatné skúšobné obdobie)</li>
-      <li><strong>Have You Ever Pro – Ročné</strong> (1 rok, bez bezplatného skúšobného obdobia)</li>
-    </ul>
-    <p><strong>Ceny:</strong> Cena každého predplatného je zobrazená na obrazovke nákupu v aplikácii v App Store a môže sa líšiť v závislosti od regiónu, meny a daní. Platba je strhnutá z vášho účtu Apple ID pri potvrdení nákupu.</p>
-    <p><strong>Bezplatné skúšobné obdobie:</strong> Týždenné a mesačné predplatné Pro zahŕňa 3-dňové bezplatné skúšobné obdobie. Po skončení skúšobného obdobia sa predplatné automaticky prevedie na platený plán, pokiaľ nie je zrušené aspoň 24 hodín pred koncom skúšobného obdobia. Na jeden účet Apple ID je možné využiť len jedno skúšobné obdobie.</p>
-    <p><strong>Automatické obnovenie:</strong> Predplatné sa automaticky obnovuje na rovnaké obdobie, pokiaľ nie je automatické obnovenie vypnuté aspoň 24 hodín pred koncom aktuálneho obdobia. Váš účet bude účtovaný za obnovenie do 24 hodín pred koncom aktuálneho obdobia.</p>
-    <p><strong>Správa / Zrušenie:</strong> Predplatné môžete kedykoľvek spravovať alebo zrušiť:
-    <br>• iOS: <em>Nastavenia > Apple ID > Predplatné</em>
-    <br>• Android: <em>Obchod Play > Profil > Platby a predplatné</em></p>
-    <p><strong>Obnovenie nákupov (iOS):</strong> Predchádzajúce nákupy môžete obnoviť pomocou možnosti „Obnoviť nákupy“ v aplikácii.</p>
-    <p><strong>Vrátenie peňazí:</strong> Vrátenie peňazí je riešené spoločnosťou Apple alebo Google podľa ich príslušných zásad.</p>
-    <p><strong>Právne odkazy:</strong>
-    <br>Podmienky používania (EULA): <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=sk" target="_blank" rel="noopener">https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html</a>
-    <br>Zásady ochrany osobných údajov: <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=sk" target="_blank" rel="noopener">https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html</a></p>
-    <h3>3) Obsah generovaný používateľmi a AI</h3>
-    <ul>
-      <li>Môžete vytvárať vlastné otázky a kategórie na súkromné použitie. Takýto obsah vopred nemoderujeme.</li>
-      <li>Ak zdieľate obsah, vyhlasujete, že máte potrebné práva, a udeľujete nám obmedzenú, nevýhradnú, odvolateľnú licenciu na jeho ukladanie, prenos a zobrazovanie v rozsahu potrebnom na prevádzku aplikácie.</li>
-      <li>Otázky generované AI môžu byť v niektorých kontextoch nepresné alebo nevhodné. Používajte ich s uvážením; nenesieme zodpovednosť za spoliehanie sa na výstupy AI.</li>
-    </ul>
-    <h3>4) Prípustné použitie</h3>
-    <p>Nepoužívajte aplikáciu na nezákonné, škodlivé alebo urážlivé činnosti (vrátane obťažovania, zneužívania alebo obsahu porušujúceho práva). Za porušenie môžeme pozastaviť alebo ukončiť prístup.</p>
-    <h3>5) Duševné vlastníctvo</h3>
-    <p>Obsah aplikácie (dizajn, vstavané otázky, aktíva) je naším vlastníctvom a vlastníctvom našich poskytovateľov licencií. Váš vlastný obsah zostáva váš, s výhradou licencie podľa oddielu 3 pri zdieľaní.</p>
-    <h3>6) Zmeny aplikácie a podmienok</h3>
-    <p>Môžeme aktualizovať funkcie alebo tieto Podmienky. Aktuálna verzia je k dispozícii na tejto stránke s dátumom účinnosti. Pokračovanie v používaní po zmenách predstavuje súhlas.</p>
-    <h3>7) Vylúčenie zodpovednosti a obmedzenie zodpovednosti</h3>
-    <p>Aplikácia je poskytovaná „tak, ako je“ na zábavu. V rozsahu povolenom zákonom sa zriekame záruk a obmedzujeme zodpovednosť za nepriame alebo následné straty.</p>
-    <h3>8) Rozhodné právo</h3>
-    <p>Tieto Podmienky sa riadia zákonmi Poľska. Súdy vo Vroclavi, Poľsko, majú výhradnú príslušnosť, s výnimkou prípadov, keď záväzné spotrebiteľské zákony ustanovujú inak.</p>
-    <h3>9) Kontakt</h3>
-    <p>Otázky k týmto Podmienkam: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
-    <h3>Príloha A — Súhrn predplatného (informácie pre Apple)</h3>
-    <ul>
-      <li><strong>Názov:</strong> Have You Ever Pro (Týždenné / Mesačné / Ročné)</li>
-      <li><strong>Dĺžka:</strong> 1 týždeň / 1 mesiac / 1 rok</li>
-      <li><strong>Bezplatné skúšobné obdobie:</strong> 3 dni pre Týždenné a Mesačné plány</li>
-      <li><strong>Cena:</strong> zobrazená na obrazovke nákupu v App Store; líši sa podľa regiónu</li>
-      <li><strong>Automatické obnovenie:</strong> áno, pokiaľ nie je zrušené ≥24h pred koncom obdobia</li>
-      <li><strong>Správa:</strong> Nastavenia > Apple ID > Predplatné</li>
-      <li><strong>Právne:</strong> <a href="https://nvsoftlab.com/pages/have-you-ever/terms-of-use/index.html?lang=sk">Podmienky používania</a> a <a href="https://nvsoftlab.com/pages/have-you-ever/privacy-policy/index.html?lang=sk">Zásady ochrany osobných údajov</a></li>
-    </ul>
-  </section>
-
-</div>
-
-<script>
-  const select = document.getElementById('language-select');
-  const sections = document.querySelectorAll('section');
-  const mainTitle = document.getElementById('main-title');
-  const languageLabel = document.getElementById('language-label');
-
-  const localizations = {
-    en: { title: 'Terms of Use - Have You Ever', label: 'Select Language:' },
-    pl: { title: 'Warunki Użytkowania - Have You Ever', label: 'Wybierz język:' },
-    uk: { title: 'Умови використання - Have You Ever', label: 'Виберіть мову:' },
-    fr: { title: 'Conditions d’Utilisation - Have You Ever', label: 'Sélectionner la langue:' },
-    de: { title: 'Nutzungsbedingungen - Have You Ever', label: 'Sprache auswählen:' },
-    es: { title: 'Términos de Uso - Have You Ever', label: 'Seleccionar idioma:' },
-    it: { title: 'Termini di Utilizzo - Have You Ever', label: 'Seleziona la lingua:' },
-    bg: { title: 'Условия за ползване - Have You Ever', label: 'Изберете език:' },
-    hu: { title: 'Felhasználási Feltételek - Have You Ever', label: 'Nyelv kiválasztása:' },
-    ro: { title: 'Termeni de Utilizare - Have You Ever', label: 'Selectează limba:' },
-    cs: { title: 'Podmínky používání - Have You Ever', label: 'Vyberte jazyk:' },
-    sk: { title: 'Podmienky používania - Have You Ever', label: 'Vyberte jazyk:' }
-  };
-
-  function showLanguage(lang) {
-    if (!localizations[lang]) lang = 'en';
-    mainTitle.textContent = localizations[lang].title;
-    languageLabel.textContent = localizations[lang].label;
-    document.title = localizations[lang].title;
-    sections.forEach(section => section.classList.remove('active'));
-    const el = document.getElementById(lang);
-    if (el) { el.classList.add('active'); select.value = lang; }
-  }
-
-  function getLangFromUrl() {
-    const params = new URLSearchParams(window.location.search);
-    const lang = params.get('lang');
-    return [
-      'en','pl','uk','fr','de','es','it',
-      'bg','hu','ro','cs','sk'
-    ].includes(lang) ? lang : 'en';
-  }
-
-  document.addEventListener('DOMContentLoaded', () => {
-    const lang = getLangFromUrl();
-    showLanguage(lang);
-  });
-
-  select.addEventListener('change', () => {
-    const newLang = select.value;
-    showLanguage(newLang);
-    const url = new URL(window.location);
-    url.searchParams.set('lang', newLang);
-    window.history.pushState({}, '', url);
-  });
-</script>
-
-</body>
+      select.addEventListener("change", () => {
+        const newLang = select.value;
+        showLanguage(newLang);
+        const url = new URL(window.location);
+        url.searchParams.set("lang", newLang);
+        window.history.pushState({}, "", url);
+      });
+    </script>
+  </body>
 </html>
