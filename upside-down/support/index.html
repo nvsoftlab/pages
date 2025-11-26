@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Support - Upside Down</title>
+<style>
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:#f4f7f9;color:#333;line-height:1.7;margin:0;padding:20px}
+  .container{max-width:960px;margin:20px auto;padding:20px 40px;background:#fff;border-radius:12px;box-shadow:0 8px 25px rgba(0,0,0,.07)}
+  header{border-bottom:2px solid #eef2f5;margin-bottom:30px;padding-bottom:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
+  header h1{font-size:28px;color:#2c3e50;margin:0}
+  .language-selector{text-align:right}
+  label{font-size:14px;color:#555;margin-right:8px}
+  select{font-size:16px;padding:8px 12px;border-radius:8px;border:1px solid #ccc;background:#f9f9f9;cursor:pointer;transition:border-color .3s,box-shadow .3s}
+  select:hover{border-color:#007bff}
+  select:focus{outline:none;border-color:#007bff;box-shadow:0 0 0 3px rgba(0,123,255,.2)}
+  section{display:none;animation:fadeIn .5s ease-in-out}
+  section.active{display:block}
+  h2{font-size:24px;color:#2c3e50;margin-top:0;padding-bottom:10px;border-bottom:1px solid #eee}
+  h3{font-size:20px;color:#34495e;margin-top:30px}
+  ul{padding-left:20px;list-style-type:'✓  '}
+  li{margin-bottom:10px}
+  p{margin-bottom:15px}
+  a{color:#007bff;text-decoration:none}
+  a:hover{text-decoration:underline}
+  strong{color:#2c3e50}
+  .card{background:#fff;border:1px solid #eef2f5;border-radius:12px;padding:16px 20px;margin:16px 0}
+  .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+  .btn{display:inline-block;padding:10px 14px;border:1px solid #dbe3ea;background:#f7fafc;border-radius:10px;text-decoration:none;color:#2c3e50;font-weight:600}
+  .btn:hover{background:#eef5fb}
+  .muted{color:#666;font-size:14px}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+  @media (max-width:600px){.container{padding:15px 20px}header{flex-direction:column;align-items:flex-start}header h1{font-size:24px}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1 id="main-title">Support - Upside Down</h1>
+    <div class="language-selector">
+      <label for="language-select" id="language-label">Select Language:</label>
+      <select id="language-select">
+        <option value="en" selected>English</option>
+        <option value="pl">Polski</option>
+        <option value="uk">Українська</option>
+        <option value="de">Deutsch</option>
+        <option value="es">Español</option>
+      </select>
+    </div>
+  </header>
+
+  <section id="en" class="active">
+    <h2>Need help?</h2>
+    <p><strong>Last updated:</strong> November 17, 2025</p>
+    <p>We’re here to help. If you have questions or issues, contact us and we’ll respond within <strong>48 hours</strong> (Mon–Fri).</p>
+    <div class="card">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+      <p class="muted">When you write, please include: device model, OS version, app version (Settings → About), and steps to reproduce.</p>
+    </div>
+    <div class="card">
+      <h3>Quick links</h3>
+      <ul>
+        <li>Privacy Policy: <a href="https://nvsoftlab.com/pages/upside-down/privacy-policy/index.html?lang=en" target="_blank" rel="noopener">View</a></li>
+        <li>Terms of Use: <a href="https://nvsoftlab.com/pages/upside-down/terms-of-use/index.html?lang=en" target="_blank" rel="noopener">View</a></li>
+      </ul>
+    </div>
+    
+    <div class="card">
+      <h3>Purchases</h3>
+      <p>All purchases are processed securely by Apple or Google. We do not store your payment information. We offer a one-time purchase for "Premium Fan Pass".</p>
+      <ul>
+        <li><strong>Restore Purchases (iOS):</strong> If you bought the Fan Pass and re-installed the app, go to Settings → <em>Restore Purchases</em>. This will restore your lifetime access on any device using the same Apple ID.</li>
+        <li><strong>Refunds:</strong> Refunds are handled exclusively by Apple/Google under their respective policies. We do not have the ability to issue refunds.</li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="https://support.apple.com/en-us/HT204084" target="_blank" rel="noopener">Request an Apple Refund</a>
+        <a class="btn" href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Request a Google Play Refund</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>FAQ</h3>
+      <p><strong>1) Fan Pass not activated after purchase</strong><br>
+      On iOS, open the app → Settings → <em>Restore Purchases</em>. On Android, ensure you’re signed into the same Google account used for purchase, then fully close and reopen the app.</p>
+      <p><strong>2) App feels slow or stuck</strong><br>
+      Force close and reopen the app, check your connection, and ensure you’re on the latest version from the App Store / Google Play.</p>
+      <p><strong>3) Change language</strong><br>
+      Go to <em>Settings → Language</em> and choose your preferred language.</p>
+      <p><strong>4) Report a bug or issue</strong><br>
+      Email us with a screenshot and description of the problem.</p>
+    </div>
+    <div class="card">
+      <h3>What to include when contacting us</h3>
+      <ul>
+        <li>Device (e.g., iPhone 14 / Pixel 7)</li>
+        <li>OS version (e.g., iOS 18.x / Android 14)</li>
+        <li>App version (Settings → About)</li>
+        <li>Steps to reproduce (1–2–3)</li>
+        <li>Screenshots or a short screen recording (if possible)</li>
+      </ul>
+    </div>
+    <p class="muted">© <span class="y"></span> NV Softlab — Upside Down. All rights reserved.</p>
+  </section>
+
+  <section id="pl">
+    <h2>Potrzebujesz pomocy?</h2>
+    <p><strong>Ostatnia aktualizacja:</strong> 17 listopada 2025</p>
+    <p>Jesteśmy tu, aby pomóc. Jeśli masz pytania lub problemy, skontaktuj się z nami, a odpowiemy w ciągu <strong>48 godzin</strong> (pon.–pt.).</p>
+    <div class="card">
+      <h3>Kontakt</h3>
+      <p>E-mail: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+      <p class="muted">Pisząc do nas, podaj: model urządzenia, wersję systemu operacyjnego, wersję aplikacji (Ustawienia → O aplikacji) oraz kroki do odtworzenia problemu.</p>
+    </div>
+    <div class="card">
+      <h3>Szybkie linki</h3>
+      <ul>
+        <li>Polityka Prywatności: <a href="https://nvsoftlab.com/pages/upside-down/privacy-policy/index.html?lang=pl" target="_blank" rel="noopener">Zobacz</a></li>
+        <li>Warunki Użytkowania: <a href="https://nvsoftlab.com/pages/upside-down/terms-of-use/index.html?lang=pl" target="_blank" rel="noopener">Zobacz</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Zakupy</h3>
+      <p>Wszystkie zakupy są bezpiecznie przetwarzane przez Apple lub Google. Nie przechowujemy Twoich informacji o płatnościach. Oferujemy jednorazowy zakup "Przepustki Fana".</p>
+      <ul>
+        <li><strong>Przywróć zakupy (iOS):</strong> Jeśli kupiłeś Przepustkę i ponownie zainstalowałeś aplikację, przejdź do Ustawienia → <em>Przywróć zakupy</em>. To przywróci Twój dożywotni dostęp na dowolnym urządzeniu używającym tego samego Apple ID.</li>
+        <li><strong>Zwroty:</strong> Zwroty są obsługiwane wyłącznie przez Apple/Google zgodnie z ich polityką. Nie mamy możliwości wystawiania zwrotów.</li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="https://support.apple.com/pl-pl/HT204084" target="_blank" rel="noopener">Poproś o zwrot Apple</a>
+        <a class="btn" href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Poproś o zwrot Google Play</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>FAQ</h3>
+      <p><strong>1) Brak dostępu Premium po zakupie</strong><br>
+      Na iOS, otwórz aplikację → Ustawienia → <em>Przywróć zakupy</em>. Na Androidzie, upewnij się, że jesteś zalogowany na to samo konto Google, którego użyto do zakupu, a następnie całkowicie zamknij i ponownie otwórz aplikację.</p>
+      <p><strong>2) Aplikacja działa wolno lub się zawiesza</strong><br>
+      Wymuś zamknięcie i ponowne otwarcie aplikacji, sprawdź połączenie z internetem i upewnij się, że masz najnowszą wersję z App Store / Google Play.</p>
+      <p><strong>3) Zmiana języka</strong><br>
+      Przejdź do <em>Ustawienia → Język</em> i wybierz preferowany język.</p>
+      <p><strong>4) Zgłaszanie błędu</strong><br>
+      Napisz do nas e-mail ze zrzutem ekranu i opisem problemu.</p>
+    </div>
+    <div class="card">
+      <h3>Co zawrzeć w wiadomości do nas</h3>
+      <ul>
+        <li>Urządzenie (np. iPhone 14 / Pixel 7)</li>
+        <li>Wersja systemu (np. iOS 18.x / Android 14)</li>
+        <li>Wersja aplikacji (Ustawienia → O aplikacji)</li>
+        <li>Kroki do odtworzenia (1–2–3)</li>
+        <li>Zrzuty ekranu lub krótkie nagranie ekranu (jeśli to możliwe)</li>
+      </ul>
+    </div>
+    <p class="muted">© <span class="y"></span> NV Softlab — Upside Down. All rights reserved.</p>
+  </section>
+
+  <section id="uk">
+    <h2>Потрібна допомога?</h2>
+    <p><strong>Останнє оновлення:</strong> 17 листопада 2025</p>
+    <p>Ми тут, щоб допомогти. Якщо у вас є запитання чи проблеми, зв’яжіться з нами, і ми відповімо протягом <strong>48 годин</strong> (пн–пт).</p>
+    <div class="card">
+      <h3>Контакти</h3>
+      <p>Ел. пошта: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+      <p class="muted">Коли ви пишете, будь ласка, вкажіть: модель пристрою, версію ОС, версію програми (Налаштування → Про програму) та кроки для відтворення проблеми.</p>
+    </div>
+    <div class="card">
+      <h3>Швидкі посилання</h3>
+      <ul>
+        <li>Політика конфіденційності: <a href="https://nvsoftlab.com/pages/upside-down/privacy-policy/index.html?lang=uk" target="_blank" rel="noopener">Переглянути</a></li>
+        <li>Умови використання: <a href="https://nvsoftlab.com/pages/upside-down/terms-of-use/index.html?lang=uk" target="_blank" rel="noopener">Переглянути</a></li>
+      </ul>
+    </div>
+    
+    <div class="card">
+      <h3>Покупки</h3>
+      <p>Усі покупки безпечно обробляються Apple або Google. Ми не зберігаємо вашу платіжну інформацію. Ми пропонуємо одноразову покупку "Фан-Перепустки".</p>
+      <ul>
+        <li><strong>Відновити покупки (iOS):</strong> Якщо ви купили Преміум і перевстановили додаток, перейдіть у Налаштування → <em>Відновити покупки</em>. Це відновить ваш довічний доступ на будь-якому пристрої, що використовує той самий Apple ID.</li>
+        <li><strong>Повернення коштів:</strong> Повернення коштів обробляється виключно Apple/Google відповідно до їхніх політик. Ми не маємо можливості здійснювати повернення.</li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="https://support.apple.com/uk-ua/HT204084" target="_blank" rel="noopener">Запросити повернення Apple</a>
+        <a class="btn" href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Запросити повернення Google Play</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>FAQ</h3>
+      <p><strong>1) Доступ не активовано після покупки</strong><br>
+      На iOS відкрийте програму → Налаштування → <em>Відновити покупки</em>. На Android переконайтеся, що ви ввійшли в той самий обліковий запис Google, який використовувався для покупки, потім повністю закрийте та знову відкрийте програму.</p>
+      <p><strong>2) Програма працює повільно або зависає</strong><br>
+      Примусово закрийте та знову відкрийте програму, перевірте з’єднання та переконайтеся, що у вас остання версія з App Store / Google Play.</p>
+      <p><strong>3) Змінити мову</strong><br>
+      Перейдіть до <em>Налаштування → Мова</em> та виберіть потрібну мову.</p>
+      <p><strong>4) Повідомити про баг</strong><br>
+      Надішліть нам електронний лист зі знімком екрана та описом проблеми.</p>
+    </div>
+    <div class="card">
+      <h3>Що вказати при зверненні до нас</h3>
+      <ul>
+        <li>Пристрій (напр., iPhone 14 / Pixel 7)</li>
+        <li>Версія ОС (напр., iOS 18.x / Android 14)</li>
+        <li>Версія програми (Налаштування → Про програму)</li>
+        <li>Кроки для відтворення (1–2–3)</li>
+        <li>Знімки екрана або короткий запис екрана (за можливості)</li>
+      </ul>
+    </div>
+    <p class="muted">© <span class="y"></span> NV Softlab — Upside Down. All rights reserved.</p>
+  </section>
+  
+  <section id="de">
+    <h2>Brauchst du Hilfe?</h2>
+    <p><strong>Letzte Aktualisierung:</strong> 17. November 2025</p>
+    <p>Wir sind hier, um zu helfen. Wenn du Fragen oder Probleme hast, kontaktiere uns und wir antworten innerhalb von <strong>48 Stunden</strong> (Mo–Fr).</p>
+    <div class="card">
+      <h3>Kontakt</h3>
+      <p>E-Mail: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+      <p class="muted">Bitte gib bei deiner Anfrage Folgendes an: Gerätemodell, Betriebssystemversion, App-Version (Einstellungen → Über) und Schritte zur Reproduktion des Problems.</p>
+    </div>
+    <div class="card">
+      <h3>Nützliche Links</h3>
+      <ul>
+        <li>Datenschutzrichtlinie: <a href="https://nvsoftlab.com/pages/upside-down/privacy-policy/index.html?lang=de" target="_blank" rel="noopener">Ansehen</a></li>
+        <li>Nutzungsbedingungen: <a href="https://nvsoftlab.com/pages/upside-down/terms-of-use/index.html?lang=de" target="_blank" rel="noopener">Ansehen</a></li>
+      </ul>
+    </div>
+    
+    <div class="card">
+      <h3>Käufe</h3>
+      <p>Alle Käufe werden sicher von Apple oder Google abgewickelt. Wir speichern deine Zahlungsinformationen nicht. Wir bieten einen einmaligen Kauf für den "Premium Fan-Pass" an.</p>
+      <ul>
+        <li><strong>Käufe wiederherstellen (iOS):</strong> Wenn du den Pass gekauft und die App neu installiert hast, gehe zu Einstellungen → <em>Käufe wiederherstellen</em>. Dies stellt deinen lebenslangen Zugriff auf jedem Gerät mit derselben Apple ID wieder her.</li>
+        <li><strong>Rückerstattungen:</strong> Rückerstattungen werden ausschließlich von Apple/Google gemäß deren Richtlinien abgewickelt. Wir haben keine Möglichkeit, Rückerstattungen vorzunehmen.</li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="https://support.apple.com/de-de/HT204084" target="_blank" rel="noopener">Apple-Rückerstattung anfordern</a>
+        <a class="btn" href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google Play-Rückerstattung anfordern</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>FAQ</h3>
+      <p><strong>1) Zugang nach Kauf nicht aktiviert</strong><br>
+      Öffne auf iOS die App → Einstellungen → <em>Käufe wiederherstellen</em>. Stelle auf Android sicher, dass du mit demselben Google-Konto angemeldet bist, das für den Kauf verwendet wurde, und schließe und öffne die App dann vollständig.</p>
+      <p><strong>2) App fühlt sich langsam an oder hängt</strong><br>
+      Erzwinge das Schließen und öffne die App erneut, überprüfe deine Verbindung und stelle sicher, dass du die neueste Version aus dem App Store / Google Play hast.</p>
+      <p><strong>3) Sprache ändern</strong><br>
+      Gehe zu <em>Einstellungen → Sprache</em> und wähle deine bevorzugte Sprache aus.</p>
+      <p><strong>4) Einen Fehler melden</strong><br>
+      Sende uns eine E-Mail mit einem Screenshot und einer Beschreibung des Problems.</p>
+    </div>
+    <div class="card">
+      <h3>Was du bei der Kontaktaufnahme angeben solltest</h3>
+      <ul>
+        <li>Gerät (z.B. iPhone 14 / Pixel 7)</li>
+        <li>Betriebssystemversion (z.B. iOS 18.x / Android 14)</li>
+        <li>App-Version (Einstellungen → Über)</li>
+        <li>Schritte zur Reproduktion (1–2–3)</li>
+        <li>Screenshots oder eine kurze Bildschirmaufnahme (falls möglich)</li>
+      </ul>
+    </div>
+    <p class="muted">© <span class="y"></span> NV Softlab — Upside Down. All rights reserved.</p>
+  </section>
+
+  <section id="es">
+    <h2>¿Necesitas ayuda?</h2>
+    <p><strong>Última actualización:</strong> 17 de noviembre de 2025</p>
+    <p>Estamos aquí para ayudar. Si tienes preguntas o problemas, contáctanos y te responderemos en un plazo de <strong>48 horas</strong> (lun-vie).</p>
+    <div class="card">
+      <h3>Contacto</h3>
+      <p>Correo electrónico: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
+      <p class="muted">Cuando escribas, por favor incluye: modelo del dispositivo, versión del sistema operativo, versión de la app (Ajustes → Acerca de) y los pasos para reproducir el problema.</p>
+    </div>
+    <div class="card">
+      <h3>Enlaces rápidos</h3>
+      <ul>
+        <li>Política de Privacidad: <a href="https://nvsoftlab.com/pages/upside-down/privacy-policy/index.html?lang=es" target="_blank" rel="noopener">Ver</a></li>
+        <li>Términos de Uso: <a href="https://nvsoftlab.com/pages/upside-down/terms-of-use/index.html?lang=es" target="_blank" rel="noopener">Ver</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Compras</h3>
+      <p>Todas las compras son procesadas de forma segura por Apple o Google. No almacenamos tu información de pago. Ofrecemos una compra única para el "Pase Fan Premium".</p>
+      <ul>
+        <li><strong>Restaurar compras (iOS):</strong> Si compraste el Pase y reinstalaste la app, ve a Ajustes → <em>Restaurar compras</em>. Esto restaurará tu acceso vitalicio en cualquier dispositivo que use el mismo Apple ID.</li>
+        <li><strong>Reembolsos:</strong> Los reembolsos son gestionados exclusivamente por Apple/Google según sus políticas. No tenemos la capacidad de emitir reembolsos.</li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="https://support.apple.com/es-es/HT204084" target="_blank" rel="noopener">Solicitar un reembolso de Apple</a>
+        <a class="btn" href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Solicitar un reembolso de Google Play</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>FAQ</h3>
+      <p><strong>1) Acceso no activado después de la compra</strong><br>
+      En iOS, abre la app → Ajustes → <em>Restaurar compras</em>. En Android, asegúrate de haber iniciado sesión con la misma cuenta de Google utilizada para la compra, luego cierra completamente y vuelve a abrir la app.</p>
+      <p><strong>2) La app va lenta o se bloquea</strong><br>
+      Fuerza el cierre y vuelve a abrir la app, comprueba tu conexión y asegúrate de tener la última versión de la App Store / Google Play.</p>
+      <p><strong>3) Cambiar idioma</strong><br>
+      Ve a <em>Ajustes → Idioma</em> y elige tu idioma preferido.</p>
+      <p><strong>4) Reportar un error</strong><br>
+      Envíanos un correo electrónico con una captura de pantalla y una descripción del problema.</p>
+    </div>
+    <div class="card">
+      <h3>Qué incluir al contactarnos</h3>
+      <ul>
+        <li>Dispositivo (ej., iPhone 14 / Pixel 7)</li>
+        <li>Versión del SO (ej., iOS 18.x / Android 14)</li>
+        <li>Versión de la app (Ajustes → Acerca de)</li>
+        <li>Pasos para reproducir (1–2–3)</li>
+        <li>Capturas de pantalla o una breve grabación de pantalla (si es posible)</li>
+      </ul>
+    </div>
+    <p class="muted">© <span class="y"></span> NV Softlab — Upside Down. All rights reserved.</p>
+  </section>
+
+</div>
+
+<script>
+  const select = document.getElementById('language-select');
+  const sections = document.querySelectorAll('section');
+  const mainTitle = document.getElementById('main-title');
+  const languageLabel = document.getElementById('language-label');
+
+  const localizations = {
+    en: { title: 'Support - Upside Down', label: 'Select Language:' },
+    pl: { title: 'Wsparcie - Upside Down', label: 'Wybierz język:' },
+    uk: { title: 'Підтримка - Upside Down', label: 'Виберіть мову:' },
+    de: { title: 'Support - Upside Down', label: 'Sprache auswählen:' },
+    es: { title: 'Soporte - Upside Down', label: 'Seleccionar idioma:' }
+  };
+
+  function showLanguage(lang) {
+    if (!localizations[lang]) lang = 'en';
+    mainTitle.textContent = localizations[lang].title;
+    languageLabel.textContent = localizations[lang].label;
+    document.title = localizations[lang].title;
+    sections.forEach(s => s.classList.remove('active'));
+    const el = document.getElementById(lang);
+    if (el) { el.classList.add('active'); select.value = lang; }
+  }
+  function getLangFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    const lang = params.get('lang');
+    return Object.keys(localizations).includes(lang) ? lang : 'en';
+  }
+  document.addEventListener('DOMContentLoaded', () => {
+    showLanguage(getLangFromUrl());
+    const yearSpans = document.querySelectorAll('.y');
+    yearSpans.forEach(span => {
+        span.textContent = new Date().getFullYear();
+    });
+  });
+  select.addEventListener('change', () => {
+    const newLang = select.value;
+    showLanguage(newLang);
+    const url = new URL(window.location);
+    url.searchParams.set('lang', newLang);
+    window.history.pushState({}, '', url);
+  });
+</script>
+</body>
+</html>
