@@ -3,96 +3,131 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Terms of Use for the Opora PL mobile application by NV Softlab.">
   <title>Умови використання — Опора PL</title>
   <style>
-    body { max-width: 820px; margin: 32px auto; padding: 0 20px 48px; font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #172033; }
-    nav { display: flex; gap: 8px; margin-bottom: 24px; }
-    nav button { padding: 8px 12px; cursor: pointer; }
-    section { display: none; }
-    section.active { display: block; }
-    h1, h2, h3 { line-height: 1.25; }
+    :root { color-scheme:light; --ink:#172033; --muted:#5f6b7d; --brand:#2457e6; --line:#dce2ec; --soft:#f5f7fb; }
+    * { box-sizing:border-box; }
+    body { max-width:860px; margin:32px auto; padding:0 22px 56px; font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color:var(--ink); background:#fff; }
+    header { padding-bottom:24px; margin-bottom:28px; border-bottom:1px solid var(--line); }
+    .brand { margin:0 0 6px; color:var(--brand); font-size:13px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+    h1 { margin:0 0 8px; font-size:38px; line-height:1.15; }
+    h2 { margin:30px 0 8px; font-size:24px; line-height:1.25; }
+    p, li { font-size:16px; }
+    ul { padding-left:24px; }
+    .meta, footer { color:var(--muted); }
+    .summary { padding:16px 18px; border:1px solid var(--line); border-radius:14px; background:var(--soft); }
+    nav { display:flex; flex-wrap:wrap; gap:8px; margin-top:20px; }
+    nav button { padding:8px 12px; border:1px solid var(--line); border-radius:10px; background:#fff; color:var(--ink); font:inherit; cursor:pointer; }
+    nav button.active { border-color:var(--brand); background:var(--brand); color:#fff; }
+    section { display:none; }
+    section.active { display:block; }
+    a { color:var(--brand); text-underline-offset:3px; }
+    footer { margin-top:38px; padding-top:22px; border-top:1px solid var(--line); font-size:14px; }
+    @media(max-width:640px){body{margin:0;padding:24px 18px 44px}h1{font-size:32px}}
   </style>
 </head>
 <body>
-  <h1>Опора PL — Terms of Use</h1>
+<header>
+  <p class="brand">Опора PL · NV Softlab</p>
+  <h1 id="page-title">Умови використання</h1>
+  <p class="meta" id="effective-date">Чинні з 13 серпня 2026 року</p>
   <nav aria-label="Language">
     <button type="button" data-lang="uk">Українська</button>
     <button type="button" data-lang="en">English</button>
     <button type="button" data-lang="pl">Polski</button>
   </nav>
+</header>
 
-  <section id="uk" class="active">
-    <h2>Умови використання</h2>
-    <p><strong>Останнє оновлення:</strong> 29 липня 2026 року</p>
-    <p>Використовуючи «Опора PL», ви погоджуєтеся з цими умовами.</p>
-    <h3>1. Призначення застосунку</h3>
-    <p>Застосунок надає швидкий доступ до екстрених номерів у Польщі, довірених контактів, одноразового поширення геолокації та інформаційних польських фраз.</p>
-    <h3>2. Не екстрена служба</h3>
-    <p>«Опора PL» не є службою порятунку, поліцією, медичною чи юридичною службою та не гарантує реагування. За безпосередньої небезпеки користуйтеся офіційними екстреними каналами.</p>
-    <h3>3. Дії користувача</h3>
-    <p>Застосунок не телефонує й не надсилає повідомлення автоматично. Ви самостійно підтверджуєте дзвінок у системному dialer або надсилання через системне меню поширення. Екстрені номери слід використовувати лише за реальної потреби.</p>
-    <h3>4. Точність і доставка</h3>
-    <p>Ми не гарантуємо точність GPS, адреси, перекладів, доступність мережі, здійснення дзвінка або доставку повідомлення. Перевіряйте інформацію перед використанням.</p>
-    <h3>5. Інформаційний характер</h3>
-    <p>Фрази й підказки мають лише інформаційний характер і не є юридичною, медичною або професійною консультацією.</p>
-    <h3>6. Підписка Pro</h3>
-    <p>Ціна й період підписки відображаються перед покупкою. Підписка автоматично поновлюється, якщо її не скасувати в налаштуваннях Apple ID щонайменше за 24 години до завершення поточного періоду. Платежі та повернення обробляє Apple відповідно до своїх правил.</p>
-    <h3>7. Відповідальність</h3>
-    <p>Застосунок надається «як є». У межах, дозволених законом, розробник не відповідає за збитки, спричинені використанням або неможливістю використання застосунку чи сторонніх сервісів.</p>
-    <h3>8. Контакти</h3>
-    <p><a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
-  </section>
+<section id="uk" class="active">
+  <div class="summary"><strong>Найголовніше:</strong> «Опора PL» — допоміжний інформаційний інструмент, а не служба порятунку. У небезпечній ситуації телефонуйте 112 або відповідній службі напряму. Застосунок не викликає допомогу автоматично й не гарантує точність координат або доставку повідомлення.</div>
 
-  <section id="en">
-    <h2>Terms of Use</h2>
-    <p><strong>Last updated:</strong> July 29, 2026</p>
-    <p>By using Opora PL, you agree to these terms.</p>
-    <h3>1. Purpose</h3>
-    <p>The app provides quick access to Polish emergency numbers, trusted contacts, one-time location sharing, and informational Polish phrases.</p>
-    <h3>2. Not an emergency service</h3>
-    <p>Opora PL is not a rescue, police, medical, or legal service and does not guarantee a response. In immediate danger, use official emergency channels.</p>
-    <h3>3. User-controlled actions</h3>
-    <p>The app does not place calls or send messages automatically. You confirm each call in the system dialer and each message through the system share sheet. Emergency numbers must be used only for genuine need.</p>
-    <h3>4. Accuracy and delivery</h3>
-    <p>We do not guarantee GPS or address accuracy, translation accuracy, network availability, call completion, or message delivery. Check information before relying on it.</p>
-    <h3>5. Informational content</h3>
-    <p>Phrases and guidance are informational only and are not legal, medical, or other professional advice.</p>
-    <h3>6. Pro subscription</h3>
-    <p>Price and duration are shown before purchase. The subscription renews automatically unless canceled in Apple ID settings at least 24 hours before the current period ends. Apple processes payments and refunds under its policies.</p>
-    <h3>7. Liability</h3>
-    <p>The app is provided “as is.” To the extent permitted by law, the developer is not liable for losses arising from use of, or inability to use, the app or third-party services.</p>
-    <h3>8. Contact</h3>
-    <p><a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
-  </section>
+  <h2>1. Видавець і прийняття Умов</h2>
+  <p>Застосунок «Опора PL» надає <strong>JDG Nazar Dzys, що працює під назвою NV Softlab</strong>, Generała Józefa Kustronia 20/6, 52-213 Wrocław, Poland («Видавець», «ми»). Використовуючи застосунок, ви погоджуєтеся з цими Умовами. Якщо ви не згодні, припиніть використання.</p>
 
-  <section id="pl">
-    <h2>Warunki użytkowania</h2>
-    <p><strong>Ostatnia aktualizacja:</strong> 29 lipca 2026 r.</p>
-    <p>Korzystając z Opora PL, akceptujesz niniejsze warunki.</p>
-    <h3>1. Przeznaczenie</h3>
-    <p>Aplikacja zapewnia szybki dostęp do polskich numerów alarmowych, zaufanych kontaktów, jednorazowego udostępniania lokalizacji oraz informacyjnych zwrotów w języku polskim.</p>
-    <h3>2. To nie jest służba ratunkowa</h3>
-    <p>Opora PL nie jest pogotowiem, policją ani usługą medyczną lub prawną i nie gwarantuje reakcji. W razie bezpośredniego zagrożenia należy korzystać z oficjalnych kanałów alarmowych.</p>
-    <h3>3. Działania użytkownika</h3>
-    <p>Aplikacja nie wykonuje połączeń ani nie wysyła wiadomości automatycznie. Użytkownik potwierdza każde połączenie w systemowym dialerze i każde udostępnienie w systemowym arkuszu udostępniania.</p>
-    <h3>4. Dokładność</h3>
-    <p>Nie gwarantujemy dokładności GPS, adresu lub tłumaczeń ani dostępności sieci, wykonania połączenia czy dostarczenia wiadomości.</p>
-    <h3>5. Charakter informacyjny</h3>
-    <p>Zwroty i wskazówki mają wyłącznie charakter informacyjny i nie stanowią porady prawnej, medycznej ani zawodowej.</p>
-    <h3>6. Subskrypcja Pro</h3>
-    <p>Cena i okres są wyświetlane przed zakupem. Subskrypcja odnawia się automatycznie, chyba że zostanie anulowana w ustawieniach Apple ID co najmniej 24 godziny przed końcem bieżącego okresu.</p>
-    <h3>7. Kontakt</h3>
-    <p><a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a></p>
-  </section>
+  <h2>2. Що робить застосунок</h2>
+  <p>Застосунок допомагає користувачам у Польщі швидко знайти екстрені та корисні номери, відкрити системний dialer, підготувати повідомлення з поточним місцем, звернутися до довіреного контакту, використати польські фрази та вести приватний локальний щоденник подій.</p>
 
-  <script>
-    document.querySelectorAll("[data-lang]").forEach((button) => {
-      button.addEventListener("click", () => {
-        document.querySelectorAll("section").forEach((section) => section.classList.remove("active"));
-        document.getElementById(button.dataset.lang).classList.add("active");
-        document.documentElement.lang = button.dataset.lang;
-      });
-    });
-  </script>
+  <h2>3. Не служба порятунку або професійна консультація</h2>
+  <ul>
+    <li>Застосунок не є службою порятунку, охорони, моніторингу чи екстреного реагування і не пов’язаний із польськими державними службами.</li>
+    <li>Ми не є поліцією, медичною, юридичною, страховою чи державною установою.</li>
+    <li>Застосунок не надсилає сигнал тривоги диспетчеру та не гарантує прибуття допомоги.</li>
+    <li>Фрази, переклади, номери та підказки мають довідковий характер і не є медичною, юридичною або іншою професійною порадою.</li>
+  </ul>
+
+  <h2>4. Кожну дію контролює користувач</h2>
+  <p>Застосунок лише готує дію. Ви підтверджуєте дзвінок у системному dialer, обираєте застосунок і отримувача в меню поширення або натискаєте «Надіслати» в SMS. Використовуйте екстрені номери лише за реальної потреби та не використовуйте функції для стеження, переслідування, погроз або іншої незаконної мети.</p>
+
+  <h2>5. Точність, доступність і доставка</h2>
+  <p>GPS, адреса, переклад, номер телефону або інша інформація можуть бути неточними, застарілими чи недоступними. Виклик або повідомлення може не відбутися через пристрій, дозволи, мережу, оператора або сторонній сервіс. У критичній ситуації перевіряйте інформацію та використовуйте офіційні канали безпосередньо.</p>
+
+  <h2>6. Локальний щоденник і вміст користувача</h2>
+  <p>Записи щоденника та власні шаблони створюєте ви. Вони залишаються вашими й зберігаються локально, як описано в Політиці конфіденційності. Ви відповідаєте за законність вмісту, резервне копіювання потрібної інформації та безпеку пристрою. Застосунок не є офіційним сховищем доказів і не гарантує прийнятність записів судом або органом влади.</p>
+
+  <h2>7. Підписка Pro</h2>
+  <ul>
+    <li>Можуть пропонуватися місячна та річна підписки з автоматичним поновленням. Конкретні переваги, ціна, розрахунковий період і доступність пробного періоду показуються в застосунку та системному вікні магазину перед підтвердженням.</li>
+    <li>Якщо надається безкоштовний trial, після нього підписка автоматично переходить у платну за ціною, показаною перед покупкою, якщо її не скасувати до завершення trial відповідно до правил магазину.</li>
+    <li>Оплату стягує Apple або Google. Підписка поновлюється автоматично до скасування. Керувати нею та скасувати можна в налаштуваннях підписок App Store або Google Play; видалення застосунку не скасовує підписку.</li>
+    <li>Скасування зазвичай діє з кінця оплаченого періоду, якщо закон або магазин не передбачає інше. Повернення коштів регулюється правилами магазину та обов’язковим законодавством. Доступні покупки можна відновити в застосунку.</li>
+    <li>Після завершення Pro локальні дані не видаляються автоматично, але частина функцій може бути заблокована до поновлення.</li>
+  </ul>
+
+  <h2>8. Інтелектуальна власність і дозволене використання</h2>
+  <p>Застосунок, дизайн і вбудований вміст належать Видавцю або ліцензіарам. Ви отримуєте особисту, невиключну, непередавану та відкличну ліцензію для приватного законного використання. Заборонено обходити оплату або захист, перепродавати чи поширювати застосунок або вбудований каталог, а також здійснювати reverse engineering поза випадками, прямо дозволеними законом.</p>
+
+  <h2>9. Зміни, оновлення та припинення</h2>
+  <p>Ми можемо змінювати функції з причин продукту, безпеки, сумісності або закону, не порушуючи обов’язкових прав споживача. Для безпечної роботи можуть бути потрібні оновлення ОС або застосунку. Ви можете припинити використання будь-коли. Ми можемо обмежити доступ у разі шахрайства, зловживання, загрози безпеці чи порушення цих Умов.</p>
+
+  <h2>10. Відмова від гарантій і відповідальність</h2>
+  <p>Застосунок надається «як є» та «за наявності». У максимальному дозволеному законом обсязі ми не гарантуємо безперебійну роботу, придатність для конкретної мети, точність або результат. Ми не відповідаємо за непрямі чи побічні збитки, недоставлене повідомлення, невстановлений дзвінок, неточне місце або дії третіх сторін. Ніщо тут не виключає відповідальність за умисні дії, грубу необережність чи іншу відповідальність і права споживача, які закон забороняє виключати.</p>
+
+  <h2>11. Право та спори</h2>
+  <p>До Умов застосовується право Польщі. Суди у Wrocław мають юрисдикцію, якщо імперативні правила захисту споживача за місцем вашого проживання не надають вам інших прав або способу розгляду спору. Перед формальним спором можна написати нам для спроби вирішити питання.</p>
+
+  <h2>12. Зміни Умов і контакти</h2>
+  <p>Актуальна версія та дата завжди доступні тут. Про суттєві зміни повідомимо, коли цього вимагає закон. Контакт: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a>. Дивіться також <a href="../privacy-policy/">Політику конфіденційності</a>.</p>
+</section>
+
+<section id="en">
+  <div class="summary"><strong>Most importantly:</strong> Opora PL is an informational aid, not an emergency service. In danger, call 112 or the relevant authority directly. The app does not summon help automatically and cannot guarantee location accuracy or message delivery.</div>
+  <h2>1. Publisher and acceptance</h2><p>Opora PL is provided by <strong>JDG Nazar Dzys, trading as NV Softlab</strong>, Generała Józefa Kustronia 20/6, 52-213 Wrocław, Poland (“Publisher”, “we”). By using the app, you accept these Terms. If you disagree, stop using it.</p>
+  <h2>2. What the app does</h2><p>The app helps users in Poland find emergency/useful numbers, open the system dialer, prepare a current-location message, reach trusted contacts, use Polish phrases, and keep a private local incident journal.</p>
+  <h2>3. Not an emergency or professional service</h2><ul><li>The app is not a rescue, security, monitoring, or emergency-response service and is not affiliated with Polish public authorities.</li><li>We are not police, medical, legal, insurance, or government professionals.</li><li>The app sends no alarm to a dispatcher and cannot guarantee help.</li><li>Phrases, translations, numbers, and guidance are informational, not professional advice.</li></ul>
+  <h2>4. User-controlled actions</h2><p>The app only prepares an action. You confirm calls in the dialer, choose the app and recipient in the share sheet, or press Send in SMS. Use emergency numbers only for genuine need and do not use the app for surveillance, harassment, threats, or unlawful purposes.</p>
+  <h2>5. Accuracy, availability, and delivery</h2><p>GPS, addresses, translations, phone numbers, or other information may be inaccurate, outdated, or unavailable. Calls or messages may fail due to the device, permissions, network, carrier, or third-party service. In a critical situation, verify information and use official channels directly.</p>
+  <h2>6. Local journal and user content</h2><p>You create journal entries and custom templates. They remain yours and are stored locally as described in the Privacy Policy. You are responsible for lawful content, backing up needed information, and device security. The app is not an official evidence repository and does not guarantee that a court or authority will accept an entry.</p>
+  <h2>7. Pro subscription</h2><ul><li>Monthly and annual auto-renewing subscriptions may be offered. Benefits, price, billing period, and trial eligibility are shown in the app and store confirmation before purchase.</li><li>If a free trial is offered, it converts automatically to the paid subscription at the displayed price unless canceled before trial end under store rules.</li><li>Apple or Google charges payment. The subscription renews until canceled in App Store or Google Play subscription settings; uninstalling does not cancel it.</li><li>Cancellation normally takes effect at the end of the paid period unless law/store rules provide otherwise. Refunds follow store rules and mandatory law. Eligible purchases can be restored.</li><li>When Pro ends, local data is not automatically deleted, but some features may remain locked until renewal.</li></ul>
+  <h2>8. Intellectual property and permitted use</h2><p>The app, design, and included content belong to the Publisher or licensors. You receive a personal, non-exclusive, non-transferable, revocable license for private lawful use. You may not bypass payment/security, resell or distribute the app/catalog, or reverse engineer beyond what law expressly permits.</p>
+  <h2>9. Changes, updates, and termination</h2><p>We may change features for product, security, compatibility, or legal reasons while respecting mandatory consumer rights. OS/app updates may be required. You may stop at any time. We may restrict access for fraud, abuse, security risk, or breach.</p>
+  <h2>10. Disclaimer and liability</h2><p>The app is provided “as is” and “as available.” To the fullest lawful extent, we do not warrant uninterrupted operation, fitness, accuracy, or outcomes and are not liable for indirect/consequential loss, failed delivery/call, inaccurate location, or third-party acts. Nothing excludes willful misconduct, gross negligence, or rights/liability that law does not permit us to exclude.</p>
+  <h2>11. Law and disputes</h2><p>Polish law applies. Courts in Wrocław have jurisdiction unless mandatory consumer rules where you live provide other rights or venues. You may contact us before a formal dispute to seek a resolution.</p>
+  <h2>12. Changes and contact</h2><p>The current version and date appear here. We will notify material changes when required. Contact: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a>. See the <a href="../privacy-policy/">Privacy Policy</a>.</p>
+</section>
+
+<section id="pl">
+  <div class="summary"><strong>Najważniejsze:</strong> Opora PL jest narzędziem informacyjnym, a nie służbą ratunkową. W razie zagrożenia dzwoń bezpośrednio pod 112 lub do właściwej służby. Aplikacja nie wzywa pomocy automatycznie i nie gwarantuje dokładności lokalizacji ani dostarczenia wiadomości.</div>
+  <h2>1. Wydawca i akceptacja</h2><p>Opora PL udostępnia <strong>JDG Nazar Dzys, działający pod nazwą NV Softlab</strong>, Generała Józefa Kustronia 20/6, 52-213 Wrocław, Poland („Wydawca”, „my”). Korzystając z aplikacji, akceptujesz Warunki. Jeśli się nie zgadzasz, przestań korzystać.</p>
+  <h2>2. Funkcje aplikacji</h2><p>Aplikacja pomaga znaleźć numery alarmowe/użyteczne w Polsce, otworzyć dialer, przygotować wiadomość z bieżącą lokalizacją, skontaktować się z zaufaną osobą, użyć polskich zwrotów i prowadzić prywatny lokalny dziennik zdarzeń.</p>
+  <h2>3. To nie jest służba ratunkowa ani porada</h2><ul><li>Aplikacja nie jest usługą ratunkową, ochrony, monitoringu ani reagowania kryzysowego i nie jest powiązana z polskimi organami.</li><li>Nie jesteśmy policją ani podmiotem medycznym, prawnym, ubezpieczeniowym lub państwowym.</li><li>Aplikacja nie wysyła alarmu do dyspozytora i nie gwarantuje pomocy.</li><li>Zwroty, tłumaczenia, numery i wskazówki są informacyjne, nie są profesjonalną poradą.</li></ul>
+  <h2>4. Działania kontroluje użytkownik</h2><p>Aplikacja jedynie przygotowuje działanie. Potwierdzasz połączenie, wybierasz aplikację i odbiorcę lub naciskasz Wyślij w SMS. Używaj numerów alarmowych tylko w rzeczywistej potrzebie; nie używaj aplikacji do śledzenia, nękania, gróźb ani celów niezgodnych z prawem.</p>
+  <h2>5. Dokładność, dostępność i dostarczenie</h2><p>GPS, adres, tłumaczenie, numer lub inne informacje mogą być niedokładne, nieaktualne albo niedostępne. Połączenie lub wiadomość może nie dojść z powodu urządzenia, uprawnień, sieci, operatora lub usługi zewnętrznej. W sytuacji krytycznej weryfikuj informacje i korzystaj bezpośrednio z oficjalnych kanałów.</p>
+  <h2>6. Lokalny dziennik i treści użytkownika</h2><p>Tworzysz wpisy i własne szablony; pozostają Twoje i są lokalne zgodnie z Polityką prywatności. Odpowiadasz za legalność treści, kopię potrzebnych informacji i bezpieczeństwo urządzenia. Aplikacja nie jest oficjalnym repozytorium dowodów i nie gwarantuje uznania wpisu przez sąd lub organ.</p>
+  <h2>7. Subskrypcja Pro</h2><ul><li>Mogą być dostępne miesięczne i roczne subskrypcje z automatycznym odnawianiem. Korzyści, cena, okres rozliczeniowy i dostępność próby są pokazane przed zakupem.</li><li>Bezpłatna próba, jeśli dostępna, automatycznie przechodzi w płatną subskrypcję po pokazanej cenie, jeśli nie zostanie anulowana przed końcem próby zgodnie z zasadami sklepu.</li><li>Opłatę pobiera Apple lub Google. Subskrypcja odnawia się do anulowania w ustawieniach App Store/Google Play; odinstalowanie nie anuluje.</li><li>Anulowanie zwykle działa od końca opłaconego okresu, chyba że prawo/sklep stanowi inaczej. Zwroty podlegają zasadom sklepu i prawu. Zakupy można przywrócić.</li><li>Po zakończeniu Pro dane lokalne nie są automatycznie usuwane, ale część funkcji może pozostać zablokowana.</li></ul>
+  <h2>8. Własność i dozwolone użycie</h2><p>Aplikacja, projekt i wbudowane treści należą do Wydawcy lub licencjodawców. Otrzymujesz osobistą, niewyłączną, nieprzenoszalną i odwołalną licencję do prywatnego legalnego użycia. Nie wolno omijać płatności/zabezpieczeń, odsprzedawać lub rozpowszechniać aplikacji/katalogu ani dokonywać reverse engineering poza przypadkami dozwolonymi prawem.</p>
+  <h2>9. Zmiany, aktualizacje i zakończenie</h2><p>Możemy zmieniać funkcje z powodów produktowych, bezpieczeństwa, zgodności lub prawa z zachowaniem obowiązkowych praw konsumenta. Aktualizacje mogą być wymagane. Możesz przestać korzystać w każdej chwili. Możemy ograniczyć dostęp przy oszustwie, nadużyciu, ryzyku bezpieczeństwa lub naruszeniu.</p>
+  <h2>10. Wyłączenia i odpowiedzialność</h2><p>Aplikacja jest dostarczana „tak jak jest” i „w miarę dostępności”. W granicach prawa nie gwarantujemy ciągłości, przydatności, dokładności ani wyniku i nie odpowiadamy za szkody pośrednie, niedostarczoną wiadomość, nieudane połączenie, błędną lokalizację lub działania osób trzecich. Nie wyłączamy winy umyślnej, rażącego niedbalstwa ani praw i odpowiedzialności, których prawo nie pozwala wyłączyć.</p>
+  <h2>11. Prawo i spory</h2><p>Stosuje się prawo polskie. Właściwe są sądy we Wrocławiu, chyba że bezwzględne przepisy konsumenckie miejsca zamieszkania zapewniają inne prawa lub właściwość. Przed formalnym sporem możesz skontaktować się z nami.</p>
+  <h2>12. Zmiany i kontakt</h2><p>Aktualna wersja i data są dostępne tutaj. O istotnych zmianach poinformujemy, gdy wymaga tego prawo. Kontakt: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a>. Zobacz <a href="../privacy-policy/">Politykę prywatności</a>.</p>
+</section>
+
+<footer>© 2026 NV Softlab · Opora PL nie jest oficjalnym produktem polskich służb państwowych.</footer>
+<script>
+  const labels={uk:['Умови використання','Чинні з 13 серпня 2026 року'],en:['Terms of Use','Effective August 13, 2026'],pl:['Warunki użytkowania','Obowiązują od 13 sierpnia 2026 r.']};
+  function selectLanguage(lang){if(!labels[lang])lang='uk';document.documentElement.lang=lang;document.querySelectorAll('section').forEach(s=>s.classList.toggle('active',s.id===lang));document.querySelectorAll('[data-lang]').forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));document.getElementById('page-title').textContent=labels[lang][0];document.getElementById('effective-date').textContent=labels[lang][1];const url=new URL(location.href);url.searchParams.set('lang',lang);history.replaceState(null,'',url);}
+  document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>selectLanguage(b.dataset.lang)));
+  selectLanguage(new URLSearchParams(location.search).get('lang')||'uk');
+</script>
 </body>
 </html>

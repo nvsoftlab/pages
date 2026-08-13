@@ -3,84 +3,128 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for the Opora PL mobile application by NV Softlab.">
   <title>Політика конфіденційності — Опора PL</title>
   <style>
-    body { max-width: 820px; margin: 32px auto; padding: 0 20px 48px; font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #172033; }
-    nav { display: flex; gap: 8px; margin-bottom: 24px; }
-    nav button { padding: 8px 12px; cursor: pointer; }
-    section { display: none; }
-    section.active { display: block; }
-    h1, h2, h3 { line-height: 1.25; }
+    :root { color-scheme: light; --ink:#172033; --muted:#5f6b7d; --brand:#2457e6; --line:#dce2ec; --soft:#f5f7fb; }
+    * { box-sizing: border-box; }
+    body { max-width: 860px; margin: 32px auto; padding: 0 22px 56px; font: 16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color:var(--ink); background:#fff; }
+    header { padding-bottom:24px; margin-bottom:28px; border-bottom:1px solid var(--line); }
+    .brand { margin:0 0 6px; color:var(--brand); font-size:13px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+    h1 { margin:0 0 8px; font-size:38px; line-height:1.15; }
+    h2 { margin:30px 0 8px; font-size:24px; line-height:1.25; }
+    h3 { margin:22px 0 6px; font-size:18px; line-height:1.3; }
+    p, li { font-size:16px; }
+    ul { padding-left:24px; }
+    .meta, footer { color:var(--muted); }
+    .summary { padding:16px 18px; border:1px solid var(--line); border-radius:14px; background:var(--soft); }
+    nav { display:flex; flex-wrap:wrap; gap:8px; margin-top:20px; }
+    nav button { padding:8px 12px; border:1px solid var(--line); border-radius:10px; background:#fff; color:var(--ink); font:inherit; cursor:pointer; }
+    nav button.active { border-color:var(--brand); background:var(--brand); color:#fff; }
+    section { display:none; }
+    section.active { display:block; }
+    a { color:var(--brand); text-underline-offset:3px; }
+    footer { margin-top:38px; padding-top:22px; border-top:1px solid var(--line); font-size:14px; }
+    @media(max-width:640px){ body{margin:0;padding:24px 18px 44px} h1{font-size:32px} }
   </style>
 </head>
 <body>
-  <h1>Опора PL — Privacy Policy</h1>
+<header>
+  <p class="brand">Опора PL · NV Softlab</p>
+  <h1 id="page-title">Політика конфіденційності</h1>
+  <p class="meta" id="effective-date">Чинна з 13 серпня 2026 року</p>
   <nav aria-label="Language">
     <button type="button" data-lang="uk">Українська</button>
     <button type="button" data-lang="en">English</button>
     <button type="button" data-lang="pl">Polski</button>
   </nav>
+</header>
 
-  <section id="uk" class="active">
-    <h2>Політика конфіденційності</h2>
-    <p><strong>Останнє оновлення:</strong> 29 липня 2026 року</p>
-    <p>«Опора PL» — локальний застосунок без реєстрації та власного серверного сховища. Ця політика пояснює, як застосунок обробляє дані.</p>
-    <h3>Довірені контакти та локальні дані</h3>
-    <p>Імена й номери вибраних вами довірених контактів, шаблони повідомлень, обране та налаштування зберігаються лише на вашому пристрої у захищеному сховищі. Застосунок використовує системний вибір контакту й не читає всю телефонну книгу. Локальні дані можна видалити в налаштуваннях застосунку або шляхом його видалення.</p>
-    <h3>Геолокація</h3>
-    <p>Геолокація запитується лише після натискання кнопки поширення місця. Вона використовується одноразово у foreground для створення посилання на карту, не зберігається нами, не передається на наші сервери та не відстежується у фоновому режимі. Надсилання відбувається лише після вашої дії через системне меню поширення та вибраний вами сторонній застосунок.</p>
-    <h3>Покупки та реклама</h3>
-    <p>Для керування підпискою Pro використовується RevenueCat, який може обробляти ідентифікатор покупки та відомості про транзакції. Оплату обробляє Apple або Google. Для безкоштовної версії можуть використовуватися Google AdMob і User Messaging Platform (UMP). Ці сервіси можуть обробляти рекламні ідентифікатори, взаємодію з рекламою, приблизні технічні дані пристрою та діагностичну інформацію відповідно до їхніх політик. Користувачі Pro не отримують рекламу. Якщо це доступно у вашому регіоні, рекламні налаштування можна змінити у налаштуваннях застосунку.</p>
-    <h3>Аналітика</h3>
-    <p>Застосунок не містить окремого SDK поведінкової аналітики. Ми можемо отримувати агреговану статистику від магазинів застосунків, RevenueCat та рекламних сервісів. Ми не передаємо їм імена чи номери довірених контактів, точні координати або текст ваших власних повідомлень.</p>
-    <h3>Діти та безпека</h3>
-    <p>Застосунок не призначений для навмисного збору даних дітей. «Опора PL» не є екстреною, медичною, поліцейською або юридичною службою.</p>
-    <h3>Контакти</h3>
-    <p>Запитання щодо конфіденційності: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a>.</p>
-  </section>
+<section id="uk" class="active">
+  <div class="summary"><strong>Коротко:</strong> «Опора PL» не має акаунтів або власного сервера. Контакти, щоденник подій, шаблони й налаштування зберігаються локально. Геолокація використовується одноразово за вашою командою. Для підписок RevenueCat обробляє анонімний ідентифікатор та історію покупок. У поточній версії реклами немає.</div>
 
-  <section id="en">
-    <h2>Privacy Policy</h2>
-    <p><strong>Last updated:</strong> July 29, 2026</p>
-    <p>Opora PL is a local-first app with no account registration and no proprietary backend storage. This policy explains how the app handles data.</p>
-    <h3>Trusted contacts and local data</h3>
-    <p>Names and phone numbers of trusted contacts you select, message templates, favorites, and settings are stored only on your device in protected storage. The app uses the system contact picker and does not read your entire address book. You can delete local data in the app settings or by uninstalling the app.</p>
-    <h3>Location</h3>
-    <p>Location is requested only after you choose to share it. It is used once in the foreground to create a map link, is not stored by us, is not sent to our servers, and is never tracked in the background. Information leaves the device only after your action through the system share sheet and a third-party app you select.</p>
-    <h3>Purchases and advertising</h3>
-    <p>RevenueCat is used to manage Pro subscriptions and may process a purchase identifier and transaction information. Payments are processed by Apple or Google. The free version may use Google AdMob and User Messaging Platform (UMP). Subject to their policies, these services may process advertising identifiers, ad interactions, approximate technical device data, and diagnostics. Pro users are not shown ads. Where available, advertising privacy choices can be changed in the app settings.</p>
-    <h3>Analytics</h3>
-    <p>The app does not include a separate behavioral analytics SDK. We may receive aggregated statistics from app stores, RevenueCat, and advertising services. We do not send trusted-contact names or phone numbers, precise coordinates, or the text of custom messages to those services.</p>
-    <h3>Children and safety</h3>
-    <p>The app is not intended to knowingly collect children's data. Opora PL is not an emergency, medical, police, or legal service.</p>
-    <h3>Contact</h3>
-    <p>Privacy questions: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a>.</p>
-  </section>
+  <h2>1. Контролер даних</h2>
+  <p>Контролером персональних даних є <strong>JDG Nazar Dzys, що працює під назвою NV Softlab</strong>, Generała Józefa Kustronia 20/6, 52-213 Wrocław, Poland («ми»). Контакт з питань конфіденційності: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a>.</p>
 
-  <section id="pl">
-    <h2>Polityka prywatności</h2>
-    <p><strong>Ostatnia aktualizacja:</strong> 29 lipca 2026 r.</p>
-    <p>Opora PL działa lokalnie, bez rejestracji konta i bez własnego serwera przechowującego dane użytkownika.</p>
-    <h3>Zaufane kontakty i dane lokalne</h3>
-    <p>Nazwy i numery wybranych zaufanych kontaktów, szablony wiadomości, ulubione i ustawienia są przechowywane wyłącznie na urządzeniu w zabezpieczonej pamięci. Aplikacja korzysta z systemowego selektora kontaktów i nie odczytuje całej książki adresowej.</p>
-    <h3>Lokalizacja</h3>
-    <p>Lokalizacja jest pobierana jednorazowo na pierwszym planie dopiero po wybraniu opcji udostępnienia. Służy do utworzenia linku do mapy, nie jest przez nas zapisywana, wysyłana na nasze serwery ani śledzona w tle. Udostępnienie następuje tylko po działaniu użytkownika przez systemowy arkusz udostępniania.</p>
-    <h3>Zakupy i reklamy</h3>
-    <p>RevenueCat obsługuje stan subskrypcji Pro, a płatności przetwarza Apple lub Google. W wersji bezpłatnej mogą działać Google AdMob i UMP, które zgodnie ze swoimi zasadami mogą przetwarzać identyfikatory reklamowe, interakcje z reklamami, przybliżone dane techniczne urządzenia i diagnostykę. Użytkownicy Pro nie otrzymują reklam.</p>
-    <h3>Analityka</h3>
-    <p>Aplikacja nie zawiera osobnego SDK analityki behawioralnej. Do usług zewnętrznych nie wysyłamy nazw ani numerów zaufanych kontaktów, dokładnych współrzędnych ani treści własnych wiadomości.</p>
-    <h3>Kontakt</h3>
-    <p>Pytania dotyczące prywatności: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a>.</p>
-  </section>
+  <h2>2. Акаунти та власний сервер</h2>
+  <p>Для користування застосунком не потрібні реєстрація, email чи номер телефону. Ми не маємо власної бази користувачів і не отримуємо ваші довірені контакти, записи щоденника, точну геолокацію або текст повідомлень. Сторонній сервіс підписок, описаний нижче, обробляє технічні дані та історію покупок.</p>
 
-  <script>
-    document.querySelectorAll("[data-lang]").forEach((button) => {
-      button.addEventListener("click", () => {
-        document.querySelectorAll("section").forEach((section) => section.classList.remove("active"));
-        document.getElementById(button.dataset.lang).classList.add("active");
-        document.documentElement.lang = button.dataset.lang;
-      });
-    });
-  </script>
+  <h2>3. Дані на пристрої</h2>
+  <h3>3.1. Довірені контакти</h3>
+  <p>Обрані ім’я та номер телефону зберігаються у захищеному сховищі iOS Keychain або Android Keystore-backed storage. Системний picker повертає лише обраний вами запис; застосунок не читає всю телефонну книгу.</p>
+  <h3>3.2. Щоденник подій</h3>
+  <p>Дата, час і нотатка, які ви додаєте до приватного щоденника, зберігаються лише у захищеному сховищі пристрою. Вони не надсилаються нам, не додаються до повідомлень і не передаються RevenueCat, Apple чи Google через функції застосунку.</p>
+  <h3>3.3. Інші локальні дані</h3>
+  <p>Локально також зберігаються улюблені та закріплені фрази, власний і вибраний шаблон повідомлення, граматична форма, тема, стан onboarding і підказок, кешований статус Pro та технічні лічильники безпеки/частоти.</p>
+  <h3>3.4. Віджети й плитки</h3>
+  <p>Віджети отримують мінімальні дані для показу дії. На Android приватне сховище віджета містить ім’я, ініціали та номер основного контакту, щоб відкрити системний dialer без запуску застосунку; цей файл виключено з cloud backup і перенесення. На iOS номер телефону віджету не передається.</p>
+
+  <h2>4. Геолокація та повідомлення</h2>
+  <p>Геолокація запитується лише після натискання функції поширення місця, тільки під час використання застосунку. Координати не записуються в сховище й існують у пам’яті протягом створення повідомлення.</p>
+  <p>Для визначення адреси системний геокодер може передати координати Apple або Google. Застосунок створює посилання Google Maps. Після вашого підтвердження повідомлення передається обраному вами месенджеру, SMS-сервісу та отримувачу, чиї власні правила конфіденційності застосовуються далі.</p>
+
+  <h2>5. Дзвінки й контакти</h2>
+  <p>Дзвінки виконує системний застосунок телефону після вашого підтвердження. Ми не отримуємо історію дзвінків. Застосунок не запитує дозволів на читання контактів, дзвінок, камеру, мікрофон, фото, календар або фонову геолокацію.</p>
+
+  <h2>6. Підписки та RevenueCat</h2>
+  <p>Платежі обробляє App Store або Google Play; ми не отримуємо платіжні реквізити. Для керування Pro використовується RevenueCat, Inc. Йому передаються випадковий анонімний App User ID, технічні відомості про застосунок і пристрій, IP-адреса/приблизна IP-локація, дані квитанції або purchase token, статус та історія покупок і час взаємодії із сервісом.</p>
+  <p>Мета і правова підстава — виконання договору та надання Pro-функцій (ст. 6(1)(b) GDPR), запобігання шахрайству й захист сервісу як наш законний інтерес (ст. 6(1)(f)), а також виконання юридичних обов’язків (ст. 6(1)(c)). RevenueCat може обробляти дані у США та інших країнах із застосуванням передбачених GDPR механізмів передачі. Деталі: <a href="https://www.revenuecat.com/privacy-policy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>.</p>
+
+  <h2>7. Реклама й аналітика</h2>
+  <p><strong>У поточній версії реклама вимкнена:</strong> рекламний SDK не ініціалізується, рекламні запити не надсилаються і реклама не показується. Окремого SDK поведінкової аналітики немає. Ми можемо бачити агреговані звіти магазинів і RevenueCat про встановлення, покупки та підписки. Перед увімкненням реклами або нової аналітики ми оновимо цю політику й, де потрібно, отримаємо згоду.</p>
+
+  <h2>8. Зберігання та видалення</h2>
+  <p>Локальний вміст зберігається, доки ви не видалите окремий запис, не скористаєтесь дією «Видалити всі локальні дані» або не видалите застосунок. Дія очищає контакти, щоденник, обране, віджети, шаблони та налаштування користувача. Вона не скасовує підписку і не видаляє записи про покупку у магазинах чи RevenueCat.</p>
+  <p>Деякі неперсональні службові значення — кеш статусу Pro, стан onboarding і лічильники, що запобігають небажаним показам — можуть залишитися. Системні резервні копії та iOS Keychain можуть зберігатися відповідно до налаштувань і правил Apple або Google.</p>
+  <p>RevenueCat зберігає відомості відповідно до своєї політики та договірних/юридичних строків. Щоб попросити про доступ або видалення даних RevenueCat, напишіть нам на <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a>; для пошуку запису нам може знадобитися інформація про магазин і покупку.</p>
+
+  <h2>9. Ваші права</h2>
+  <p>За GDPR ви можете вимагати доступ, виправлення, видалення, обмеження, перенесення даних або заперечити проти обробки на підставі законного інтересу. Згоду можна відкликати без впливу на попередню законність обробки. Ви також можете подати скаргу до наглядового органу; у Польщі це <a href="https://uodo.gov.pl" target="_blank" rel="noopener">Urząd Ochrony Danych Osobowych</a>.</p>
+
+  <h2>10. Безпека та діти</h2>
+  <p>Чутливий локальний вміст зберігається у захищеному системному сховищі. Жоден метод не гарантує абсолютної безпеки; використовуйте код доступу або біометрію. Застосунок не спрямований на дітей до 13 років і ми свідомо не збираємо їхні дані.</p>
+
+  <h2>11. Зміни</h2>
+  <p>Ми оновимо цю сторінку та дату чинності, якщо зміниться обробка даних. Суттєві зміни будуть повідомлені у застосунку або іншим належним способом, коли цього вимагає закон.</p>
+  <p>Дивіться також <a href="../terms-of-use/">Умови використання</a>.</p>
+</section>
+
+<section id="en">
+  <div class="summary"><strong>In short:</strong> Opora PL has no accounts or proprietary backend. Contacts, incident journal entries, templates, and preferences are stored locally. Location is used once at your request. RevenueCat processes an anonymous identifier and purchase history for subscriptions. The current version contains no advertising.</div>
+  <h2>1. Data controller</h2><p>The controller is <strong>JDG Nazar Dzys, trading as NV Softlab</strong>, Generała Józefa Kustronia 20/6, 52-213 Wrocław, Poland (“we”). Privacy contact: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a>.</p>
+  <h2>2. Accounts and our servers</h2><p>No registration, email, or phone number is required. We do not operate a user database and do not receive trusted contacts, journal entries, precise location, or message text. The subscription provider described below processes technical and purchase data.</p>
+  <h2>3. Data on your device</h2><h3>3.1 Trusted contacts</h3><p>The selected name and phone number are stored in iOS Keychain or Android Keystore-backed storage. The system picker returns only the entry you select; the app does not read the full address book.</p><h3>3.2 Incident journal</h3><p>The date, time, and note you add are kept only in protected device storage. They are not sent to us, attached to messages, or provided to RevenueCat, Apple, or Google by the app.</p><h3>3.3 Other local data</h3><p>Favorites and pinned phrases, custom and selected message templates, grammatical form, theme, onboarding/hint state, cached Pro status, and technical safety/frequency counters are also stored locally.</p><h3>3.4 Widgets and tiles</h3><p>Widgets receive the minimum needed for an action. On Android, private widget storage contains the primary contact’s name, initials, and number so it can open the dialer; that file is excluded from cloud backup and device transfer. The iOS widget does not receive the number.</p>
+  <h2>4. Location and messages</h2><p>Location is requested only when you choose to share it and only while using the app. Coordinates are not persisted. The OS geocoder may send them to Apple or Google to resolve an address. The app creates a Google Maps link. After your confirmation, the message is handled by your selected messenger/SMS service and recipient under their own privacy terms.</p>
+  <h2>5. Calls and permissions</h2><p>Calls are made by the system phone app after your confirmation; we receive no call history. The app requests no permission to read contacts, place calls, access camera, microphone, photos, calendar, or background location.</p>
+  <h2>6. Subscriptions and RevenueCat</h2><p>App Store or Google Play processes payment; we receive no payment credentials. RevenueCat, Inc. manages Pro and receives a random anonymous App User ID, app/device technical details, IP address/approximate IP location, receipt or purchase token, purchase status/history, and service interaction timestamps.</p><p>Processing is necessary to perform the contract and provide Pro (GDPR Art. 6(1)(b)), prevent fraud and secure the service as our legitimate interest (Art. 6(1)(f)), and meet legal duties (Art. 6(1)(c)). RevenueCat may process data in the US and other countries using GDPR transfer safeguards. See its <a href="https://www.revenuecat.com/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>.</p>
+  <h2>7. Advertising and analytics</h2><p><strong>Advertising is disabled in the current version:</strong> the ad SDK is not initialized, no ad requests are made, and no ads are shown. There is no separate behavioral analytics SDK. We may receive aggregated installation, purchase, and subscription reports from stores and RevenueCat. We will update this policy and obtain consent where required before enabling ads or new analytics.</p>
+  <h2>8. Retention and deletion</h2><p>Local content remains until you delete an entry, use “Delete all local data,” or uninstall. That action clears contacts, journal, favorites, widget data, templates, and user preferences; it does not cancel a subscription or delete store/RevenueCat purchase records.</p><p>Non-personal service values such as cached Pro status, onboarding state, and protective counters may remain. System backups and iOS Keychain items may persist under Apple/Google settings and rules. RevenueCat retains data under its policy and contractual/legal periods. To request access to or deletion of RevenueCat data, email <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a>; store and purchase details may be needed to locate the record.</p>
+  <h2>9. Your rights</h2><p>Under GDPR you may request access, correction, deletion, restriction, portability, or object to legitimate-interest processing. Consent may be withdrawn without affecting prior lawful processing. You may complain to a supervisory authority; in Poland, this is <a href="https://uodo.gov.pl" target="_blank" rel="noopener">UODO</a>.</p>
+  <h2>10. Security and children</h2><p>Sensitive local content uses protected OS storage. No method is absolutely secure; use a passcode or biometrics. The app is not directed to children under 13, and we do not knowingly collect their data.</p>
+  <h2>11. Changes</h2><p>We will update this page and effective date when processing changes, and provide notice of material changes where required. See also the <a href="../terms-of-use/">Terms of Use</a>.</p>
+</section>
+
+<section id="pl">
+  <div class="summary"><strong>W skrócie:</strong> Opora PL nie ma kont ani własnego backendu. Kontakty, dziennik zdarzeń, szablony i ustawienia są przechowywane lokalnie. Lokalizacja jest używana jednorazowo na polecenie użytkownika. RevenueCat przetwarza anonimowy identyfikator i historię zakupów dla subskrypcji. Obecna wersja nie zawiera reklam.</div>
+  <h2>1. Administrator danych</h2><p>Administratorem jest <strong>JDG Nazar Dzys, działający pod nazwą NV Softlab</strong>, Generała Józefa Kustronia 20/6, 52-213 Wrocław, Poland („my”). Kontakt: <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a>.</p>
+  <h2>2. Konta i nasze serwery</h2><p>Aplikacja nie wymaga rejestracji, emaila ani numeru telefonu. Nie prowadzimy bazy użytkowników i nie otrzymujemy zaufanych kontaktów, wpisów dziennika, dokładnej lokalizacji ani treści wiadomości. Dostawca subskrypcji opisany niżej przetwarza dane techniczne i zakupowe.</p>
+  <h2>3. Dane na urządzeniu</h2><h3>3.1 Zaufane kontakty</h3><p>Wybrane imię i numer są zapisane w iOS Keychain lub pamięci chronionej przez Android Keystore. Selektor systemowy zwraca tylko wybrany wpis; aplikacja nie czyta całej książki adresowej.</p><h3>3.2 Dziennik zdarzeń</h3><p>Dodana data, godzina i notatka pozostają wyłącznie w chronionej pamięci urządzenia. Nie są wysyłane do nas, dołączane do wiadomości ani przekazywane przez aplikację RevenueCat, Apple lub Google.</p><h3>3.3 Inne dane lokalne</h3><p>Lokalnie zapisujemy też ulubione i przypięte zwroty, własny i wybrany szablon wiadomości, formę gramatyczną, motyw, stan wdrożenia i podpowiedzi, cache Pro oraz techniczne liczniki bezpieczeństwa/częstotliwości.</p><h3>3.4 Widżety i kafelki</h3><p>Widżety otrzymują minimum danych. Na Androidzie prywatna pamięć widżetu zawiera imię, inicjały i numer głównego kontaktu, aby otworzyć dialer; plik jest wyłączony z kopii chmurowej i transferu. Widżet iOS nie otrzymuje numeru.</p>
+  <h2>4. Lokalizacja i wiadomości</h2><p>Lokalizacja jest pobierana tylko po wybraniu udostępnienia i tylko podczas używania aplikacji. Współrzędne nie są zapisywane. Geokoder systemowy może przekazać je Apple lub Google w celu ustalenia adresu. Po potwierdzeniu wiadomość obsługuje wybrany komunikator/SMS i odbiorca według własnych zasad.</p>
+  <h2>5. Połączenia i uprawnienia</h2><p>Połączenie wykonuje aplikacja telefonu po potwierdzeniu; nie otrzymujemy historii połączeń. Aplikacja nie prosi o uprawnienia do odczytu kontaktów, wykonywania połączeń, kamery, mikrofonu, zdjęć, kalendarza ani lokalizacji w tle.</p>
+  <h2>6. Subskrypcje i RevenueCat</h2><p>Płatność obsługuje App Store lub Google Play; nie otrzymujemy danych płatniczych. RevenueCat, Inc. zarządza Pro i otrzymuje losowy anonimowy App User ID, dane techniczne aplikacji/urządzenia, adres IP/przybliżoną lokalizację IP, paragon lub purchase token, status i historię zakupów oraz czas interakcji z usługą.</p><p>Podstawą jest wykonanie umowy i udostępnienie Pro (art. 6 ust. 1 lit. b RODO), zapobieganie oszustwom i bezpieczeństwo jako nasz prawnie uzasadniony interes (lit. f) oraz obowiązki prawne (lit. c). RevenueCat może przetwarzać dane w USA i innych krajach z zabezpieczeniami transferu RODO. Zobacz <a href="https://www.revenuecat.com/privacy-policy" target="_blank" rel="noopener">politykę RevenueCat</a>.</p>
+  <h2>7. Reklamy i analityka</h2><p><strong>Reklamy są wyłączone w obecnej wersji:</strong> SDK reklam nie jest inicjalizowany, żądania reklam nie są wysyłane i reklamy nie są wyświetlane. Nie ma osobnego SDK analityki behawioralnej. Możemy otrzymywać zagregowane raporty instalacji, zakupów i subskrypcji od sklepów i RevenueCat. Przed włączeniem reklam lub nowej analityki zaktualizujemy politykę i uzyskamy zgodę, gdy będzie wymagana.</p>
+  <h2>8. Okres przechowywania i usuwanie</h2><p>Dane lokalne pozostają do usunięcia wpisu, użycia „Usuń wszystkie dane lokalne” lub odinstalowania. Funkcja czyści kontakty, dziennik, ulubione, widżety, szablony i ustawienia użytkownika; nie anuluje subskrypcji ani nie usuwa zapisów zakupowych sklepu/RevenueCat.</p><p>Mogą pozostać nieosobowe wartości techniczne: cache Pro, stan wdrożenia i liczniki ochronne. Kopie systemowe i elementy iOS Keychain mogą pozostać zgodnie z ustawieniami Apple/Google. RevenueCat przechowuje dane zgodnie ze swoją polityką i okresami prawnymi/umownymi. Wniosek o dostęp lub usunięcie danych RevenueCat wyślij na <a href="mailto:nvsoftlab@gmail.com">nvsoftlab@gmail.com</a>; do znalezienia rekordu mogą być potrzebne dane sklepu i zakupu.</p>
+  <h2>9. Prawa</h2><p>Na podstawie RODO możesz żądać dostępu, sprostowania, usunięcia, ograniczenia, przenoszenia lub wnieść sprzeciw wobec przetwarzania opartego na uzasadnionym interesie. Możesz złożyć skargę do <a href="https://uodo.gov.pl" target="_blank" rel="noopener">UODO</a>.</p>
+  <h2>10. Bezpieczeństwo i dzieci</h2><p>Wrażliwe dane lokalne korzystają z chronionej pamięci systemowej. Żadna metoda nie gwarantuje pełnego bezpieczeństwa; używaj kodu lub biometrii. Aplikacja nie jest kierowana do dzieci poniżej 13 lat i świadomie nie zbieramy ich danych.</p>
+  <h2>11. Zmiany</h2><p>Przy zmianie przetwarzania zaktualizujemy stronę i datę, a o istotnych zmianach poinformujemy, gdy wymaga tego prawo. Zobacz też <a href="../terms-of-use/">Warunki użytkowania</a>.</p>
+</section>
+
+<footer>© 2026 NV Softlab · Opora PL nie jest oficjalnym produktem polskich służb państwowych.</footer>
+<script>
+  const labels={uk:['Політика конфіденційності','Чинна з 13 серпня 2026 року'],en:['Privacy Policy','Effective August 13, 2026'],pl:['Polityka prywatności','Obowiązuje od 13 sierpnia 2026 r.']};
+  function selectLanguage(lang){if(!labels[lang])lang='uk';document.documentElement.lang=lang;document.querySelectorAll('section').forEach(s=>s.classList.toggle('active',s.id===lang));document.querySelectorAll('[data-lang]').forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));document.getElementById('page-title').textContent=labels[lang][0];document.getElementById('effective-date').textContent=labels[lang][1];const url=new URL(location.href);url.searchParams.set('lang',lang);history.replaceState(null,'',url);}
+  document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>selectLanguage(b.dataset.lang)));
+  selectLanguage(new URLSearchParams(location.search).get('lang')||'uk');
+</script>
 </body>
 </html>
