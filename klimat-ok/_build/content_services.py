@@ -1,0 +1,223 @@
+"""Content of the service pages — texts from klimat-ok.wroclaw.pl (Oferta menu)."""
+
+ICONS = {
+    'phone': '<rect x="7" y="2.5" width="10" height="19" rx="2.5"/><line x1="10.5" y1="18.5" x2="13.5" y2="18.5"/>',
+    'ac': '<rect x="2.5" y="5.5" width="19" height="9" rx="2.5"/><line x1="6" y1="11" x2="18" y2="11"/><line x1="8" y1="18.5" x2="8" y2="21"/><line x1="16" y1="18.5" x2="16" y2="21"/>',
+    'doc': '<rect x="4.5" y="3" width="15" height="18" rx="2.5"/><line x1="8" y1="8.5" x2="16" y2="8.5"/><line x1="8" y1="12.5" x2="16" y2="12.5"/><line x1="8" y1="16.5" x2="12.5" y2="16.5"/>',
+    'tools': '<line x1="4" y1="20" x2="13" y2="11"/><line x1="14.5" y1="9.5" x2="20" y2="4"/><line x1="16.5" y1="3" x2="21.5" y2="8"/><line x1="11" y1="13" x2="15" y2="17"/>',
+    'gear': '<circle cx="12" cy="12" r="3.2"/><line x1="12" y1="2.5" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="21.5"/><line x1="2.5" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="21.5" y2="12"/>',
+    'check': '<circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.8 2.8L16 10"/>',
+    'search': '<circle cx="10.5" cy="10.5" r="6.5"/><line x1="15.5" y1="15.5" x2="21" y2="21"/>',
+    'drop': '<path d="M12 3.5c3.5 4.2 6 7.4 6 10.5a6 6 0 0 1-12 0c0-3.1 2.5-6.3 6-10.5z"/>',
+    'home': '<path d="M3.5 11L12 4l8.5 7"/><path d="M6 9.5V20h12V9.5"/><path d="M10 20v-5h4v5"/>',
+    'leaf': '<path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><line x1="5" y1="19" x2="12" y2="12"/>',
+    'bolt': '<path d="M13 2.5L5 13.5h6l-1 8 8-11h-6l1-8z"/>',
+    'sun': '<circle cx="12" cy="12" r="4"/><line x1="12" y1="2.5" x2="12" y2="4.5"/><line x1="12" y1="19.5" x2="12" y2="21.5"/><line x1="2.5" y1="12" x2="4.5" y2="12"/><line x1="19.5" y1="12" x2="21.5" y2="12"/><line x1="5.3" y1="5.3" x2="6.7" y2="6.7"/><line x1="17.3" y1="17.3" x2="18.7" y2="18.7"/><line x1="5.3" y1="18.7" x2="6.7" y2="17.3"/><line x1="17.3" y1="6.7" x2="18.7" y2="5.3"/>',
+    'air': '<path d="M3 8h11a3 3 0 1 0-3-3"/><path d="M3 12h16a3 3 0 1 1-3 3"/><path d="M3 16h8"/>',
+    'shield': '<path d="M12 3l8 3v6c0 4.5-3.4 8.2-8 9-4.6-.8-8-4.5-8-9V6l8-3z"/><path d="M8.5 12l2.5 2.5 4.5-4.5"/>',
+    'pin': '<path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/>',
+    'thermo': '<path d="M14 14.5V5a2 2 0 0 0-4 0v9.5a4 4 0 1 0 4 0z"/>',
+    'moon': '<path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/>',
+}
+
+# Order = order of the "Oferta" menu on klimat-ok.wroclaw.pl
+SERVICES = [
+    {
+        'slug': 'montaz-klimatyzacji',
+        'name': 'Montaż klimatyzacji',
+        'short': 'Montaż urządzeń w mieszkaniach, domach, biurach i innych obiektach.',
+        'card_img': 'assets/img/montaz.jpg',
+        'img': 'montaz',
+        'title': 'Montaż klimatyzacji Wrocław — Klimat OK',
+        'desc': 'Profesjonalny montaż klimatyzacji we Wrocławiu i okolicach. Dobór urządzenia, estetyczna instalacja, próba szczelności i uruchomienie. Zadzwoń: 518 353 169.',
+        'pill': 'Montaż • dobór • uruchomienie',
+        'h1': 'Montaż klimatyzacji<br class="br-desk"> we Wrocławiu',
+        'lead': 'Dobieramy i montujemy klimatyzację w mieszkaniach, domach, biurach i zakładach. Dbamy o estetykę wykonania i bezawaryjną pracę instalacji przez długie lata.',
+        'chip': 0,
+        'highlights': [
+            ('ac', 'Dobór urządzenia', 'Model dopasowany do pomieszczenia'),
+            ('pin', 'Planowanie instalacji', 'Najlepsze miejsce dla obu jednostek'),
+            ('shield', 'Test szczelności', 'Uruchomienie i kontrola pracy'),
+            ('moon', 'Cicha praca', 'Komfort nawet w nocy'),
+        ],
+        'intro': 'Oferujemy montaż klimatyzacji we Wrocławiu, Siechnicach i okolicach – instalacji, która jest niezwykle przydatna w budynkach o różnych przeznaczeniach (domach czy zakładach produkcyjnych, gdzie ważne jest zachowanie komfortu użytkowania przestrzeni). Urządzenia klimatyzacyjne oferowane przez Klimat OK gwarantują optymalny komfort termiczny dla osób przebywających w pomieszczeniach, gdzie zainstalowano instalację. Nasze usługi pozwalają w późniejszym czasie dogodnie sterować temperaturą w poszczególnych pomieszczeniach, a tym samym dopasować ją do indywidualnych preferencji. Dzięki specjalnym trybom chłodzenia można także dowolnie dopasować pracę urządzenia i cieszyć się jego cichą pracą nawet w nocy.',
+        'sections': [
+            ('Bezawaryjny system klimatyzacji', [
+                'Montaż klimatyzacji oferowany przez naszą firmę to nie tylko modne urządzenie, ale przede wszystkim gwarancja pracy przez długie lata. Z uwagi na fakt, że w naszym kraju z roku na rok lato jest coraz cieplejsze, zdajemy sobie sprawę z tego, że komfort naszych Klientów jest najważniejszy. Profesjonalny montaż klimatyzacji gwarantuje więc zarówno wysoki poziom estetyki, jak i bezawaryjne działanie systemu. Tak wykonana instalacja znacznie podnosi także standard obiektu.',
+            ]),
+            ('Jak przebiega montaż klimatyzacji?', [
+                'Oferowany przez nas montaż klimatyzacji to proces, który wymaga staranności i precyzji. Wszystko rozpoczyna się od wyboru odpowiedniego urządzenia – nasi specjaliści pomagają dobrać model dopasowany do wielkości pomieszczenia, jego przeznaczenia oraz oczekiwań użytkownika. Następnie przechodzimy do etapu planowania instalacji, podczas którego ustalamy najlepszą lokalizację jednostki wewnętrznej i zewnętrznej. Ważne jest, aby klimatyzator działał efektywnie, nie zakłócał codziennego funkcjonowania domowników oraz harmonijnie wpasował się w przestrzeń.',
+                'Montaż właściwy obejmuje kilka kluczowych etapów. Po pierwsze, mocujemy jednostkę wewnętrzną w wyznaczonym miejscu, dbając o to, aby była stabilna i odpowiednio ustawiona pod względem przepływu powietrza. Następnie przygotowujemy otwory do przeprowadzenia instalacji rur chłodniczych, które łączą ją z jednostką zewnętrzną. Kolejnym krokiem jest montaż jednostki zewnętrznej – umieszczamy ją na ścianie budynku, dachu lub specjalnym stelażu na gruncie, w zależności od możliwości technicznych i preferencji Klienta. Po połączeniu całego układu przeprowadzamy testy szczelności oraz pierwsze uruchomienie urządzenia, aby upewnić się, że działa poprawnie i jest gotowe do użytkowania.',
+            ]),
+            ('Co warto wiedzieć przed montażem klimatyzacji?', [
+                'Przed przystąpieniem do montażu warto pamiętać o kilku istotnych kwestiach. Przede wszystkim konieczne jest zapewnienie odpowiedniej przestrzeni dla jednostek klimatyzacyjnych. Jednostka wewnętrzna powinna być zamontowana w miejscu, które zapewni równomierne rozprowadzanie chłodnego powietrza, a jednocześnie nie będzie narażone na bezpośrednie działanie promieni słonecznych czy źródeł ciepła, takich jak kaloryfery. Z kolei jednostka zewnętrzna wymaga odpowiedniej wentylacji oraz dostępu do serwisowania.',
+            ]),
+            ('Dlaczego warto postawić na profesjonalny montaż?', [
+                'Decydując się na klimatyzację montowaną przez profesjonalistów, masz pewność, że urządzenie zostanie zainstalowane zgodnie z najwyższymi standardami. Fachowy montaż to nie tylko kwestia estetyki, ale przede wszystkim bezpieczeństwa i efektywności działania. Nieprawidłowo zamontowany klimatyzator może działać mniej wydajnie, generować większe zużycie energii lub szybciej ulegać awariom.',
+                'Aby klimatyzator funkcjonował sprawnie przez wiele lat, niezwykle istotna jest jego regularna konserwacja. Oferujemy kompleksowy <a href="../serwis-klimatyzacji/">serwis klimatyzacji</a>, który obejmuje przeglądy techniczne, czyszczenie filtrów, sprawdzanie szczelności instalacji oraz kontrolę parametrów pracy urządzenia. Regularny serwis pozwala uniknąć kosztownych awarii, poprawia wydajność klimatyzatora i zapewnia lepszą jakość powietrza w pomieszczeniach.',
+            ]),
+            ('Montaż klimatyzacji najwyższej jakości', [
+                'Montaż klimatyzacji należy zlecić fachowcom, którzy podejdą do danej realizacji rzetelnie, a jednocześnie na tyle elastycznie, aby spełnić wymagania inwestora. Oferujemy produkty od najlepszych marek, dzięki czemu Klienci mają gwarancję, że każde urządzenie wyróżnia się wysoką jakością i niezawodną pracą. Nasi pracownicy ustalą z Klientem miejsce, gdzie ma znajdować się urządzenie – zarówno jednostka wewnętrzna, jak i zewnętrzna. Następnie zamontują specjalny stelaż na ścianie i wykonają otwory na przewody elektryczne, instalację odprowadzania skroplin itd. Kolejny etap prac przeprowadzany jest na zewnątrz obiektu. Fachowcy montują jednostkę zewnętrzną z uwzględnieniem odpływu skroplin. Na zakończenie prac montażowych wykonuje się próbę szczelności, odpowietrzenie i napełnienie czynnikiem chłodniczym.',
+                'Zapraszamy do skorzystania z naszej oferty, w której znajdziesz profesjonalny montaż klimatyzacji, oparty na doświadczeniu pracowników i materiałach najwyższej jakości.',
+                'Zachęcamy do skorzystania z oferty montażu klimatyzatorów w Klimat OK. Dzięki nam zyskasz komfort termiczny bez względu na panującą na zewnątrz temperaturę. Zapraszamy do poznania oferty <a href="../pompa-ciepla/">pomp ciepła</a>, <a href="../rekuperacja/">rekuperacji</a> oraz <a href="../serwis-klimatyzacji/">serwisu klimatyzacji</a>.',
+            ]),
+        ],
+        'steps_title': 'Montaż krok po kroku',
+        'steps_lead': 'Od wyboru urządzenia po pierwsze uruchomienie instalacji.',
+        'steps': [
+            ('ac', 'Dobór urządzenia', 'Model dopasowany do wielkości i przeznaczenia pomieszczenia.'),
+            ('doc', 'Planowanie instalacji', 'Ustalamy lokalizację jednostki wewnętrznej i zewnętrznej.'),
+            ('tools', 'Jednostka wewnętrzna', 'Stabilny montaż i otwory na instalację chłodniczą.'),
+            ('home', 'Jednostka zewnętrzna', 'Na ścianie, dachu lub stelażu, z odpływem skroplin.'),
+            ('check', 'Test i uruchomienie', 'Próba szczelności, odpowietrzenie i napełnienie czynnikiem.'),
+        ],
+        'gallery_alt': ['Montaż klimatyzacji w trakcie prac', 'Zamontowany klimatyzator w salonie', 'Jednostka wewnętrzna na poddaszu'],
+    },
+    {
+        'slug': 'serwis-klimatyzacji',
+        'name': 'Serwis klimatyzacji',
+        'short': 'Serwis, przeglądy i usuwanie awarii urządzeń klimatyzacyjnych.',
+        'card_img': 'assets/img/serwis.jpg',
+        'img': 'serwis',
+        'title': 'Serwis i przegląd klimatyzacji Wrocław — Klimat OK',
+        'desc': 'Serwis i przeglądy klimatyzacji we Wrocławiu: czyszczenie, dezynfekcja, kontrola szczelności i czynnika, usuwanie awarii. Przeglądy gwarancyjne i pogwarancyjne.',
+        'pill': 'Przegląd klimatyzacji',
+        'h1': 'Serwis klimatyzacji<br class="br-desk"> we Wrocławiu',
+        'lead': 'Kompleksowa obsługa od chwili zgłoszenia usterki aż do jej całkowitego usunięcia. Wykonujemy przeglądy gwarancyjne i pogwarancyjne w domach, mieszkaniach i biurach.',
+        'chip': 3,
+        'highlights': [
+            ('phone', 'Od zgłoszenia do naprawy', 'Kompleksowa obsługa usterek'),
+            ('home', 'Serwis na miejscu', 'Tam, gdzie pracuje urządzenie'),
+            ('drop', 'Czyszczenie i dezynfekcja', 'Wymiennik, wentylatory i taca'),
+            ('search', 'Diagnostyka', 'Kody błędów i sterownik'),
+        ],
+        'intro': 'Przeprowadzamy przeglądy i serwis klimatyzacji we Wrocławiu. Skuteczność działania urządzeń klimatyzacyjnych i chłodniczych to nie tylko wysoka jakość wykonania komponentów oraz ich zastosowanie technologiczne, ale także właściwa eksploatacja i konserwacja. Nawet bardzo dobrze zaprojektowane i prawidłowo zamontowane urządzenie nie będzie funkcjonować odpowiednio, jeśli nie będzie właściwie serwisowane. Właśnie dlatego oferujemy kompleksowy przegląd klimatyzacji w obiektach mieszkalnych i budynkach biurowych.',
+        'sections': [
+            ('Gwarancja poprawnego działania instalacji', [
+                'Przegląd gwarancyjny klimatyzacji, a także pogwarancyjny to niezbędne działania do tego, aby zapewnić sprawność instalacji regulującej temperaturę w pomieszczeniu. Klimatyzacja musi być właściwie oczyszczona i zdezynfekowana, co zapewni całej instalacji możliwość funkcjonowania, a użytkownikom obiektu komfort i bezpieczeństwo. Nasi fachowcy dbają o to, żeby usunąć z układu chłodzenia nadmierną wilgoć, która może powodować rozwój niebezpiecznych, chorobotwórczych mikroorganizmów.',
+            ]),
+            ('Kompleksowe wsparcie serwisantów', [
+                'Nasz serwis klimatyzacji we Wrocławiu zapewnia Klientowi kompleksową obsługę od chwili zgłoszenia usterki, aż do jej całkowitego usunięcia. Dla wygody użytkownika prace serwisowe przeprowadzamy w miejscu, gdzie jest zamontowane urządzenie tak, aby najmniej angażować Klienta. Nasz serwis obejmuje m.in.:',
+                {'checks': [
+                    'czyszczenie wentylatorów, komory wymiennika i samego wymiennika,',
+                    'kontrolę prawidłowości odprowadzania skroplin oraz czyszczenie tacy ociekowej,',
+                    'dezynfekcję wymiennika i tacy ociekowej, sprawdzenie parametrów automatyki,',
+                    'czyszczenie kratek czerpni, czyszczenie kratek wyrzutni,',
+                    'sprawdzenie historii kodów błędów i poprawności funkcjonowania sterownika.',
+                ]},
+                'Tak przeprowadzony serwis daje gwarancję tego, że urządzenie będzie działać bez zarzutu i da komfort cieplny na długi czas.',
+                'Jeśli więc zależy Ci na fachowej naprawie i serwisie urządzeń klimatyzujących we Wrocławiu, to zapraszamy do skorzystania z naszej oferty. Świadczymy również usługi z zakresu <a href="../pompa-ciepla/">pomp ciepła</a> oraz <a href="../rekuperacja/">rekuperacji</a>. Nasi pracownicy wykazują się znajomością najskuteczniejszych metod serwisu takich instalacji.',
+            ]),
+            ('Kiedy warto wykonać serwis klimatyzacji?', [
+                'Regularna konserwacja klimatyzacji jest kluczowa dla jej sprawnego działania i wydłużenia żywotności urządzenia. W domowych systemach chłodzących zaleca się przeprowadzanie przeglądu co najmniej raz do roku, najlepiej przed sezonem letnim. W przypadku biur i lokali usługowych, gdzie klimatyzatory działają intensywnie przez większą część roku, zalecany jest serwis klimatyzacji dwa razy w roku – wiosną oraz jesienią. Dzięki temu urządzenie będzie działało bez zakłóceń, a użytkownicy unikną problemów związanych z przegrzewaniem lub osłabioną wydajnością.',
+            ]),
+            ('Jakie objawy świadczą o konieczności przeglądu klimatyzacji?', [
+                'Zaniedbana klimatyzacja może nie tylko działać mniej efektywnie, ale także stanowić zagrożenie dla zdrowia. Jeśli urządzenie pracuje głośniej niż zwykle, wydziela nieprzyjemne zapachy, nie chłodzi pomieszczenia tak skutecznie, jak wcześniej, zaczyna skraplać wodę w sposób nienaturalny lub przecieka, a także nie reaguje prawidłowo na zmiany ustawień temperatury, to znak, że konieczne jest skorzystanie z naszego serwisu klimatyzacji domowej we Wrocławiu. Ignorowanie tych objawów może prowadzić do poważniejszych awarii, które wymagają kosztownych napraw lub nawet wymiany całego systemu.',
+            ]),
+            ('Przebieg serwisu klimatyzacji domowej', [
+                'Każdy serwis zaczyna się od dokładnej inspekcji urządzenia. Nasi specjaliści sprawdzają wszystkie kluczowe elementy, w tym stan filtrów, wentylatorów i wymiennika ciepła. Następnie przeprowadzamy czyszczenie i dezynfekcję filtrów oraz kanałów powietrznych, usuwanie zanieczyszczeń z jednostki wewnętrznej i zewnętrznej, kontrolę poziomu czynnika chłodniczego i ewentualne uzupełnienie, sprawdzenie szczelności układu, test poprawności działania automatyki sterującej oraz kalibrację ustawień temperatury i przepływu powietrza. Regularne przeprowadzanie tych czynności pozwala uniknąć nadmiernego zużycia energii oraz przedłużyć żywotność klimatyzatora.',
+            ]),
+            ('Dlaczego warto postawić na profesjonalny serwis?', [
+                'Niektórzy użytkownicy decydują się na samodzielne czyszczenie klimatyzatora, ograniczając się do wymiany filtrów. Jednak oferowany przez nas kompleksowy serwis klimatyzacji we Wrocławiu obejmuje znacznie więcej czynności technicznych, które wymagają odpowiedniego sprzętu oraz wiedzy. Nasi specjaliści mają dostęp do profesjonalnych narzędzi diagnostycznych, które pozwalają wykryć nawet najmniejsze nieprawidłowości w działaniu urządzenia. W ten sposób można uniknąć nagłych awarii w najgorętszych miesiącach roku.',
+            ]),
+            ('Profesjonalny serwis klimatyzacji', [
+                'Wrocław to miasto, w którym coraz więcej osób decyduje się na <a href="../montaz-klimatyzacji/">montaż klimatyzacji</a> w swoich domach i miejscach pracy. Dlatego też rośnie zapotrzebowanie na profesjonalne usługi serwisowe, które zagwarantują prawidłowe działanie tych urządzeń przez długie lata. Przeprowadzany przez naszą firmę serwis klimatyzacji we Wrocławiu i okolicznych miejscowościach to gwarancja fachowej obsługi, dzięki której będziesz mógł cieszyć się komfortem chłodnego powietrza nawet podczas najbardziej upalnych dni.',
+            ]),
+            ('Serwis klimatyzacji dostosowany do Twoich potrzeb', [
+                'Nasza firma oferuje szeroki zakres usług związanych z utrzymaniem i naprawą urządzeń klimatyzacyjnych. Doskonale wiemy, że każdy Klient jest inny, a co za tym idzie – różne są również potrzeby związane z serwisem klimatyzacji. Dlatego przeprowadzając serwis klimatyzacji we Wrocławiu, stawiamy na indywidualne podejście do każdego zlecenia, dostosowując swoje usługi do Twoich wymagań i oczekiwań. Niezależnie od tego, czy potrzebujesz jednorazowej naprawy, czy też regularnej konserwacji swojego urządzenia – możesz liczyć na profesjonalne wsparcie ze strony naszych specjalistów.',
+            ]),
+            ('Dodatkowe usługi związane z klimatyzacją', [
+                'Poza serwisowaniem klimatyzacji zajmujemy się także montażem <a href="../pompa-ciepla/">pomp ciepła</a>, które stanowią nowoczesne i energooszczędne rozwiązanie w zakresie ogrzewania i chłodzenia budynków. Połączenie klimatyzacji z pompą ciepła pozwala na stworzenie systemu całorocznego, który nie tylko schładza pomieszczenia latem, ale również efektywnie ogrzewa je zimą. Oferujemy kompleksowe doradztwo oraz profesjonalny montaż dostosowany do indywidualnych potrzeb Klienta.',
+                'Zaufaj profesjonalistom i ciesz się komfortem termicznym przez cały rok. Gwarantujemy wysoką jakość usług serwisowych oraz szybki i fachowy montaż urządzeń klimatyzacyjnych, a także systemów wentylacji i <a href="../rekuperacja/">rekuperacji</a>. Nasz zespół fachowców jest zawsze gotowy do szybkiego reagowania na zgłoszenia awarii; dzięki wiedzy oraz doświadczeniu jesteśmy w stanie skutecznie naprawić każde urządzenie. Dzięki naszym usługom Twój system klimatyzacji będzie działał sprawnie i efektywnie przez długi czas, a Ty unikniesz nieprzewidzianych kosztów związanych z awariami.',
+            ]),
+        ],
+        'steps_title': 'Jak przebiega serwis?',
+        'steps_lead': 'Od inspekcji urządzenia po kalibrację ustawień.',
+        'steps': [
+            ('search', 'Inspekcja', 'Stan filtrów, wentylatorów i wymiennika ciepła.'),
+            ('drop', 'Czyszczenie i dezynfekcja', 'Filtry, kanały powietrzne i obie jednostki.'),
+            ('gear', 'Czynnik chłodniczy', 'Kontrola poziomu i ewentualne uzupełnienie.'),
+            ('shield', 'Szczelność układu', 'Sprawdzamy szczelność całej instalacji.'),
+            ('check', 'Test i kalibracja', 'Automatyka, temperatura i przepływ powietrza.'),
+        ],
+        'gallery_alt': ['Jednostka zewnętrzna na balkonie', 'Klimatyzator kasetonowy z instalacją', 'Jednostka zewnętrzna w ogrodzie'],
+    },
+    {
+        'slug': 'pompa-ciepla',
+        'name': 'Pompa ciepła',
+        'short': 'Sprzedaż i montaż pomp ciepła we Wrocławiu i okolicach.',
+        'card_img': 'assets/img/uslugi/pompy-2.jpg',
+        'img': 'pompy',
+        'title': 'Pompy ciepła Wrocław — montaż | Klimat OK',
+        'desc': 'Montaż pomp ciepła we Wrocławiu i na Dolnym Śląsku. Ekologiczne, bezobsługowe ogrzewanie domu i niższe rachunki. Zadzwoń: 518 353 169.',
+        'pill': 'Pompy ciepła • montaż',
+        'h1': 'Pompy ciepła<br class="br-desk"> we Wrocławiu',
+        'lead': 'Nowoczesne i ekologiczne ogrzewanie domu. Montujemy wszystkie dostępne na rynku rodzaje pomp ciepła we Wrocławiu i w województwie dolnośląskim.',
+        'chip': 1,
+        'highlights': [
+            ('bolt', 'Niższe rachunki', 'Tańsze ogrzewanie w dłuższym czasie'),
+            ('leaf', 'Ekologiczne ogrzewanie', 'Bez spalania paliwa i smogu'),
+            ('sun', 'Fotowoltaika', 'Prąd z własnych paneli'),
+            ('home', 'Wszystkie rodzaje pomp', 'Wrocław i Dolny Śląsk'),
+        ],
+        'intro': 'Pompa ciepła we Wrocławiu to niezawodne i wydajne urządzenie, które stosunkowo niedawno weszło na rynek i cieszy się dużym zainteresowaniem inwestorów. Pompa ciepła jest urządzeniem grzewczym wyróżniającym się tym, że nie produkuje własnej energii, jak tradycyjne systemy zasilane paliwami. Jedyną energią dodatkową, jaką potrzebuje to urządzenie, jest prąd, który można dostarczyć z paneli fotowoltaicznych. Co prawda koszty instalacji z pompą ciepła są wyższe niż cena montażu tradycyjnego centralnego ogrzewania z kotłem grzewczym, ale w dłuższej perspektywie czasu wydatki ponoszone na ogrzewanie są niższe. Nasza firma, wychodząc naprzeciw potrzebom Klientów, oferuje montaż pomp ciepła we Wrocławiu i województwie dolnośląskim. Instalujemy wszystkie dostępne na rynku rodzaje pomp ciepła.',
+        'sections': [
+            ('Redukcja kosztów', [
+                'Wykorzystanie ogrzewania za pomocą pompy ciepła generuje niższe nakłady na budowę domu, ponieważ nie trzeba budować komina i typowej kotłowni z miejscem na składowanie opału. Dzięki montażowi pomp ciepła przez naszą firmę Klimat OK całe przedsięwzięcie będzie korzystne dla portfela i pozwoli korzystać z wygodnego oraz bezobsługowego ogrzewania. Warto pamiętać, że montowanie pomp ciepła jest wspierane przez Unię Europejską i dofinansowywane z funduszy unijnych. W połączeniu z ogrzewaniem podłogowym pompy ciepła zapewniają mieszkańcom najwyższy komfort cieplny.',
+            ]),
+            ('Montaż pomp ciepła – nowoczesny i ekologiczny sposób na ogrzewanie', [
+                'Pompy ciepła powietrzne do ogrzewania wody i pomieszczeń wykorzystują energię cieplną znajdującą się na zewnątrz budynków. Nie wymagają więc spalania paliwa, przez co nie generują smogu. Najkorzystniej jest wraz z pompą zamontować panele fotowoltaiczne, z których będzie się czerpać prąd. Dzięki temu dom stanie się samowystarczalny. Miesięczny koszt ogrzewania dzięki takiemu rozwiązaniu można zredukować do 0 zł, za pomocą integracji z innymi efektywnymi systemami.',
+                'W naszej ofercie znajdziesz <a href="../serwis-klimatyzacji/">przeglądy klimatyzacji</a>, <a href="../rekuperacja/">rekuperacje</a> oraz profesjonalny montaż pomp ciepła we Wrocławiu wykonywany przez doświadczonych, wykwalifikowanych pracowników. Zapraszamy do skorzystania z usług Klimat OK, które sprawią, że Twój dom będzie w pełni ekologiczny!',
+            ]),
+        ],
+        'steps_title': 'Jak wygląda współpraca?',
+        'steps_lead': 'Od pierwszej rozmowy po serwis zamontowanej pompy ciepła.',
+        'steps': [
+            ('phone', 'Kontakt', 'Zadzwoń lub wyślij zapytanie.'),
+            ('home', 'Dobór pompy', 'Rodzaj pompy dopasowany do budynku.'),
+            ('doc', 'Wycena', 'Ustalamy zakres prac i szczegóły realizacji.'),
+            ('tools', 'Montaż', 'Instalacja wykonana przez doświadczonych fachowców.'),
+            ('gear', 'Serwis', 'Przeglądy i opieka po montażu.'),
+        ],
+        'gallery_alt': ['Jednostki zewnętrzne na dachu budynku', 'Urządzenia zewnętrzne na dachu', 'Duża jednostka zewnętrzna na dachu'],
+    },
+    {
+        'slug': 'rekuperacja',
+        'name': 'Rekuperacja',
+        'short': 'Montaż i serwis wentylacji mechanicznej z odzyskiem ciepła.',
+        'card_img': 'assets/img/uslugi/rekuperacja-1.jpg',
+        'img': 'rekuperacja',
+        'title': 'Rekuperacja Wrocław — montaż i serwis | Klimat OK',
+        'desc': 'Montaż i serwis rekuperacji we Wrocławiu. Wentylacja mechaniczna z odzyskiem ciepła: świeże powietrze, mniej wilgoci i niższe koszty ogrzewania.',
+        'pill': 'Wentylacja z odzyskiem ciepła',
+        'h1': 'Rekuperacja<br class="br-desk"> we Wrocławiu',
+        'lead': 'Wentylacja mechaniczna z odzyskiem ciepła – świeże powietrze w domu bez wychładzania budynku. Montujemy i serwisujemy systemy rekuperacji.',
+        'chip': 1,
+        'highlights': [
+            ('thermo', 'Odzysk ciepła', 'Mniejsze straty energii'),
+            ('air', 'Świeże powietrze', 'Bez rozszczelniania okien'),
+            ('drop', 'Mniej wilgoci', 'Ochrona przed pleśnią'),
+            ('tools', 'Montaż i serwis', 'Rekuperatory i osprzęt'),
+        ],
+        'intro': 'Instalacja rekuperacji we Wrocławiu to rozwiązanie, które stosuje się w nowoczesnych obiektach, w szczególności w budownictwie pasywnym. Jest to sposób na znaczące zwiększenie komfortu użytkowników i obniżenie kosztów eksploatacji. Oferujemy montaż i serwis rekuperacji, czyli systemu mechanicznej wentylacji z odzyskiem ciepła, który w odróżnieniu od klasycznej wentylacji pozwala na ograniczenie wychładzania budynku.',
+        'sections': [
+            ('Instalacja rekuperacji sposobem na redukcję strat ciepła', [
+                'Obiekty ze standardową wentylacją grawitacyjną wyróżniają się jedną wadą – dochodzi w nich do dużych strat ciepła w wyniku zasysania ogrzanego powietrza i wyprowadzaniu go na zewnątrz budynku wraz ze zgromadzoną w powietrzu wilgocią. Rekuperacja pozwala natomiast oczyścić powietrze z nadmiernej ilości wilgoci i wywietrzyć pomieszczenia, bez strat ciepła. Dzięki specjalistom z naszej firmy zyskasz profesjonalny montaż rekuperatorów i osprzętu we Wrocławiu umożliwiającego sprawne i wydajne działanie takich systemów.',
+            ]),
+            ('Wygodna i ekonomiczna wentylacja za pomocą rekuperacji', [
+                'W latach 90. praktykowano rozwiązania, które zapewniały dopływ świeżego powietrza do obiektów poprzez naturalne nieszczelności okien i drzwi. Obecnie w trakcie wymiany drzwi i okien na nowe i szczelne oraz izolacji domu styropianem, można spotkać wiele problemów dotyczących pojawiającej się pleśni czy wilgoci. Aby im zaradzić, rozszczelnia się okna i w ten sposób umożliwia dopływ świeżego powietrza z zewnątrz. Prowadzi to jednak do wychłodzenia powietrza w budynku, którego ogrzanie generuje dodatkowe koszty. Właśnie dlatego wentylacja mechaniczna z odzyskiem ciepła pozostaje najwygodniejszym i najbardziej ekonomicznym rozwiązaniem.',
+                'Zachęcamy do skorzystania z usług naszej firmy, dzięki którym możesz cieszyć się funkcjonalną rekuperacją w domu. Nasi pracownicy dbają o to, aby instalacje były wykonane dokładnie i precyzyjnie, co pozwoli zmniejszyć straty ciepła do minimum.',
+            ]),
+        ],
+        'steps_title': 'Jak wygląda współpraca?',
+        'steps_lead': 'Od pierwszej rozmowy po serwis zamontowanego systemu.',
+        'steps': [
+            ('phone', 'Kontakt', 'Zadzwoń lub wyślij zapytanie.'),
+            ('air', 'Dobór systemu', 'Rekuperator dopasowany do budynku.'),
+            ('doc', 'Wycena', 'Ustalamy zakres prac i szczegóły realizacji.'),
+            ('tools', 'Montaż', 'Rekuperator, kanały i osprzęt.'),
+            ('gear', 'Serwis', 'Przeglądy i konserwacja systemu.'),
+        ],
+        'gallery_alt': ['Kanały wentylacyjne pod stropem', 'Instalacja kanałów wentylacji', 'Prowadzenie instalacji pod stropem'],
+    },
+]
