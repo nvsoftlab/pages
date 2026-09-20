@@ -32,19 +32,14 @@ SERVICES = {
   'desc': 'Montaż klimatyzacji we Wrocławiu i okolicach. Split, multisplit, kanałowa, '
           'kasetonowa. Dobór urządzenia, montaż, przegląd i serwis. Darmowa wycena.',
   'eyebrow': 'KLIMATYZACJA', 'bg': 'klimatyzacja',
-  'h1': 'Klimatyzacja Wrocław',
-  'lead': 'Jeśli potrzebna Ci dobra klimatyzacja, Wrocław jest miastem, w którym działamy. '
-          'Od lat instalujemy klimatyzację w różnych rodzajach na terenie Wrocławia i okolic. '
-          'Dobra klimatyzacja to podstawa, szczególnie w domu czy w firmie, gdzie dobre warunki '
-          'pracy zwiększają wydajność pracowników.',
-  'ticks': ['Split, multisplit, kanałowa, kasetonowa, przypodłogowo-podsufitowa i przenośna',
-            'Dobór urządzenia do wielkości i przeznaczenia pomieszczenia',
-            'Poza montażem także przegląd i serwis klimatyzatorów'],
+  'h1': 'Klimatyzacja we Wrocławiu — od doboru po serwis',
+  'lead': 'Nie musisz wiedzieć, czy potrzebujesz splita, multisplita czy kasetonu. Powiedz, jakie masz pomieszczenia i czego od nich oczekujesz — dobierzemy urządzenie, zamontujemy je zgodnie z wymaganiami producenta i zostaniemy z Tobą na czas przeglądów.',
+    'ticks': ['Darmowa wycena — koszt znasz przed rozpoczęciem prac', 'Dobór mocy do metrażu i przeznaczenia pomieszczenia', 'Montaż przez ekipę z certyfikatami i uprawnieniami', 'Przegląd i serwis po montażu — nie znikamy po odbiorze'],
   'blocks': [
     {'p': ['Jeśli nie wiesz, czy potrzebujesz klimatyzacji kasetonowej, split czy multisplit — '
            'zapraszamy do kontaktu. Mamy wieloletnie doświadczenie w tym temacie i na pewno nasi '
            'eksperci pomogą Ci wybrać klimatyzację idealną do Twojego biura czy mieszkania.']},
-    {'h2': 'Klimatyzacja Wrocław — co musisz wiedzieć?',
+    {'h2': 'Na co zwrócić uwagę, wybierając klimatyzację?',
      'img': 'klimatyzacja-2', 'cap': 'Klimatyzacja ścienna w pomieszczeniu biurowym',
      'p': ['Cieplejsze pory roku to czas, kiedy trudno wyobrazić sobie funkcjonowanie bez dobrze '
            'działającej klimatyzacji. Urządzenia zapewniające odpowiednią temperaturę oraz wilgotność '
@@ -59,7 +54,7 @@ SERVICES = {
            'Do najbardziej istotnych parametrów klimatyzatorów zalicza się: moc, poziom hałasu, zużycie '
            'prądu, sposób montażu. Warto też zwrócić uwagę, czy dane urządzenie posiada jedynie funkcję '
            'ochładzania, czy także dogrzewania. Profesjonalne klimatyzatory zapewniają podwójne działanie.']},
-    {'h2': 'Montaż klimatyzacji Wrocław',
+    {'h2': 'Dlaczego nie warto montować klimatyzacji samodzielnie?',
      'img': 'serwis', 'cap': 'Montaż jednostki wewnętrznej — realizacja GETMON',
      'p': ['Instalacja złożonych systemów klimatyzacji to zadanie wymagające pewnej wiedzy oraz '
            'doświadczenia. Niewłaściwe umieszczenie jednostki wewnętrznej lub zewnętrznej, albo '
@@ -86,23 +81,19 @@ SERVICES = {
   'desc': 'Klimatyzatory ścienne typu split — montaż we Wrocławiu. Doradztwo, dobór modelu, '
           'instalacja, serwis i konserwacja. Darmowa wycena: 884 884 823.',
   'eyebrow': 'KLIMATYZACJA', 'bg': 'klimatyzacja',
-  'h1': 'Klimatyzacja ścienna (split)',
-  'lead': 'Klimatyzatory ścienne typu split to najczęściej wybierane rozwiązanie do mieszkań, domów '
-          'i biur. Charakteryzują się nowoczesnym wyglądem, cichą pracą oraz wysoką wydajnością '
-          'chłodzenia i ogrzewania.',
-  'ticks': ['Dwie jednostki — wewnętrzna na ścianie i zewnętrzna',
-            'Efektywna praca przy minimalnym hałasie w pomieszczeniu',
-            'Doradztwo, dobór modelu, montaż, serwis i konserwacja'],
+  'h1': 'Klimatyzacja ścienna split — najczęstszy wybór do mieszkań',
+  'lead': 'Jeśli chcesz schłodzić pomieszczenie bez remontu i bez hałasu, split jest rozwiązaniem, po które sięga większość naszych klientów. Doradzimy model, zamontujemy i zajmiemy się serwisem.',
+    'ticks': ['Cicha praca — hałaśliwa jednostka zostaje na zewnątrz', 'Chłodzi latem, dogrzewa w miesiącach przejściowych', 'Niewielkie wymiary — nie dominuje we wnętrzu', 'Doradztwo, dobór modelu, montaż, serwis i konserwacja'],
   'blocks': [
     {'p': ['System składa się z dwóch jednostek — wewnętrznej (montowanej na ścianie) i zewnętrznej '
            '— co zapewnia efektywną pracę przy minimalnym hałasie w pomieszczeniu.']},
-    {'h2': 'Kompleksowy montaż klimatyzatorów split',
+    {'h2': 'Co dostajesz w ramach montażu?',
      'img': 'klimatyzacja-2', 'cap': 'Jednostka ścienna w salonie',
      'p': ['Oferujemy kompleksową usługę montażu klimatyzatorów split — od doradztwa i doboru '
            'odpowiedniego modelu, przez instalację, aż po serwis i konserwację.',
            'Zadbaj o komfort termiczny przez cały rok — sprawnie, estetycznie i w pełni dopasowane '
            'do Twoich potrzeb.']},
-    {'h2': 'Dla kogo klimatyzacja ścienna?',
+    {'h2': 'Do jakich wnętrz pasuje split?',
      'p': ['Klimatyzatory ścienne zaliczają się do urządzeń typu split. Jak sama nazwa wskazuje, '
            'montuje się je na ścianie (jednostka zewnętrzna i wewnętrzna są po różnych stronach). '
            'W związku z tym montaż klimatyzatorów ściennych jest relatywnie prosty i mało czasochłonny. '
@@ -122,16 +113,11 @@ SERVICES = {
   'desc': 'Klimatyzacja multi split we Wrocławiu — jedna jednostka zewnętrzna, kilka pomieszczeń. '
           'Bezpłatna konsultacja i wycena. GETMON, tel. 884 884 823.',
   'eyebrow': 'KLIMATYZACJA', 'bg': 'multisplit',
-  'h1': 'Klimatyzacja MultiSplit Wrocław',
-  'lead': 'GETMON instaluje systemy klimatyzacji multisplit we Wrocławiu od wielu lat. Mamy duże '
-          'doświadczenie i mnóstwo zadowolonych klientów — więc możesz znaleźć rozwiązanie idealne '
-          'dla swojego biura. Dodatkowo oferujemy bezpłatną konsultację, abyś mógł być pewien, że '
-          'podejmiesz właściwą decyzję.',
-  'ticks': ['Jedna jednostka zewnętrzna obsługuje nawet pięć pomieszczeń',
-            'Indywidualna regulacja temperatury w każdym pokoju',
-            'Cicha praca — sprawdza się w sypialni i biurze'],
+  'h1': 'Multi split — kilka pomieszczeń, jedna jednostka na elewacji',
+  'lead': 'Chcesz klimatyzację w salonie i dwóch sypialniach, ale nie chcesz trzech agregatów na ścianie budynku? Multi split podłącza nawet pięć jednostek wewnętrznych do jednego urządzenia zewnętrznego — taniej i z mniejszą ingerencją w elewację.',
+    'ticks': ['Jeden agregat zamiast kilku — niższy koszt i mniej miejsca', 'Każdy pokój ustawia temperaturę niezależnie', 'Cicha praca — sprawdza się w sypialni i biurze', 'Bezpłatna konsultacja przed wyborem zestawu'],
   'blocks': [
-    {'h2': 'Klimatyzacja MultiSplit — jak działa?',
+    {'h2': 'Jak działa system multi split?',
      'img': 'multisplit', 'cap': 'System multi split — jednostki wewnętrzne',
      'p': ['Klimatyzatory typu multi split to rodzaj klimatyzatorów wykorzystujących wiele parowników '
            'i sprężarek do chłodzenia wielu pomieszczeń lub obszarów. Zaletą systemu multi split '
@@ -141,7 +127,7 @@ SERVICES = {
            'split, ponieważ wymagają one jedynie pracy sprężarki i parownika, które aktywnie chłodzą dany '
            'obszar. Ponadto systemy multi split są zazwyczaj cichsze niż systemy single split, dzięki '
            'czemu idealnie nadają się do stosowania w sypialniach lub innych cichych pomieszczeniach.']},
-    {'h2': 'Kiedy klimatyzacja multi split to najlepsze rozwiązanie?',
+    {'h2': 'Kiedy multi split wygrywa z kilkoma splitami?',
      'p': ['Klimatyzatory split doskonale sprawdzają się w przypadku pojedynczego pomieszczenia. '
            'Co jednak zrobić w przypadku, gdy chcemy korzystać z klimatyzacji w całym mieszkaniu lub '
            'biurze? Czy w każdym pokoju trzeba instalować osobne urządzenia? Na szczęście istnieje '
@@ -164,16 +150,11 @@ SERVICES = {
   'desc': 'Klimatyzacja kanałowa we Wrocławiu — montaż w biurach, mieszkaniach i obiektach. '
           'Bezpłatna konsultacja. GETMON, tel. 884 884 823.',
   'eyebrow': 'KLIMATYZACJA', 'bg': 'kanalowa',
-  'h1': 'Klimatyzacja kanałowa — Wrocław',
-  'lead': 'GETMON od lat instaluje systemy klimatyzacji kanałowej do biur, mieszkań i wszelkich '
-          'pomieszczeń, w których ważna jest odpowiednia temperatura powietrza. Mamy wiele różnych '
-          'systemów do wyboru — instalujemy klimatyzację kanałową, kasetonową czy split. Dodatkowo '
-          'oferujemy bezpłatną konsultację, abyś mógł być pewien, że podejmiesz właściwą decyzję.',
-  'ticks': ['Dyskretna instalacja ukryta w suficie podwieszanym',
-            'Kanały prostokątne lub okrągłe — do niemal każdego budynku',
-            'Równomierna temperatura w całym obiekcie'],
+  'h1': 'Klimatyzacja kanałowa — komfort, którego nie widać',
+  'lead': 'W pokojach zostają tylko dyskretne kratki nawiewne — całą instalację chowamy w suficie. Rozwiązanie dla większych domów, biur i lokali, gdzie estetyka wnętrza jest równie ważna jak temperatura.',
+    'ticks': ['We wnętrzu widać wyłącznie kratki nawiewne', 'Równomierna temperatura, bez gorących punktów', 'Kanały prostokątne lub okrągłe — do niemal każdego budynku', 'Najtaniej na etapie projektu lub remontu — doradzimy kiedy'],
   'blocks': [
-    {'h2': 'Jak działa klimatyzacja kanałowa?',
+    {'h2': 'Dlaczego dobór kanałów decyduje o rachunkach?',
      'img': 'kanalowa', 'cap': 'Kanały wentylacyjne instalacji klimatyzacji',
      'p': ['Kanały wentylacyjne są podstawowym elementem każdego systemu klimatyzacji i odgrywają '
            'kluczową rolę w rozprowadzaniu chłodnego powietrza w całym domu lub biurze. Kanały to system '
@@ -184,7 +165,7 @@ SERVICES = {
            'mocy chłodniczej do pomieszczeń, a w przestrzeni będzie panował dyskomfort. Ponadto źle '
            'dobrane kanały mogą powodować wysokie rachunki za energię, ponieważ urządzenie klimatyzacyjne '
            'będzie musiało pracować ciężej, aby schłodzić pomieszczenie.']},
-    {'h2': 'Czym jest klimatyzacja kanałowa?',
+    {'h2': 'Kiedy najlepiej zaplanować instalację kanałową?',
      'img': 'wentylacja', 'cap': 'Rozprowadzenie kanałów w stropie',
      'p': ['Klimatyzacja kanałowa stanowi złożony system rur połączonych ze sobą, które są rozprowadzone '
            'po powierzchni całego schładzanego budynku. Elementy instalacji klimatyzacyjnej przechodzą '
@@ -207,18 +188,14 @@ SERVICES = {
   'desc': 'Klimatyzatory kasetonowe montowane w suficie podwieszanym — Wrocław i okolice. '
           'Dobór jednostki, montaż i serwis. GETMON, tel. 884 884 823.',
   'eyebrow': 'KLIMATYZACJA', 'bg': 'kasetonowa',
-  'h1': 'Klimatyzacja kasetonowa — Wrocław',
-  'lead': 'W GETMON instalujemy klimatyzatory kasetonowe, które skutecznie i równomiernie dostarczają '
-          'chłodne powietrze do Twojego domu lub biura. Nasi wysoko wykwalifikowani technicy wspólnie '
-          'z Tobą wybiorą idealną jednostkę dla Twojej przestrzeni.',
-  'ticks': ['Widoczna tylko kratka — urządzenie ukryte w suficie',
-            'Nawiew jedno-, dwu- lub czterokierunkowy',
-            'Chłodzi, ogrzewa i — z filtrem — oczyszcza powietrze'],
+  'h1': 'Klimatyzacja kasetonowa — chłodzi równomiernie, nie rzuca się w oczy',
+  'lead': 'Montowana w suficie podwieszanym, widoczna tylko jako kratka. Rozprowadza powietrze nawet w czterech kierunkach, więc sprawdza się w biurach, salonach i lokalach usługowych o większej powierzchni.',
+    'ticks': ['Widoczna tylko kratka — reszta ukryta w suficie', 'Nawiew jedno-, dwu- lub czterokierunkowy', 'Chłodzi, ogrzewa i — z filtrem — oczyszcza powietrze', 'Technicy dobiorą jednostkę do rozstawu stelaża'],
   'blocks': [
     {'p': ['Dzięki wieloletniemu doświadczeniu jesteśmy pewni, że możemy zapewnić Ci najlepszą możliwą '
            'obsługę. Jeśli więc szukasz niezawodnej firmy, która zainstaluje Twój klimatyzator — '
            'jesteśmy idealnym wyborem.']},
-    {'h2': 'Klimatyzacja kasetonowa — co to jest?',
+    {'h2': 'Dlaczego klienci wybierają kaseton?',
      'img': 'kasetonowa', 'cap': 'Jednostka kasetonowa w suficie podwieszanym',
      'p': ['Jednym z najpopularniejszych typów klimatyzatorów jest klimatyzator kasetonowy. Jak sama '
            'nazwa wskazuje, ten typ klimatyzatora jest przeznaczony do montażu w kasecie lub wnęce '
@@ -227,7 +204,7 @@ SERVICES = {
            'bardzo skuteczne w chłodzeniu pomieszczeń, ponieważ urządzenie można umieścić bezpośrednio '
            'nad obszarem, który wymaga chłodzenia. Wreszcie, są one stosunkowo łatwe w instalacji '
            'i konserwacji.']},
-    {'h2': 'Jak zbudowana jest klimatyzacja kasetonowa?',
+    {'h2': 'Jak to jest zbudowane i montowane?',
      'p': ['W przeważającej większości klimatyzatory kasetonowe są urządzeniami typu split — oznacza to, '
            'że ich konstrukcja zakłada istnienie dwóch jednostek: zewnętrznej (skraplającej) oraz '
            'wewnętrznej (w formie parownika). Na rynku dostępne są także klimatyzatory pozwalające na '
@@ -250,15 +227,11 @@ SERVICES = {
   'desc': 'Klimatyzacja przypodłogowo-podsufitowa we Wrocławiu — do restauracji, banków, sklepów '
           'i dużych przestrzeni. Bezpłatna konsultacja: 884 884 823.',
   'eyebrow': 'KLIMATYZACJA', 'bg': 'przypodlogowa',
-  'h1': 'Klimatyzacja przypodłogowo-podsufitowa',
-  'lead': 'GETMON od lat instaluje systemy klimatyzacji do biur, firm i mieszkań we Wrocławiu '
-          'i okolicach. Mamy wiele różnych systemów do wyboru, więc możesz znaleźć idealny dla swoich '
-          'potrzeb. Mamy już setki zadowolonych klientów — stań się kolejnym z nich.',
-  'ticks': ['Montaż przy podłodze albo pod sufitem — pełna swoboda',
-            'Równomierny nawiew w dużych przestrzeniach',
-            'Sterowanie pilotem, filtr antybakteryjny w wybranych modelach'],
+  'h1': 'Klimatyzacja przypodłogowo-podsufitowa — do dużych przestrzeni',
+  'lead': 'Restauracja, bank, salon czy sklep wielkopowierzchniowy? Ten typ zamontujesz tam, gdzie akurat jest miejsce — przy podłodze albo pod sufitem — a powietrze i tak rozchodzi się równomiernie.',
+    'ticks': ['Montaż przy podłodze albo pod sufitem — pełna swoboda', 'Równomierny nawiew nawet w największe upały', 'Sterowanie pilotem, filtr antybakteryjny w wybranych modelach', 'Dyskretny montaż, który nie psuje aranżacji wnętrza'],
   'blocks': [
-    {'h2': 'Klimatyzacja przypodłogowo-podsufitowa — wybór idealny',
+    {'h2': 'Co zyskujesz na tym rozwiązaniu?',
      'img': 'przypodlogowa', 'cap': 'Jednostka przypodłogowo-podsufitowa',
      'p': ['Korzyści płynące z zastosowania klimatyzacji od podłogi do sufitu są liczne. Nie tylko '
            'zapewnia ona stały dopływ chłodnego, świeżego powietrza, ale również pomaga poprawić jakość '
@@ -266,7 +239,7 @@ SERVICES = {
            'przypodłogowa może pomóc w obniżeniu kosztów energii poprzez utrzymanie temperatury na '
            'stałym poziomie. Dzieje się tak, ponieważ chłodne powietrze jest równomiernie rozprowadzane '
            'w całej przestrzeni, zapobiegając powstawaniu gorących punktów.']},
-    {'h2': 'Jak działa klimatyzacja przypodłogowo-podsufitowa?',
+    {'h2': 'Gdzie sprawdza się najlepiej?',
      'p': ['Klimatyzacja przypodłogowo-podsufitowa to nowoczesne rozwiązanie o uniwersalnym charakterze. '
            'Sprawdza się doskonale w przypadku potrzeby chłodzenia dość dużych przestrzeni, do których '
            'zaliczyć można restauracje, banki czy różnego rodzaju sklepy. Jak sama nazwa wskazuje, '
@@ -288,15 +261,11 @@ SERVICES = {
   'desc': 'Klimatyzacja przenośna we Wrocławiu — jak działa, czy warto i na co uważać przy '
           'rurze wywiewnej. Bezpłatna konsultacja GETMON: 884 884 823.',
   'eyebrow': 'KLIMATYZACJA', 'bg': 'przenosna',
-  'h1': 'Klimatyzacja przenośna — Wrocław',
-  'lead': 'GETMON od lat instaluje systemy klimatyzacji przenośnej we Wrocławiu i okolicach. '
-          'Mamy wiele różnych systemów do wyboru, więc możesz znaleźć idealny do swoich potrzeb. '
-          'Dodatkowo oferujemy bezpłatną konsultację — czekamy na Twój telefon.',
-  'ticks': ['Bez stałej instalacji — przenosisz z pokoju do pokoju',
-            'Energooszczędna alternatywa dla systemu centralnego',
-            'Doradzimy, jak poprowadzić rurę wywiewną bez utraty wydajności'],
+  'h1': 'Klimatyzacja przenośna — chłód bez stałej instalacji',
+  'lead': 'Wynajmujesz mieszkanie albo nie możesz powiesić jednostki na elewacji? Klimatyzator przenośny przestawisz z pokoju do pokoju. Zanim go kupisz, warto wiedzieć, jak wyprowadzić rurę wywiewną, żeby nie stracić wydajności.',
+    'ticks': ['Bez stałej instalacji i bez ingerencji w elewację', 'Przenosisz z pokoju do pokoju, chowasz po sezonie', 'Doradzimy, jak poprowadzić rurę wywiewną', 'Uczciwie powiemy, kiedy lepszy będzie split'],
   'blocks': [
-    {'h2': 'Klimatyzacja przenośna — jak działa?',
+    {'h2': 'Jak działa klimatyzator przenośny?',
      'img': 'przenosna', 'cap': 'Klimatyzator przenośny w pomieszczeniu',
      'p': ['Przenośna klimatyzacja może być doskonałym sposobem na zapewnienie chłodu w domu podczas '
            'gorących miesięcy letnich. W przeciwieństwie do jednostek okiennych klimatyzatory przenośne '
@@ -304,7 +273,7 @@ SERVICES = {
            'Dodatkowo klimatyzatory przenośne są znacznie bardziej energooszczędne niż centralne systemy '
            'klimatyzacji, co czyni je doskonałym wyborem dla każdego, kto chce zaoszczędzić na rachunkach '
            'za energię. Klimatyzatory przenośne są również stosunkowo ciche.']},
-    {'h2': 'Czy warto zainwestować w klimatyzację przenośną?',
+    {'h2': 'Wady, o których warto wiedzieć przed zakupem',
      'p': ['Każdy rodzaj klimatyzacji działa na podobnej zasadzie — w instalacji umieszczany jest '
            'specjalny czynnik, którego krążenie schładza masy powietrza. Klimatyzacja przenośna nie jest '
            'tutaj wyjątkiem. Warto jednak pamiętać, że jednostka klimatyzacyjna montowana na stałe na '
@@ -327,14 +296,11 @@ SERVICES = {
   'desc': 'Monoblock, split, multi split, ścienna, kasetonowa, kanałowa, przenośna — '
           'poznaj rodzaje klimatyzacji i wybierz najlepszy dla swojego domu lub firmy.',
   'eyebrow': 'PORADNIK', 'bg': 'rodzaje',
-  'h1': 'Rodzaje klimatyzacji',
-  'lead': 'Systemy klimatyzacji różnią się od siebie przede wszystkim budową oraz sposobem montażu. '
-          'Poznaj lepiej poszczególne rodzaje klimatyzacji i wybierz najlepszy dla Twojego domu lub firmy.',
-  'ticks': ['Ze względu na budowę: monoblock, split, multi split',
-            'Ze względu na montaż: ścienna, przypodłogowo-podsufitowa, kasetonowa, kanałowa, przenośna',
-            'Pomożemy dobrać typ do metrażu i przeznaczenia pomieszczenia'],
+  'h1': 'Rodzaje klimatyzacji — który typ pasuje do Twojego wnętrza?',
+  'lead': 'Split, multi split, kaseton czy kanałówka? Różnią się budową i sposobem montażu, a od tego zależy koszt, estetyka i liczba pomieszczeń, które schłodzisz. Poniżej krótki przewodnik — a jeśli wolisz od razu konkret, zadzwoń po darmową wycenę.',
+    'ticks': ['Ze względu na budowę: monoblock, split, multi split', 'Ze względu na montaż: ścienna, kasetonowa, kanałowa, przypodłogowa, przenośna', 'Pomożemy dobrać typ do metrażu i przeznaczenia pomieszczenia'],
   'blocks': [
-    {'h2': 'Rodzaje klimatyzacji ze względu na budowę',
+    {'h2': 'Podział ze względu na budowę',
      'p': ['Klimatyzatory dzielimy ze względu na ilość jednostek zewnętrznych. Mogą posiadać jeden moduł '
            '(wtedy mówimy o klimatyzatorach typu monoblock) lub kilka modułów (klimatyzatory typu split '
            'lub multi split).'],
@@ -355,7 +321,7 @@ SERVICES = {
     {'ul': ['energooszczędność',
             'cicha praca — system multi split jest wykorzystywany nawet w sypialni czy biurze',
             'uniwersalność — idealnie sprawdzi się do chłodzenia całego mieszkania lub biura']},
-    {'h2': 'Rodzaje klimatyzacji ze względu na sposób montażu',
+    {'h2': 'Podział ze względu na sposób montażu',
      'img': 'klimatyzacja-2', 'cap': 'Różne typy jednostek wewnętrznych',
      'p': ['Systemy klimatyzacyjne różnią się również w zależności od rodzaju ich montażu. Klimatyzatory '
            'ścienne, kasetonowe, kanałowe, a może podsufitowe lub przypodłogowe — które z nich wybrać?'],
@@ -382,15 +348,11 @@ SERVICES = {
   'desc': 'Projektowanie i montaż wentylacji oraz rekuperacji we Wrocławiu — domy, biura, '
           'restauracje i lokale usługowe. Od projektu po uruchomienie. Tel. 884 884 823.',
   'eyebrow': 'WENTYLACJA', 'bg': 'wentylacja',
-  'h1': 'Instalacja wentylacji i rekuperacji',
-  'lead': 'Zajmujemy się kompleksowym montażem systemów wentylacyjnych w domach, biurach i obiektach '
-          'przemysłowych. Dobieramy rozwiązania dopasowane do potrzeb klienta — od projektu po '
-          'uruchomienie instalacji.',
-  'ticks': ['Wentylacja mechaniczna i rekuperacja z odzyskiem ciepła',
-            'Domy jednorodzinne, biura, restauracje i lokale usługowe',
-            'Projekt, montaż, uruchomienie, regulacja i serwis'],
+  'h1': 'Wentylacja i rekuperacja — świeże powietrze bez otwierania okien',
+  'lead': 'Rekuperacja odzyskuje ciepło, które w tradycyjnej wentylacji ucieka przez kratki. Efekt: niższe rachunki za ogrzewanie, przefiltrowane powietrze i mniejsze ryzyko wilgoci na ścianach. Projektujemy i montujemy w domach, biurach i lokalach usługowych.',
+    'ticks': ['Odzysk ciepła zamiast strat przez kratki wentylacyjne', 'Filtry zatrzymują kurz i pyłki — ważne dla alergików', 'Domy jednorodzinne, biura, restauracje i salony', 'Projekt, montaż, uruchomienie, regulacja, serwis i gwarancja'],
   'blocks': [
-    {'h2': 'Wentylacja i rekuperacja — nowoczesne systemy dla domu i obiektów użytkowych',
+    {'h2': 'Wentylacja czy rekuperacja — czym się różnią?',
      'img': 'wentylacja', 'cap': 'Instalacja kanałów wentylacyjnych',
      'p': ['Firma GETMON specjalizuje się w projektowaniu i montażu nowoczesnych systemów klimatyzacji, '
            'wentylacji oraz rekuperacji. W praktyce najczęściej stosowane rozwiązania w budynkach '
@@ -412,7 +374,7 @@ SERVICES = {
             'mniejsze straty ciepła',
             'niższe koszty ogrzewania',
             'wyższy komfort codziennego użytkowania']},
-    {'h2': 'Rekuperacja w domu',
+    {'h2': 'Co daje rekuperacja w domu jednorodzinnym?',
      'p': ['Rekuperacja to obecnie jedno z najczęściej wybieranych rozwiązań w nowoczesnym budownictwie '
            'jednorodzinnym. System ten, znany jako wentylacja mechaniczna z odzyskiem ciepła, zapewnia '
            'stałą wymianę powietrza w budynku przy jednoczesnym ograniczeniu strat energii. W praktyce '
@@ -426,7 +388,7 @@ SERVICES = {
             'niższe rachunki za ogrzewanie',
             'ograniczenie wilgoci i ryzyka powstawania pleśni',
             'filtracja powietrza z kurzu i pyłków']},
-    {'h2': 'Wentylacja w lokalach użytkowych — restauracje, biura, salony',
+    {'h2': 'Wentylacja w lokalu usługowym — komfort i wymogi sanitarne',
      'img': 'kanalowa', 'cap': 'Wentylacja w lokalu usługowym',
      'p': ['Systemy wentylacyjne w obiektach komercyjnych mają szczególne znaczenie, ponieważ muszą '
            'działać wydajnie przy dużym obciążeniu i intensywnej eksploatacji. Firma GETMON realizuje '
@@ -434,7 +396,7 @@ SERVICES = {
            'przestrzeniach pracy, salonach kosmetycznych i fryzjerskich, a także w sklepach i innych '
            'lokalach usługowych. W takich miejscach odpowiednia wentylacja zapewnia nie tylko komfort '
            'użytkowników, ale również spełnienie obowiązujących wymogów sanitarnych i technicznych.']},
-    {'h2': 'Doświadczenie i kompleksowa obsługa GETMON',
+    {'h2': 'Co bierzemy na siebie?',
      'p': ['Posiadamy duże doświadczenie w montażu systemów wentylacji i rekuperacji, dzięki czemu '
            'możemy oferować rozwiązania dopasowane zarówno do nowych inwestycji, jak i modernizacji '
            'istniejących budynków. Każdy projekt realizujemy indywidualnie, zaczynając od doboru '
@@ -456,16 +418,11 @@ SERVICES = {
   'desc': 'Pompy ciepła powietrzne, gruntowe i powietrze-powietrze. Dobór, projekt, montaż '
           'i serwis we Wrocławiu. Pomoc w dotacjach „Czyste Powietrze”. Tel. 884 884 823.',
   'eyebrow': 'POMPY CIEPŁA', 'bg': 'pompy',
-  'h1': 'Pompy ciepła — nowoczesne i ekologiczne ogrzewanie',
-  'lead': 'Pompy ciepła to energooszczędne i przyjazne dla środowiska rozwiązanie, które zapewnia '
-          'komfort cieplny przez cały rok. Dzięki wykorzystaniu energii z powietrza, gruntu lub wody '
-          'możesz skutecznie ogrzewać swój dom, biuro czy halę przemysłową — bez konieczności spalania '
-          'paliw kopalnych.',
-  'ticks': ['Nawet o 70% niższe rachunki za ogrzewanie',
-            'Ogrzewanie, chłodzenie i podgrzewanie wody użytkowej',
-            'Pomoc w uzyskaniu dotacji, np. „Czyste Powietrze”'],
+  'h1': 'Pompy ciepła — nawet o 70% niższe rachunki za ogrzewanie',
+  'lead': 'Ciepło z powietrza, gruntu lub wody zamiast spalania paliw. Jedno urządzenie ogrzewa dom, chłodzi go latem i podgrzewa wodę użytkową. Pomożemy też dobrać model i przejść przez formalności dotacji „Czyste Powietrze”.',
+    'ticks': ['Nawet o 70% niższe rachunki za ogrzewanie', 'Ogrzewanie, chłodzenie i ciepła woda z jednego urządzenia', 'Pomoc w uzyskaniu dotacji, np. „Czyste Powietrze”', 'Dobór, projekt, montaż i serwis u jednego wykonawcy'],
   'blocks': [
-    {'h2': 'Dlaczego warto wybrać pompę ciepła?',
+    {'h2': 'Co realnie zyskujesz na pompie ciepła?',
      'img': 'pompy', 'cap': 'Jednostka zewnętrzna pompy ciepła',
      'ul': ['Niskie koszty eksploatacji — nawet o 70% niższe rachunki za ogrzewanie',
             'Ekologiczne rozwiązanie — zero emisji spalin i CO₂',
@@ -475,7 +432,7 @@ SERVICES = {
      'p': ['Oferujemy kompleksową obsługę: dobór urządzenia, projekt, montaż i serwis. Korzystamy tylko '
            'ze sprawdzonych, renomowanych producentów, co daje Ci gwarancję jakości i niezawodności '
            'przez lata.']},
-    {'h2': 'Rodzaje pomp ciepła',
+    {'h2': 'Którą pompę wybrać do swojego budynku?',
      'h3': [('1. Powietrzne pompy ciepła (powietrze–woda)',
              ['Najpopularniejszy i najszybszy w montażu system. Wykorzystuje energię zawartą w powietrzu '
               'zewnętrznym. Zalety: niskie koszty inwestycji, szybki montaż, działanie nawet przy −25°C, '
@@ -505,13 +462,9 @@ SERVICES = {
   'desc': 'Montaż monitoringu we Wrocławiu — projekt, rozmieszczenie kamer CCTV, rejestratory '
           'i zdalny podgląd. Dla firm i posesji prywatnych. Tel. 884 884 823.',
   'eyebrow': 'MONITORING', 'bg': 'monitoring',
-  'h1': 'Montaż monitoringu Wrocław',
-  'lead': 'System monitoringu to niezbędne rozwiązanie do zabezpieczenia terenu firmy lub prywatnej '
-          'posesji. Polega na rozmieszczeniu w kluczowych miejscach, zarówno wewnątrz, jak i na zewnątrz '
-          'budynku, kamer CCTV.',
-  'ticks': ['Budowa systemu od podstaw albo montaż zakupionych urządzeń',
-            'Kamery HD z dyskiem twardym i zdalnym podglądem przez internet',
-            'Rozmieszczenie kamer zaplanowane pod konkretny obiekt'],
+  'h1': 'Montaż monitoringu we Wrocławiu — wiesz, co dzieje się u Ciebie',
+  'lead': 'Kamery w kluczowych punktach, nagrania na dysku i podgląd z telefonu — z dowolnego miejsca. Zaprojektujemy rozmieszczenie pod Twój obiekt albo zamontujemy sprzęt, który już masz.',
+    'ticks': ['Podgląd na telefonie z dowolnego miejsca', 'Nagrania na dysku — wiele godzin materiału', 'Kamery widoczne odstraszają, ukryte dokumentują', 'System od podstaw albo montaż Twoich urządzeń'],
   'blocks': [
     {'img': 'monitoring', 'cap': 'Kamery monitoringu na elewacji budynku',
      'p': ['Obraz zostaje przekazany do tak zwanej telewizji przemysłowej, obserwowanej samodzielnie, '
@@ -524,7 +477,7 @@ SERVICES = {
            'Montaż monitoringu na zewnątrz zwykle następuje w dobrze widocznych miejscach, aby odstraszyć '
            'potencjalnych włamywaczy lub wandali. Jeszcze lepszą ochronę zapewnia połączenie widocznych '
            'kamer z ukrytymi.']},
-    {'h2': 'Jak przeprowadzić montaż monitoringu?',
+    {'h2': 'Gotowy zestaw czy system projektowany pod obiekt?',
      'p': ['Możliwy jest zakup gotowego systemu monitoringu lub wykonanie go na specjalne zamówienie. '
            'W pierwszym przypadku instalację należy przeprowadzić samodzielnie, a w przypadku bardziej '
            'zaawansowanych realizacji konieczne okazuje się wynajęcie profesjonalnej firmy. Warto '
@@ -549,15 +502,11 @@ SERVICES = {
   'desc': 'Monitoring cyfrowy IP we Wrocławiu — HD, Full HD i 4K, zasilanie PoE, zdalny podgląd '
           'i łatwa rozbudowa systemu. GETMON, tel. 884 884 823.',
   'eyebrow': 'MONITORING', 'bg': 'ip',
-  'h1': 'Monitoring cyfrowy IP',
-  'lead': 'Wśród najważniejszych zalet urządzeń IP (Internet Protocol) należy wymienić ich '
-          'nieograniczony zasięg. Podgląd z kamer zostaje przesłany na komputer lub telefon za '
-          'pośrednictwem sieci internetowej, co daje dostęp praktycznie z dowolnego miejsca na świecie.',
-  'ticks': ['Rozdzielczość HD, Full HD oraz 4K, także do pracy w nocy',
-            'Zasilanie PoE — mniej kabli i niższy koszt instalacji',
-            'Łatwa rozbudowa o kolejne kamery bez zmian w systemie'],
+  'h1': 'Monitoring IP — jakość 4K i podgląd z dowolnego miejsca',
+  'lead': 'Kamery IP wysyłają obraz przez sieć, więc podejrzysz go z telefonu praktycznie z każdego miejsca i skonfigurujesz system zdalnie. Bez zakłóceń typowych dla analogu i z możliwością rozbudowy w dowolnym momencie.',
+    'ticks': ['Rozdzielczość HD, Full HD i 4K, także w nocy', 'Zdalny podgląd i konfiguracja przez internet', 'Zasilanie PoE — mniej kabli, niższy koszt instalacji', 'Dokładasz kolejne kamery bez przebudowy systemu'],
   'blocks': [
-    {'h2': 'Zalety monitoringu cyfrowego',
+    {'h2': 'Dlaczego IP zamiast analogu?',
      'img': 'ip', 'cap': 'Kamera IP na nowoczesnym budynku',
      'p': ['Połączenie sieciowe umożliwia także zdalną konfigurację systemu. Monitoring cyfrowy '
            'charakteryzuje się ponadto wysoką jakością obrazu. Do powszechnego użytku weszły urządzenia '
@@ -579,15 +528,11 @@ SERVICES = {
   'desc': 'Monitoring analogowy AHD we Wrocławiu — kompatybilność wsteczna, modernizacja CCTV '
           'do 1080p, niższy koszt systemu. GETMON, tel. 884 884 823.',
   'eyebrow': 'MONITORING', 'bg': 'analogowy',
-  'h1': 'Monitoring analogowy',
-  'lead': 'Wbrew pozorom kamery analogowe wciąż znajdują szerokie zastosowanie. W wielu przypadkach nie '
-          'ma bowiem konieczności wykorzystywania rejestratorów o wysokiej rozdzielczości — wystarczą '
-          'podstawowe modele.',
-  'ticks': ['AHD-HD i Full HD — transmisja obrazu w jakości zbliżonej do IP',
-            'Kompatybilność wsteczna z istniejącą instalacją CCTV',
-            'Modernizacja etapami, bez wymiany całego sprzętu'],
+  'h1': 'Monitoring analogowy AHD — tańsza modernizacja istniejącego CCTV',
+  'lead': 'Masz już instalację analogową? Nie musisz wymieniać wszystkiego. AHD jest z nią kompatybilny wstecznie, więc system modernizujesz etapami, a obraz podnosisz do 1080p tam, gdzie to naprawdę potrzebne.',
+    'ticks': ['Kompatybilność wsteczna z istniejącą instalacją CCTV', 'Modernizacja etapami, bez wymiany całego sprzętu', 'AHD-HD i Full HD — jakość zbliżona do IP', 'Tańsze kamery tam, gdzie wystarczą; 1080p przy bramie'],
   'blocks': [
-    {'h2': 'Monitoring analogowy i jego najważniejsze atuty',
+    {'h2': 'Kiedy analog wciąż ma sens?',
      'img': 'analogowy', 'cap': 'Kamera analogowa w instalacji CCTV',
      'p': ['Istnieją rozwiązania o znacznie lepszej jakości niż kiedyś. Dla przykładu system telewizji '
            'przemysłowej AHD-HD oraz Full HD pozwala na transmisję obrazu w jakości IP. Monitoring '
@@ -598,7 +543,7 @@ SERVICES = {
            'odległości 200 m (przy wykorzystaniu skrętki komputerowej) lub 500 m (w przypadku kabla RG-6, '
            'czyli koncentryka). W wielu obiektach problem więc nie występuje ze względu na ograniczoną '
            'przestrzeń do kontrolowania.']},
-    {'h2': 'Modernizacja istniejącej instalacji',
+    {'h2': 'Jak zmodernizować CCTV bez wymiany wszystkiego?',
      'p': ['Monitoring analogowy AHD może współpracować bez problemów z istniejącymi już systemami '
            'analogowymi dzięki kompatybilności wstecznej. W efekcie możliwa jest migracja z niskiej '
            'rozdzielczości typowej dla analogów do obrazu 2-megapikselowego. W praktyce tworzy się '
@@ -620,19 +565,15 @@ SERVICES = {
   'desc': 'Systemy alarmowe we Wrocławiu i na Dolnym Śląsku — ochrona przed włamaniem, pożarem '
           'i wandalizmem. Dobór i montaż instalacji. GETMON, tel. 884 884 823.',
   'eyebrow': 'SYSTEMY ALARMOWE', 'bg': 'alarmy',
-  'h1': 'Systemy alarmowe — Wrocław i Dolny Śląsk',
-  'lead': 'System alarmowy to zbiór urządzeń służących do zabezpieczenia wyznaczonego obszaru przed '
-          'włamaniem, pożarem oraz innymi niepożądanymi zdarzeniami. Sprawny, prawidłowo funkcjonujący '
-          'system gwarantuje wysoki poziom bezpieczeństwa.',
-  'ticks': ['Ochrona przed włamaniem, pożarem i wandalizmem',
-            'Rozwiązania dla domów, mieszkań i obiektów firmowych',
-            'Dobór urządzeń i wykonanie niezawodnej instalacji'],
+  'h1': 'Systemy alarmowe we Wrocławiu — spokój o dom i firmę',
+  'lead': 'Czujki ruchu, wykrywacze dymu i czujniki otwarcia okien — dobrane do obiektu i połączone w system, który wykrywa zagrożenie, zanim zrobi się poważnie. Dla domów, mieszkań i firm na Dolnym Śląsku.',
+    'ticks': ['Ochrona przed włamaniem, pożarem i wandalizmem', 'Rozwiązania dla domów, mieszkań i obiektów firmowych', 'Dobór urządzeń i wykonanie niezawodnej instalacji', 'Darmowa wycena po oględzinach obiektu'],
   'blocks': [
     {'p': ['Niezbędny do tego okazuje się zarówno wybór właściwych rozwiązań, jak i stworzenie '
            'niezawodnej instalacji. Pomocne w osiągnięciu takiego efektu będą specjalistyczne urządzenia, '
            'a także renomowany ekspert od instalacji systemów. We Wrocławiu i okolicach mogą Państwo '
            'skorzystać z usług firmy GETMON.']},
-    {'h2': 'Alarmy na miarę potrzeb',
+    {'h2': 'Alarm dobrany do obiektu, nie z katalogu',
      'img': 'alarmy', 'cap': 'Czujniki systemu alarmowego',
      'p': ['Posiadamy szeroki asortyment systemów alarmowych dostosowanych do potrzeb i oczekiwań '
            'Klienta. Systemy alarmowe pozwalają zwiększyć ochronę monitorowanych obiektów — zarówno '
@@ -650,15 +591,11 @@ SERVICES = {
   'desc': 'Przewodowe systemy alarmowe we Wrocławiu — montaż w budynkach nowych i istniejących. '
           'Niezawodna ochrona domu i firmy. GETMON, tel. 884 884 823.',
   'eyebrow': 'SYSTEMY ALARMOWE', 'bg': 'alarm-przewodowy',
-  'h1': 'Systemy alarmowe przewodowe',
-  'lead': 'W GETMON rozumiemy, że Twój dom jest Twoim sanktuarium. Dlatego oferujemy szeroką gamę '
-          'rozwiązań zabezpieczających, aby dopasować się do Twoich specyficznych potrzeb. Instalujemy '
-          'niezawodne systemy alarmowe, które zapewnią Ci bezpieczeństwo i spokojny sen.',
-  'ticks': ['Rozwiązanie dla budynków nowych i już istniejących',
-            'Okablowanie pod tynkiem, w peszlu albo w listwach',
-            'Ochrona przed włamaniem i pożarem'],
+  'h1': 'Alarmy przewodowe — niezawodność bez zasięgu i baterii',
+  'lead': 'Sygnał idzie kablem, więc nie zakłóci go sąsiednia sieć ani awaria internetu. Najlepszy moment na montaż to budowa lub remont — ale okablowanie da się też poprowadzić w listwach, bez kucia ścian.',
+    'ticks': ['Transmisja kablem — bez zakłóceń radiowych', 'Dla budynków nowych i już istniejących', 'Okablowanie pod tynkiem, w peszlu albo w listwach', 'Ochrona przed włamaniem i pożarem'],
   'blocks': [
-    {'h2': 'Instalacja przewodowego systemu alarmowego',
+    {'h2': 'Co daje przewodowy system alarmowy?',
      'img': 'alarm-przewodowy', 'cap': 'Centrala i czujniki systemu przewodowego',
      'p': ['Oferujemy wysokiej jakości przewodowe systemy alarmowe, które zostały zaprojektowane z myślą '
            'o ochronie Twojego domu lub firmy. Nasze systemy są łatwe w instalacji i obsłudze, a ponadto '
@@ -668,7 +605,7 @@ SERVICES = {
            'innego nagłego zdarzenia. Systemy alarmowe są dostępne w różnych wariantach, od prostych '
            'czujników dymu po kompleksowe systemy bezpieczeństwa. Bez względu na rodzaj wybranego systemu '
            'ważne jest, aby został on profesjonalnie zainstalowany przez wykwalifikowanego technika.']},
-    {'h2': 'Zalety alarmów przewodowych',
+    {'h2': 'Kiedy montować i jak poprowadzić okablowanie?',
      'p': ['Alarmy przewodowe to doskonałe rozwiązanie zarówno do budynków nowo projektowanych, jak '
            'i już istniejących. W przypadku tych ostatnich, jeśli zdecydujemy się na zamontowanie tej '
            'technologii, możemy zrobić to na dwa sposoby. Wybierając pełną modernizację instalacji '
@@ -690,19 +627,15 @@ SERVICES = {
   'desc': 'Bezprzewodowe systemy alarmowe we Wrocławiu — bezinwazyjny montaż, sterowanie z aplikacji, '
           'szyfrowana transmisja. GETMON, tel. 884 884 823.',
   'eyebrow': 'SYSTEMY ALARMOWE', 'bg': 'alarm-bezprzewodowy',
-  'h1': 'Systemy alarmowe bezprzewodowe',
-  'lead': 'W naszej firmie szczycimy się tym, że jesteśmy ekspertami w dziedzinie instalacji systemów '
-          'alarmowych. Mamy wieloletnie doświadczenie w instalowaniu wszystkich rodzajów systemów '
-          'alarmowych i wiemy, jak robić to szybko i sprawnie.',
-  'ticks': ['Bezinwazyjny montaż — bez remontu i kucia ścian',
-            'Sterowanie i powiadomienia z aplikacji w telefonie',
-            'Szyfrowana transmisja danych, możliwy sygnał do agencji ochrony'],
+  'h1': 'Alarmy bezprzewodowe — montaż bez kucia ścian',
+  'lead': 'Czujki komunikują się radiowo lub przez internet, więc instalacja nie wymaga remontu, a system rozbudujesz w każdej chwili. Powiadomienia trafiają na telefon, a w razie potrzeby — prosto do agencji ochrony.',
+    'ticks': ['Bezinwazyjny montaż — bez remontu i kucia ścian', 'Sterowanie i powiadomienia z aplikacji w telefonie', 'Szyfrowana transmisja, możliwy sygnał do agencji ochrony', 'Dokładasz czujki w dowolnym momencie'],
   'blocks': [
     {'p': ['Jeśli szukasz bezprzewodowego systemu alarmowego we Wrocławiu, jesteśmy firmą, do której '
            'powinieneś zadzwonić. Przyjedziemy do Ciebie, ocenimy Twoje potrzeby i zaproponujemy najlepszy '
            'dla Ciebie system. Następnie bezbłędnie zainstalujemy system, dzięki czemu będziesz mieć '
            'pewność, że Twoja nieruchomość jest bezpieczna.']},
-    {'h2': 'Czy warto stosować alarmy bezprzewodowe?',
+    {'h2': 'Jak działa alarm bezprzewodowy?',
      'img': 'alarm-bezprzewodowy', 'cap': 'Bezprzewodowe czujniki systemu alarmowego',
      'p': ['Technologia systemów alarmowych rozwija się w bardzo szybkim tempie. Tradycyjne rozwiązania '
            'zostają niemal całkowicie wypierane przez nowoczesne urządzenia. Wśród obecnie dostępnych na '
@@ -715,7 +648,7 @@ SERVICES = {
            'którzy natychmiast dowiedzą się o wszystkich niepożądanych zdarzeniach, nawet znajdując się '
            'w dużej odległości od obiektu. Systemy bezprzewodowe mogą również wysyłać sygnał bezpośrednio '
            'do agencji ochrony, umożliwiając ich błyskawiczną interwencję.']},
-    {'h2': 'Wady i zalety alarmów bezprzewodowych',
+    {'h2': 'Wady, o których powiemy Ci wprost',
      'p': ['Mogłoby się wydawać, że tego typu technologia rozwiązuje wszystkie problemy tradycyjnych '
            'instalacji alarmowych. Należy jednak pamiętać o kilku wadach, dotyczących przede wszystkim '
            'systemów wykorzystujących do powiadamiania sygnał radiowy. Taka transmisja okazuje się podatna '

@@ -18,7 +18,7 @@ POSTS = [
          'straty energii, co przekłada się na realne oszczędności w dłuższej perspektywie.',
  'service': 'wentylacja-wroclaw',
  'blocks': [
-   {'h2': 'Rekuperacja — dlaczego warto ją zamontować w domu?',
+   {'h2': 'Cztery rzeczy, które zmienia rekuperacja',
     'p': ['Jedną z największych zalet rekuperacji są niższe koszty ogrzewania. System pozwala odzyskać '
           'nawet 70–90% ciepła, które w tradycyjnej wentylacji grawitacyjnej bezpowrotnie ucieka na '
           'zewnątrz. W skali roku przekłada się to na realne oszczędności, szczególnie w sezonie '
@@ -32,7 +32,7 @@ POSTS = [
           'powietrza pomaga też utrzymać odpowiednią wilgotność, ograniczając ryzyko powstawania pleśni '
           'i grzybów na ścianach. Dodatkowym atutem jest wyższy komfort akustyczny oraz bezpieczeństwo '
           '— zamknięte okna oznaczają mniej hałasu z zewnątrz i mniejsze ryzyko włamania.']},
-   {'h2': 'Jak działa rekuperacja w praktyce?',
+   {'h2': 'Jak to działa — bez technicznego żargonu',
     'img': 'kanalowa', 'cap': 'Kanały rekuperacji rozprowadzone w budynku',
     'p': ['Cały system opiera się na pracy urządzenia zwanego rekuperatorem, które odpowiada za wymianę '
           'powietrza i odzysk energii cieplnej. Zużyte powietrze z pomieszczeń takich jak kuchnia czy '
@@ -42,14 +42,14 @@ POSTS = [
           'ciepła, gdzie energia z powietrza wywiewanego ogrzewa to, które dopiero trafia do domu. Dzięki '
           'temu zimą nie tracisz ciepła, a latem system może wspierać utrzymanie przyjemniejszej '
           'temperatury wewnątrz.']},
-   {'h2': 'Kiedy najlepiej zaplanować montaż rekuperacji?',
+   {'h2': 'Kiedy zaplanować montaż, żeby nie przepłacić',
     'p': ['Najlepszym momentem na decyzję o rekuperacji jest etap projektowania domu. Wtedy można bez '
           'problemu rozplanować całą instalację, tak aby była jak najbardziej efektywna i estetyczna. '
           'Ważne jest odpowiednie dobranie urządzenia do wielkości budynku, zaplanowanie przebiegu kanałów '
           'wentylacyjnych oraz lokalizacji jednostki centralnej. Najczęściej montuje się ją '
           'w pomieszczeniach technicznych, na poddaszu lub w kotłowni. Jeśli chcesz uniknąć późniejszych '
           'przeróbek i dodatkowych kosztów, warto skonsultować projekt wcześniej.']},
-   {'h2': 'Ile kosztuje rekuperacja? Aktualne i realne ceny instalacji',
+   {'h2': 'Ile to kosztuje — realne widełki dla 100, 150 i 200 m²',
     'p': ['Koszt rekuperacji zależy od powierzchni domu, projektu instalacji oraz zastosowanych '
           'komponentów. W przypadku standardowych systemów wentylacji mechanicznej z odzyskiem ciepła '
           'można przyjąć orientacyjne widełki cenowe, które często pojawiają się w realnych wycenach '
@@ -69,7 +69,7 @@ POSTS = [
            'stopień skomplikowania projektu',
            'rodzaj kanałów wentylacyjnych',
            'etap budowy domu (najtaniej wychodzi montaż na etapie projektu)']},
-   {'h2': 'Rekuperacja — inwestycja, która się zwraca',
+   {'h2': 'Kiedy inwestycja się zwraca?',
     'p': ['Choć koszt początkowy może wydawać się wysoki, rekuperacja w praktyce obniża koszty ogrzewania '
           'nawet o kilkadziesiąt procent rocznie. Dzięki odzyskowi ciepła system ogranicza straty energii, '
           'co przekłada się na realne oszczędności w dłuższej perspektywie. Dodatkowo zyskujesz stały '
@@ -101,7 +101,7 @@ POSTS = [
           'biur czy obiektów komercyjnych. System opiera się na jednostce centralnej połączonej z siecią '
           'kanałów, które rozprowadzają chłodne (lub ciepłe) powietrze do poszczególnych pomieszczeń '
           'przez estetyczne kratki nawiewne.']},
-   {'h2': 'Jak wygląda montaż klimatyzacji kanałowej?',
+   {'h2': 'Jak wygląda montaż krok po kroku',
     'img': 'kanalowa', 'cap': 'Kanały nawiewne ukryte w suficie podwieszanym',
     'p': ['Montaż rozpoczyna się od zaprojektowania trasy kanałów i odpowiedniego doboru mocy urządzenia. '
           'Kluczowe etapy to: instalacja jednostki centralnej (zwykle w przestrzeni sufitowej lub na '
@@ -125,12 +125,12 @@ POSTS = [
    {'p': ['Tak samo sprawa wygląda w kwestii montażu. Zwykle jego kwota jest niższa, ponieważ długość '
           'instalacji ma niewielką wartość. Standardowo przyjmuje się długość instalacji do 3 m, koszt '
           'takiego montażu to kwota ok. 2000 zł.']},
-   {'h2': 'Zgoda wspólnoty — o czym trzeba pamiętać',
+   {'h2': 'Zgoda wspólnoty — formalność, o której łatwo zapomnieć',
     'img': 'klimatyzacja', 'cap': 'Jednostka zewnętrzna na balkonie w bloku',
     'p': ['Warto jednak pamiętać, że aby posiadać klimatyzację w bloku, niezbędna jest zgoda wspólnoty '
           'mieszkaniowej bądź spółdzielni zarządzającej budynkiem. Z reguły mają one konkretne wymagania, '
           'wynikające np. z warunków technicznych lub istniejących już instalacji.']},
-   {'h2': 'Co składa się na końcową cenę',
+   {'h2': 'Co podbija cenę ponad standardowy montaż',
     'ul': ['moc i klasa energetyczna urządzenia',
            'długość instalacji freonowej ponad standardowe 3 m',
            'sposób i miejsce montażu jednostki zewnętrznej',

@@ -397,6 +397,35 @@ def page_hero(r, d, crumbs):
 '''
 
 
+def proof(r):
+    """Why-us block. Every claim is checked: the rating comes from the Google
+    listing getmon.pl itself links to, the rest from getmon.pl's own copy."""
+    cards = [
+        ('4,9 / 257 opinii', 'Ocena w Google od klientów z Wrocławia i okolic'),
+        ('Darmowa wycena', 'Koszt i zakres prac poznajesz przed startem'),
+        ('Certyfikaty i uprawnienia', 'Montaż zgodny z wymaganiami producentów'),
+        ('Serwis po montażu', 'Przeglądy i obsługa instalacji, nie tylko montaż'),
+    ]
+    items = '\n'.join(
+        '        <div class="trust__card" data-reveal>\n'
+        '          <div class="trust__title">%s</div>\n'
+        '          <div class="trust__txt">%s</div>\n'
+        '        </div>' % (e(t), e(x)) for t, x in cards)
+    return '''
+    <section class="section section--tint section--bt">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">DLACZEGO GETMON</span>
+          <h2 class="h2 h2--sm">Cztery powody, dla których klienci zostają</h2>
+        </div>
+        <div class="trust__grid">
+%s
+        </div>
+      </div>
+    </section>
+''' % items
+
+
 def related(r, slugs):
     cards = '\n'.join(
         f'''        <a class="rel-card" href="{r}{s}/">
@@ -452,8 +481,10 @@ def build_service(slug, d):
       </div>
     </section>
 ''',
+           proof(r),
            related(r, d['related']),
-           band(r, 'Planujesz taką instalację?', 'Napisz lub zadzwoń i opowiedz, czego potrzebujesz.'),
+           band(r, 'Darmowa wycena, zero zobowiązań',
+                'Opisz obiekt i zakres prac — odezwiemy się z konkretną propozycją.'),
            contact(r, d['nav'], d.get('chip')),
            '  </main>', footer(r)]
     write(ROOT / slug / 'index.html', ''.join(out))
@@ -516,7 +547,7 @@ def build_blog_index():
       </div>
     </section>
 ''',
-           band(r, 'Masz pytanie po lekturze?', 'Zadzwoń — doradzimy bez zobowiązań.'),
+           band(r, 'Wolisz zapytać wprost?', 'Zadzwoń — doradzimy bez zobowiązań i bez sprzedażowego nacisku.'),
            contact(r),
            '  </main>', footer(r)]
     write(ROOT / 'blog' / 'index.html', ''.join(out))
@@ -600,7 +631,7 @@ def build_post(p):
       </div>
     </section>
 ''',
-           band(r, 'Potrzebujesz wyceny?', 'Opisz obiekt — odezwiemy się z konkretną propozycją.'),
+           band(r, 'Od artykułu do realizacji', 'Opisz obiekt — przygotujemy darmową wycenę zakresu prac.'),
            contact(r, svc['nav'], svc.get('chip')),
            '  </main>', footer(r)]
     write(ROOT / 'blog' / p['slug'] / 'index.html', ''.join(out))
@@ -679,8 +710,8 @@ def build_privacy():
 MARKS = [('TOPBAR', lambda: topbar()),
          ('HEROFORM', lambda: quote_card('hero', '', None, r='')),
          ('HEADER', lambda: header('', None, None)),
-         ('BAND', lambda: band('', 'Planujesz nową instalację?',
-                               'Napisz lub zadzwoń i opowiedz, czego potrzebujesz.')),
+         ('BAND', lambda: band('', 'Darmowa wycena, zero zobowiązań',
+                               'Opisz obiekt i zakres prac — odezwiemy się z konkretną propozycją.')),
          ('CONTACT', lambda: contact('')),
          ('FOOTER', lambda: footer(''))]
 
