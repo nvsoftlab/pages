@@ -30,7 +30,7 @@ TEL = 'tel:+48884884823'
 TEL2 = 'tel:+48517211442'
 MAIL = 'biuro@getmon.pl'
 ADDRESS = 'Centralna 37/U, 52-114 Wrocław'
-REVIEWS_URL = 'https://maps.app.goo.gl/PHqNAuC1VpeQV1PLA'
+REVIEWS_URL = 'https://share.google/Vi7KtLl2xMIycERBV'
 CHIPS = ['Klimatyzacja', 'Wentylacja', 'Pompa ciepła', 'Monitoring', 'Alarm']
 BUSINESS = {
     '@context': 'https://schema.org', '@type': 'HVACBusiness', 'name': 'GETMON',

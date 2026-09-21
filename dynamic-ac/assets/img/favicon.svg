@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Dynamic AC</title>
+  <!-- Circular airflow mark taken from the Dynamic AC logo -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M14.5 45.5A23 23 0 0 1 17 15.7 23 23 0 0 1 31 8.8" stroke="#16355B" stroke-width="5"/>
+    <path d="M19 49.5A27.5 27.5 0 0 1 10.2 22" stroke="#16355B" stroke-width="2.6"/>
+    <path d="M34 7.5A24.5 24.5 0 0 1 55.5 20 24.5 24.5 0 0 1 56 42" stroke="#F15A24" stroke-width="5"/>
+    <path d="M36 3.8A28.5 28.5 0 0 1 61 21" stroke="#F15A24" stroke-width="2.6"/>
+    <path d="M21 55A26 26 0 0 0 51.5 48" stroke="#F15A24" stroke-width="4"/>
+  </g>
+
+  <!-- Two-colour snowflake from the centre of the logo -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.6">
+    <g stroke="#16355B">
+      <path d="M32 14v36M32 32 17 23M32 32 17 41"/>
+      <path d="m32 20-5-4M32 20l5-4M23.5 27l-1-6M23.5 27l-6 1M23.5 37l-6-1M23.5 37l-1 6"/>
+    </g>
+    <g stroke="#F15A24">
+      <path d="M32 14v36M32 32l15-9M32 32l15 9"/>
+      <path d="m32 44-5 4M32 44l5 4M40.5 27l1-6M40.5 27l6 1M40.5 37l6-1M40.5 37l1 6"/>
+    </g>
+  </g>
+</svg>
