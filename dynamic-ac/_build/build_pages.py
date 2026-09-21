@@ -14,6 +14,7 @@ Run:  python3 dynamic-ac/_build/build_pages.py
 """
 import html
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -40,8 +41,59 @@ BUSINESS = {
                 'addressLocality': 'Wrocław', 'addressCountry': 'PL'},
     'areaServed': {'@type': 'City', 'name': 'Wrocław'},
 }
+DISCLAIMER = ('Nieoficjalna koncepcja strony przygotowana przez nvsoftlab. '
+              'Wersja demonstracyjna — nie jest oficjalną stroną firmy Dynamic AC.')
+DEMO_SUFFIX = ' — koncepcja redesignu | nvsoftlab'
 
 e = html.escape
+
+
+def demo_title(title):
+    """Every generated page is a private redesign concept, not the official site."""
+    t = re.sub(r'\s*[—|]\s*Dynamic AC\s*$', '', title).strip()
+    t = re.sub(r'\s*—\s*Dynamic AC,', ' —', t)
+    return t + DEMO_SUFFIX
+
+
+def demo_modal():
+    return '''
+  <!-- First-visit demo notice -->
+  <div class="demo-modal" id="demoModal" hidden>
+    <div class="demo-modal__backdrop"></div>
+    <div class="demo-modal__panel" role="dialog" aria-modal="true" aria-labelledby="demoModalTitle" aria-describedby="demoModalText">
+      <span class="demo-modal__eyebrow">Koncepcja redesignu</span>
+      <h2 class="demo-modal__title" id="demoModalTitle">Strona demonstracyjna</h2>
+      <p class="demo-modal__text" id="demoModalText">''' + DISCLAIMER + '''</p>
+      <label class="demo-modal__check">
+        <input type="checkbox" id="demoModalAck">
+        <span>Zapoznałem/am się z informacją, że to nieoficjalna koncepcja strony.</span>
+      </label>
+      <button type="button" class="btn btn--primary btn--block" id="demoModalBtn" disabled>Przejdź do strony</button>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var m = document.getElementById('demoModal');
+      if (!m) return;
+      var KEY = 'dynamicac-demo-notice-v2';
+      var seen = false;
+      try { seen = localStorage.getItem(KEY) === '1'; } catch (e) {}
+      if (seen) { m.hidden = true; return; }
+      var ack = document.getElementById('demoModalAck');
+      var btn = document.getElementById('demoModalBtn');
+      m.hidden = false;
+      document.body.classList.add('no-scroll');
+      ack.addEventListener('change', function () { btn.disabled = !ack.checked; });
+      btn.addEventListener('click', function () {
+        if (!ack.checked) return;
+        try { localStorage.setItem(KEY, '1'); } catch (e) {}
+        m.hidden = true;
+        document.body.classList.remove('no-scroll');
+      });
+      setTimeout(function () { ack.focus(); }, 300);
+    })();
+  </script>
+'''
 
 
 def icon(name, size=26, cls='', stroke='1.7'):
@@ -56,6 +108,7 @@ def icon(name, size=26, cls='', stroke='1.7'):
 def head(r, title, desc, og_img, ld, preload=None, canonical=''):
     pre = f'\n  <link rel="preload" as="image" href="{preload}">' if preload else ''
     can = f'\n  <link rel="canonical" href="{SITE}/{canonical}">' if canonical else ''
+    title = demo_title(title)
     blocks = '\n'.join(
         '  <script type="application/ld+json">\n' + json.dumps(x, ensure_ascii=False, indent=2) + '\n  </script>'
         for x in ld)
@@ -65,6 +118,8 @@ def head(r, title, desc, og_img, ld, preload=None, canonical=''):
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="googlebot" content="noindex, nofollow, noarchive">
   <title>{e(title)}</title>
   <meta name="description" content="{e(desc)}">
   <meta name="theme-color" content="#101A28">{can}
@@ -255,7 +310,11 @@ def footer(r):
       </div>
     </div>
   </div>
+  <div class="container footer__disclaimer">
+    <p>{DISCLAIMER}</p>
+  </div>
 </footer>
+{demo_modal()}
 '''
 
 

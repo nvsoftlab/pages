@@ -309,6 +309,44 @@
   </div>
 </footer>
 
+  <!-- First-visit demo notice -->
+  <div class="demo-modal" id="demoModal" hidden>
+    <div class="demo-modal__backdrop"></div>
+    <div class="demo-modal__panel" role="dialog" aria-modal="true" aria-labelledby="demoModalTitle" aria-describedby="demoModalText">
+      <span class="demo-modal__eyebrow">Koncepcja redesignu</span>
+      <h2 class="demo-modal__title" id="demoModalTitle">Strona demonstracyjna</h2>
+      <p class="demo-modal__text" id="demoModalText">Nieoficjalna koncepcja strony przygotowana przez nvsoftlab. Wersja demonstracyjna — nie jest oficjalną stroną firmy Dynamic AC.</p>
+      <label class="demo-modal__check">
+        <input type="checkbox" id="demoModalAck">
+        <span>Zapoznałem/am się z informacją, że to nieoficjalna koncepcja strony.</span>
+      </label>
+      <button type="button" class="btn btn--primary btn--block" id="demoModalBtn" disabled>Przejdź do strony</button>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var m = document.getElementById('demoModal');
+      if (!m) return;
+      var KEY = 'dynamicac-demo-notice-v2';
+      var seen = false;
+      try { seen = localStorage.getItem(KEY) === '1'; } catch (e) {}
+      if (seen) { m.hidden = true; return; }
+      var ack = document.getElementById('demoModalAck');
+      var btn = document.getElementById('demoModalBtn');
+      m.hidden = false;
+      document.body.classList.add('no-scroll');
+      ack.addEventListener('change', function () { btn.disabled = !ack.checked; });
+      btn.addEventListener('click', function () {
+        if (!ack.checked) return;
+        try { localStorage.setItem(KEY, '1'); } catch (e) {}
+        m.hidden = true;
+        document.body.classList.remove('no-scroll');
+      });
+      setTimeout(function () { ack.focus(); }, 300);
+    })();
+  </script>
+
+
 <div class="mbar">
   <a class="mbar__call" href="tel:+48575749772">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><path d="M4 5c0 8.3 6.7 15 15 15l1.5-3.4-4.3-2-2 2a12.6 12.6 0 0 1-6.8-6.8l2-2-2-4.3L4 5z"/></svg>
