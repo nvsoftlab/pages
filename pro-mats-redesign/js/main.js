@@ -16,6 +16,8 @@
   const year = doc.querySelector('#year');
   const mobileCta = doc.querySelector('.mobile-cta');
   const orderSection = doc.querySelector('#order');
+  const heroSection = doc.querySelector('.hero');
+  const footer = doc.querySelector('.footer');
 
   if (year) year.textContent = String(new Date().getFullYear());
 
@@ -25,6 +27,7 @@
     menuButton.setAttribute('aria-expanded', 'false');
     menuButton.setAttribute('aria-label', 'Відкрити меню');
     doc.body.classList.remove('menu-open');
+    root.classList.remove('menu-open');
     if (compactViewport.matches) {
       if (nav.contains(doc.activeElement)) menuButton.focus({ preventScroll: true });
       nav.setAttribute('inert', '');
@@ -46,6 +49,7 @@
     menuButton.setAttribute('aria-expanded', String(shouldOpen));
     menuButton.setAttribute('aria-label', shouldOpen ? 'Закрити меню' : 'Відкрити меню');
     doc.body.classList.toggle('menu-open', shouldOpen);
+    root.classList.toggle('menu-open', shouldOpen);
     nav?.toggleAttribute('inert', !shouldOpen && compactViewport.matches);
     if (shouldOpen) nav?.querySelector('a')?.focus({ preventScroll: true });
   });
@@ -53,6 +57,11 @@
   nav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
   window.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') closeMenu();
+  });
+
+  const wideViewport = window.matchMedia('(min-width: 1021px)');
+  wideViewport.addEventListener?.('change', (event) => {
+    if (event.matches) closeMenu();
   });
 
   const revealItems = [...doc.querySelectorAll('.reveal')];
@@ -100,7 +109,7 @@
     drawings.forEach((drawing) => drawingObserver.observe(drawing));
   }
 
-  const navLinks = [...doc.querySelectorAll('.nav a[href^="#"]')];
+  const navLinks = [...doc.querySelectorAll('.nav > a[href^="#"]')];
   const sectionMap = navLinks
     .map((link) => ({ link, section: doc.querySelector(link.getAttribute('href')) }))
     .filter((item) => item.section);
@@ -118,6 +127,7 @@
 
   const parallaxItems = [...doc.querySelectorAll('[data-parallax]')];
   let ticking = false;
+  let lastScrollTop = 0;
 
   const updateScrollEffects = () => {
     const scrollTop = window.scrollY || root.scrollTop;
@@ -148,6 +158,16 @@
         const shift = (itemCenter - viewportCenter) * speed;
         item.style.setProperty('--parallax', `${shift.toFixed(2)}px`);
       });
+    }
+
+    if (mobileCta) {
+      const heroBottom = heroSection ? heroSection.getBoundingClientRect().bottom : 0;
+      const pastHero = heroBottom < 0;
+      const scrollingUp = scrollTop < lastScrollTop;
+      const nearEnd = (orderSection && orderSection.getBoundingClientRect().top < window.innerHeight * 0.92)
+        || (footer && footer.getBoundingClientRect().top < window.innerHeight * 0.98);
+      mobileCta.classList.toggle('is-hidden', nearEnd || !pastHero || !scrollingUp);
+      lastScrollTop = scrollTop;
     }
     ticking = false;
   };
@@ -310,13 +330,6 @@
     });
   });
 
-  if (mobileCta && orderSection && 'IntersectionObserver' in window) {
-    const ctaObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => mobileCta.classList.toggle('is-hidden', entry.isIntersecting));
-    }, { threshold: 0.08 });
-    ctaObserver.observe(orderSection);
-  }
-
   const designSelect = doc.querySelector('#design-select');
   doc.querySelectorAll('.collection-card[data-design] a[href="#order"]').forEach((link) => {
     link.addEventListener('click', () => {
@@ -371,4 +384,106 @@
       formStatus.textContent = 'Це демо: дані не надсилались. Після підключення CRM тут буде підтвердження заявки.';
     }
   });
+
+  // Mobile carousels: auto-advance + dot indicators
+  const carouselEls = [
+    ...doc.querySelectorAll('.collection-grid, .works__grid')
+  ];
+
+  const initCarousel = (carousel) => {
+    if (!carousel || carousel.dataset.carousel) return;
+    const items = [...carousel.children].filter((child) => child.nodeType === 1);
+    if (items.length < 2) return;
+    carousel.dataset.carousel = '1';
+
+    const dots = doc.createElement('div');
+    dots.className = 'carousel-dots';
+    dots.setAttribute('role', 'group');
+    dots.setAttribute('aria-label', 'Навігація по слайдах');
+    items.forEach((_, i) => {
+      const dot = doc.createElement('button');
+      dot.type = 'button';
+      dot.className = i === 0 ? 'carousel-dot is-active' : 'carousel-dot';
+      dot.setAttribute('aria-label', `Слайд ${i + 1} з ${items.length}`);
+      dot.addEventListener('click', () => goTo(i));
+      dots.appendChild(dot);
+    });
+    carousel.after(dots);
+
+    let index = 0;
+    let paused = false;
+    let resumeTimer = null;
+    let rafId = null;
+
+    const goTo = (i) => {
+      const item = items[i];
+      if (!item) return;
+      const cRect = carousel.getBoundingClientRect();
+      const iRect = item.getBoundingClientRect();
+      const target = carousel.scrollLeft + (iRect.left - cRect.left) - (carousel.clientWidth - item.clientWidth) / 2;
+      carousel.scrollTo({ left: Math.max(0, target), behavior: 'smooth' });
+    };
+
+    const updateDots = () => {
+      const cRect = carousel.getBoundingClientRect();
+      const center = cRect.left + cRect.width / 2;
+      let best = 0;
+      let bestDist = Infinity;
+      items.forEach((item, i) => {
+        const r = item.getBoundingClientRect();
+        const d = Math.abs(r.left + r.width / 2 - center);
+        if (d < bestDist) {
+          bestDist = d;
+          best = i;
+        }
+      });
+      if (best === index) return;
+      index = best;
+      dots.querySelectorAll('.carousel-dot').forEach((dot, i) => dot.classList.toggle('is-active', i === index));
+    };
+
+    carousel.addEventListener('scroll', () => {
+      if (rafId) return;
+      rafId = window.requestAnimationFrame(() => {
+        updateDots();
+        rafId = null;
+      });
+    }, { passive: true });
+
+    const pause = () => {
+      paused = true;
+      window.clearTimeout(resumeTimer);
+    };
+    const resume = () => {
+      window.clearTimeout(resumeTimer);
+      resumeTimer = window.setTimeout(() => { paused = false; }, 4000);
+    };
+
+    carousel.addEventListener('pointerenter', pause);
+    carousel.addEventListener('pointerleave', resume);
+    carousel.addEventListener('touchstart', pause, { passive: true });
+    carousel.addEventListener('touchend', resume, { passive: true });
+
+    let visible = false;
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => { visible = entry.isIntersecting; });
+      }, { threshold: 0.5 });
+      observer.observe(carousel);
+    } else {
+      visible = true;
+    }
+
+    window.setInterval(() => {
+      if (paused || !visible || doc.hidden) return;
+      goTo((index + 1) % items.length);
+    }, 4500);
+  };
+
+  const setupCarousels = () => {
+    if (compactViewport.matches) carouselEls.forEach(initCarousel);
+  };
+
+  setupCarousels();
+  compactViewport.addEventListener?.('change', setupCarousels);
 })();
