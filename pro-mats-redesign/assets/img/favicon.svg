@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Pro Mats</title>
+  <defs>
+    <linearGradient id="tile" x1="18" y1="8" x2="110" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#18181B"/>
+      <stop offset="1" stop-color="#070708"/>
+    </linearGradient>
+    <radialGradient id="warmth" cx="0" cy="0" r="1" gradientTransform="translate(27 25) rotate(45) scale(110)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C62934" stop-opacity=".18"/>
+      <stop offset=".62" stop-color="#C62934" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="4" y="4" width="120" height="120" rx="25" fill="url(#tile)"/>
+  <rect x="4" y="4" width="120" height="120" rx="25" fill="url(#warmth)"/>
+  <rect x="4.5" y="4.5" width="119" height="119" rx="24.5" fill="none" stroke="#fff" stroke-opacity=".1"/>
+
+  <g transform="translate(8 31) scale(.62)">
+    <path fill="#FAF9F6" d="M56.6 0h17.9l24.8 51.9H81.4L56.6 0Z"/>
+    <path fill="#FAF9F6" d="M124.1 0h-17.9L131 51.9h17.9 31.7c-12.5-1.8-32.7-6.2-36.9-10.4C138.5 36.1 132.1 20.3 124.1 0Z"/>
+    <path fill="#C62934" d="M124.1 0h-17.9L81.4 51.9h17.9L124.1 0Z"/>
+    <path fill="#C62934" d="M56.6 0h17.9L49.6 51.9H31.7 0c12.5-1.8 32.7-6.2 36.9-10.4C42.2 36.1 48.6 20.3 56.6 0Z"/>
+    <path fill="#FAF9F6" d="M56.6 106.3h17.9l24.8-51.9H81.4l-24.8 51.9Z"/>
+    <path fill="#FAF9F6" d="M124.1 106.3h-17.9L131 54.5h49.6c-12.5 1.8-32.7 6.2-36.9 10.4-5.2 5.4-11.6 21.1-19.6 41.4Z"/>
+    <path fill="#C62934" d="M124.1 106.3h-17.9L81.4 54.5h17.9l24.8 51.8Z"/>
+    <path fill="#C62934" d="M56.6 106.3h17.9L49.6 54.5H0c12.5 1.8 32.7 6.2 36.9 10.4 5.3 5.4 11.7 21.1 19.7 41.4Z"/>
+  </g>
+</svg>
