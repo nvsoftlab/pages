@@ -2568,10 +2568,6 @@ summary {
   text-transform: uppercase;
 }
 
-.mobile-cta {
-  display: none;
-}
-
 .carousel-dots {
   display: none;
 }
@@ -2949,7 +2945,15 @@ summary {
 @media (max-width: 720px) {
   :root {
     --pad: 18px;
-    --header-offset: 78px;
+    --header-offset: 12px;
+  }
+
+  .page-progress {
+    display: none;
+  }
+
+  .header {
+    position: relative;
   }
 
   .section {
@@ -2978,10 +2982,6 @@ summary {
   .hero-in {
     animation-duration: .42s;
     animation-delay: calc(.02s + var(--i) * .035s);
-  }
-
-  .custom__frame::after {
-    display: none;
   }
 
   .utility {
@@ -3647,37 +3647,6 @@ summary {
   .privacy-dialog__content p {
     font-size: 13px;
     line-height: 1.65;
-  }
-
-  .mobile-cta {
-    position: fixed;
-    z-index: 90;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    min-height: calc(62px + env(safe-area-inset-bottom));
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px env(safe-area-inset-bottom);
-    color: var(--white);
-    background: var(--accent);
-    border-top: 1px solid rgba(255,255,255,.2);
-    font-size: 13px;
-    font-weight: 800;
-    box-shadow: 0 -14px 34px rgba(11, 11, 12, .18);
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    will-change: transform;
-    transition: transform .24s var(--ease-out), opacity .18s linear, visibility 0s linear;
-  }
-
-  .mobile-cta.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    transform: translate3d(0, calc(100% + 1px), 0);
-    transition: transform .24s var(--ease-out), opacity .18s linear, visibility 0s linear .24s;
   }
 
   .carousel-dots {

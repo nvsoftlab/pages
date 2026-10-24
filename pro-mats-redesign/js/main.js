@@ -12,10 +12,6 @@
   const menuButton = doc.querySelector('.menu-button');
   const progress = doc.querySelector('.page-progress span');
   const year = doc.querySelector('#year');
-  const mobileCta = doc.querySelector('.mobile-cta');
-  const orderSection = doc.querySelector('#order');
-  const heroSection = doc.querySelector('.hero');
-  const footer = doc.querySelector('.footer');
 
   if (year) year.textContent = String(new Date().getFullYear());
 
@@ -119,13 +115,6 @@
       });
     }
 
-    if (mobileCta) {
-      const heroBottom = heroSection ? heroSection.getBoundingClientRect().bottom : 0;
-      const pastHero = heroBottom < -24;
-      const nearEnd = (orderSection && orderSection.getBoundingClientRect().top < window.innerHeight * 0.92)
-        || (footer && footer.getBoundingClientRect().top < window.innerHeight * 0.98);
-      mobileCta.classList.toggle('is-hidden', !compactViewport.matches || nearEnd || !pastHero);
-    }
     ticking = false;
   };
 
