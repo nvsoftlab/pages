@@ -29,7 +29,7 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="assets/img/hero-mats.webp">
   <link rel="preload" as="image" href="assets/img/design-double-black.webp">
-  <link rel="stylesheet" href="css/styles.css?v=20261024-layout-10">
+  <link rel="stylesheet" href="css/styles.css?v=20261024-layout-14">
   <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
 </head>
 <body id="top">
@@ -255,9 +255,36 @@
   <footer class="footer">
     <div class="wrap footer__top"><p>Захист салону,<br>пошитий саме під твоє авто.</p><a href="#top">Повернутися нагору <svg class="ic" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg></a></div>
     <div class="wrap footer__grid"><div class="footer__brand"><img src="assets/img/logo.svg" width="630" height="106" alt="Pro Mats"><p>Індивідуальні автомобільні килимки з преміальної екошкіри.</p></div><div><strong>Навігація</strong><a href="#quality">Чому Pro Mats</a><a href="#works">Роботи</a><a href="#collections">Колекції</a><a href="#custom">Конфігуратор</a><a href="#location">Шоурум</a></div><div><strong>Контакти</strong><a href="tel:+380671177387">+38 (067) 11-77-387</a><a href="https://www.instagram.com/pro_mats_ua/" target="_blank" rel="noopener noreferrer">Instagram <svg class="ic" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a><a href="#location">Тернопіль, вул. Лук’яновича, 8</a></div><div class="footer__cta"><span>Готовий почати?</span><a href="#order">Підібрати комплект <b><svg class="ic" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></b></a></div></div>
-    <div class="wrap footer__bottom"><span>© <span id="year"></span> Pro Mats</span><span>Концепт преміального редизайну</span></div>
+    <div class="wrap footer__bottom"><span>© <span id="year"></span> Pro Mats</span><button class="footer__privacy" type="button" data-privacy-open>Політика конфіденційності</button><span>Концепт преміального редизайну</span></div>
   </footer>
-  <a class="mobile-cta" href="#order">Підібрати комплект <span><svg class="ic" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span></a>
-  <script src="js/main.js?v=20261024-mobile-8"></script>
+
+  <dialog class="privacy-dialog" id="privacy-dialog" aria-labelledby="privacy-title">
+    <article class="privacy-dialog__panel">
+      <header class="privacy-dialog__header">
+        <div><span>Pro Mats · юридична інформація</span><h2 id="privacy-title">Політика конфіденційності</h2></div>
+        <button class="privacy-dialog__close" type="button" data-privacy-close aria-label="Закрити політику конфіденційності"><span></span><span></span></button>
+      </header>
+      <div class="privacy-dialog__content">
+        <p class="privacy-dialog__lead">Ця політика пояснює, які дані може отримувати Pro Mats під час користування сайтом, навіщо вони потрібні та які права має відвідувач.</p>
+
+        <section><span>01</span><div><h3>Які дані ми отримуємо</h3><p>Якщо ви залишаєте заявку, ми можемо отримати ім’я, номер телефону, марку, модель і рік автомобіля, обрану конфігурацію килимків та іншу інформацію, яку ви добровільно зазначили у формі або повідомили менеджеру.</p><p>Під час відвідування сайту також можуть автоматично оброблятися технічні дані: IP-адреса, тип браузера й пристрою, дата та час доступу, переглянуті сторінки, адреса сторінки переходу та файли cookie.</p></div></section>
+
+        <section><span>02</span><div><h3>Для чого використовуються дані</h3><p>Дані потрібні, щоб відповісти на звернення, перевірити наявність лекал, підготувати консультацію та розрахунок, погодити й виконати замовлення, організувати доставку, забезпечити роботу та безпеку сайту, а також поліпшувати сервіс.</p><p>Підставою обробки є ваша згода, необхідність виконати запит до укладення договору або сам договір, виконання вимог законодавства та законний інтерес Pro Mats у захисті й розвитку сервісу.</p></div></section>
+
+        <section><span>03</span><div><h3>Зберігання та передавання</h3><p>Ми не продаємо персональні дані. Доступ до них можуть мати уповноважені працівники Pro Mats та постачальники послуг — зокрема хостинг, CRM, аналітика або служба доставки — лише в обсязі, необхідному для виконання їхніх функцій.</p><p>Дані зберігаються не довше, ніж це потрібно для зазначених цілей, виконання зобов’язань і вимог закону; звичайний строк зберігання звернень — до трьох років.</p></div></section>
+
+        <section><span>04</span><div><h3>Cookie та зовнішні сервіси</h3><p>Сайт може використовувати необхідні cookie для коректної роботи та, після підключення відповідних інструментів, аналітичні cookie. Їх можна обмежити або видалити в налаштуваннях браузера, однак частина функцій може працювати інакше.</p><p>Для шрифтів і карти сайт звертається до Google Fonts та OpenStreetMap. Під час завантаження цих ресурсів відповідні сервіси можуть отримувати технічні дані вашого з’єднання відповідно до власних політик конфіденційності.</p></div></section>
+
+        <section><span>05</span><div><h3>Ваші права</h3><p>Ви можете запросити інформацію про обробку своїх даних, їх виправлення, оновлення, видалення або обмеження обробки, відкликати згоду чи заперечити проти обробки у випадках, передбачених законодавством України.</p></div></section>
+
+        <section><span>06</span><div><h3>Контакти</h3><p>Щоб скористатися своїми правами або поставити запитання щодо конфіденційності, зв’яжіться з Pro Mats: <a href="tel:+380671177387">+38 (067) 11-77-387</a>, вул. Лук’яновича, 8, Тернопіль, 46000.</p></div></section>
+
+        <section><span>07</span><div><h3>Зміни політики</h3><p>Політика може оновлюватися у зв’язку зі змінами сайту, сервісів або законодавства. Актуальна редакція завжди доступна за цим посиланням у футері.</p><small>Редакція від 24 жовтня 2026 року.</small></div></section>
+      </div>
+    </article>
+  </dialog>
+
+  <a class="mobile-cta is-hidden" href="#order">Підібрати комплект <span><svg class="ic" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span></a>
+  <script src="js/main.js?v=20261024-mobile-13"></script>
 </body>
 </html>

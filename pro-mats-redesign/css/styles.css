@@ -48,7 +48,9 @@ body {
 }
 
 html.menu-open,
-body.menu-open {
+body.menu-open,
+html.dialog-open,
+body.dialog-open {
   overflow: hidden;
 }
 
@@ -2438,6 +2440,162 @@ summary {
   text-transform: uppercase;
 }
 
+.footer__privacy {
+  padding: 0;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  transition: color .25s;
+}
+
+.footer__privacy:hover,
+.footer__privacy:focus-visible {
+  color: var(--white);
+}
+
+.privacy-dialog {
+  width: min(100% - 48px, 1040px);
+  max-width: none;
+  max-height: calc(100dvh - 48px);
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  color: var(--ink);
+  background: var(--paper);
+  border: 0;
+  box-shadow: 0 36px 120px rgba(0, 0, 0, .46);
+}
+
+.privacy-dialog::backdrop {
+  background: rgba(5, 5, 6, .84);
+  backdrop-filter: blur(8px);
+}
+
+.privacy-dialog__panel {
+  max-height: calc(100dvh - 48px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-color: var(--accent) var(--paper-deep);
+  scrollbar-width: thin;
+}
+
+.privacy-dialog__header {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 34px clamp(28px, 5vw, 64px) 30px;
+  background: rgba(243, 240, 233, .96);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(18px);
+}
+
+.privacy-dialog__header > div > span,
+.privacy-dialog__content > section > span {
+  color: var(--accent);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .17em;
+  text-transform: uppercase;
+}
+
+.privacy-dialog__header h2 {
+  margin: 7px 0 0;
+  font-family: var(--font-display);
+  font-size: clamp(38px, 5vw, 64px);
+  font-weight: 550;
+  line-height: .95;
+  letter-spacing: -.055em;
+}
+
+.privacy-dialog__close {
+  position: relative;
+  flex: none;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  background: transparent;
+  border: 1px solid var(--line);
+}
+
+.privacy-dialog__close span {
+  position: absolute;
+  top: 22px;
+  left: 12px;
+  width: 20px;
+  height: 1px;
+  background: var(--ink);
+  transform: rotate(45deg);
+}
+
+.privacy-dialog__close span:last-child {
+  transform: rotate(-45deg);
+}
+
+.privacy-dialog__content {
+  padding: 0 clamp(28px, 5vw, 64px) 58px;
+}
+
+.privacy-dialog__lead {
+  max-width: 760px;
+  margin: 0;
+  padding-block: 34px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.privacy-dialog__content > section {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  gap: 24px;
+  padding-block: 30px;
+  border-top: 1px solid var(--line);
+}
+
+.privacy-dialog__content h3 {
+  margin: 0 0 14px;
+  font-family: var(--font-display);
+  font-size: clamp(25px, 3vw, 34px);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -.035em;
+}
+
+.privacy-dialog__content p {
+  max-width: 760px;
+  margin: 0 0 13px;
+  color: #514d47;
+  font-size: 14px;
+  line-height: 1.72;
+}
+
+.privacy-dialog__content p:last-child {
+  margin-bottom: 0;
+}
+
+.privacy-dialog__content a {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.privacy-dialog__content small {
+  display: block;
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
 .mobile-cta {
   display: none;
 }
@@ -2523,7 +2681,7 @@ summary {
   position: absolute;
   z-index: 7;
   top: 12%;
-  right: clamp(7px, 1.35vw, 22px);
+  right: max(var(--pad), calc((100vw - var(--wrap)) / 2 + var(--pad)));
   bottom: 12%;
   display: block;
   width: 1px;
@@ -2854,12 +3012,9 @@ summary {
 }
 
 @media (max-width: 1020px) {
-  .motion-rail {
-    display: none;
-  }
-
+  .motion-rail,
   .section-line {
-    right: 6px;
+    display: none;
   }
 
   .section-trace {
@@ -3121,14 +3276,17 @@ summary {
     display: none;
   }
 
-  .reveal {
-    transform: translateY(20px);
-    transition-duration: .48s;
+  .reveal,
+  .reveal.visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 
-  .reveal--clip {
+  .reveal--clip,
+  .reveal--clip.visible {
     clip-path: none;
-    transition: opacity .48s var(--ease-out) var(--delay, 0s), transform .48s var(--ease-out) var(--delay, 0s);
+    transition: none;
   }
 
   .hero-in {
@@ -3177,6 +3335,8 @@ summary {
   .header {
     background: #0b0b0c;
     backdrop-filter: none;
+    backface-visibility: hidden;
+    transform: translateZ(0);
   }
 
   .nav {
@@ -3747,6 +3907,62 @@ summary {
     gap: 7px;
   }
 
+  .footer__privacy {
+    padding-block: 5px;
+    text-align: left;
+  }
+
+  .privacy-dialog {
+    width: 100%;
+    height: 100dvh;
+    max-height: none;
+    margin: 0;
+  }
+
+  .privacy-dialog__panel {
+    max-height: 100dvh;
+  }
+
+  .privacy-dialog__header {
+    gap: 18px;
+    padding: calc(22px + env(safe-area-inset-top)) 18px 22px;
+    backdrop-filter: none;
+  }
+
+  .privacy-dialog__header h2 {
+    max-width: 270px;
+    font-size: 38px;
+  }
+
+  .privacy-dialog__close {
+    width: 44px;
+    height: 44px;
+  }
+
+  .privacy-dialog__content {
+    padding: 0 18px calc(36px + env(safe-area-inset-bottom));
+  }
+
+  .privacy-dialog__lead {
+    padding-block: 26px;
+    font-size: 13px;
+  }
+
+  .privacy-dialog__content > section {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding-block: 25px;
+  }
+
+  .privacy-dialog__content h3 {
+    font-size: 29px;
+  }
+
+  .privacy-dialog__content p {
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
   .mobile-cta {
     position: fixed;
     z-index: 90;
@@ -3764,13 +3980,18 @@ summary {
     font-size: 13px;
     font-weight: 800;
     box-shadow: 0 -14px 34px rgba(11, 11, 12, .18);
-    transform: translateY(0);
-    transition: transform .35s var(--ease), visibility .35s;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    will-change: transform;
+    transition: transform .24s var(--ease-out), opacity .18s linear, visibility 0s linear;
   }
 
   .mobile-cta.is-hidden {
+    opacity: 0;
     visibility: hidden;
-    transform: translateY(110%);
+    transform: translate3d(0, calc(100% + 1px), 0);
+    transition: transform .24s var(--ease-out), opacity .18s linear, visibility 0s linear .24s;
   }
 
   .carousel-dots {

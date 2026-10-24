@@ -5,6 +5,7 @@
   const root = doc.documentElement;
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const compactViewport = window.matchMedia('(max-width: 720px)');
+  const navigationViewport = window.matchMedia('(max-width: 1020px)');
   const richMotion = window.matchMedia('(min-width: 721px) and (pointer: fine)');
   const header = doc.querySelector('.header');
   const nav = doc.querySelector('.nav');
@@ -28,7 +29,7 @@
     menuButton.setAttribute('aria-label', 'Відкрити меню');
     doc.body.classList.remove('menu-open');
     root.classList.remove('menu-open');
-    if (compactViewport.matches) {
+    if (navigationViewport.matches) {
       if (nav.contains(doc.activeElement)) menuButton.focus({ preventScroll: true });
       nav.setAttribute('inert', '');
     }
@@ -36,12 +37,12 @@
 
   const syncMobileNavigation = () => {
     if (!nav) return;
-    if (compactViewport.matches && !nav.classList.contains('is-open')) nav.setAttribute('inert', '');
+    if (navigationViewport.matches && !nav.classList.contains('is-open')) nav.setAttribute('inert', '');
     else nav.removeAttribute('inert');
   };
 
   syncMobileNavigation();
-  compactViewport.addEventListener?.('change', syncMobileNavigation);
+  navigationViewport.addEventListener?.('change', syncMobileNavigation);
 
   menuButton?.addEventListener('click', () => {
     const shouldOpen = menuButton.getAttribute('aria-expanded') !== 'true';
@@ -50,7 +51,7 @@
     menuButton.setAttribute('aria-label', shouldOpen ? 'Закрити меню' : 'Відкрити меню');
     doc.body.classList.toggle('menu-open', shouldOpen);
     root.classList.toggle('menu-open', shouldOpen);
-    nav?.toggleAttribute('inert', !shouldOpen && compactViewport.matches);
+    nav?.toggleAttribute('inert', !shouldOpen && navigationViewport.matches);
     if (shouldOpen) nav?.querySelector('a')?.focus({ preventScroll: true });
   });
 
@@ -59,9 +60,8 @@
     if (event.key === 'Escape') closeMenu();
   });
 
-  const wideViewport = window.matchMedia('(min-width: 1021px)');
-  wideViewport.addEventListener?.('change', (event) => {
-    if (event.matches) closeMenu();
+  navigationViewport.addEventListener?.('change', () => {
+    closeMenu();
   });
 
   const revealItems = [...doc.querySelectorAll('.reveal')];
@@ -70,7 +70,7 @@
     item.style.setProperty('--delay', `${Math.min(delayIndex * 0.12, 0.48)}s`);
   });
 
-  if (reduceMotion || !('IntersectionObserver' in window)) {
+  if (compactViewport.matches || reduceMotion || !('IntersectionObserver' in window)) {
     revealItems.forEach((item) => item.classList.add('visible'));
   } else {
     const revealObserver = new IntersectionObserver((entries, observer) => {
@@ -127,7 +127,6 @@
 
   const parallaxItems = [...doc.querySelectorAll('[data-parallax]')];
   let ticking = false;
-  let lastScrollTop = 0;
 
   const updateScrollEffects = () => {
     const scrollTop = window.scrollY || root.scrollTop;
@@ -162,12 +161,10 @@
 
     if (mobileCta) {
       const heroBottom = heroSection ? heroSection.getBoundingClientRect().bottom : 0;
-      const pastHero = heroBottom < 0;
-      const scrollingUp = scrollTop < lastScrollTop;
+      const pastHero = heroBottom < -24;
       const nearEnd = (orderSection && orderSection.getBoundingClientRect().top < window.innerHeight * 0.92)
         || (footer && footer.getBoundingClientRect().top < window.innerHeight * 0.98);
-      mobileCta.classList.toggle('is-hidden', nearEnd || !pastHero || !scrollingUp);
-      lastScrollTop = scrollTop;
+      mobileCta.classList.toggle('is-hidden', !compactViewport.matches || nearEnd || !pastHero);
     }
     ticking = false;
   };
@@ -349,6 +346,37 @@
     });
   });
 
+  const privacyDialog = doc.querySelector('#privacy-dialog');
+  const privacyClose = privacyDialog?.querySelector('[data-privacy-close]');
+  let privacyTrigger = null;
+
+  const closePrivacy = () => {
+    if (!privacyDialog?.open) return;
+    privacyDialog.close();
+  };
+
+  doc.querySelectorAll('[data-privacy-open]').forEach((trigger) => {
+    trigger.addEventListener('click', () => {
+      if (!privacyDialog) return;
+      privacyTrigger = trigger;
+      doc.body.classList.add('dialog-open');
+      root.classList.add('dialog-open');
+      privacyDialog.showModal();
+      privacyClose?.focus({ preventScroll: true });
+    });
+  });
+
+  privacyClose?.addEventListener('click', closePrivacy);
+  privacyDialog?.addEventListener('click', (event) => {
+    if (event.target === privacyDialog) closePrivacy();
+  });
+  privacyDialog?.addEventListener('close', () => {
+    doc.body.classList.remove('dialog-open');
+    root.classList.remove('dialog-open');
+    privacyTrigger?.focus({ preventScroll: true });
+    privacyTrigger = null;
+  });
+
   const form = doc.querySelector('#lead-form');
   const formStatus = form?.querySelector('.form-status');
 
@@ -385,7 +413,7 @@
     }
   });
 
-  // Mobile carousels: auto-advance + dot indicators
+  // Mobile carousels: manual swipe + dot indicators
   const carouselEls = [
     ...doc.querySelectorAll('.collection-grid, .works__grid')
   ];
@@ -411,8 +439,6 @@
     carousel.after(dots);
 
     let index = 0;
-    let paused = false;
-    let resumeTimer = null;
     let rafId = null;
 
     const goTo = (i) => {
@@ -450,34 +476,6 @@
       });
     }, { passive: true });
 
-    const pause = () => {
-      paused = true;
-      window.clearTimeout(resumeTimer);
-    };
-    const resume = () => {
-      window.clearTimeout(resumeTimer);
-      resumeTimer = window.setTimeout(() => { paused = false; }, 4000);
-    };
-
-    carousel.addEventListener('pointerenter', pause);
-    carousel.addEventListener('pointerleave', resume);
-    carousel.addEventListener('touchstart', pause, { passive: true });
-    carousel.addEventListener('touchend', resume, { passive: true });
-
-    let visible = false;
-    if ('IntersectionObserver' in window) {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => { visible = entry.isIntersecting; });
-      }, { threshold: 0.5 });
-      observer.observe(carousel);
-    } else {
-      visible = true;
-    }
-
-    window.setInterval(() => {
-      if (paused || !visible || doc.hidden) return;
-      goTo((index + 1) % items.length);
-    }, 4500);
   };
 
   const setupCarousels = () => {
