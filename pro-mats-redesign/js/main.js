@@ -11,9 +11,6 @@
   const nav = doc.querySelector('.nav');
   const menuButton = doc.querySelector('.menu-button');
   const progress = doc.querySelector('.page-progress span');
-  const motionRail = doc.querySelector('.motion-rail');
-  const motionRailValue = motionRail?.querySelector('strong');
-  const lineProgressSections = [...doc.querySelectorAll('[data-line-progress]')];
   const year = doc.querySelector('#year');
   const mobileCta = doc.querySelector('.mobile-cta');
   const orderSection = doc.querySelector('#order');
@@ -83,32 +80,6 @@
     revealItems.forEach((item) => revealObserver.observe(item));
   }
 
-  const drawings = [...doc.querySelectorAll('.motion-drawing')];
-  if (!compactViewport.matches) {
-    drawings.forEach((drawing) => {
-      drawing.querySelectorAll('[data-draw]').forEach((path) => {
-        try {
-          path.style.setProperty('--line-length', String(Math.ceil(path.getTotalLength())));
-        } catch (error) {
-          path.style.setProperty('--line-length', '2000');
-        }
-      });
-    });
-  }
-
-  if (compactViewport.matches || reduceMotion || !('IntersectionObserver' in window)) {
-    drawings.forEach((drawing) => drawing.classList.add('is-drawn'));
-  } else {
-    const drawingObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('is-drawn');
-        observer.unobserve(entry.target);
-      });
-    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.12 });
-    drawings.forEach((drawing) => drawingObserver.observe(drawing));
-  }
-
   const navLinks = [...doc.querySelectorAll('.nav > a[href^="#"]')];
   const sectionMap = navLinks
     .map((link) => ({ link, section: doc.querySelector(link.getAttribute('href')) }))
@@ -134,18 +105,7 @@
     const scrollRatio = Math.min(1, Math.max(0, scrollTop / scrollRange));
 
     progress?.style.setProperty('transform', `scaleX(${scrollRatio})`);
-    motionRail?.style.setProperty('--page-progress', scrollRatio.toFixed(4));
-    if (motionRailValue) motionRailValue.textContent = String(Math.round(scrollRatio * 100)).padStart(2, '0');
     header?.classList.toggle('is-scrolled', scrollTop > 18);
-
-    if (!compactViewport.matches) {
-      lineProgressSections.forEach((section) => {
-        const rect = section.getBoundingClientRect();
-        const travel = rect.height + window.innerHeight * 0.62;
-        const localProgress = Math.min(1, Math.max(0, (window.innerHeight * 0.78 - rect.top) / travel));
-        section.style.setProperty('--section-progress', localProgress.toFixed(4));
-      });
-    }
 
     if (!reduceMotion && richMotion.matches) {
       const viewportCenter = window.innerHeight / 2;
